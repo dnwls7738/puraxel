@@ -69,9 +69,11 @@
   color: #55576f;
   padding-left: 16px;
   padding-top: 10px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
+  width: 130px;
 }
 .snsT {
+  width: 10px;
   margin-left: 3px;
   font-family: "Neue Machina";
   font-style: normal;
@@ -83,10 +85,13 @@
 }
 .sns {
   padding-left: 16px;
+  width: 130px;
 }
 
 .info {
-  padding: 16px;
+  padding-top: 10px;
+  width: 150px;
+  float: right;
   span {
     padding-right: 16px;
     font-family: "Pretendard";
