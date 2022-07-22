@@ -1,0 +1,14 @@
+import React from "react";
+import Header from "../layout/Header";
+import Fx5000Cont from "../includes/Fx5000Cont";
+
+function Fx5000() {
+  return (
+    <>
+      <Header name="FX-5000" text="inquery" />
+      <Fx5000Cont />
+    </>
+  );
+}
+
+export default Fx5000;

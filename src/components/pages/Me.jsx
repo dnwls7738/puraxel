@@ -5,7 +5,7 @@ import Header from "../layout/Header";
 function Me() {
   return (
     <>
-      <Header name="Me" />
+      <Header name="ME" text="shop" />
       <MeCont />
     </>
   );

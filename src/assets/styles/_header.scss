@@ -47,3 +47,62 @@
     letter-spacing: -0.03em;
   }
 }
+
+.product {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #55576f;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 16px;
+}
+.mall {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #55576f;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 70px;
+}
+.snsT {
+  margin-left: 3px;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #55576f;
+}
+.sns {
+  padding-left: 16px;
+}
+
+.info {
+  padding: 16px;
+  span {
+    padding-right: 16px;
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 144%;
+    letter-spacing: -0.03em;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #7e818d;
+    opacity: 0.5;
+    float: right;
+  }
+}
+
+.css-10hburv-MuiTypography-root {
+  font-size: 48px !important;
+  font-family: "Neue Machina" !important;
+}

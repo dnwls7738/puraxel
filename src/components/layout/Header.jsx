@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import Icon from "@mui/material/Icon";
+import GroupIcon from "@mui/icons-material/Group";
 
 import {
   ListItem,
@@ -14,10 +19,7 @@ import {
   IconButton,
 } from "@mui/material";
 
-function Header({ name }) {
-  const [state, setState] = React.useState({
-    right: false,
-  });
+function Header({ name, text }) {
   const [close, setClose] = useState(false);
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -36,14 +38,107 @@ function Header({ name }) {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
+        <span className="product">product</span>
         {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text, index) => (
-          <ListItem key={text} disablePadding>
+          <Link to={text}>
             <ListItemButton>
-              <ListItemText primary={text} />
+              <ListItem key={text} disablePadding>
+                <ListItemText primary={text} />
+              </ListItem>
             </ListItemButton>
-          </ListItem>
+          </Link>
         ))}
       </List>
+      <div>
+        <div className="product">
+          <span>puraxel mall</span>
+        </div>
+        <Link
+          to={{
+            pathname: "https://facebook.com",
+          }}
+          target="_blank"
+        >
+          <div className="mall">
+            <span>Shop</span>
+          </div>
+        </Link>
+      </div>
+
+      <div className="sns">
+        <div className="snsT">
+          <span>sns</span>
+        </div>
+        <Link
+          to={{
+            pathname: "",
+          }}
+          target="_blank"
+        >
+          <Icon
+            sx={{
+              width: 32,
+              height: 32,
+              paddingRight: 5,
+            }}
+          >
+            <FacebookIcon
+              sx={{
+                width: 32,
+                height: 32,
+              }}
+            />
+          </Icon>
+        </Link>
+
+        <Link
+          to={{
+            pathname: "",
+          }}
+          target="_blank"
+        >
+          <Icon
+            sx={{
+              width: 32,
+              height: 32,
+              paddingRight: 5,
+            }}
+          >
+            <InstagramIcon
+              sx={{
+                width: 32,
+                height: 32,
+              }}
+            />
+          </Icon>
+        </Link>
+        <Link
+          to={{
+            pathname: "",
+          }}
+          target="_blank"
+        >
+          <Icon
+            sx={{
+              width: 32,
+              height: 32,
+            }}
+          >
+            <YouTubeIcon
+              sx={{
+                width: 32,
+                height: 32,
+              }}
+            />
+          </Icon>
+        </Link>
+      </div>
+
+      <div className="info">
+        <span>EN</span>
+        <span>KR</span>
+        <span>사업자 정보</span>
+      </div>
     </Box>
   );
 
@@ -56,17 +151,17 @@ function Header({ name }) {
       <div className="right">
         <Link to="" className="shop">
           <div className="shopText">
-            <span>shop</span>
+            <span>{text}</span>
           </div>
           <div className="shopIcon">
-            <StorefrontOutlinedIcon />
+            {name === "ME" ? <StorefrontOutlinedIcon /> : <GroupIcon />}
           </div>
         </Link>
 
         {["right"].map((anchor) => (
           <React.Fragment key={anchor}>
             <IconButton>
-              {state ? (
+              {!close ? (
                 <MenuIcon
                   onClick={toggleDrawer(anchor, true)}
                   sx={{
@@ -74,14 +169,18 @@ function Header({ name }) {
                   }}
                 />
               ) : (
-                <CloseIcon onClick={toggleDrawer(anchor, false)} />
+                <CloseIcon
+                  onClick={toggleDrawer(anchor, false)}
+                  sx={{
+                    zIndex: 99999,
+                  }}
+                />
               )}
             </IconButton>
 
             <Drawer
               anchor={"right"}
               open={close}
-              onClose={toggleDrawer(anchor, false)}
               PaperProps={{
                 sx: {
                   width: 360,
