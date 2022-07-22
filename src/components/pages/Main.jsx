@@ -4,7 +4,7 @@ import Header from "../layout/Header";
 function Main() {
   return (
     <>
-      <Header />
+      <Header name="puraxel" />
     </>
   );
 }

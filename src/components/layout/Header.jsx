@@ -14,7 +14,7 @@ import {
   IconButton,
 } from "@mui/material";
 
-function Header() {
+function Header({ name }) {
   const [state, setState] = React.useState({
     right: false,
   });
@@ -36,7 +36,7 @@ function Header() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemText primary={text} />
@@ -50,7 +50,7 @@ function Header() {
   return (
     <header id="header">
       <div className="header__logo">
-        <Link to="/">ME</Link>
+        <Link to="/">{name}</Link>
       </div>
 
       <div className="right">

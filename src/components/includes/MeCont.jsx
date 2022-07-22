@@ -16,8 +16,9 @@ import { Link } from "react-router-dom";
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-  border: `1px solid ${theme.palette.divider}`,
+  border: `1px solid #efefef`,
   borderRadius: "4px",
+  boxShadow: "0px 4.46774px 11.1693px rgba(169, 121, 124, 0.1)",
   "&:not(:last-child)": {
     borderBottom: 0,
   },
@@ -254,42 +255,41 @@ function MeCont() {
               </p>
             </div>
 
-            <AccordionSummary
-              sx={{
-                cursor: "none",
-              }}
-              aria-controls="panel1d-content"
-              id="panel1d-header"
-            >
-              <Typography
-                sx={{
-                  fontFamily: "Pretendard",
-                  padding: "0 0 0 0",
-                  cursor: "none",
-                }}
+            <Accordion>
+              <AccordionSummary
+                aria-controls="panel1d-content"
+                id="panel1d-header"
               >
-                <span style={{ fontSize: "16px", color: "#55576F" }}>
-                  제품 사용 방법
-                </span>
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography
-                sx={{
-                  fontSize: "12px",
-                  fontFamily: "Pretendard",
-                  marginBottom: 2,
-                }}
+                <Typography
+                  sx={{
+                    fontFamily: "Pretendard",
+                    padding: "0 0 0 0",
+                  }}
+                >
+                  <span style={{ fontSize: "16px", color: "#55576F" }}>
+                    제품 사용 방법
+                  </span>
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails
+                sx={{ background: "linear-gradient(#F8F9FA, #F8F9FA00)" }}
               >
-                같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된
-                화장품의 흡수율을 높입니다. 레이저 모드를 함께 사용하면 피부
-                흡수율을 극대화할 수 있습니다.
-              </Typography>
-            </AccordionDetails>
-            <AccordionDetails
-              sx={{ padding: "0 0 0 0", height: "100%" }}
-            ></AccordionDetails>
-
+                <Typography
+                  sx={{
+                    fontSize: "12px",
+                    fontFamily: "Pretendard",
+                    marginBottom: 2,
+                  }}
+                >
+                  같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된
+                  화장품의 흡수율을 높입니다. 레이저 모드를 함께 사용하면 피부
+                  흡수율을 극대화할 수 있습니다.
+                </Typography>
+              </AccordionDetails>
+              <AccordionDetails
+                sx={{ padding: "0 0 0 0", height: "100%" }}
+              ></AccordionDetails>
+            </Accordion>
             <div className="contMain"></div>
           </div>
         </SwiperSlide>
