@@ -35,16 +35,15 @@
 
 .shop {
   color: #55576f;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   .shopText {
-    text-align: center;
-    display: inline-block;
     font-family: "Pretendard";
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     letter-spacing: -0.03em;
-  }
-  .shopIcon {
   }
 }

@@ -94,12 +94,12 @@ function MeCont() {
             </div>
 
             <Accordion
-              expanded={expanded === "panel1"}
-              onChange={handleChange("panel1")}
+              expanded={expanded === "panel3"}
+              onChange={handleChange("panel3")}
             >
               <AccordionSummary
-                aria-controls="panel1d-content"
-                id="panel1d-header"
+                aria-controls="panel3d-content"
+                id="panel3d-header"
               >
                 <Typography
                   sx={{
@@ -163,9 +163,136 @@ function MeCont() {
             <div className="contMain"></div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">하나의 디바이스로</span>
+              <p className="contHeader2">
+                <em>레이저</em>와 <em>갈바닉 케어</em>를 한번에
+              </p>
+            </div>
+
+            <Accordion
+              expanded={expanded === "panel2"}
+              onChange={handleChange("panel2")}
+            >
+              <AccordionSummary
+                aria-controls="panel2d-content"
+                id="panel2d-header"
+              >
+                <Typography
+                  sx={{
+                    fontFamily: "Pretendard",
+                    padding: "0 0 0 0",
+                  }}
+                >
+                  <span style={{ fontSize: "16px", color: "#55576F" }}>
+                    GALVANIC MODE
+                    <em
+                      style={{
+                        fontSize: "12px",
+                        paddingLeft: "10px",
+                        color: "#7E818D",
+                      }}
+                    >
+                      갈바닉 모드
+                    </em>
+                  </span>
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography
+                  sx={{
+                    fontSize: "12px",
+                    fontFamily: "Pretendard",
+                    marginBottom: 2,
+                  }}
+                >
+                  같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된
+                  화장품의 흡수율을 높입니다. 레이저 모드를 함께 사용하면 피부
+                  흡수율을 극대화할 수 있습니다.
+                </Typography>
+              </AccordionDetails>
+              <AccordionDetails
+                sx={{ padding: "10px 0 10px 10px", bgcolor: "#F2F3F6" }}
+              >
+                <Link to="">
+                  <Typography
+                    sx={{
+                      fontSize: "12px",
+                      fontFamily: "Pretendard",
+                    }}
+                  >
+                    <span style={{ fontSize: "12px", color: "#55576F" }}>
+                      갈바닉 모드 기술
+                      <em
+                        style={{
+                          fontSize: "10px",
+                          paddingLeft: "10px",
+                          color: "#7E818D",
+                        }}
+                      >
+                        자세히 보기 &gt;
+                      </em>
+                    </span>
+                  </Typography>
+                </Link>
+              </AccordionDetails>
+            </Accordion>
+
+            <div className="contMain"></div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">
+                이제는 집에서 혼자 쉽고 편하게!
+              </span>
+              <p className="contHeader2">
+                셀프 홈케어 <em>팁</em>
+              </p>
+            </div>
+
+            <AccordionSummary
+              sx={{
+                cursor: "none",
+              }}
+              aria-controls="panel1d-content"
+              id="panel1d-header"
+            >
+              <Typography
+                sx={{
+                  fontFamily: "Pretendard",
+                  padding: "0 0 0 0",
+                  cursor: "none",
+                }}
+              >
+                <span style={{ fontSize: "16px", color: "#55576F" }}>
+                  제품 사용 방법
+                </span>
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography
+                sx={{
+                  fontSize: "12px",
+                  fontFamily: "Pretendard",
+                  marginBottom: 2,
+                }}
+              >
+                같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된
+                화장품의 흡수율을 높입니다. 레이저 모드를 함께 사용하면 피부
+                흡수율을 극대화할 수 있습니다.
+              </Typography>
+            </AccordionDetails>
+            <AccordionDetails
+              sx={{ padding: "0 0 0 0", height: "100%" }}
+            ></AccordionDetails>
+
+            <div className="contMain"></div>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );

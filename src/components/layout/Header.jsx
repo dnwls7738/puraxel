@@ -58,7 +58,9 @@ function Header() {
           <div className="shopText">
             <span>shop</span>
           </div>
-          <StorefrontOutlinedIcon className="shopIcon" />
+          <div className="shopIcon">
+            <StorefrontOutlinedIcon />
+          </div>
         </Link>
 
         {["right"].map((anchor) => (
