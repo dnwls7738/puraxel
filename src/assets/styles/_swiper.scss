@@ -1,0 +1,21 @@
+.swiper {
+  width: 360px;
+  height: 800px;
+}
+.swiper-pagination-fraction {
+  font-family: "Pretendard";
+  margin-bottom: 750px;
+  margin-left: 140px;
+  font-size: 12px;
+  float: left;
+}
+.swiper-pagination-current {
+  padding: 5px;
+  color: #55576f;
+}
+.swiper-pagination-total {
+  font-family: "Pretendard";
+  color: #55576f;
+  opacity: 30%;
+  padding: 5px;
+}
