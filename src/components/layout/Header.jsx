@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
-import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -196,7 +195,11 @@ function Header({ name, text }) {
             <span>{text}</span>
           </div>
           <div className="shopIcon">
-            {name === "ME" ? <StorefrontOutlinedIcon /> : <GroupIcon />}
+            {name === "ME" ? (
+              <img src="./img/gnb_ic_shop.svg" />
+            ) : (
+              <GroupIcon />
+            )}
           </div>
         </Link>
 
@@ -204,7 +207,8 @@ function Header({ name, text }) {
           <React.Fragment>
             <IconButton>
               {!close ? (
-                <MenuIcon
+                <img
+                  src="./img/gnb_ic_ham.svg"
                   onClick={toggleDrawer(anchor, true)}
                   sx={{
                     zIndex: 99999,
