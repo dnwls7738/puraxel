@@ -11,6 +11,7 @@ function MeCont() {
       <Swiper
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
+        spaceBetween={50}
         slidesPerView={1}
         pagination={{
           clickable: true,
@@ -32,7 +33,7 @@ function MeCont() {
               </span>
               <h1>PURAXEL ME</h1>
             </div>
-            <div className="contMain1">
+            <div className="contMain">
               <p className="contExplain">
                 소형 레이저 기술로 가정용 미용기기에 혁신을 가져오다
               </p>
@@ -54,7 +55,7 @@ function MeCont() {
                 height: "500px",
               }}
             >
-              <Swiper spaceBetween={50} slidesPerView={1}>
+              <Swiper slidesPerView={1}>
                 <SwiperSlide>
                   <MeItem
                     headEN="PURAXEL LASER"
@@ -95,7 +96,7 @@ function MeCont() {
                 height: "500px",
               }}
             >
-              <Swiper spaceBetween={50}>
+              <Swiper spaceBetween={10}>
                 <SwiperSlide>
                   <div className="howTo">
                     <div className="howToTitle">
