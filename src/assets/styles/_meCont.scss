@@ -71,7 +71,7 @@
   }
   .howTo {
     width: 320px;
-    height: 600px;
+    height: 650px;
     background: #ffffff;
     border: 0.558467px solid #efefef;
     box-shadow: 0px 4.46774px 11.1693px rgba(169, 121, 124, 0.1);
@@ -94,13 +94,13 @@
       }
     }
     .howToExplain {
-      padding: 10px;
+      padding: 20px;
       background: linear-gradient(
         180deg,
         #f8f9fa 0%,
         rgba(248, 249, 250, 0) 100%
       );
-      .expain {
+      .explain {
         width: 278px;
         height: 63px;
         font-family: "Pretendard";
@@ -110,6 +110,40 @@
         line-height: 150%;
         letter-spacing: -0.01em;
         color: #7e818d;
+      }
+    }
+    .howToConts1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .howToCont {
+        width: 280px;
+        height: 220px;
+        background-color: #faf8fb;
+        margin-top: 20px;
+        align-items: center;
+      }
+    }
+
+    .howToCont2 {
+      width: 318px;
+      height: 471px;
+      margin-top: 30px;
+      background-color: #faf8fb;
+      align-items: center;
+    }
+
+    .howToConts2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .howToCont3 {
+        width: 133px;
+        height: 455px;
+        margin-top: 30px;
+        background-color: #faf8fb;
+        align-items: center;
       }
     }
   }
