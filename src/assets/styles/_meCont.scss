@@ -46,7 +46,7 @@
   .contMain {
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 610px;
     background-image: url(../../../public/img/me_01_main.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,11 +69,10 @@
     position: absolute;
     width: 360px;
     height: 360px;
-    background-image: url(../../../public/img/me_img_laser.png),
-      url(../../../public/img/me_02_ellipse_group.png);
+    background-image: url(../../../public/img/me_02_ellipse_group.png);
     background-repeat: no-repeat;
-    background-size: cover, cover;
-    background-position: 50% -50%, center;
+    background-size: cover;
+    background-position: center;
   }
   .howTo {
     width: 320px;
