@@ -160,7 +160,7 @@ function MeCont() {
 
                 <div className="priceSub">
                   <p className="month">12개월</p>
-                  <p className="subPrice">월 164,800원</p>
+                  <p className="subPrice">월 157,500원</p>
                 </div>
               </div>
               <div className="price2">
@@ -180,6 +180,15 @@ function MeCont() {
                   <p className="month">12개월</p>
                   <p className="subPrice">월 164,800원</p>
                 </div>
+              </div>
+              <div className="details">
+                <span className="detailText">
+                  제품을 어떻게 사용하고 얼마나 해도 되는지 등 상세한 과정과
+                  내용이 필요합니다. 그에 따른 사용 방법이 아래 이미지 또는
+                  영상으로 들어갈 예정입니다. 콘텐츠 형식은 정헤져 있지
+                  않습니다. 콘텐츠에 따라 사용 방법 디자인이 크게 달라질 수
+                  있습니다.
+                </span>
               </div>
             </div>
           </div>

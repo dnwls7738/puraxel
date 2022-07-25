@@ -59,17 +59,19 @@
       padding: 20px 0 0 20px;
     }
   }
+
   .contHow {
+    position: fixed;
     width: 320px;
-    height: 600px;
+    height: 450px;
     background-image: url(https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80);
     margin: 0 20px 20px 20px;
     background-size: 320px 600px;
+    z-index: -999999;
   }
-
   .howTo {
     width: 320px;
-    height: 800px;
+    height: 600px;
     background: #ffffff;
     border: 0.558467px solid #efefef;
     box-shadow: 0px 4.46774px 11.1693px rgba(169, 121, 124, 0.1);
@@ -266,6 +268,25 @@
           font-feature-settings: "tnum" on, "lnum" on;
           color: #4d5058;
         }
+      }
+    }
+    .details {
+      width: 278px;
+      height: 126px;
+      margin-top: 210px;
+      .detailText {
+        font-family: "Pretendard";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        /* or 21px */
+
+        letter-spacing: -0.01em;
+
+        /* grayscale/06 */
+
+        color: #7e818d;
       }
     }
   }

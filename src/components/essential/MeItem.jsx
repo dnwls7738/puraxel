@@ -110,9 +110,8 @@ function MeItem({ headKR, headEN, expain }) {
             </Link>
           </AccordionDetails>
         </Accordion>
-
-        <div className="contHow"></div>
       </div>
+      <div className="contHow"></div>
     </>
   );
 }
