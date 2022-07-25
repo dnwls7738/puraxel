@@ -68,7 +68,7 @@ function Header({ name, text }) {
     setClose(!close);
   };
 
-  const list = (anchor) => (
+  const list = () => (
     <Box
       sx={{
         width: 360,
@@ -77,7 +77,10 @@ function Header({ name, text }) {
       role="presentation"
     >
       <List>
-        <span className="product">product</span>
+        <div>
+          <span className="product">product</span>
+        </div>
+
         {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text, index) => (
           <Link to={text}>
             <ListItemButton>
@@ -198,7 +201,7 @@ function Header({ name, text }) {
         </Link>
 
         {["right"].map((anchor) => (
-          <React.Fragment key={anchor}>
+          <React.Fragment>
             <IconButton>
               {!close ? (
                 <MenuIcon

@@ -12,6 +12,7 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
+import { bgcolor } from "@mui/system";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -81,10 +82,13 @@ function MeCont() {
               <h1>PURAXEL ME</h1>
             </div>
             <div className="contMain">
-              <p>소형 레이저 기술로 가정용 미용기기에 혁신을 가져오다</p>
+              <p className="explain">
+                소형 레이저 기술로 가정용 미용기기에 혁신을 가져오다
+              </p>
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -93,157 +97,160 @@ function MeCont() {
                 <em>레이저</em>와 <em>갈바닉 케어</em>를 한번에
               </p>
             </div>
-
-            <Accordion
-              expanded={expanded === "panel3"}
-              onChange={handleChange("panel3")}
+            <div
+              style={{
+                width: "360px",
+                height: "500px",
+              }}
             >
-              <AccordionSummary
-                aria-controls="panel3d-content"
-                id="panel3d-header"
-              >
-                <Typography
-                  sx={{
-                    fontFamily: "Pretendard",
-                    padding: "0 0 0 0",
-                  }}
-                >
-                  <span style={{ fontSize: "16px", color: "#55576F" }}>
-                    PURAXEL LASER
-                    <em
-                      style={{
-                        fontSize: "12px",
-                        paddingLeft: "10px",
-                        color: "#7E818D",
-                      }}
-                    >
-                      레이저 모드
-                    </em>
-                  </span>
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography
-                  sx={{
-                    fontSize: "12px",
-                    fontFamily: "Pretendard",
-                    marginBottom: 2,
-                  }}
-                >
-                  한번의 레이저로 0.2mm 이하의 얕은 피부층에 작은 홀을 생성하여
-                  크림과 앰플의 의 피부흡수율을 높여줍니다.
-                </Typography>
-              </AccordionDetails>
-              <AccordionDetails
-                sx={{ padding: "10px 0 10px 10px", bgcolor: "#F2F3F6" }}
-              >
-                <Link to="">
-                  <Typography
-                    sx={{
-                      fontSize: "12px",
-                      fontFamily: "Pretendard",
-                    }}
+              <Swiper>
+                <SwiperSlide>
+                  <Accordion
+                    expanded={expanded === "panel3"}
+                    onChange={handleChange("panel3")}
                   >
-                    <span style={{ fontSize: "12px", color: "#55576F" }}>
-                      프락셔널 레이저 기술
-                      <em
-                        style={{
-                          fontSize: "10px",
-                          paddingLeft: "10px",
-                          color: "#7E818D",
+                    <AccordionSummary
+                      aria-controls="panel3d-content"
+                      id="panel3d-header"
+                    >
+                      <Typography
+                        sx={{
+                          fontFamily: "Pretendard",
+                          padding: "0 0 0 0",
                         }}
                       >
-                        자세히 보기 &gt;
-                      </em>
-                    </span>
-                  </Typography>
-                </Link>
-              </AccordionDetails>
-            </Accordion>
+                        <span style={{ fontSize: "16px", color: "#55576F" }}>
+                          PURAXEL LASER
+                          <em
+                            style={{
+                              fontSize: "12px",
+                              paddingLeft: "10px",
+                              color: "#7E818D",
+                            }}
+                          >
+                            레이저 모드
+                          </em>
+                        </span>
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography
+                        sx={{
+                          fontSize: "12px",
+                          fontFamily: "Pretendard",
+                          marginBottom: 2,
+                        }}
+                      >
+                        한번의 레이저로 0.2mm 이하의 얕은 피부층에 작은 홀을
+                        생성하여 크림과 앰플의 의 피부흡수율을 높여줍니다.
+                      </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails
+                      sx={{ padding: "10px 0 10px 10px", bgcolor: "#F2F3F6" }}
+                    >
+                      <Link to="">
+                        <Typography
+                          sx={{
+                            fontSize: "12px",
+                            fontFamily: "Pretendard",
+                          }}
+                        >
+                          <span style={{ fontSize: "12px", color: "#55576F" }}>
+                            프락셔널 레이저 기술
+                            <em
+                              style={{
+                                fontSize: "10px",
+                                paddingLeft: "10px",
+                                color: "#7E818D",
+                              }}
+                            >
+                              자세히 보기 &gt;
+                            </em>
+                          </span>
+                        </Typography>
+                      </Link>
+                    </AccordionDetails>
+                  </Accordion>
 
-            <div className="contMain"></div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="cont">
-            <div className="contName">
-              <span className="contHeader">하나의 디바이스로</span>
-              <p className="contHeader2">
-                <em>레이저</em>와 <em>갈바닉 케어</em>를 한번에
-              </p>
+                  <div className="contMain"></div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                  <Accordion
+                    expanded={expanded === "panel2"}
+                    onChange={handleChange("panel2")}
+                  >
+                    <AccordionSummary
+                      aria-controls="panel2d-content"
+                      id="panel2d-header"
+                    >
+                      <Typography
+                        sx={{
+                          fontFamily: "Pretendard",
+                          padding: "0 0 0 0",
+                        }}
+                      >
+                        <span style={{ fontSize: "16px", color: "#55576F" }}>
+                          GALVANIC MODE
+                          <em
+                            style={{
+                              fontSize: "12px",
+                              paddingLeft: "10px",
+                              color: "#7E818D",
+                            }}
+                          >
+                            갈바닉 모드
+                          </em>
+                        </span>
+                      </Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <Typography
+                        sx={{
+                          fontSize: "12px",
+                          fontFamily: "Pretendard",
+                          marginBottom: 2,
+                        }}
+                      >
+                        같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여
+                        이온화된 화장품의 흡수율을 높입니다. 레이저 모드를 함께
+                        사용하면 피부 흡수율을 극대화할 수 있습니다.
+                      </Typography>
+                    </AccordionDetails>
+                    <AccordionDetails
+                      sx={{ padding: "10px 0 10px 10px", bgcolor: "#F2F3F6" }}
+                    >
+                      <Link to="">
+                        <Typography
+                          sx={{
+                            fontSize: "12px",
+                            fontFamily: "Pretendard",
+                          }}
+                        >
+                          <span style={{ fontSize: "12px", color: "#55576F" }}>
+                            갈바닉 모드 기술
+                            <em
+                              style={{
+                                fontSize: "10px",
+                                paddingLeft: "10px",
+                                color: "#7E818D",
+                              }}
+                            >
+                              자세히 보기 &gt;
+                            </em>
+                          </span>
+                        </Typography>
+                      </Link>
+                    </AccordionDetails>
+                  </Accordion>
+
+                  <div className="contMain"></div>
+                </SwiperSlide>
+              </Swiper>
             </div>
-
-            <Accordion
-              expanded={expanded === "panel2"}
-              onChange={handleChange("panel2")}
-            >
-              <AccordionSummary
-                aria-controls="panel2d-content"
-                id="panel2d-header"
-              >
-                <Typography
-                  sx={{
-                    fontFamily: "Pretendard",
-                    padding: "0 0 0 0",
-                  }}
-                >
-                  <span style={{ fontSize: "16px", color: "#55576F" }}>
-                    GALVANIC MODE
-                    <em
-                      style={{
-                        fontSize: "12px",
-                        paddingLeft: "10px",
-                        color: "#7E818D",
-                      }}
-                    >
-                      갈바닉 모드
-                    </em>
-                  </span>
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography
-                  sx={{
-                    fontSize: "12px",
-                    fontFamily: "Pretendard",
-                    marginBottom: 2,
-                  }}
-                >
-                  같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된
-                  화장품의 흡수율을 높입니다. 레이저 모드를 함께 사용하면 피부
-                  흡수율을 극대화할 수 있습니다.
-                </Typography>
-              </AccordionDetails>
-              <AccordionDetails
-                sx={{ padding: "10px 0 10px 10px", bgcolor: "#F2F3F6" }}
-              >
-                <Link to="">
-                  <Typography
-                    sx={{
-                      fontSize: "12px",
-                      fontFamily: "Pretendard",
-                    }}
-                  >
-                    <span style={{ fontSize: "12px", color: "#55576F" }}>
-                      갈바닉 모드 기술
-                      <em
-                        style={{
-                          fontSize: "10px",
-                          paddingLeft: "10px",
-                          color: "#7E818D",
-                        }}
-                      >
-                        자세히 보기 &gt;
-                      </em>
-                    </span>
-                  </Typography>
-                </Link>
-              </AccordionDetails>
-            </Accordion>
-
-            <div className="contMain"></div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -254,43 +261,55 @@ function MeCont() {
                 셀프 홈케어 <em>팁</em>
               </p>
             </div>
+            <div
+              style={{
+                width: "360px",
+                height: "500px",
+              }}
+            >
+              <Swiper>
+                <SwiperSlide> 제품사용방법1</SwiperSlide>
+                <SwiperSlide> 제품사용방법2 </SwiperSlide>
+                <SwiperSlide> 제품사용방법3</SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
+        </SwiperSlide>
 
-            <Accordion>
-              <AccordionSummary
-                aria-controls="panel1d-content"
-                id="panel1d-header"
-              >
-                <Typography
-                  sx={{
-                    fontFamily: "Pretendard",
-                    padding: "0 0 0 0",
-                  }}
-                >
-                  <span style={{ fontSize: "16px", color: "#55576F" }}>
-                    제품 사용 방법
-                  </span>
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails
-                sx={{ background: "linear-gradient(#F8F9FA, #F8F9FA00)" }}
-              >
-                <Typography
-                  sx={{
-                    fontSize: "12px",
-                    fontFamily: "Pretendard",
-                    marginBottom: 2,
-                  }}
-                >
-                  같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된
-                  화장품의 흡수율을 높입니다. 레이저 모드를 함께 사용하면 피부
-                  흡수율을 극대화할 수 있습니다.
-                </Typography>
-              </AccordionDetails>
-              <AccordionDetails
-                sx={{ padding: "0 0 0 0", height: "100%" }}
-              ></AccordionDetails>
-            </Accordion>
-            <div className="contMain"></div>
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">쇼핑몰</span>
+              <p className="contHeader2">추천제품</p>
+            </div>
+
+            <div className="contMain">
+              <div className="price">
+                <div className="priceMain">
+                  <p className="priceName">퓨라셀 ME</p>
+                  <p className="mainPrice">1,890,000원</p>
+                </div>
+
+                <div className="priceSub">
+                  <p className="month">12개월</p>
+                  <p className="subPrice">월 164,800원</p>
+                </div>
+              </div>
+              <div className="price">
+                <div className="priceMain">
+                  <p className="priceName">
+                    퓨라셀 ME+ <br />
+                    퓨라더마앰플
+                  </p>
+                  <p className="mainPrice">1,890,000원</p>
+                </div>
+                <p className="disconunt">23% off</p>
+                <div className="priceSub">
+                  <p className="month">12개월</p>
+                  <p className="subPrice">월 164,800원</p>
+                </div>
+              </div>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
