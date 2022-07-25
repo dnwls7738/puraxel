@@ -1,17 +1,7 @@
 @charset "UTF-8";
 
-:root {
-  --white: #fff;
-  --black: #000;
-  --dark_bg: #000;
-  --dark_border: #2e2e30;
-  --light_bg: #f0eeeb;
-  --light_border: #dad8d1;
-
-  --main_font: "Saol";
-  --sub_font: "Rajdhani";
-  --kor_font: "Chosunilbo";
-  --subKor_font: "S-CoreDream";
+#root {
+  background: linear-gradient(white 0%, rgba(233, 202, 244, 0.3) 100%);
 }
 
 /* border-box 초기화 */
