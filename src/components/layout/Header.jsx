@@ -191,16 +191,18 @@ function Header({ name, text }) {
 
       <div className="right">
         <Link to="" className="shop">
-          <div className="shopText">
-            <span>{text}</span>
-          </div>
-          <div className="shopIcon">
-            {name === "ME" ? (
-              <img src="./img/gnb_ic_shop.svg" />
-            ) : (
-              <GroupIcon />
-            )}
-          </div>
+          <IconButton>
+            <div className="shopText">
+              <span>{text}</span>
+            </div>
+            <div className="shopIcon">
+              {name === "ME" ? (
+                <img src="./img/gnb_ic_shop.svg" />
+              ) : (
+                <GroupIcon />
+              )}
+            </div>
+          </IconButton>
         </Link>
 
         {["right"].map((anchor) => (

@@ -39,7 +39,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-function MeItem({ headKR, headEN, expain }) {
+function MeItem({ headKR, headEN, expain, bgImg }) {
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -111,7 +111,11 @@ function MeItem({ headKR, headEN, expain }) {
           </AccordionDetails>
         </Accordion>
       </div>
-      <div className="contHow"></div>
+      <div className="contHow">
+        <div className="bgImg">
+          <img src={bgImg} alt="" />
+        </div>
+      </div>
     </>
   );
 }

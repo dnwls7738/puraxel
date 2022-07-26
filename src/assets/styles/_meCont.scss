@@ -65,15 +65,24 @@
   }
 
   .contHow {
-    margin-top: 20px;
-    position: absolute;
+    margin-top: 30px;
+    position: relative;
     width: 360px;
-    height: 360px;
+    height: 310px;
     background-image: url(../../../public/img/me_02_ellipse_group.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    .bgImg {
+      img {
+        width: 360px;
+        height: 450px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
   }
+
   .howTo {
     width: 320px;
     height: 650px;
