@@ -45,14 +45,15 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
+
   return (
     <>
       <div className="ModeExplain">
         <Accordion
-          expanded={expanded === "panel3"}
-          onChange={handleChange("panel3")}
+          expanded={expanded === "panel1"}
+          onChange={handleChange("panel1")}
         >
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
             <Typography
               sx={{
                 fontFamily: "Pretendard",
@@ -73,6 +74,7 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
               </span>
             </Typography>
           </AccordionSummary>
+
           <AccordionDetails>
             <Typography
               sx={{
@@ -84,6 +86,7 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
               {expain}
             </Typography>
           </AccordionDetails>
+
           <AccordionDetails
             sx={{ padding: "10px 0 10px 10px", bgcolor: "#F2F3F6" }}
           >

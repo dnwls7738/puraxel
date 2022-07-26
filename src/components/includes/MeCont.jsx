@@ -18,13 +18,17 @@ function MeCont() {
         spaceBetween={50}
         slidesPerView={1}
         pagination={{
-          clickable: true,
           type: "fraction",
-          formatFractionCurrent: function (number) {
-            return "0" + number;
-          },
-          formatFractionTotal: function (number) {
-            return "0" + number;
+          renderFraction: function (currentClass, totalClass) {
+            return (
+              '<span class="' +
+              currentClass +
+              '"></span>' +
+              " ㅡ " +
+              '<span class="' +
+              totalClass +
+              '"></span>'
+            );
           },
         }}
         scrollbar={{ draggable: true }}
