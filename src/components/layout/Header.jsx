@@ -8,7 +8,6 @@ import Icon from "@mui/material/Icon";
 import GroupIcon from "@mui/icons-material/Group";
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
-import GlobalStyles from "@mui/material/GlobalStyles";
 
 import {
   ListItem,
@@ -36,22 +35,6 @@ const theme = createTheme({
           // Some CSS
           fontSize: "48px",
           fontFamily: "PP Neue Machina",
-        },
-      },
-    },
-  },
-});
-
-const theme1 = createTheme({
-  components: {
-    // Name of the component
-    MuiBox: {
-      styleOverrides: {
-        // Name of the slot
-        root: {
-          // Some CSS
-          marginTop: "10px",
-          width: "width: 360",
         },
       },
     },
@@ -109,10 +92,10 @@ function Header({ name, text }) {
           <span className="product">product</span>
         </div>
 
-        {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text, index) => (
-          <Link to={text}>
+        {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text) => (
+          <Link key={text} to={text}>
             <ListItemButton>
-              <ListItem key={text} disablePadding>
+              <ListItem disablePadding>
                 <ThemeProvider theme={theme}>
                   <ListItemText primary={text} />
                 </ThemeProvider>
@@ -129,7 +112,7 @@ function Header({ name, text }) {
       <div className="mall">
         <Link
           to={{
-            pathname: "https://facebook.com",
+            pathname: "https://lmdt.cafe24.com",
           }}
           target="_blank"
         >
@@ -221,38 +204,56 @@ function Header({ name, text }) {
       </div>
 
       <div className="right">
-        <Link to="" className="shop">
-          <IconButton>
-            <div className="shopText">
-              <span>{text}</span>
-            </div>
-            <div className="shopIcon">
-              {name === "ME" ? <img src={Shop} /> : <GroupIcon />}
-            </div>
-          </IconButton>
-        </Link>
+        {name === "ME" ? (
+          <Link
+            to={{
+              pathname: "https://lmdt.cafe24.com",
+            }}
+            target="_blank"
+            className="shop"
+          >
+            <IconButton>
+              <div className="shopText">
+                <span>{text}</span>
+              </div>
+              <div className="shopIcon">
+                <img src={Shop} />
+              </div>
+            </IconButton>
+          </Link>
+        ) : (
+          <Link to="/" className="shop">
+            <IconButton>
+              <div className="shopText">
+                <span>{text}</span>
+              </div>
+              <div className="shopIcon">
+                <GroupIcon />
+              </div>
+            </IconButton>
+          </Link>
+        )}
 
         {["right"].map((anchor) => (
-          <React.Fragment>
-            <GlobalStyles styles={{ fontSize: 48 }} />
-            <IconButton>
-              {!close ? (
+          <React.Fragment key={anchor}>
+            {!close ? (
+              <IconButton onClick={toggleDrawer(anchor, true)}>
                 <img
                   src={Ham}
-                  onClick={toggleDrawer(anchor, true)}
                   sx={{
                     zIndex: 99999,
                   }}
                 />
-              ) : (
+              </IconButton>
+            ) : (
+              <IconButton onClick={toggleDrawer(anchor, false)}>
                 <CloseIcon
-                  onClick={toggleDrawer(anchor, false)}
                   sx={{
                     zIndex: 99999,
                   }}
                 />
-              )}
-            </IconButton>
+              </IconButton>
+            )}
 
             <Drawer
               anchor={"right"}
@@ -268,48 +269,47 @@ function Header({ name, text }) {
             >
               {list(anchor)}
             </Drawer>
-
-            <Modal
-              aria-labelledby="transition-modal-title"
-              aria-describedby="transition-modal-description"
-              open={open}
-              onClose={handleClose}
-              closeAfterTransition
-              BackdropComponent={Backdrop}
-              BackdropProps={{
-                timeout: 500,
-              }}
-            >
-              <Fade in={open}>
-                <Box sx={style}>
-                  <Typography
-                    id="transition-modal-title"
-                    variant="h6"
-                    component="h2"
-                    sx={header}
-                  >
-                    주식회사 라메디텍
-                  </Typography>
-                  <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                    <p style={style2}>
-                      대표자 최종석 | 사업자번호 : 119-86-51786
-                      <br />
-                      통신판매업신고번호 : 제2017-서울금천-0999호
-                    </p>
-                    <br />
-                    <p style={style2}>
-                      서울특별시 금천구 벚꽃로 234, 10층 1002호
-                      <br /> (가산동, 에이스하이엔드타워 6차)
-                      <br /> T. 02-852-7980
-                      <br /> F. 02-852-7983
-                      <br /> E. sales@lameditech.com
-                    </p>
-                  </Typography>
-                </Box>
-              </Fade>
-            </Modal>
           </React.Fragment>
         ))}
+        <Modal
+          aria-labelledby="transition-modal-title"
+          aria-describedby="transition-modal-description"
+          open={open}
+          onClose={handleClose}
+          closeAfterTransition
+          BackdropComponent={Backdrop}
+          BackdropProps={{
+            timeout: 500,
+          }}
+        >
+          <Fade in={open}>
+            <Box sx={style}>
+              <Typography
+                id="transition-modal-title"
+                variant="h6"
+                component="h2"
+                sx={header}
+              >
+                주식회사 라메디텍
+              </Typography>
+              <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                <span style={style2}>
+                  대표자 최종석 | 사업자번호 : 119-86-51786 통신판매업신고번호 :
+                  제2017-서울금천-0999호
+                </span>
+                <br />
+                <br />
+                <span style={style2}>
+                  서울특별시 금천구 벚꽃로 234, 10층 1002호
+                  <br /> (가산동, 에이스하이엔드타워 6차)
+                  <br /> T. 02-852-7980
+                  <br /> F. 02-852-7983
+                  <br /> E. sales@lameditech.com
+                </span>
+              </Typography>
+            </Box>
+          </Fade>
+        </Modal>
       </div>
     </header>
   );
