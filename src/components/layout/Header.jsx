@@ -9,6 +9,7 @@ import Close from "../../assets/img/gnb_close.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
 import Logo from "../../assets/img/gnb_logo.svg";
 import Inquiry from "../../assets/img/inquiry.svg";
+import Arrow from "../../assets/img/menu_shop_arrow.svg";
 
 import {
   ListItem,
@@ -102,7 +103,7 @@ function Header({ name, text }) {
   };
 
   const list = () => (
-    <Box sx={{ marginTop: 5 }} role="presentation">
+    <Box sx={{ marginTop: 6 }} role="presentation">
       <List>
         <div>
           <span className="product">product</span>
@@ -132,7 +133,11 @@ function Header({ name, text }) {
           }}
           target="_blank"
         >
-          <span>Shop</span>
+          {" "}
+          <div className="toShop">
+            <img src={Arrow} />
+            <span>Shop</span>
+          </div>
         </Link>
       </div>
 
@@ -215,18 +220,14 @@ function Header({ name, text }) {
 
   return (
     <header id="header">
-      <div className="header__logo">
+      <div
+        className="header__logo"
+        style={{
+          zIndex: 99999,
+        }}
+      >
         <Link to="/">
-          {name === "puraxel" ? (
-            <img
-              src={Logo}
-              style={{
-                zIndex: 99999,
-              }}
-            />
-          ) : (
-            <>{name}</>
-          )}
+          {name === "puraxel" ? <img src={Logo} /> : <>{name}</>}
         </Link>
       </div>
 
@@ -241,10 +242,10 @@ function Header({ name, text }) {
           >
             <ThemeProvider theme={theme1}>
               <IconButton>
-                <div className="shopText">
+                <div className="shopText" style={{ zIndex: 99999 }}>
                   <span>{text}</span>
                 </div>
-                <div className="shopIcon">
+                <div className="shopIcon" style={{ zIndex: 99999 }}>
                   <img src={Shop} />
                 </div>
               </IconButton>
@@ -254,10 +255,10 @@ function Header({ name, text }) {
           <Link to="/" className="shop">
             <ThemeProvider theme={theme1}>
               <IconButton>
-                <div className="shopText">
+                <div className="shopText" style={{ zIndex: 99999 }}>
                   <span>{text}</span>
                 </div>
-                <div className="shopIcon">
+                <div className="shopIcon" style={{ zIndex: 99999 }}>
                   <img src={Inquiry} />
                 </div>
               </IconButton>
