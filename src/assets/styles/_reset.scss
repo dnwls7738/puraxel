@@ -1,15 +1,18 @@
 @charset "UTF-8";
+:root {
+  --vh: 100%;
+}
+html,
+body {
+  height: 100vh;
+  height: var(--vh);
+}
 
 #root {
   overflow: auto;
   width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
   background: linear-gradient(white 0%, rgba(233, 202, 244, 0.3) 100%);
-}
-body {
-  position: fixed;
-  overflow: hidden;
-  touch-action: none;
 }
 
 /* border-box 초기화 */
