@@ -6,6 +6,14 @@ import Main from "./components/pages/Main";
 import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
+const setScreenSize = () => {
+  let vh = window.innerHeight * 0.01;
+
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+};
+
+setScreenSize();
+
 function App() {
   return (
     <Router>
