@@ -42,6 +42,22 @@ const theme = createTheme({
   },
 });
 
+const theme1 = createTheme({
+  components: {
+    // Name of the component
+    MuiBox: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          marginTop: "10px",
+          width: "width: 360",
+        },
+      },
+    },
+  },
+});
+
 const header = {
   fontFamily: "Pretendard",
   fontStyle: "normal",
@@ -87,13 +103,7 @@ function Header({ name, text }) {
   };
 
   const list = () => (
-    <Box
-      sx={{
-        width: 360,
-        marginTop: 10,
-      }}
-      role="presentation"
-    >
+    <Box sx={{ marginTop: 5 }} role="presentation">
       <List>
         <div>
           <span className="product">product</span>
