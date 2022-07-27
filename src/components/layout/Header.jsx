@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import StorefrontOutlinedIcon from "@mui/icons-material/StorefrontOutlined";
 import CloseIcon from "@mui/icons-material/Close";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Icon from "@mui/material/Icon";
 import GroupIcon from "@mui/icons-material/Group";
+import Ham from "../../assets/img/gnb_ic_ham.svg";
+import Shop from "../../assets/img/gnb_ic_shop.svg";
 
 import {
   ListItem,
@@ -19,7 +20,6 @@ import {
   Backdrop,
   Modal,
   Fade,
-  Button,
   Typography,
 } from "@mui/material";
 
@@ -196,11 +196,7 @@ function Header({ name, text }) {
               <span>{text}</span>
             </div>
             <div className="shopIcon">
-              {name === "ME" ? (
-                <img src="./img/gnb_ic_shop.svg" />
-              ) : (
-                <GroupIcon />
-              )}
+              {name === "ME" ? <img src={Shop} /> : <GroupIcon />}
             </div>
           </IconButton>
         </Link>
@@ -210,7 +206,7 @@ function Header({ name, text }) {
             <IconButton>
               {!close ? (
                 <img
-                  src="./img/gnb_ic_ham.svg"
+                  src={Ham}
                   onClick={toggleDrawer(anchor, true)}
                   sx={{
                     zIndex: 99999,

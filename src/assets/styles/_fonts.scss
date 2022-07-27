@@ -1,3 +1,9 @@
+// Pretendard
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 
-@import url(//db.onlinewebfonts.com/c/38d41072aa88a50711d4d50dd0d50f6b?family=Neue+Machina);
+// PP Neue Machina
+@font-face {
+  font-family: "PP Neue Machina";
+  src: url("../fonts/PPNeueMachina-InktrapRegular.otf") format("woff"),
+    url("../fonts/PPNeueMachina-InktrapRegular.otf") format("woff2");
+}

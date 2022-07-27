@@ -6,7 +6,6 @@ import "swiper/scss/pagination";
 import "swiper/css/effect-fade";
 import HowItem from "../item/HowItem";
 import MeModeItem from "../item/MeModeItem";
-
 import PriceItem from "../item/PriceItem";
 
 function MeCont() {
@@ -24,7 +23,7 @@ function MeCont() {
               '<span class="' +
               currentClass +
               '"></span>' +
-              " ㅡ " +
+              "-" +
               '<span class="' +
               totalClass +
               '"></span>'

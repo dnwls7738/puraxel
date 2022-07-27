@@ -1,12 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import MeItem from "../item/MeItem";
-import bgLaser from "../../assets/img/me_img_laser.png";
-import bgGal from "../../assets/img/me_02_a.png";
 import { EffectFade } from "swiper";
-
 import "swiper/css";
 import "swiper/css/effect-fade";
+
+import MeItem from "../item/MeItem";
+
+import bgLaser from "../../assets/img/me_img_laser.png";
+import bgGal from "../../assets/img/me_02_a.png";
 
 function MeModeItem() {
   return (
