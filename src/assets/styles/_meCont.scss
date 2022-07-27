@@ -68,23 +68,27 @@
     overflow: hidden;
     position: relative;
     width: 360px;
+    height: 550px;
     text-align: center;
     background-image: url(../img/me_02_ellipse_group.png);
     background-repeat: no-repeat;
     background-size: 360px 300px;
-    background-position: center;
+    background-position: center 30%;
 
     img {
-      height: 450px;
-      width: 360px;
+      position: absolute;
+      height: 500px;
+      right: 0;
+      top: -30px;
     }
     .ovalImg {
+      z-index: 1;
       position: absolute;
       border-radius: 50%;
-      bottom: 90px;
-      left: 250px;
-      width: 140px;
-      height: 140px;
+      bottom: 150px;
+      left: 230px;
+      width: 160px;
+      height: 160px;
       background: linear-gradient(
         180deg,
         rgba(244, 237, 255, 0.3) 0%,

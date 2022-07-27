@@ -41,6 +41,21 @@ const theme = createTheme({
   },
 });
 
+const theme1 = createTheme({
+  components: {
+    // Name of the component
+    MuiIconButton: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          padding: "0px",
+        },
+      },
+    },
+  },
+});
+
 const header = {
   fontFamily: "Pretendard",
   fontStyle: "normal",
@@ -212,39 +227,45 @@ function Header({ name, text }) {
             target="_blank"
             className="shop"
           >
-            <IconButton>
-              <div className="shopText">
-                <span>{text}</span>
-              </div>
-              <div className="shopIcon">
-                <img src={Shop} />
-              </div>
-            </IconButton>
+            <ThemeProvider theme={theme1}>
+              <IconButton>
+                <div className="shopText">
+                  <span>{text}</span>
+                </div>
+                <div className="shopIcon">
+                  <img src={Shop} />
+                </div>
+              </IconButton>
+            </ThemeProvider>
           </Link>
         ) : (
           <Link to="/" className="shop">
-            <IconButton>
-              <div className="shopText">
-                <span>{text}</span>
-              </div>
-              <div className="shopIcon">
-                <GroupIcon />
-              </div>
-            </IconButton>
+            <ThemeProvider theme={theme1}>
+              <IconButton>
+                <div className="shopText">
+                  <span>{text}</span>
+                </div>
+                <div className="shopIcon">
+                  <GroupIcon />
+                </div>
+              </IconButton>
+            </ThemeProvider>
           </Link>
         )}
 
         {["right"].map((anchor) => (
           <React.Fragment key={anchor}>
             {!close ? (
-              <IconButton onClick={toggleDrawer(anchor, true)}>
-                <img
-                  src={Ham}
-                  sx={{
-                    zIndex: 99999,
-                  }}
-                />
-              </IconButton>
+              <ThemeProvider theme={theme1}>
+                <IconButton onClick={toggleDrawer(anchor, true)}>
+                  <img
+                    src={Ham}
+                    sx={{
+                      zIndex: 99999,
+                    }}
+                  />
+                </IconButton>
+              </ThemeProvider>
             ) : (
               <IconButton onClick={toggleDrawer(anchor, false)}>
                 <CloseIcon
