@@ -8,6 +8,7 @@ import Icon from "@mui/material/Icon";
 import GroupIcon from "@mui/icons-material/Group";
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
+import GlobalStyles from "@mui/material/GlobalStyles";
 
 import {
   ListItem,
@@ -21,7 +22,25 @@ import {
   Modal,
   Fade,
   Typography,
+  createTheme,
+  ThemeProvider,
 } from "@mui/material";
+
+const theme = createTheme({
+  components: {
+    // Name of the component
+    MuiTypography: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          // Some CSS
+          fontSize: "48px",
+          fontFamily: "PP Neue Machina",
+        },
+      },
+    },
+  },
+});
 
 const header = {
   fontFamily: "Pretendard",
@@ -84,7 +103,9 @@ function Header({ name, text }) {
           <Link to={text}>
             <ListItemButton>
               <ListItem key={text} disablePadding>
-                <ListItemText primary={text} />
+                <ThemeProvider theme={theme}>
+                  <ListItemText primary={text} />
+                </ThemeProvider>
               </ListItem>
             </ListItemButton>
           </Link>
@@ -203,6 +224,7 @@ function Header({ name, text }) {
 
         {["right"].map((anchor) => (
           <React.Fragment>
+            <GlobalStyles styles={{ fontSize: 48 }} />
             <IconButton>
               {!close ? (
                 <img
