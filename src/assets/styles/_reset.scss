@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+#root {
+  overflow: auto;
+  width: 100%;
+  min-height: calc(var(--vh) * 100);
+  background: linear-gradient(white 0%, rgba(233, 202, 244, 0.3) 100%);
+}
+
 /* border-box 초기화 */
 *,
 *:before,
@@ -10,8 +17,6 @@
 }
 /* 가로모드 글씨 확대 초기화 */
 html {
-  width: 100%;
-  height: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

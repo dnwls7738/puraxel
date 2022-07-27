@@ -7,13 +7,17 @@ import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
 function App() {
-  function setScreenSize() {
-    let vh = window.innerHeight * 0.01;
+  const handleResize = () => {
+    const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }
+  };
+
   useEffect(() => {
-    setScreenSize();
-  });
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <Router>
       <Route path="/" exact component={Main} />
