@@ -65,21 +65,33 @@
   }
 
   .contHow {
-    margin-top: 30px;
+    overflow: hidden;
     position: relative;
     width: 360px;
-    height: 310px;
+    text-align: center;
     background-image: url(../img/me_02_ellipse_group.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 360px 300px;
     background-position: center;
-    .bgImg {
-      img {
-        width: 360px;
-        height: 450px;
-        display: block;
-        margin: 0 auto;
-      }
+
+    img {
+      height: 450px;
+      width: 360px;
+    }
+    .ovalImg {
+      position: absolute;
+      border-radius: 50%;
+      bottom: 90px;
+      left: 250px;
+      width: 140px;
+      height: 140px;
+      background: linear-gradient(
+        180deg,
+        rgba(244, 237, 255, 0.3) 0%,
+        rgba(233, 202, 244, 0.3) 100%
+      );
+      box-shadow: 0px 12px 24px rgba(243, 232, 255, 0.3);
+      backdrop-filter: blur(40px);
     }
   }
 
