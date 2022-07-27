@@ -64,20 +64,96 @@
     }
   }
 
+  .line {
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    top: 317px;
+    left: 148px;
+    width: 57px;
+    height: 89px;
+    border-top: 1px dashed #bca7da;
+    border-right: 1px dashed #bca7da;
+    border-radius: 2.05307px;
+    opacity: 0.7;
+  }
+  .ex {
+    z-index: 1;
+    top: 300px;
+    left: 30px;
+    position: absolute;
+    display: inline-block;
+    .laserImg {
+      width: 122px;
+      height: 35px;
+    }
+    .laserEx {
+      margin: 5px;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: #7e818d;
+      width: 106px;
+      height: 35px;
+    }
+  }
+  .line2 {
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    top: 230px;
+    left: 90px;
+    width: 192px;
+    height: 27px;
+    border-top: 1px dashed #bca7da;
+    border-left: 1px dashed #bca7da;
+    border-radius: 2.05307px;
+    opacity: 0.7;
+  }
+
+  .ex2 {
+    z-index: 1;
+    top: 250px;
+    left: 30px;
+    position: absolute;
+    display: inline-block;
+    .galbanicImg {
+      width: 122px;
+      height: 35px;
+    }
+    .galbanicEx {
+      margin: 5px;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: #7e818d;
+      width: 118px;
+      height: 35px;
+    }
+  }
+
   .contHow {
     overflow: hidden;
     position: relative;
     width: 360px;
     height: 550px;
+    margin-bottom: 20px;
     text-align: center;
     background-image: url(../img/me_02_ellipse_group.png);
     background-repeat: no-repeat;
-    background-size: 360px 300px;
-    background-position: center 30%;
+    background-size: 450px 300px;
+    background-position: center 15%;
 
-    img {
+    .images {
       position: absolute;
       height: 500px;
+      width: 370px;
       right: 0;
       top: -30px;
     }

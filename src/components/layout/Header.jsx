@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CloseIcon from "@mui/icons-material/Close";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Icon from "@mui/material/Icon";
-import GroupIcon from "@mui/icons-material/Group";
 import Ham from "../../assets/img/gnb_ic_ham.svg";
+import Close from "../../assets/img/gnb_close.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
+import Logo from "../../assets/img/gnb_logo.svg";
+import Inquiry from "../../assets/img/inquiry.svg";
 
 import {
   ListItem,
@@ -215,7 +216,18 @@ function Header({ name, text }) {
   return (
     <header id="header">
       <div className="header__logo">
-        <Link to="/">{name}</Link>
+        <Link to="/">
+          {name === "puraxel" ? (
+            <img
+              src={Logo}
+              style={{
+                zIndex: 99999,
+              }}
+            />
+          ) : (
+            <>{name}</>
+          )}
+        </Link>
       </div>
 
       <div className="right">
@@ -246,7 +258,7 @@ function Header({ name, text }) {
                   <span>{text}</span>
                 </div>
                 <div className="shopIcon">
-                  <GroupIcon />
+                  <img src={Inquiry} />
                 </div>
               </IconButton>
             </ThemeProvider>
@@ -267,13 +279,16 @@ function Header({ name, text }) {
                 </IconButton>
               </ThemeProvider>
             ) : (
-              <IconButton onClick={toggleDrawer(anchor, false)}>
-                <CloseIcon
-                  sx={{
-                    zIndex: 99999,
-                  }}
-                />
-              </IconButton>
+              <ThemeProvider theme={theme1}>
+                <IconButton onClick={toggleDrawer(anchor, false)}>
+                  <img
+                    src={Close}
+                    style={{
+                      zIndex: 99999,
+                    }}
+                  />
+                </IconButton>
+              </ThemeProvider>
             )}
 
             <Drawer

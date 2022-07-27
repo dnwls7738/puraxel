@@ -114,9 +114,10 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
           </AccordionDetails>
         </Accordion>
       </div>
+
       <div className="contHow">
         <div className="ovalImg" alt="" />
-        <img src={bgImg} alt="" />
+        <img className="images" src={bgImg} alt="" />
       </div>
     </>
   );

@@ -7,6 +7,8 @@ import "swiper/css/effect-fade";
 import MeItem from "../item/MeItem";
 import bgLaser from "../../assets/img/me_02_b.png";
 import bgGal from "../../assets/img/me_02_a.png";
+import PuraxelLaser from "./PuraxelLaser";
+import Galbanic from "./Galbanic";
 
 function MeModeItem() {
   return (
@@ -25,6 +27,7 @@ function MeModeItem() {
                   피부흡수율을 높여줍니다."
           bgImg={bgLaser}
         />
+        <PuraxelLaser />
       </SwiperSlide>
 
       <SwiperSlide>
@@ -36,6 +39,7 @@ function MeModeItem() {
                   사용하면 피부 흡수율을 극대화할 수 있습니다."
           bgImg={bgGal}
         />
+        <Galbanic />
       </SwiperSlide>
     </Swiper>
   );
