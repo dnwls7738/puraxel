@@ -6,31 +6,14 @@ import Main from "./components/pages/Main";
 import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
-// const setScreenSize = () => {
-//   let vh = window.innerHeight * 0.01;
-
-//   document.documentElement.style.setProperty("--vh", `${vh}px`);
-// };
-// setScreenSize();
-// window.addEventListener("resize", () => setScreenSize());
-
 function App() {
-  let vh = 0;
-
-  useEffect(() => {
-    vh = window.innerHeight * 0.01;
+  function setScreenSize() {
+    let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty("--vh", `${vh}px`);
-  }, []);
-
-  const setVh = () => {
-    document.documentElement.style.setProperty(
-      "--vh",
-      `${window.innerHeight}px`
-    );
-  };
-  window.addEventListener("resize", setVh);
-  setVh();
-
+  }
+  useEffect(() => {
+    setScreenSize();
+  });
   return (
     <Router>
       <Route path="/" exact component={Main} />
