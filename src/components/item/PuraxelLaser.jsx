@@ -1,12 +1,13 @@
 import React from "react";
 import LaserEx from "../../assets/img/puraxelLaser.svg";
 import Point from "../../assets/img/me_point.svg";
+import Senser from "../../assets/img/senser.svg";
 
 function PuraxelLaser() {
   return (
     <div>
       <div className="ex3">
-        <img className="senserImg" src={LaserEx} alt="" />
+        <img className="senserImg" src={Senser} alt="" />
         <p className="senserEx">
           피부에 닿을 때만 <br />
           레이저가 나와 안전합니다.
