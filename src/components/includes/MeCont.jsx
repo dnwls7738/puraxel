@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
@@ -44,7 +44,7 @@ function MeCont() {
           }
           if (index.activeIndex === 1) {
             gsap.to(boxRef.current, {
-              x: "330px",
+              x: "350px",
               y: "170px",
               duration: 1.5,
             });
@@ -68,6 +68,7 @@ function MeCont() {
         scrollbar={{ draggable: true }}
       >
         <img src={Oval} alt="" className="ovalImg" ref={boxRef} />
+
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -92,14 +93,8 @@ function MeCont() {
                 <em>레이저</em>와 <em>갈바닉 케어</em>를 한번에
               </p>
             </div>
-            <div
-              style={{
-                width: "360px",
-                height: "500px",
-              }}
-            >
-              <MeModeItem />
-            </div>
+
+            <MeModeItem />
           </div>
         </SwiperSlide>
 
@@ -113,17 +108,9 @@ function MeCont() {
                 셀프 홈케어 <em>팁</em>
               </p>
             </div>
-            <div
-              style={{
-                width: "360px",
-                height: "500px",
-              }}
-            >
-              <HowItem />
-            </div>
+            <HowItem />
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <PriceItem />
         </SwiperSlide>

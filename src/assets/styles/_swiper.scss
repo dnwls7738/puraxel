@@ -1,14 +1,14 @@
 .swiper {
   width: 360px;
   height: 755px;
-  .ovalImg {
-    z-index: 1;
-    position: absolute;
-    bottom: 210px;
-    left: -130px;
-    width: 250px;
-    height: 250px;
-  }
+}
+.ovalImg {
+  z-index: 1;
+  position: absolute;
+  bottom: 210px;
+  left: -130px;
+  width: 250px;
+  height: 250px;
 }
 .swiper-pagination-fraction {
   font-family: "Pretendard";
