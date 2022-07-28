@@ -103,7 +103,7 @@ function Header({ name, text }) {
   };
 
   const list = () => (
-    <Box sx={{ marginTop: 6 }} role="presentation">
+    <Box sx={{ marginTop: 10 }} role="presentation">
       <List>
         <div>
           <span className="product">product</span>
@@ -133,7 +133,6 @@ function Header({ name, text }) {
           }}
           target="_blank"
         >
-          {" "}
           <div className="toShop">
             <img src={Arrow} />
             <span>Shop</span>
@@ -297,7 +296,7 @@ function Header({ name, text }) {
               open={close}
               PaperProps={{
                 sx: {
-                  width: 360,
+                  width: 310,
                   color: "#55576F",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   zIndex: 0,
