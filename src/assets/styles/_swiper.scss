@@ -1,12 +1,20 @@
 .swiper {
   width: 360px;
-  height: 800px;
+  height: 755px;
+  z-index: 1;
+  .ovalImg {
+    position: absolute;
+    bottom: 210px;
+    left: -130px;
+    width: 250px;
+    height: 250px;
+  }
 }
 .swiper-pagination-fraction {
   font-family: "Pretendard";
-  margin-bottom: 750px;
-  margin-left: 140px;
-  font-size: 12px;
+  margin-bottom: 703px;
+  margin-left: 162px;
+  font-size: 14px;
   float: left;
 }
 .swiper-pagination-current {

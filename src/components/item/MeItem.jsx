@@ -116,7 +116,6 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
       </div>
 
       <div className="contHow">
-        <div className="ovalImg" alt="" />
         <img className="images" src={bgImg} alt="" />
       </div>
     </>

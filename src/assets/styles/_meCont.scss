@@ -1,4 +1,13 @@
+.ovalImg {
+  z-index: 1;
+  position: absolute;
+  bottom: 210px;
+  left: -130px;
+  width: 250px;
+  height: 250px;
+}
 .cont {
+  z-index: 1;
   .contName {
     padding: 20px 20px 20px 20px;
     .contHeader {
@@ -26,6 +35,7 @@
         font-weight: 700;
       }
     }
+
     h1 {
       color: #55576f;
       margin-top: 25px;
@@ -44,7 +54,7 @@
   }
 
   .contMain {
-    position: fixed;
+    position: relative;
     width: 100%;
     height: 610px;
     background-image: url(../img/me_01_main.png);
@@ -65,7 +75,6 @@
   }
 
   .ex {
-    z-index: 1;
     top: 300px;
     left: 15px;
     position: absolute;
@@ -103,7 +112,6 @@
   }
 
   .ex2 {
-    z-index: 1;
     top: 210px;
     left: 15px;
     position: absolute;
@@ -134,7 +142,6 @@
   }
 
   .ex3 {
-    z-index: 1;
     top: 210px;
     left: 15px;
     position: absolute;
@@ -158,35 +165,17 @@
   }
 
   .contHow {
+    z-index: -1;
     overflow: hidden;
-    position: relative;
     width: 360px;
     height: 550px;
     margin-bottom: 20px;
-
     .images {
       position: absolute;
       height: 500px;
       width: 370px;
       right: 0;
-      top: -30px;
-    }
-
-    .ovalImg {
-      z-index: 1;
-      position: absolute;
-      border-radius: 50%;
-      bottom: 150px;
-      left: 230px;
-      width: 160px;
-      height: 160px;
-      background: linear-gradient(
-        180deg,
-        rgba(244, 237, 255, 0.3) 0%,
-        rgba(233, 202, 244, 0.3) 100%
-      );
-      box-shadow: 0px 12px 24px rgba(243, 232, 255, 0.3);
-      backdrop-filter: blur(40px);
+      top: 150px;
     }
   }
 

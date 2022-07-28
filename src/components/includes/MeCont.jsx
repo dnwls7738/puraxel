@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { gsap } from "gsap";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/css/effect-fade";
 import HowItem from "../item/HowItem";
 import MeModeItem from "../item/MeModeItem";
 import PriceItem from "../item/PriceItem";
+import Oval from "../../assets/img/mobile_oval_me.svg";
 
 function MeCont() {
+  const boxRef = useRef();
+
   return (
     <>
       <Swiper
@@ -30,8 +34,40 @@ function MeCont() {
             );
           },
         }}
+        onSlideChange={(index) => {
+          if (index.activeIndex === 0) {
+            gsap.to(boxRef.current, {
+              x: "0px",
+              y: "0px",
+              duration: 1.5,
+            });
+          }
+          if (index.activeIndex === 1) {
+            gsap.to(boxRef.current, {
+              x: "330px",
+              y: "170px",
+              duration: 1.5,
+            });
+          }
+          if (index.activeIndex === 2) {
+            gsap.to(boxRef.current, {
+              x: "350px",
+              y: "0px",
+              duration: 1.5,
+            });
+          }
+          if (index.activeIndex === 3) {
+            gsap.to(boxRef.current, {
+              x: "400px",
+              y: "200px",
+              duration: 1.5,
+            });
+          }
+          console.log(index.activeIndex);
+        }}
         scrollbar={{ draggable: true }}
       >
+        <img src={Oval} alt="" className="ovalImg" ref={boxRef} />
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
