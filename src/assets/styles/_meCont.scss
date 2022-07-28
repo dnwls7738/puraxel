@@ -64,23 +64,10 @@
     }
   }
 
-  .line {
-    z-index: 1;
-    position: absolute;
-    display: inline-block;
-    top: 317px;
-    left: 148px;
-    width: 57px;
-    height: 89px;
-    border-top: 1px dashed #bca7da;
-    border-right: 1px dashed #bca7da;
-    border-radius: 2.05307px;
-    opacity: 0.7;
-  }
   .ex {
     z-index: 1;
     top: 300px;
-    left: 30px;
+    left: 15px;
     position: absolute;
     display: inline-block;
     .laserImg {
@@ -88,52 +75,84 @@
       height: 35px;
     }
     .laserEx {
-      margin: 5px;
+      margin: 10px;
       font-family: "Pretendard";
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 150%;
       letter-spacing: -0.01em;
       color: #7e818d;
-      width: 106px;
+      width: 110px;
       height: 35px;
     }
-  }
-  .line2 {
-    z-index: 1;
-    position: absolute;
-    display: inline-block;
-    top: 230px;
-    left: 90px;
-    width: 192px;
-    height: 27px;
-    border-top: 1px dashed #bca7da;
-    border-left: 1px dashed #bca7da;
-    border-radius: 2.05307px;
-    opacity: 0.7;
+    .point {
+      top: 300px;
+      left: 40px;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+    }
+    .point2 {
+      top: 103px;
+      left: 177px;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+    }
   }
 
   .ex2 {
     z-index: 1;
-    top: 250px;
-    left: 30px;
+    top: 210px;
+    left: 15px;
     position: absolute;
     display: inline-block;
     .galbanicImg {
       width: 122px;
       height: 35px;
     }
+    .point3 {
+      top: -10px;
+      left: 242px;
+      position: absolute;
+      width: 24px;
+      height: 24px;
+    }
     .galbanicEx {
-      margin: 5px;
+      margin: 10px;
       font-family: "Pretendard";
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 12px;
       line-height: 150%;
       letter-spacing: -0.01em;
       color: #7e818d;
-      width: 118px;
+      width: 140px;
+      height: 35px;
+    }
+  }
+
+  .ex3 {
+    z-index: 1;
+    top: 210px;
+    left: 15px;
+    position: absolute;
+    display: inline-block;
+    .senserImg {
+      width: 122px;
+      height: 35px;
+    }
+    .senserEx {
+      margin: 10px;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: #7e818d;
+      width: 125px;
       height: 35px;
     }
   }
@@ -144,11 +163,6 @@
     width: 360px;
     height: 550px;
     margin-bottom: 20px;
-    text-align: center;
-    background-image: url(../img/me_02_ellipse_group.png);
-    background-repeat: no-repeat;
-    background-size: 450px 300px;
-    background-position: center 15%;
 
     .images {
       position: absolute;
@@ -157,6 +171,7 @@
       right: 0;
       top: -30px;
     }
+
     .ovalImg {
       z-index: 1;
       position: absolute;
