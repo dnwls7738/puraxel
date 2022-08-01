@@ -1,12 +1,12 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper";
-import "swiper/css";
-import "swiper/css/effect-fade";
+import "swiper/scss";
+import "swiper/scss/effect-fade";
 
 import MeItem from "../item/MeItem";
-import bgLaser from "../../assets/img/me_02_b.png";
-import bgGal from "../../assets/img/me_02_a.png";
+import bgLaser from "../../assets/img/me_01.png";
+import bgGal from "../../assets/img/me_02.png";
 import PuraxelLaser from "./PuraxelLaser";
 import Galbanic from "./Galbanic";
 
@@ -18,7 +18,7 @@ function MeModeItem() {
       effect={"fade"}
       fadeEffect={{ crossFade: true }}
     >
-      <SwiperSlide className="laser">
+      <SwiperSlide>
         <MeItem
           headEN="PURAXEL LASER"
           headKR="레이저 모드"

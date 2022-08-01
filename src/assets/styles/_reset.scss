@@ -1,13 +1,17 @@
 @charset "UTF-8";
-
-#root,
-body,
-html {
+#root {
   overflow: auto;
-  width: 100%;
-  height: 755px;
-  min-height: calc(var(--vh) * 100);
-  background: linear-gradient(white 0%, rgba(233, 202, 244, 0.3) 100%);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(white, rgba(233, 202, 244, 0.3));
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* border-box 초기화 */

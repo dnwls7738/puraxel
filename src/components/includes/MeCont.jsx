@@ -34,41 +34,39 @@ function MeCont() {
             );
           },
         }}
-        onSlideChange={(index) => {
-          if (index.activeIndex === 0) {
-            gsap.to(boxRef.current, {
-              x: "0px",
-              y: "0px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 1) {
-            gsap.to(boxRef.current, {
-              x: "350px",
-              y: "170px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 2) {
-            gsap.to(boxRef.current, {
-              x: "350px",
-              y: "0px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 3) {
-            gsap.to(boxRef.current, {
-              x: "400px",
-              y: "200px",
-              duration: 1.5,
-            });
-          }
-          console.log(index.activeIndex);
-        }}
+        // onSlideChange={(index) => {
+        //   if (index.activeIndex === 0) {
+        //     gsap.to(boxRef.current, {
+        //       x: "0px",
+        //       y: "0px",
+        //       duration: 1.5,
+        //     });
+        //   }
+        //   if (index.activeIndex === 1) {
+        //     gsap.to(boxRef.current, {
+        //       x: "350px",
+        //       y: "170px",
+        //       duration: 1.5,
+        //     });
+        //   }
+        //   if (index.activeIndex === 2) {
+        //     gsap.to(boxRef.current, {
+        //       x: "350px",
+        //       y: "0px",
+        //       duration: 1.5,
+        //     });
+        //   }
+        //   if (index.activeIndex === 3) {
+        //     gsap.to(boxRef.current, {
+        //       x: "400px",
+        //       y: "200px",
+        //       duration: 1.5,
+        //     });
+        //   }
+        //   console.log(index.activeIndex);
+        // }}
         scrollbar={{ draggable: true }}
       >
-        <img src={Oval} alt="" className="ovalImg" ref={boxRef} />
-
         <SwiperSlide>
           <div className="cont">
             <div className="contName">

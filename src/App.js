@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Fx5000 from "./components/pages/Fx5000";
 import Hair from "./components/pages/Hair";
@@ -7,17 +7,6 @@ import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
 function App() {
-  const handleResize = () => {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  };
-
-  useEffect(() => {
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
   return (
     <Router>
       <Route path="/" exact component={Main} />

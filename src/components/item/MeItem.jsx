@@ -28,9 +28,6 @@ const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
     "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
       transform: "rotate(90deg)",
     },
-    "& .MuiAccordionSummary-content": {
-      marginLeft: theme.spacing(1),
-    },
   })
 );
 
@@ -57,14 +54,13 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
             <Typography
               sx={{
                 fontFamily: "Pretendard",
-                padding: "0 0 0 0",
               }}
             >
-              <span style={{ fontSize: "16px", color: "#55576F" }}>
+              <span style={{ color: "#55576F" }}>
                 {headEN}
                 <em
                   style={{
-                    fontSize: "12px",
+                    fontSize: "0.7rem",
                     paddingLeft: "10px",
                     color: "#7E818D",
                   }}
@@ -76,13 +72,7 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
           </AccordionSummary>
 
           <AccordionDetails>
-            <Typography
-              sx={{
-                fontSize: "12px",
-                fontFamily: "Pretendard",
-                marginBottom: 2,
-              }}
-            >
+            <Typography sx={{ fontSize: "0.8rem", fontFamily: "Pretendard" }}>
               {expain}
             </Typography>
           </AccordionDetails>
@@ -93,15 +83,14 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
             <Link to="">
               <Typography
                 sx={{
-                  fontSize: "12px",
                   fontFamily: "Pretendard",
                 }}
               >
-                <span style={{ fontSize: "12px", color: "#55576F" }}>
+                <span style={{ color: "#55576F" }}>
                   프락셔널 레이저 기술
                   <em
                     style={{
-                      fontSize: "10px",
+                      fontSize: "0.8rem",
                       paddingLeft: "10px",
                       color: "#7E818D",
                     }}
@@ -116,7 +105,9 @@ function MeItem({ headKR, headEN, expain, bgImg }) {
       </div>
 
       <div className="contHow">
-        <img className="images" src={bgImg} alt="" />
+        <div className="images">
+          <img src={bgImg} alt="" />
+        </div>
       </div>
     </>
   );
