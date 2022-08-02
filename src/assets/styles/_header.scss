@@ -15,7 +15,6 @@
   padding: 15px 10px 10px 10px;
   a {
     display: inline-block;
-
     font-family: "PP Neue Machina";
     font-style: normal;
     font-weight: 300;
@@ -50,52 +49,54 @@
   display: flex;
   align-items: center;
   span {
-    margin-left: 10px;
+    font-size: 40px;
   }
 }
 
-.product {
+.menuHead {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 120%;
   letter-spacing: -0.03em;
   color: #55576f;
-  padding-left: 16px;
-  padding-right: 16px;
+  margin-top: 56px;
+  margin-left: 16px;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  color: #55576f;
+  margin-top: 56px;
 }
 .mall {
-  font-family: "PP Neue Machina";
-  font-style: normal;
-  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "CaviarDreams";
+  font-weight: bold;
   font-size: 48px;
   line-height: 120%;
   letter-spacing: -0.03em;
   color: #55576f;
   padding-left: 16px;
   padding-bottom: 30px;
-  width: 160px;
-}
-.snsT {
-  width: 10px;
-  margin-left: 3px;
-  font-family: "PP Neue Machina";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 120%;
-  letter-spacing: -0.03em;
-  color: #55576f;
-}
-.sns {
-  padding-left: 16px;
-  width: 130px;
+  padding-right: 16px;
+  width: 100%;
 }
 
 .info {
   padding: 10px;
   width: 150px;
-  float: right;
+  position: absolute;
+  left: 60%;
+  top: 96%;
   span {
     padding-right: 16px;
     font-family: "Pretendard";

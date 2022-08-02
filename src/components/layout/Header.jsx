@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import Icon from "@mui/material/Icon";
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Close from "../../assets/img/gnb_close.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
 import Logo from "../../assets/img/gnb_logo.svg";
 import Inquiry from "../../assets/img/inquiry.svg";
-import Arrow from "../../assets/img/menu_shop_arrow.svg";
+import Youtube from "../../assets/img/sns_youtube.svg";
+import Insta from "../../assets/img/sns_insta.svg";
+import Facebook from "../../assets/img/sns_facebook.svg";
 
 import {
   ListItem,
@@ -35,8 +34,10 @@ const theme = createTheme({
         // Name of the slot
         root: {
           // Some CSS
-          fontSize: "48px",
-          fontFamily: "PP Neue Machina",
+          fontSize: "36px",
+          fontFamily: "CaviarDreams",
+          height: "43px",
+          fontWeight: "bold",
         },
       },
     },
@@ -80,7 +81,7 @@ const style2 = {
 
 const style = {
   position: "fixed",
-  top: "70%",
+  top: "82%",
   left: "50%",
   transform: "translate(-50%, -60%)",
   width: 300,
@@ -103,10 +104,10 @@ function Header({ name, text }) {
   };
 
   const list = () => (
-    <Box sx={{ marginTop: 10 }} role="presentation">
+    <Box role="presentation">
       <List>
-        <div>
-          <span className="product">product</span>
+        <div className="menuHead">
+          <span>product</span>
         </div>
 
         {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text) => (
@@ -122,91 +123,76 @@ function Header({ name, text }) {
         ))}
       </List>
 
-      <div className="product">
-        <span>puraxel mall</span>
-      </div>
-
       <div className="mall">
-        <Link
-          to={{
-            pathname: "https://lmdt.cafe24.com",
-          }}
-          target="_blank"
-        >
-          <div className="toShop">
-            <img src={Arrow} />
-            <span>Shop</span>
-          </div>
-        </Link>
-      </div>
-
-      <div className="sns">
-        <div className="snsT">
-          <span>sns</span>
+        <div>
+          <span className="product">puraxel mall</span>
+          <Link
+            to={{
+              pathname: "https://lmdt.cafe24.com",
+            }}
+            target="_blank"
+          >
+            <div className="toShop">
+              <span>Shop</span>
+            </div>
+          </Link>
         </div>
-        <Link
-          to={{
-            pathname: "",
-          }}
-          target="_blank"
-        >
-          <Icon
-            sx={{
-              width: 32,
-              height: 32,
-              paddingRight: 5,
-            }}
-          >
-            <FacebookIcon
-              sx={{
-                width: 32,
-                height: 32,
-              }}
-            />
-          </Icon>
-        </Link>
 
-        <Link
-          to={{
-            pathname: "",
-          }}
-          target="_blank"
-        >
-          <Icon
-            sx={{
-              width: 32,
-              height: 32,
-              paddingRight: 5,
+        <div className="sns">
+          <span className="product">sns</span>
+          <Link
+            to={{
+              pathname: "",
             }}
+            target="_blank"
           >
-            <InstagramIcon
+            <Icon
               sx={{
                 width: 32,
                 height: 32,
+                marginRight: "16px",
+                borderRadius: "6px",
               }}
-            />
-          </Icon>
-        </Link>
-        <Link
-          to={{
-            pathname: "",
-          }}
-          target="_blank"
-        >
-          <Icon
-            sx={{
-              width: 32,
-              height: 32,
+            >
+              <img src={Facebook} />
+            </Icon>
+          </Link>
+
+          <Link
+            to={{
+              pathname: "",
             }}
+            target="_blank"
           >
-            <YouTubeIcon
+            <Icon
               sx={{
                 width: 32,
                 height: 32,
+                marginRight: "16px",
+                borderRadius: "6px",
               }}
-            />
-          </Icon>
-        </Link>
+            >
+              <img src={Insta} />
+            </Icon>
+          </Link>
+
+          <Link
+            to={{
+              pathname: "",
+            }}
+            target="_blank"
+          >
+            <Icon
+              sx={{
+                width: 32,
+                height: 32,
+                borderRadius: "6px",
+              }}
+            >
+              <img src={Youtube} />
+            </Icon>
+          </Link>
+        </div>
       </div>
 
       <div className="info">
@@ -251,7 +237,7 @@ function Header({ name, text }) {
             </ThemeProvider>
           </Link>
         ) : (
-          <Link to="/" className="shop">
+          <Link to="INQUIRY" className="shop">
             <ThemeProvider theme={theme1}>
               <IconButton>
                 <div className="shopText" style={{ zIndex: 99999 }}>
@@ -296,7 +282,7 @@ function Header({ name, text }) {
               open={close}
               PaperProps={{
                 sx: {
-                  width: 310,
+                  width: 360,
                   color: "#55576F",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   zIndex: 0,

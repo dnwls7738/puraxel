@@ -11,7 +11,10 @@
 }
 .swiper-pagination-fraction {
   font-family: "Pretendard";
+  margin-left: 830px;
+  margin-top: 20px;
   font-size: 24px;
+  float: right;
 }
 .swiper-pagination-current {
   padding: 5px;
@@ -24,30 +27,33 @@
   padding: 5px;
 }
 
-// @media (max-width: 1440px) {
-//   .swiper-pagination-fraction {
-//     font-family: "Pretendard";
-//     top: 20px;
-//     margin-left: 350px;
-//     position: absolute;
-//     font-size: 20px;
-//   }
-// }
-// @media (max-width: 768px) {
-//   .swiper-pagination-fraction {
-//     font-family: "Pretendard";
-//     margin-bottom: 703px;
-//     margin-left: 152px;
-//     font-size: 16px;
-//     float: left;
-//   }
-// }
-// @media (max-width: 480px) {
-//   .swiper-pagination-fraction {
-//     font-family: "Pretendard";
-//     margin-bottom: 703px;
-//     margin-left: 142px;
-//     font-size: 14px;
-//     float: left;
-//   }
-// }
+@media (max-width: 1000px) {
+  .swiper-pagination-fraction {
+    font-family: "Pretendard";
+    margin-left: 730px;
+    margin-top: 25px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-pagination-fraction {
+    font-family: "Pretendard";
+    margin-left: 700px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 415px) {
+  .swiper-pagination-fraction {
+    font-family: "Pretendard";
+    margin-left: 330px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 375px) {
+  .swiper-pagination-fraction {
+    font-family: "Pretendard";
+    margin-left: 300px;
+    font-size: 14px;
+  }
+}

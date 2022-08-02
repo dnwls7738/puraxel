@@ -42,9 +42,51 @@
   }
 
   .ModeExplain {
-    height: 180px;
-    .MuiPaper-root {
-      margin: 0 20px 20px 20px;
+    width: 100%;
+    height: 100%;
+    .modes {
+      border: 1px solid #f2f3f6;
+      padding: 8px 8px 8px 8px;
+      .mode1 {
+        width: 49.5%;
+        display: inline-block;
+        font-family: Pretendard;
+        font-weight: 600;
+        font-size: 24px;
+        color: #f8f9fa;
+        border: 1px solid #4d5058;
+        background-color: #4d5058;
+        border-radius: 4px;
+        padding: 8px 27px 8px 12px;
+      }
+      .mode2 {
+        width: 49.5%;
+        margin-left: 6px;
+        display: inline-block;
+        font-family: Pretendard;
+        font-weight: 600;
+        font-size: 24px;
+        color: #a7abb6;
+        border: 1px solid #f2f3f6;
+        background-color: #f2f3f6;
+        border-radius: 4px;
+        padding: 8px 67px 8px 12px;
+      }
+      .modeEx {
+        font-family: Pretendard;
+        font-weight: 300;
+        color: #4d5058;
+        font-size: 28px;
+        margin-top: 12px;
+      }
+    }
+    .exs {
+      margin-top: 20px;
+      width: 100%;
+      height: 800px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
 
@@ -111,8 +153,6 @@
         rgba(248, 249, 250, 0) 100%
       );
       .explain {
-        width: 400px;
-        height: 150px;
         font-family: "Pretendard";
         font-style: normal;
         font-weight: 500;
@@ -162,7 +202,7 @@
   .ex {
     width: 200px;
     height: 35px;
-    top: 400px;
+    top: 570px;
     left: 15px;
     position: absolute;
     display: inline-block;
@@ -171,7 +211,7 @@
       font-family: "Pretendard";
       font-style: normal;
       font-weight: 500;
-      font-size: 25px;
+      font-size: 24px;
       line-height: 150%;
       letter-spacing: -0.01em;
       color: #7e818d;
@@ -183,7 +223,7 @@
   .ex2 {
     width: 200px;
     height: 35px;
-    top: 210px;
+    top: 410px;
     left: 15px;
     position: absolute;
     display: inline-block;
@@ -205,7 +245,7 @@
   .ex3 {
     width: 150px;
     height: 35px;
-    top: 210px;
+    top: 410px;
     left: 15px;
     position: absolute;
     display: inline-block;
@@ -214,7 +254,7 @@
       font-family: "Pretendard";
       font-style: normal;
       font-weight: 500;
-      font-size: 25px;
+      font-size: 24px;
       line-height: 150%;
       letter-spacing: -0.01em;
       color: #7e818d;
@@ -229,10 +269,10 @@
 
     .price {
       margin: 0 auto;
-      width: 320px;
-      height: 75px;
+      width: 100%;
+      height: 150px;
       border: 1px solid #f2f3f6;
-      padding: 10px;
+      padding: 20px;
       margin-bottom: 10px;
       .priceMain {
         display: flex;
@@ -240,12 +280,12 @@
         align-items: center;
         margin-bottom: 5px;
         .priceName {
-          width: 100px;
-          height: 24px;
+          width: 200px;
+          height: 48px;
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 500;
-          font-size: 16px;
+          font-size: 32px;
           line-height: 150%;
           letter-spacing: -0.01em;
           color: #28292e;
@@ -254,7 +294,7 @@
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 24px;
           line-height: 144%;
           text-align: right;
           letter-spacing: -0.03em;
@@ -272,7 +312,7 @@
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 24px;
           line-height: 144%;
           letter-spacing: -0.03em;
           font-feature-settings: "tnum" on, "lnum" on;
@@ -284,7 +324,7 @@
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 300;
-          font-size: 20px;
+          font-size: 40px;
           line-height: 144%;
           letter-spacing: -0.03em;
           font-feature-settings: "tnum" on, "lnum" on;
@@ -294,23 +334,22 @@
     }
     .price2 {
       margin: 0 auto;
-      width: 320px;
-      height: 105px;
+      width: 100%;
+      height: 190px;
       border: 1px solid #f2f3f6;
-      padding: 10px;
-      margin-bottom: 10px;
+      padding: 20px;
       .priceMain {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 35px;
         .priceName {
-          width: 100px;
-          height: 24px;
+          width: 200px;
+          height: 48px;
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 500;
-          font-size: 16px;
+          font-size: 32px;
           line-height: 150%;
           letter-spacing: -0.01em;
           color: #28292e;
@@ -319,7 +358,7 @@
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 24px;
           line-height: 144%;
           text-align: right;
           letter-spacing: -0.03em;
@@ -329,7 +368,7 @@
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 24px;
             line-height: 144%;
             text-align: right;
             letter-spacing: -0.03em;
@@ -339,17 +378,17 @@
         }
       }
       .discount {
-        width: 55px;
+        width: 100px;
         height: 22px;
         display: inline-block;
         background: #f8f9fa;
         border-radius: 4px;
-        margin-top: 5px;
+        margin-top: 20px;
         .disPrice {
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 24px;
           line-height: 140%;
           letter-spacing: -0.01em;
           color: #b398ad;
@@ -363,7 +402,7 @@
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 600;
-          font-size: 12px;
+          font-size: 24px;
           line-height: 144%;
           letter-spacing: -0.03em;
           font-feature-settings: "tnum" on, "lnum" on;
@@ -375,7 +414,7 @@
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 300;
-          font-size: 20px;
+          font-size: 40px;
           line-height: 144%;
           letter-spacing: -0.03em;
           font-feature-settings: "tnum" on, "lnum" on;
@@ -384,15 +423,14 @@
       }
     }
     .details {
-      margin: 0 auto;
-      width: 278px;
+      width: 500px;
       height: 126px;
       margin-top: 210px;
       .detailText {
         font-family: "Pretendard";
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 28px;
         line-height: 150%;
         /* or 21px */
 
@@ -408,9 +446,9 @@
 
 @media (max-width: 1200px) {
   .cont {
-    width: 765px;
+    width: 800px;
     .contMain {
-      width: 765px;
+      width: 100%;
     }
     .contHow {
       width: 100%;
@@ -461,9 +499,51 @@
       }
     }
     .ModeExplain {
-      height: 180px;
-      .MuiPaper-root {
-        margin: 0 20px 20px 20px;
+      width: 100%;
+      height: 100%;
+      .modes {
+        border: 1px solid #f2f3f6;
+        padding: 8px 8px 8px 8px;
+        .mode1 {
+          width: 49.5%;
+          display: inline-block;
+          font-family: Pretendard;
+          font-weight: 600;
+          font-size: 24px;
+          color: #f8f9fa;
+          border: 1px solid #4d5058;
+          background-color: #4d5058;
+          border-radius: 4px;
+          padding: 8px 27px 8px 12px;
+        }
+        .mode2 {
+          width: 49.5%;
+          margin-left: 6px;
+          display: inline-block;
+          font-family: Pretendard;
+          font-weight: 600;
+          font-size: 24px;
+          color: #a7abb6;
+          border: 1px solid #f2f3f6;
+          background-color: #f2f3f6;
+          border-radius: 4px;
+          padding: 8px 67px 8px 12px;
+        }
+        .modeEx {
+          font-family: Pretendard;
+          font-weight: 300;
+          color: #4d5058;
+          font-size: 28px;
+          margin-top: 12px;
+        }
+      }
+      .exs {
+        margin-top: 20px;
+        width: 100%;
+        height: 800px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     }
     .howTo {
@@ -547,7 +627,7 @@
     .ex2 {
       width: 200px;
       height: 35px;
-      top: 210px;
+      top: 410px;
       left: 15px;
       position: absolute;
       display: inline-block;
@@ -725,15 +805,14 @@
         }
       }
       .details {
-        margin: 0 auto;
-        width: 278px;
+        width: 500px;
         height: 126px;
         margin-top: 210px;
         .detailText {
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 500;
-          font-size: 14px;
+          font-size: 28px;
           line-height: 150%;
           /* or 21px */
 
@@ -750,24 +829,69 @@
 
 @media (max-width: 768px) {
   .cont {
-    width: 360px;
+    width: 705px;
     .contMain {
-      width: 360px;
-    }
-    .contMain {
+      width: 705px;
       .contExplain {
         font-family: "Pretendard";
-        font-size: 16px;
-        width: 150px;
+        font-size: 24px;
+        width: 200px;
       }
     }
+    .ModeExplain {
+      width: 100%;
+      height: 100%;
+      .modes {
+        border: 1px solid #f2f3f6;
+        padding: 8px 8px 8px 8px;
+        .mode1 {
+          width: 49.5%;
+          display: inline-block;
+          font-family: Pretendard;
+          font-weight: 600;
+          font-size: 24px;
+          color: #f8f9fa;
+          background-color: #4d5058;
+          border-radius: 4px;
+          padding: 8px 27px 8px 12px;
+        }
+        .mode2 {
+          margin-left: 6px;
+          width: 49.5%;
+          display: inline-block;
+          font-family: Pretendard;
+          font-weight: 600;
+          font-size: 24px;
+          color: #a7abb6;
+          background-color: #f2f3f6;
+          border-radius: 4px;
+          padding: 8px 67px 8px 12px;
+        }
+        .modeEx {
+          font-family: Pretendard;
+          font-weight: 300;
+          color: #4d5058;
+          font-size: 28px;
+          margin-top: 12px;
+        }
+      }
+      .exs {
+        margin-top: 20px;
+        width: 765px;
+        height: 720px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+
     .contHow {
       .images {
         width: 100%;
-        height: 500px;
+        height: 700px;
         img {
           width: 100%;
-          height: 500px;
+          height: 700px;
         }
       }
     }
@@ -775,7 +899,7 @@
       padding: 20px 20px 20px 20px;
       .contHeader {
         font-family: "Pretendard";
-        font-size: 12px;
+        font-size: 24px;
         color: #55576f;
         line-height: 144%;
         letter-spacing: -0.03em;
@@ -790,7 +914,7 @@
         font-family: "Pretendard";
         font-style: normal;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 40px;
         line-height: 144%;
         letter-spacing: -0.03em;
         padding-top: 10px;
@@ -809,8 +933,7 @@
       }
     }
     .howTo {
-      width: 320px;
-      height: 650px;
+      height: 850px;
       background: #ffffff;
       border: 0.558467px solid #efefef;
       box-shadow: 0px 4.46774px 11.1693px rgba(169, 121, 124, 0.1);
@@ -824,7 +947,7 @@
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 500;
-          font-size: 16px;
+          font-size: 24px;
           line-height: 150%;
           display: flex;
           align-items: flex-end;
@@ -833,6 +956,7 @@
         }
       }
       .howToExplain {
+        width: 100%;
         padding: 20px;
         background: linear-gradient(
           180deg,
@@ -840,12 +964,10 @@
           rgba(248, 249, 250, 0) 100%
         );
         .explain {
-          width: 278px;
-          height: 63px;
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 500;
-          font-size: 14px;
+          font-size: 24px;
           line-height: 150%;
           letter-spacing: -0.01em;
           color: #7e818d;
@@ -856,9 +978,10 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        padding: 0 20px 0 20px;
         .howToCont {
-          width: 280px;
-          height: 220px;
+          width: 100%;
+          height: 275px;
           background-color: #faf8fb;
           margin-top: 20px;
           align-items: center;
@@ -866,9 +989,9 @@
       }
 
       .howToCont2 {
-        width: 318px;
-        height: 471px;
-        margin-top: 30px;
+        width: 100%;
+        height: 545px;
+        margin-top: 70px;
         background-color: #faf8fb;
         align-items: center;
       }
@@ -878,88 +1001,84 @@
         align-items: center;
         justify-content: space-evenly;
         .howToCont3 {
-          width: 133px;
-          height: 455px;
-          margin-top: 30px;
+          width: 320px;
+          height: 535px;
+          margin-top: 70px;
           background-color: #faf8fb;
           align-items: center;
         }
       }
     }
-
     .ex {
-      top: 300px;
+      width: 180px;
+      height: 35px;
+      top: 470px;
       left: 15px;
       position: absolute;
       display: inline-block;
-      .laserImg {
-        width: 122px;
-        height: 35px;
-      }
       .laserEx {
         margin: 10px;
         font-family: "Pretendard";
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 20px;
         line-height: 150%;
         letter-spacing: -0.01em;
         color: #7e818d;
-        width: 110px;
-        height: 35px;
-      }
-    }
-    .ex3 {
-      width: 150px;
-      left: 15px;
-      position: absolute;
-      display: inline-block;
-      .senserImg {
-        width: 100px;
-        height: 30px;
-      }
-      .senserEx {
-        margin: 10px;
-        font-family: "Pretendard";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 150%;
-        letter-spacing: -0.01em;
-        color: #7e818d;
-        width: 125px;
+        width: 300px;
         height: 35px;
       }
     }
     .ex2 {
+      width: 180px;
+      height: 35px;
       top: 210px;
       left: 15px;
       position: absolute;
       display: inline-block;
-      .galbanicImg {
-        width: 122px;
-        height: 35px;
-      }
       .galbanicEx {
         margin: 10px;
         font-family: "Pretendard";
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 20px;
         line-height: 150%;
         letter-spacing: -0.01em;
         color: #7e818d;
-        width: 110px;
+        width: 200px;
+        height: 35px;
+      }
+    }
+    .ex3 {
+      width: 130px;
+      height: 35px;
+      top: 330px;
+      left: 15px;
+      position: absolute;
+      display: inline-block;
+      .senserEx {
+        margin: 10px;
+        font-family: "Pretendard";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: #7e818d;
+        width: 300px;
         height: 35px;
       }
     }
     .contPrice {
-      margin: 0 20px 20px 20px;
+      width: 100%;
+      height: 100%;
+
       .price {
-        width: 320px;
-        height: 75px;
+        margin: 0 auto;
+        width: 100%;
+        height: 150px;
         border: 1px solid #f2f3f6;
-        padding: 10px;
+        padding: 20px;
         margin-bottom: 10px;
         .priceMain {
           display: flex;
@@ -967,12 +1086,12 @@
           align-items: center;
           margin-bottom: 5px;
           .priceName {
-            width: 100px;
-            height: 24px;
+            width: 200px;
+            height: 48px;
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 32px;
             line-height: 150%;
             letter-spacing: -0.01em;
             color: #28292e;
@@ -981,7 +1100,7 @@
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 24px;
             line-height: 144%;
             text-align: right;
             letter-spacing: -0.03em;
@@ -999,7 +1118,7 @@
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 24px;
             line-height: 144%;
             letter-spacing: -0.03em;
             font-feature-settings: "tnum" on, "lnum" on;
@@ -1011,7 +1130,7 @@
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 300;
-            font-size: 20px;
+            font-size: 40px;
             line-height: 144%;
             letter-spacing: -0.03em;
             font-feature-settings: "tnum" on, "lnum" on;
@@ -1020,23 +1139,23 @@
         }
       }
       .price2 {
-        width: 320px;
-        height: 105px;
+        margin: 0 auto;
+        width: 100%;
+        height: 190px;
         border: 1px solid #f2f3f6;
-        padding: 10px;
-        margin-bottom: 10px;
+        padding: 20px;
         .priceMain {
           display: flex;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 35px;
           .priceName {
-            width: 100px;
-            height: 24px;
+            width: 200px;
+            height: 48px;
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
+            font-size: 32px;
             line-height: 150%;
             letter-spacing: -0.01em;
             color: #28292e;
@@ -1045,7 +1164,7 @@
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 24px;
             line-height: 144%;
             text-align: right;
             letter-spacing: -0.03em;
@@ -1055,7 +1174,7 @@
               font-family: "Pretendard";
               font-style: normal;
               font-weight: 600;
-              font-size: 12px;
+              font-size: 24px;
               line-height: 144%;
               text-align: right;
               letter-spacing: -0.03em;
@@ -1065,17 +1184,17 @@
           }
         }
         .discount {
-          width: 55px;
+          width: 100px;
           height: 22px;
           display: inline-block;
           background: #f8f9fa;
           border-radius: 4px;
-          margin-top: 5px;
+          margin-top: 20px;
           .disPrice {
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 24px;
             line-height: 140%;
             letter-spacing: -0.01em;
             color: #b398ad;
@@ -1089,7 +1208,7 @@
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 600;
-            font-size: 12px;
+            font-size: 24px;
             line-height: 144%;
             letter-spacing: -0.03em;
             font-feature-settings: "tnum" on, "lnum" on;
@@ -1101,7 +1220,7 @@
             font-family: "Pretendard";
             font-style: normal;
             font-weight: 300;
-            font-size: 20px;
+            font-size: 40px;
             line-height: 144%;
             letter-spacing: -0.03em;
             font-feature-settings: "tnum" on, "lnum" on;
@@ -1110,14 +1229,14 @@
         }
       }
       .details {
-        width: 278px;
+        width: 500px;
         height: 126px;
         margin-top: 210px;
         .detailText {
           font-family: "Pretendard";
           font-style: normal;
           font-weight: 500;
-          font-size: 14px;
+          font-size: 28px;
           line-height: 150%;
           /* or 21px */
 
@@ -1135,6 +1254,55 @@
 @media (max-width: 480px) {
   .cont {
     width: 360px;
+    .contMain {
+      width: 360px;
+    }
+    .ModeExplain {
+      margin-left: 20px;
+      width: 320px;
+      height: 100%;
+      .modes {
+        border: 1px solid #f2f3f6;
+        padding: 8px 8px 8px 8px;
+        .mode1 {
+          width: 148px;
+          display: inline-block;
+          font-family: Pretendard;
+          font-weight: 600;
+          font-size: 12px;
+          color: #f8f9fa;
+          border: 1px solid #4d5058;
+          background-color: #4d5058;
+          border-radius: 4px;
+          padding: 8px 27px 8px 12px;
+        }
+        .mode2 {
+          margin-left: 6px;
+          width: 148px;
+          display: inline-block;
+          font-family: Pretendard;
+          font-weight: 600;
+          font-size: 12px;
+          color: #a7abb6;
+          border: 1px solid #f2f3f6;
+          background-color: #f2f3f6;
+          border-radius: 4px;
+          padding: 8px 67px 8px 12px;
+        }
+        .modeEx {
+          font-family: Pretendard;
+          font-weight: 300;
+          color: #4d5058;
+          font-size: 14px;
+          margin-top: 12px;
+        }
+      }
+      .exs {
+        margin-top: 50px;
+        width: 320px;
+        height: 420px;
+      }
+    }
     .contHow {
       .images {
         width: 100%;
@@ -1147,7 +1315,7 @@
     }
     .howTo {
       width: 320px;
-      height: 650px;
+      height: 600px;
       background: #ffffff;
       border: 0.558467px solid #efefef;
       box-shadow: 0px 4.46774px 11.1693px rgba(169, 121, 124, 0.1);
@@ -1195,7 +1363,7 @@
         flex-direction: column;
         .howToCont {
           width: 280px;
-          height: 220px;
+          height: 197px;
           background-color: #faf8fb;
           margin-top: 20px;
           align-items: center;
@@ -1204,7 +1372,7 @@
 
       .howToCont2 {
         width: 318px;
-        height: 471px;
+        height: 420px;
         margin-top: 30px;
         background-color: #faf8fb;
         align-items: center;
@@ -1216,7 +1384,7 @@
         justify-content: space-evenly;
         .howToCont3 {
           width: 133px;
-          height: 455px;
+          height: 405px;
           margin-top: 30px;
           background-color: #faf8fb;
           align-items: center;
@@ -1268,7 +1436,7 @@
       }
     }
     .ex {
-      top: 300px;
+      top: 350px;
       left: 15px;
       position: absolute;
       display: inline-block;
@@ -1289,9 +1457,8 @@
         height: 35px;
       }
     }
-
     .ex3 {
-      top: 210px;
+      top: 260px;
       left: 15px;
       position: absolute;
       display: inline-block;
@@ -1312,9 +1479,31 @@
         height: 35px;
       }
     }
+    .ex2 {
+      top: 260px;
+      left: 15px;
+      position: absolute;
+      display: inline-block;
+      .galbanicImg {
+        width: 100px;
+        height: 35px;
+      }
+      .galbanicEx {
+        margin: 10px;
+        font-family: "Pretendard";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: #7e818d;
+        width: 120px;
+        height: 35px;
+      }
+    }
     .contPrice {
-      margin: 0 20px 20px 20px;
       .price {
+        margin: 0 auto;
         width: 320px;
         height: 75px;
         border: 1px solid #f2f3f6;
@@ -1469,6 +1658,7 @@
         }
       }
       .details {
+        margin: 0 auto;
         width: 278px;
         height: 126px;
         margin-top: 210px;

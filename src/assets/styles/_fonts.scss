@@ -7,3 +7,16 @@
   src: url("../fonts/PPNeueMachina-InktrapRegular.otf") format("woff"),
     url("../fonts/PPNeueMachina-InktrapRegular.otf") format("woff2");
 }
+
+// CaviarDreams
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../fonts/CaviarDreams.ttf") format("woff"),
+    url("../fonts/CaviarDreams.ttf") format("woff2");
+}
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../fonts/CaviarDreams_Bold.ttf") format("woff"),
+    url("../fonts/CaviarDreams_Bold.ttf") format("woff2");
+  font-weight: bold;
+}
