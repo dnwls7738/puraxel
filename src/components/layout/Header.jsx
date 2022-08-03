@@ -9,6 +9,7 @@ import Inquiry from "../../assets/img/inquiry.svg";
 import Youtube from "../../assets/img/sns_youtube.svg";
 import Insta from "../../assets/img/sns_insta.svg";
 import Facebook from "../../assets/img/sns_facebook.svg";
+import Shortcut from "../../assets/img/shortcutMini.svg";
 
 import {
   ListItem,
@@ -80,7 +81,7 @@ const style2 = {
 };
 
 const style = {
-  position: "fixed",
+  position: "absolute",
   top: "82%",
   left: "50%",
   transform: "translate(-50%, -60%)",
@@ -89,7 +90,7 @@ const style = {
   border: "none",
   borderRadius: "4px",
   boxShadow: 24,
-  p: 4,
+  p: 2,
 };
 
 function Header({ name, text }) {
@@ -109,7 +110,12 @@ function Header({ name, text }) {
     }
   }
   const list = () => (
-    <Box role="presentation">
+    <Box
+      role="presentation"
+      sx={{
+        position: "relative",
+      }}
+    >
       <List>
         <div className="menuHead">
           <span>product</span>
@@ -222,7 +228,7 @@ function Header({ name, text }) {
       </div>
 
       <div className="right">
-        {name === "puraxel" ? (
+        {name === "puraxel" && "PURA-TECH" ? (
           <Component2 />
         ) : name === "ME" ? (
           <Link
@@ -324,36 +330,48 @@ function Header({ name, text }) {
                 sx={header}
               >
                 주식회사 라메디텍
-                <Link
-                  to={{
-                    pathname: "https://www.lameditech.com/",
-                  }}
-                  target="_blank"
+                <div
                   style={{
-                    marginLeft: "20px",
+                    display: "inline-block",
+                    fontFamily: "Pretendard",
+                    marginLeft: "40px",
                     background: "#F2F3F6",
                     padding: "2px 8px 2px 8px",
                     borderRadius: "4px",
                   }}
                 >
-                  라메디텍 바로가기
-                </Link>
+                  <Link
+                    to={{
+                      pathname: "https://www.lameditech.com/",
+                    }}
+                    target="_blank"
+                    style={{}}
+                  >
+                    라메디텍 바로가기
+                    <div
+                      style={{
+                        display: "inline-block",
+                      }}
+                    >
+                      <img src={Shortcut} style={{ display: "block" }} />
+                    </div>
+                  </Link>
+                </div>
               </Typography>
 
               <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                <span style={style2}>
-                  대표자 최종석 | 사업자번호 : 119-86-51786 통신판매업신고번호 :
-                  제2017-서울금천-0999호
-                </span>
+                <p style={style2}>
+                  대표자 최종석 | 사업자번호 : 119-86-51786 <br />
+                  통신판매업신고번호 : 제2017-서울금천-0999호
+                </p>
                 <br />
-                <br />
-                <span style={style2}>
+                <p style={style2}>
                   서울특별시 금천구 벚꽃로 234, 10층 1002호
                   <br /> (가산동, 에이스하이엔드타워 6차)
                   <br /> T. 02-852-7980
                   <br /> F. 02-852-7983
                   <br /> E. sales@lameditech.com
-                </span>
+                </p>
               </Typography>
             </Box>
           </Fade>

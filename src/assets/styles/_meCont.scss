@@ -4,13 +4,12 @@
   position: absolute;
   right: 220px;
   top: 350px;
-  z-index: 1;
 }
 .cont {
   overflow: hidden;
   position: relative;
   width: 1200px;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
 
   .contName {
@@ -99,6 +98,7 @@
       background-repeat: no-repeat;
     }
   }
+
   .contExplain {
     font-family: "Pretendard";
     font-style: normal;
@@ -113,11 +113,12 @@
 
   .contMain {
     width: 100%;
-    height: 590px;
+    height: 100%;
     background-image: url(../img/me_01_main.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: center center;
+    z-index: -1;
   }
 
   .contHow {
@@ -1264,10 +1265,8 @@
 
 @media (max-width: 480px) {
   .cont {
-    width: 360px;
-    .contMain {
-      width: 360px;
-    }
+    width: 100%;
+
     .ModeExplain {
       margin-left: 20px;
       width: 320px;
@@ -1404,7 +1403,9 @@
       }
     }
     .contMain {
-      background-size: contain;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
       .contExplain {
         font-family: "Pretendard";
         font-size: 16px;

@@ -16,6 +16,7 @@ function MeCont() {
 
   return (
     <>
+      <img className="oval" src={Oval} ref={boxRef} alt="oval" />
       <Swiper
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
@@ -69,7 +70,6 @@ function MeCont() {
         }}
         scrollbar={{ draggable: true }}
       >
-        <img className="oval" src={Oval} ref={boxRef} />
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
