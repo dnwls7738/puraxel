@@ -109,7 +109,6 @@ function MeCont() {
                 셀프 홈케어 <em>팁</em>
               </p>
             </div>
-            <HowItem />
           </div>
         </SwiperSlide>
         <SwiperSlide>
