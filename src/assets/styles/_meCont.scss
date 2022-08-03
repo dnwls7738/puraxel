@@ -840,9 +840,9 @@
 
 @media (max-width: 768px) {
   .cont {
-    width: 705px;
+    width: 100%;
     .contMain {
-      width: 705px;
+      width: 100%;
       .contExplain {
         font-family: "Pretendard";
         font-size: 24px;
@@ -889,7 +889,7 @@
       }
       .exs {
         margin-top: 20px;
-        width: 765px;
+        width: 100%;
         height: 720px;
         background-position: center;
         background-size: contain;

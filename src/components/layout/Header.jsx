@@ -165,7 +165,7 @@ function Header({ name, text }) {
                 borderRadius: "6px",
               }}
             >
-              <img src={Facebook} />
+              <img src={Facebook} alt="" />
             </Icon>
           </Link>
 
@@ -183,7 +183,7 @@ function Header({ name, text }) {
                 borderRadius: "6px",
               }}
             >
-              <img src={Insta} />
+              <img src={Insta} alt="" />
             </Icon>
           </Link>
 
@@ -200,7 +200,7 @@ function Header({ name, text }) {
                 borderRadius: "6px",
               }}
             >
-              <img src={Youtube} />
+              <img src={Youtube} alt="" />
             </Icon>
           </Link>
         </div>
@@ -223,7 +223,7 @@ function Header({ name, text }) {
         }}
       >
         <Link to="/">
-          {name === "puraxel" ? <img src={Logo} /> : <>{name}</>}
+          {name === "puraxel" ? <img src={Logo} alt="" /> : <>{name}</>}
         </Link>
       </div>
 
@@ -244,7 +244,7 @@ function Header({ name, text }) {
                   <span>{text}</span>
                 </div>
                 <div className="shopIcon" style={{ zIndex: 99999 }}>
-                  <img src={Shop} />
+                  <img src={Shop} alt="" />
                 </div>
               </IconButton>
             </ThemeProvider>
@@ -257,7 +257,7 @@ function Header({ name, text }) {
                   <span>{text}</span>
                 </div>
                 <div className="shopIcon" style={{ zIndex: 99999 }}>
-                  <img src={Inquiry} />
+                  <img src={Inquiry} alt="" />
                 </div>
               </IconButton>
             </ThemeProvider>
@@ -274,6 +274,7 @@ function Header({ name, text }) {
                     sx={{
                       zIndex: 99999,
                     }}
+                    alt=""
                   />
                 </IconButton>
               </ThemeProvider>
@@ -285,6 +286,7 @@ function Header({ name, text }) {
                     style={{
                       zIndex: 99999,
                     }}
+                    alt=""
                   />
                 </IconButton>
               </ThemeProvider>
@@ -353,7 +355,7 @@ function Header({ name, text }) {
                         display: "inline-block",
                       }}
                     >
-                      <img src={Shortcut} style={{ display: "block" }} />
+                      <img src={Shortcut} style={{ display: "block" }} alt="" />
                     </div>
                   </Link>
                 </div>
