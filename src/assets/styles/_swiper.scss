@@ -10,11 +10,17 @@
   height: 250px;
 }
 .swiper-pagination-fraction {
+  display: flex;
   font-family: "Pretendard";
   margin-left: 830px;
   margin-top: 20px;
   font-size: 24px;
+  font-weight: 700;
   float: right;
+  .img {
+    width: 0;
+    height: 8px;
+  }
 }
 .swiper-pagination-current {
   padding: 5px;

@@ -1,8 +1,18 @@
+.oval {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  right: 220px;
+  top: 350px;
+  z-index: 1;
+}
 .cont {
+  overflow: hidden;
   position: relative;
   width: 1200px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
+
   .contName {
     padding: 20px 20px 20px 20px;
     .contHeader {
@@ -34,7 +44,7 @@
     h1 {
       color: #55576f;
       margin-top: 25px;
-      font-family: "PP Neue Machina";
+      font-family: "CaviarDreams";
       font-size: 44px;
       line-height: 110%;
       letter-spacing: -0.03em;
@@ -89,25 +99,25 @@
       background-repeat: no-repeat;
     }
   }
+  .contExplain {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    width: 240px;
+    padding: 0 0 20px 20px;
+    color: #4d5058;
+  }
 
   .contMain {
     width: 100%;
-    height: 100vh;
+    height: 590px;
     background-image: url(../img/me_01_main.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    .contExplain {
-      font-family: "Pretendard";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 150%;
-      letter-spacing: -0.01em;
-      width: 200px;
-      padding: 20px 0 0 20px;
-      color: #4d5058;
-    }
   }
 
   .contHow {
@@ -854,6 +864,7 @@
           background-color: #4d5058;
           border-radius: 4px;
           padding: 8px 27px 8px 12px;
+          box-shadow: #000000 8%;
         }
         .mode2 {
           margin-left: 6px;
@@ -926,7 +937,7 @@
       h1 {
         color: #55576f;
         margin-top: 25px;
-        font-family: "PP Neue Machina";
+        font-family: "CaviarDreams";
         font-size: 44px;
         line-height: 110%;
         letter-spacing: -0.03em;
@@ -1264,6 +1275,7 @@
       .modes {
         border: 1px solid #f2f3f6;
         padding: 8px 8px 8px 8px;
+        background: #fff;
         .mode1 {
           width: 148px;
           display: inline-block;
@@ -1300,7 +1312,7 @@
       .exs {
         margin-top: 50px;
         width: 320px;
-        height: 420px;
+        height: 520px;
       }
     }
     .contHow {
@@ -1392,14 +1404,22 @@
       }
     }
     .contMain {
+      background-size: contain;
       .contExplain {
         font-family: "Pretendard";
         font-size: 16px;
         width: 150px;
       }
+      .oval {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 240px;
+        top: 350px;
+      }
     }
     .contName {
-      padding: 20px 20px 20px 20px;
+      padding: 20px 20px 8px 20px;
       .contHeader {
         font-family: "Pretendard";
         font-size: 12px;
@@ -1429,7 +1449,7 @@
       h1 {
         color: #55576f;
         margin-top: 25px;
-        font-family: "PP Neue Machina";
+        font-family: "CaviarDreams";
         font-size: 44px;
         line-height: 110%;
         letter-spacing: -0.03em;

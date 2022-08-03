@@ -103,6 +103,11 @@ function Header({ name, text }) {
     setClose(!close);
   };
 
+  function Component2() {
+    if (name === "puraxel") {
+      return;
+    }
+  }
   const list = () => (
     <Box role="presentation">
       <List>
@@ -217,7 +222,9 @@ function Header({ name, text }) {
       </div>
 
       <div className="right">
-        {name === "ME" ? (
+        {name === "puraxel" ? (
+          <Component2 />
+        ) : name === "ME" ? (
           <Link
             to={{
               pathname: "https://lmdt.cafe24.com",
@@ -286,6 +293,7 @@ function Header({ name, text }) {
                   color: "#55576F",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   zIndex: 0,
+                  backdropFilter: "blur(4px)",
                 },
               }}
             >
@@ -302,6 +310,9 @@ function Header({ name, text }) {
           BackdropComponent={Backdrop}
           BackdropProps={{
             timeout: 500,
+            sx: {
+              backgroundColor: "rgba(0, 0, 0, 0.2)",
+            },
           }}
         >
           <Fade in={open}>
@@ -313,7 +324,22 @@ function Header({ name, text }) {
                 sx={header}
               >
                 주식회사 라메디텍
+                <Link
+                  to={{
+                    pathname: "https://www.lameditech.com/",
+                  }}
+                  target="_blank"
+                  style={{
+                    marginLeft: "20px",
+                    background: "#F2F3F6",
+                    padding: "2px 8px 2px 8px",
+                    borderRadius: "4px",
+                  }}
+                >
+                  라메디텍 바로가기
+                </Link>
               </Typography>
+
               <Typography id="transition-modal-description" sx={{ mt: 2 }}>
                 <span style={style2}>
                   대표자 최종석 | 사업자번호 : 119-86-51786 통신판매업신고번호 :

@@ -92,6 +92,7 @@ function MeItem() {
               backgroundColor: modeCondition ? "#4d5058" : "#f2f3f6",
               borderColor: modeCondition ? "#4d5058" : "#f2f3f6",
               color: modeCondition ? "#f8f9fa" : "#a7abb6",
+              boxShadow: modeCondition ? "0 8px 8px #00000020" : "none",
             }}
           >
             <p>
@@ -107,6 +108,7 @@ function MeItem() {
               backgroundColor: modeCondition ? "#f2f3f6" : "#4d5058",
               borderColor: modeCondition ? "#f2f3f6" : "#4d5058",
               color: modeCondition ? "#a7abb6" : "#f8f9fa",
+              boxShadow: modeCondition ? "none" : "0 8px 8px #00000020",
             }}
           >
             <p>

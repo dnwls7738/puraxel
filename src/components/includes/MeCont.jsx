@@ -9,6 +9,7 @@ import HowItem from "../item/HowItem";
 import MeModeItem from "../item/MeModeItem";
 import PriceItem from "../item/PriceItem";
 import Oval from "../../assets/img/mobile_oval_me.svg";
+import Line from "../../assets/img/pageLine.svg";
 
 function MeCont() {
   const boxRef = useRef();
@@ -27,46 +28,48 @@ function MeCont() {
               '<span class="' +
               currentClass +
               '"></span>' +
-              "-" +
+              `<img src=${Line}
+              }}>` +
               '<span class="' +
               totalClass +
               '"></span>'
             );
           },
         }}
-        // onSlideChange={(index) => {
-        //   if (index.activeIndex === 0) {
-        //     gsap.to(boxRef.current, {
-        //       x: "0px",
-        //       y: "0px",
-        //       duration: 1.5,
-        //     });
-        //   }
-        //   if (index.activeIndex === 1) {
-        //     gsap.to(boxRef.current, {
-        //       x: "350px",
-        //       y: "170px",
-        //       duration: 1.5,
-        //     });
-        //   }
-        //   if (index.activeIndex === 2) {
-        //     gsap.to(boxRef.current, {
-        //       x: "350px",
-        //       y: "0px",
-        //       duration: 1.5,
-        //     });
-        //   }
-        //   if (index.activeIndex === 3) {
-        //     gsap.to(boxRef.current, {
-        //       x: "400px",
-        //       y: "200px",
-        //       duration: 1.5,
-        //     });
-        //   }
-        //   console.log(index.activeIndex);
-        // }}
+        onSlideChange={(index) => {
+          if (index.activeIndex === 0) {
+            gsap.to(boxRef.current, {
+              x: "0px",
+              y: "0px",
+              duration: 1.5,
+            });
+          }
+          if (index.activeIndex === 1) {
+            gsap.to(boxRef.current, {
+              x: "270px",
+              y: "170px",
+              duration: 1.5,
+            });
+          }
+          if (index.activeIndex === 2) {
+            gsap.to(boxRef.current, {
+              x: "350px",
+              y: "0px",
+              duration: 1.5,
+            });
+          }
+          if (index.activeIndex === 3) {
+            gsap.to(boxRef.current, {
+              x: "370px",
+              y: "50px",
+              duration: 1.5,
+            });
+          }
+          console.log(index.activeIndex);
+        }}
         scrollbar={{ draggable: true }}
       >
+        <img className="oval" src={Oval} ref={boxRef} />
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -75,11 +78,11 @@ function MeCont() {
               </span>
               <h1>PURAXEL ME</h1>
             </div>
-            <div className="contMain">
-              <p className="contExplain">
-                소형 레이저 기술로 가정용 미용기기에 혁신을 가져오다
-              </p>
-            </div>
+            <p className="contExplain">
+              소형 레이저 기술로
+              <br /> 가정용 미용기기에 혁신을 가져오다
+            </p>
+            <div className="contMain"></div>
           </div>
         </SwiperSlide>
 
