@@ -16,7 +16,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
-    "swiper": "^8.3.1",
+    "swiper": "github:dnwls7738/swiper",
     "swiper-src": "github:dnwls7738/swiper",
     "web-vitals": "^2.1.4"
   },
