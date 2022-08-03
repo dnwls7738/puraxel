@@ -12,15 +12,8 @@
 .swiper-pagination-fraction {
   display: flex;
   font-family: "Pretendard";
-  margin-left: 830px;
-  margin-top: 20px;
   font-size: 24px;
   font-weight: 700;
-  float: right;
-  .img {
-    width: 0;
-    height: 8px;
-  }
 }
 .swiper-pagination-current {
   padding: 5px;
@@ -32,7 +25,6 @@
   opacity: 30%;
   padding: 5px;
 }
-
 @media (max-width: 1000px) {
   .swiper-pagination-fraction {
     font-family: "Pretendard";
