@@ -2,33 +2,28 @@ import React, { useState } from "react";
 import LaserEx from "../../assets/img/puraxelLaser.svg";
 import Senser from "../../assets/img/senser.svg";
 import GalbanicEx from "../../assets/img/galvanicMode.svg";
-import LaserImg from "../../assets/img/me_01.png";
-import GalbanicImg from "../../assets/img/me_02.png";
-
-const LaserImage = {
-  backgroundImage: `url(${LaserImg} )`,
-};
-const GalbanicImage = {
-  backgroundImage: `url(${GalbanicImg} )`,
-};
+import LaserImg from "../../assets/img/me_02_laser.svg";
+import GalbanicImg from "../../assets/img/me_02_galvanic.svg";
 
 const LaserExplain = () => {
   return (
     <>
-      <div className="ex3">
-        <img className="senserImg" src={Senser} alt="senser" />
-        <p className="senserEx">
-          피부에 닿을 때만 <br />
-          레이저가 나와 안전합니다.
-        </p>
-      </div>
-      <div className="ex">
-        <img className="laserImg" src={LaserEx} alt="laser" />
-        <p className="laserEx">
-          피부 두께에 따라
-          <br /> 레이저 세기를
-          <br /> 조정할 수 있습니다.
-        </p>
+      <div>
+        <div className="ex2">
+          <img className="senserImg" src={Senser} alt="senser" />
+          <p className="senserEx">
+            피부에 닿을 때만 <br />
+            레이저가 나와 안전합니다.
+          </p>
+        </div>
+        <div className="ex">
+          <img className="laserImg" src={LaserEx} alt="laser" />
+          <p className="laserEx">
+            피부 두께에 따라
+            <br /> 레이저 세기를
+            <br /> 조정할 수 있습니다.
+          </p>
+        </div>
       </div>
     </>
   );
@@ -37,7 +32,7 @@ const LaserExplain = () => {
 const GalvanicExplain = () => {
   return (
     <>
-      <div className="ex2">
+      <div className="ex3">
         <img className="galbanicImg" src={GalbanicEx} alt="galbanic" />
         <p className="galbanicEx">
           갈바닉 전류 기술을 활용하여 크림, 앰플을 피부에 <br /> 깊숙이 스며들게
@@ -119,7 +114,12 @@ function MeItem() {
             {modeCondition ? <LaserText /> : <GarbanicText />}
           </div>
         </div>
-        <div className="exs" style={modeCondition ? LaserImage : GalbanicImage}>
+        <div className="exs">
+          {modeCondition ? (
+            <img src={LaserImg} alt="" />
+          ) : (
+            <img src={GalbanicImg} alt="" />
+          )}
           {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
         </div>
       </div>

@@ -7,11 +7,11 @@
 }
 
 .header__logo {
-  padding: 15px 10px 10px 10px;
   a {
+    margin: 20px 20px 20px 20px;
     display: inline-block;
     font-family: "CaviarDreams";
-    font-weight: bold;
+    font-weight: 700;
     font-size: 24px;
     line-height: 120%;
     letter-spacing: -0.03em;
@@ -19,6 +19,7 @@
   }
 }
 .right {
+  margin: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;

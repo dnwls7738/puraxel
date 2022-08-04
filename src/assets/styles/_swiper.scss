@@ -1,14 +1,7 @@
 .swiper-wrapper {
   width: 100%;
 }
-.ovalImg {
-  z-index: 1;
-  position: absolute;
-  bottom: 210px;
-  left: -130px;
-  width: 250px;
-  height: 250px;
-}
+
 .swiper-pagination-fraction {
   display: flex;
   font-family: "Pretendard";
@@ -17,32 +10,34 @@
   left: 90% !important;
 }
 .swiper-pagination-current {
-  padding: 5px;
+  padding: 10px;
   color: #55576f;
 }
 .swiper-pagination-total {
   font-family: "Pretendard";
   color: #55576f;
   opacity: 30%;
-  padding: 5px;
+  padding: 10px;
 }
 @media (max-width: 1000px) {
   .swiper-pagination-fraction {
     font-family: "Pretendard";
     font-size: 24px;
+    left: 90% !important;
   }
 }
 @media (max-width: 768px) {
   .swiper-pagination-fraction {
     font-family: "Pretendard";
     font-size: 16px;
+    left: 85% !important;
   }
 }
 @media (max-width: 415px) {
   .swiper-pagination-fraction {
     font-family: "Pretendard";
     font-size: 14px;
-    left: 88% !important;
+    left: 80% !important;
   }
 }
 
@@ -50,5 +45,6 @@
   .swiper-pagination-fraction {
     font-family: "Pretendard";
     font-size: 14px;
+    left: 80% !important;
   }
 }

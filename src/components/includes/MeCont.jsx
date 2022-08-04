@@ -5,23 +5,24 @@ import { gsap } from "gsap";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/css/effect-fade";
-import HowItem from "../item/HowItem";
+
 import MeModeItem from "../item/MeModeItem";
 import PriceItem from "../item/PriceItem";
 import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
+import Main from "../../assets/img/me_main.svg";
 
 function MeCont() {
   const boxRef = useRef();
 
   return (
     <>
-      <img className="oval" src={Oval} ref={boxRef} alt="oval" />
       <Swiper
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
-        spaceBetween={50}
         slidesPerView={1}
+        observer="true"
+        observeParents="true"
         pagination={{
           type: "fraction",
           renderFraction: function (currentClass, totalClass) {
@@ -47,22 +48,22 @@ function MeCont() {
           }
           if (index.activeIndex === 1) {
             gsap.to(boxRef.current, {
-              x: "270px",
-              y: "170px",
+              x: "220px",
+              y: "60px",
               duration: 1.5,
             });
           }
           if (index.activeIndex === 2) {
             gsap.to(boxRef.current, {
-              x: "350px",
-              y: "0px",
+              x: "270px",
+              y: "100px",
               duration: 1.5,
             });
           }
           if (index.activeIndex === 3) {
             gsap.to(boxRef.current, {
-              x: "370px",
-              y: "50px",
+              x: "300px",
+              y: "100px",
               duration: 1.5,
             });
           }
@@ -76,16 +77,21 @@ function MeCont() {
               <span className="contHeader">
                 <em>홈 에스테틱</em> 레이저의 시작
               </span>
-              <h1>PURAXEL ME</h1>
+              <h1>
+                PURAXEL
+                <br /> ME
+              </h1>
             </div>
             <p className="contExplain">
               소형 레이저 기술로
               <br /> 가정용 미용기기에 혁신을 가져오다
             </p>
-            <div className="contMain"></div>
+            <div className="contMain">
+              <img src={Main} alt="" />
+            </div>
           </div>
         </SwiperSlide>
-
+        <img className="oval" src={Oval} ref={boxRef} alt="oval" />
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -111,6 +117,7 @@ function MeCont() {
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <PriceItem />
         </SwiperSlide>
