@@ -1,16 +1,17 @@
 diff --git a/node_modules/swiper/modules/pagination/pagination.scss b/node_modules/swiper/modules/pagination/pagination.scss
-index 2da2b03..6600d67 100644
+index 2da2b03..70f3759 100644
 --- a/node_modules/swiper/modules/pagination/pagination.scss
 +++ b/node_modules/swiper/modules/pagination/pagination.scss
-@@ -33,9 +33,8 @@
+@@ -33,9 +33,9 @@
  .swiper-pagination-custom,
  .swiper-horizontal > .swiper-pagination-bullets,
  .swiper-pagination-bullets.swiper-pagination-horizontal {
 -  bottom: 10px;
 -  left: 0;
 -  width: 100%;
-+  top: 0;
++  top: -10px;
 +  right: 0;
++  padding-right: 15px;
  }
  /* Bullets */
  .swiper-pagination-bullets-dynamic {
