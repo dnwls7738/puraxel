@@ -8,7 +8,7 @@ import "swiper/css/effect-fade";
 
 import MeModeItem from "../item/MeModeItem";
 import PriceItem from "../item/PriceItem";
-import Oval from "../../assets/img/mobile_oval_me.svg";
+// import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
 import Main from "../../assets/img/me_main.svg";
 
