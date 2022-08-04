@@ -6,10 +6,15 @@
 }
 
 .cont {
+  background-image: url(../img/mobile_bg_me.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   .contMain {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     text-align: center;
 
@@ -120,7 +125,6 @@
       }
     }
     .exs {
-      text-align: center;
       position: relative;
       margin-top: 40px;
       width: 100%;
@@ -128,8 +132,8 @@
       .img {
         display: block;
         margin: 0 auto;
-        width: 40rem;
-        height: 50rem;
+        width: 100%;
+        height: auto;
         text-align: center;
       }
       .ex {
@@ -178,8 +182,8 @@
         top: 0;
         left: 15px;
         position: absolute;
-        .galbanicImg {
-          width: 100px;
+        .galvanicImg {
+          width: 100%;
         }
         .galbanicEx {
           text-align: left;
@@ -194,16 +198,6 @@
           width: 100%;
           height: 35px;
         }
-      }
-    }
-  }
-  .contHow {
-    .images {
-      width: 100%;
-      height: 470px;
-      img {
-        width: 100%;
-        height: 470px;
       }
     }
   }
@@ -303,69 +297,15 @@
 
 @media (min-width: 768px) {
   html {
-    font-size: 15px;
+    font-size: 20px;
   }
-  .ex {
-    top: 200px;
-    left: 15px;
-    position: absolute;
-    .laserImg {
-      width: 100%;
-    }
-    .laserEx {
-      text-align: left;
-      margin-top: 5px;
-      font-family: "Pretendard";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 150%;
-      letter-spacing: -0.01em;
-      color: #7e818d;
-      width: 100%;
-      height: 35px;
-    }
-  }
-  .ex2 {
-    top: 0;
-    left: 15px;
-    position: absolute;
-    .senserImg {
-      width: 100%;
-    }
-    .senserEx {
-      text-align: left;
-      margin-top: 5px;
-      font-family: "Pretendard";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 150%;
-      letter-spacing: -0.01em;
-      color: #7e818d;
-      width: 100%;
-      height: 35px;
-    }
-  }
-  .ex3 {
-    top: 0;
-    left: 15px;
-    position: absolute;
-    .galbanicImg {
-      width: 100px;
-    }
-    .galbanicEx {
-      text-align: left;
-      margin: 5px;
-      font-family: "Pretendard";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 1.2rem;
-      line-height: 150%;
-      letter-spacing: -0.01em;
-      color: #7e818d;
-      width: 100%;
-      height: 35px;
+  .cont {
+    .ModeExplain {
+      .exs {
+        .ex {
+          top: 160px;
+        }
+      }
     }
   }
 }

@@ -20,6 +20,7 @@ function MeCont() {
       <Swiper
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
+        spaceBetween={10}
         slidesPerView={1}
         observer="true"
         observeParents="true"
