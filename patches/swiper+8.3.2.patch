@@ -1,5 +1,5 @@
 diff --git a/node_modules/swiper/modules/pagination/pagination.scss b/node_modules/swiper/modules/pagination/pagination.scss
-index 2da2b03..10a8f95 100644
+index 2da2b03..6600d67 100644
 --- a/node_modules/swiper/modules/pagination/pagination.scss
 +++ b/node_modules/swiper/modules/pagination/pagination.scss
 @@ -33,9 +33,8 @@
@@ -9,7 +9,7 @@ index 2da2b03..10a8f95 100644
 -  bottom: 10px;
 -  left: 0;
 -  width: 100%;
-+  top: 15px;
++  top: 0;
 +  right: 0;
  }
  /* Bullets */
