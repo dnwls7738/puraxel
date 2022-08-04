@@ -71,12 +71,11 @@ function MeCont() {
         }}
         scrollbar={{ draggable: true }}
       >
+        {/* <img className="oval" src={Oval} ref={boxRef} alt="oval" /> */}
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
-              <span className="contHeader">
-                <em>홈 에스테틱</em> 레이저의 시작
-              </span>
+              <span className="contHeader">홈 에스테틱 레이저의 시작</span>
               <h1>
                 PURAXEL
                 <br /> ME
@@ -91,7 +90,7 @@ function MeCont() {
             </div>
           </div>
         </SwiperSlide>
-        <img className="oval" src={Oval} ref={boxRef} alt="oval" />
+
         <SwiperSlide>
           <div className="cont">
             <div className="contName">

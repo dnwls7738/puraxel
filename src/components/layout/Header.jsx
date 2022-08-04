@@ -216,12 +216,7 @@ function Header({ name, text }) {
 
   return (
     <header id="header">
-      <div
-        className="header__logo"
-        style={{
-          zIndex: 99999,
-        }}
-      >
+      <div className="header__logo">
         <Link to="/">
           {name === "puraxel" ? <img src={Logo} alt="" /> : <>{name}</>}
         </Link>
@@ -240,10 +235,8 @@ function Header({ name, text }) {
           >
             <ThemeProvider theme={theme1}>
               <IconButton>
-                <div className="shopText" style={{ zIndex: 99999 }}>
-                  <span>{text}</span>
-                </div>
-                <div className="shopIcon" style={{ zIndex: 99999 }}>
+                <div className="shopIcon">
+                  <p className="shopText">{text}</p>
                   <img src={Shop} alt="" />
                 </div>
               </IconButton>
@@ -253,10 +246,8 @@ function Header({ name, text }) {
           <Link to="INQUIRY" className="shop">
             <ThemeProvider theme={theme1}>
               <IconButton>
-                <div className="shopText" style={{ zIndex: 99999 }}>
-                  <span>{text}</span>
-                </div>
-                <div className="shopIcon" style={{ zIndex: 99999 }}>
+                <div className="shopIcon">
+                  <p className="shopText">{text}</p>
                   <img src={Inquiry} alt="" />
                 </div>
               </IconButton>
@@ -271,7 +262,8 @@ function Header({ name, text }) {
                 <IconButton onClick={toggleDrawer(anchor, true)}>
                   <img
                     src={Ham}
-                    sx={{
+                    style={{
+                      width: "2.4rem",
                       zIndex: 99999,
                     }}
                     alt=""
@@ -284,6 +276,7 @@ function Header({ name, text }) {
                   <img
                     src={Close}
                     style={{
+                      width: "2.4rem",
                       zIndex: 99999,
                     }}
                     alt=""

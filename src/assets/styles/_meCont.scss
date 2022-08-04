@@ -1,460 +1,371 @@
 .oval {
-  width: 300px;
+  width: 136px;
   position: absolute;
   right: 220px;
   top: 350px;
 }
-@media (max-width: 480px) {
-  .cont {
-    width: 100vw;
-    height: 100vh;
 
-    .contMain {
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      img {
-        max-width: 100%;
-        height: auto;
-      }
+.cont {
+  width: 100%;
+  height: 100vh;
+  .contMain {
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
 
-      .contExplain {
-        font-family: "Pretendard";
-        font-size: 16px;
-        width: 150px;
-      }
-      .oval {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        right: 240px;
-        top: 350px;
-      }
+    img {
+      max-width: 100%;
+      height: auto;
     }
-    .contName {
-      padding: 0 0 8px 20px;
-      .contHeader {
-        font-family: "Pretendard";
-        font-weight: 700;
-        font-size: 12px;
-        color: #55576f;
-        line-height: 144%;
-        letter-spacing: -0.03em;
-        em {
-          color: #55576f;
-        }
-      }
 
-      .contHeader2 {
-        color: #55576f;
-        font-family: "Pretendard";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 144%;
-        letter-spacing: -0.03em;
-        padding-top: 10px;
-        em {
-          font-weight: 700;
-        }
-      }
-
-      h1 {
-        color: #55576f;
-        margin-top: 25px;
-        font-family: "Pretendard";
-        font-size: 44px;
-        line-height: 110%;
-        letter-spacing: -0.03em;
-      }
-    }
     .contExplain {
       font-family: "Pretendard";
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: -0.01em;
-      width: 240px;
-      padding: 0 0 20px 20px;
-      color: #4d5058;
+      font-size: 10em;
+      width: 150px;
     }
-    .ModeExplain {
+  }
+
+  .contName {
+    padding: 0 20px 8px 20px;
+    .contHeader {
+      font-family: "Pretendard";
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #55576f;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      em {
+        color: #55576f;
+      }
+    }
+
+    .contHeader2 {
+      color: #55576f;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      padding-top: 10px;
+      em {
+        font-weight: 700;
+      }
+    }
+
+    h1 {
+      color: #55576f;
+      margin-top: 25px;
+      font-family: "Pretendard";
+      font-size: 4.8rem;
+      line-height: 110%;
+      letter-spacing: -0.03em;
+    }
+  }
+  .contExplain {
+    font-family: "Pretendard";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    width: 280px;
+    padding: 0 0 20px 20px;
+    color: #4d5058;
+  }
+  .ModeExplain {
+    width: 100%;
+    height: 100%;
+    .modes {
+      height: auto;
+      border: 1px solid #f2f3f6;
+      margin: 0 20px 0 20px;
+      padding: 15px 0;
+      background: #fff;
+      .modeBox {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .mode1 {
+        width: 49%;
+        font-family: Pretendard;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #f8f9fa;
+        border: 1px solid #4d5058;
+        background-color: #4d5058;
+        border-radius: 4px;
+        padding: 8px 27px 8px 12px;
+      }
+      .mode2 {
+        width: 49%;
+        height: auto;
+        font-family: Pretendard;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #a7abb6;
+        border: 1px solid #f2f3f6;
+        background-color: #f2f3f6;
+        border-radius: 4px;
+        padding: 8px 67px 8px 12px;
+      }
+      .modeEx {
+        padding: 0 15px;
+        font-family: Pretendard;
+        font-weight: 300;
+        color: #4d5058;
+        font-size: 1.4rem;
+        margin-top: 12px;
+        line-height: 150%;
+      }
+    }
+    .exs {
+      text-align: center;
+      position: relative;
+      margin-top: 40px;
       width: 100%;
       height: 100%;
-      .modes {
-        height: auto;
-        border: 1px solid #f2f3f6;
-        margin: 0 20px 0 20px;
-        padding: 8px 8px 8px 8px;
-        background: #fff;
-        .mode1 {
-          width: 49%;
-          display: inline-block;
-          font-family: Pretendard;
-          font-weight: 600;
-          font-size: 12px;
-          color: #f8f9fa;
-          border: 1px solid #4d5058;
-          background-color: #4d5058;
-          border-radius: 4px;
-          padding: 8px 27px 8px 12px;
+      .img {
+        display: block;
+        margin: 0 auto;
+        width: 40rem;
+        height: 50rem;
+        text-align: center;
+      }
+      .ex {
+        top: 90px;
+        left: 15px;
+        position: absolute;
+        .laserImg {
+          width: 100%;
         }
-        .mode2 {
-          margin-left: 6px;
-          width: 49%;
-          height: auto;
-          display: inline-block;
-          font-family: Pretendard;
-          font-weight: 600;
-          font-size: 12px;
-          color: #a7abb6;
-          border: 1px solid #f2f3f6;
-          background-color: #f2f3f6;
-          border-radius: 4px;
-          padding: 8px 67px 8px 12px;
-        }
-        .modeEx {
-          font-family: Pretendard;
-          font-weight: 300;
-          color: #4d5058;
-          font-size: 0.8rem;
-          margin-top: 12px;
+        .laserEx {
+          text-align: left;
+          margin-top: 5px;
+          font-family: "Pretendard";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.2rem;
           line-height: 150%;
+          letter-spacing: -0.01em;
+          color: #7e818d;
+          width: 100%;
+          height: 35px;
         }
       }
-      .exs {
-        position: relative;
-        margin-top: 40px;
-        width: 100%;
-        height: 100%;
-        img {
-          max-width: 100%;
-          height: auto;
+      .ex2 {
+        top: 0;
+        left: 15px;
+        position: absolute;
+        .senserImg {
+          width: 100%;
         }
-        .ex {
-          top: 90px;
-          left: 15px;
-          position: absolute;
-          .laserEx {
-            margin-top: 5px;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 150%;
-            letter-spacing: -0.01em;
-            color: #7e818d;
-            width: 110px;
-            height: 35px;
-          }
+        .senserEx {
+          text-align: left;
+          margin-top: 5px;
+          font-family: "Pretendard";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.2rem;
+          line-height: 150%;
+          letter-spacing: -0.01em;
+          color: #7e818d;
+          width: 100%;
+          height: 35px;
         }
-        .ex2 {
-          top: 0;
-          left: 15px;
-          position: absolute;
-          .senserEx {
-            margin-top: 5px;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 150%;
-            letter-spacing: -0.01em;
-            color: #7e818d;
-            width: 125px;
-            height: 35px;
-          }
+      }
+      .ex3 {
+        top: 0;
+        left: 15px;
+        position: absolute;
+        .galbanicImg {
+          width: 100px;
         }
-        .ex3 {
-          top: 0;
-          left: 15px;
-          position: absolute;
-          .galbanicImg {
-            width: 100px;
-            height: 35px;
-          }
-          .galbanicEx {
-            margin: 10px;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 150%;
-            letter-spacing: -0.01em;
-            color: #7e818d;
-            width: 120px;
-            height: 35px;
-          }
+        .galbanicEx {
+          text-align: left;
+          margin: 5px;
+          font-family: "Pretendard";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 1.2rem;
+          line-height: 150%;
+          letter-spacing: -0.01em;
+          color: #7e818d;
+          width: 100%;
+          height: 35px;
         }
       }
     }
-    .contHow {
-      .images {
+  }
+  .contHow {
+    .images {
+      width: 100%;
+      height: 470px;
+      img {
         width: 100%;
         height: 470px;
-        img {
-          width: 100%;
-          height: 470px;
+      }
+    }
+  }
+
+  .contPrice {
+    .price1 {
+      border: 1px solid #f2f3f6;
+      border-radius: 4px;
+      padding: 8px 16px 8px 16px;
+      margin: 20px 20px;
+      .name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text {
+          font-family: "Pretendard";
+          font-weight: 600;
+          font-size: 1.6rem;
+          color: #4d5058;
+        }
+        .num {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #b298ad;
+        }
+      }
+      .sub {
+        text-align: right;
+        margin-top: 10px;
+        .subText {
+          font-family: "Pretendard";
+          font-weight: 700;
+          color: #c7cad3;
+          em {
+            font-weight: 300;
+            font-size: 2rem;
+            color: #4d5058;
+          }
         }
       }
     }
-    .howTo {
-      width: 320px;
-      height: 600px;
-      background: #ffffff;
-      border: 0.558467px solid #efefef;
-      box-shadow: 0px 4.46774px 11.1693px rgba(169, 121, 124, 0.1);
-      backdrop-filter: blur(13.4032px);
-      border-radius: 4.46774px;
-      margin: 0 20px 20px 20px;
 
-      .howToTitle {
-        padding: 10px;
-        .title {
-          font-family: "Pretendard";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 150%;
-          display: flex;
-          align-items: flex-end;
-          letter-spacing: -0.01em;
-          color: #55576f;
-        }
-      }
-      .howToExplain {
-        padding: 20px;
-        background: linear-gradient(
-          180deg,
-          #f8f9fa 0%,
-          rgba(248, 249, 250, 0) 100%
-        );
-        .explain {
-          width: 278px;
-          height: 63px;
-          font-family: "Pretendard";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 150%;
-          letter-spacing: -0.01em;
-          color: #7e818d;
-        }
-      }
-      .howToConts1 {
+    .price2 {
+      border: 1px solid #f2f3f6;
+      border-radius: 4px;
+      padding: 8px 16px 8px 16px;
+      margin: 20px 20px;
+      .name {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        .howToCont {
-          width: 280px;
-          height: 197px;
-          background-color: #faf8fb;
-          margin-top: 20px;
-          align-items: center;
+        .text {
+          font-family: "Pretendard";
+          font-weight: 600;
+          font-size: 1.6rem;
+          color: #4d5058;
+        }
+        .num {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #b298ad;
+          em {
+            font-family: "Pretendard";
+            font-weight: 700;
+            color: #c7cad3;
+          }
         }
       }
-
-      .howToCont2 {
-        width: 318px;
-        height: 420px;
-        margin-top: 30px;
-        background-color: #faf8fb;
-        align-items: center;
-      }
-
-      .howToConts2 {
+      .sub {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        .howToCont3 {
-          width: 133px;
-          height: 405px;
-          margin-top: 30px;
-          background-color: #faf8fb;
-          align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        .subText {
+          font-family: "Pretendard";
+          font-weight: 700;
+          color: #c7cad3;
+          em {
+            font-weight: 300;
+            font-size: 2rem;
+            color: #4d5058;
+          }
+        }
+        .sale {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #b298ad;
+          background: #f8f9fa;
+          padding: 2px 4px 2px 4px;
         }
       }
     }
+  }
+}
 
-    .contPrice {
-      .price {
-        margin: 0 auto;
-        width: 320px;
-        height: 75px;
-        border: 1px solid #f2f3f6;
-        padding: 10px;
-        margin-bottom: 10px;
-        .priceMain {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 5px;
-          .priceName {
-            width: 100px;
-            height: 24px;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 150%;
-            letter-spacing: -0.01em;
-            color: #28292e;
-          }
-          .mainPrice {
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 144%;
-            text-align: right;
-            letter-spacing: -0.03em;
-            font-feature-settings: "tnum" on, "lnum" on;
-            color: #b398ad;
-          }
-        }
-        .disconunt {
-          display: inline-block;
-        }
-        .priceSub {
-          float: right;
-          .month {
-            display: inline-block;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 144%;
-            letter-spacing: -0.03em;
-            font-feature-settings: "tnum" on, "lnum" on;
-            color: #c7cad3;
-            padding-right: 10px;
-          }
-          .subPrice {
-            display: inline-block;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 144%;
-            letter-spacing: -0.03em;
-            font-feature-settings: "tnum" on, "lnum" on;
-            color: #4d5058;
-          }
-        }
-      }
-      .price2 {
-        margin: 0 auto;
-        width: 320px;
-        height: 105px;
-        border: 1px solid #f2f3f6;
-        padding: 10px;
-        margin-bottom: 10px;
-        .priceMain {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 35px;
-          .priceName {
-            width: 100px;
-            height: 24px;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 150%;
-            letter-spacing: -0.01em;
-            color: #28292e;
-          }
-          .mainPrice {
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 144%;
-            text-align: right;
-            letter-spacing: -0.03em;
-            font-feature-settings: "tnum" on, "lnum" on;
-            color: #b398ad;
-            .mainSub {
-              font-family: "Pretendard";
-              font-style: normal;
-              font-weight: 600;
-              font-size: 12px;
-              line-height: 144%;
-              text-align: right;
-              letter-spacing: -0.03em;
-              font-feature-settings: "tnum" on, "lnum" on;
-              color: #c7cad3;
-            }
-          }
-        }
-        .discount {
-          width: 55px;
-          height: 22px;
-          display: inline-block;
-          background: #f8f9fa;
-          border-radius: 4px;
-          margin-top: 5px;
-          .disPrice {
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 140%;
-            letter-spacing: -0.01em;
-            color: #b398ad;
-            padding: 2px 4px 2px 4px;
-          }
-        }
-        .priceSub {
-          float: right;
-          .month {
-            display: inline-block;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 144%;
-            letter-spacing: -0.03em;
-            font-feature-settings: "tnum" on, "lnum" on;
-            color: #c7cad3;
-            padding-right: 10px;
-          }
-          .subPrice {
-            display: inline-block;
-            font-family: "Pretendard";
-            font-style: normal;
-            font-weight: 300;
-            font-size: 20px;
-            line-height: 144%;
-            letter-spacing: -0.03em;
-            font-feature-settings: "tnum" on, "lnum" on;
-            color: #4d5058;
-          }
-        }
-      }
-      .details {
-        margin: 0 auto;
-        width: 278px;
-        height: 126px;
-        margin-top: 210px;
-        .detailText {
-          font-family: "Pretendard";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 14px;
-          line-height: 150%;
-          /* or 21px */
-
-          letter-spacing: -0.01em;
-
-          /* grayscale/06 */
-
-          color: #7e818d;
-        }
-      }
+@media (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  .ex {
+    top: 200px;
+    left: 15px;
+    position: absolute;
+    .laserImg {
+      width: 100%;
+    }
+    .laserEx {
+      text-align: left;
+      margin-top: 5px;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: #7e818d;
+      width: 100%;
+      height: 35px;
+    }
+  }
+  .ex2 {
+    top: 0;
+    left: 15px;
+    position: absolute;
+    .senserImg {
+      width: 100%;
+    }
+    .senserEx {
+      text-align: left;
+      margin-top: 5px;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: #7e818d;
+      width: 100%;
+      height: 35px;
+    }
+  }
+  .ex3 {
+    top: 0;
+    left: 15px;
+    position: absolute;
+    .galbanicImg {
+      width: 100px;
+    }
+    .galbanicEx {
+      text-align: left;
+      margin: 5px;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: #7e818d;
+      width: 100%;
+      height: 35px;
     }
   }
 }
