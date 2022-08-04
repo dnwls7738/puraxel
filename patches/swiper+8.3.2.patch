@@ -10,7 +10,7 @@ index 2da2b03..6600d67 100644
 -  left: 0;
 -  width: 100%;
 +  top: 0;
-+  right: 1;
++  right: 0;
  }
  /* Bullets */
  .swiper-pagination-bullets-dynamic {
