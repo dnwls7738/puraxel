@@ -10,7 +10,6 @@ import Youtube from "../../assets/img/sns_youtube.svg";
 import Insta from "../../assets/img/sns_insta.svg";
 import Facebook from "../../assets/img/sns_facebook.svg";
 import Shortcut from "../../assets/img/shortcutMini.svg";
-import MainTag from "../../assets/img/appbar_mainTag_pura.svg";
 
 import {
   ListItem,

@@ -18,8 +18,6 @@ function ExperimentBtn() {
     },
   };
 
-  const modeCondition = buttonSelector === "first";
-
   return (
     <div className="buttons">
       <div className="button">

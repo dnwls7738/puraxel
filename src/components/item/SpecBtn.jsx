@@ -22,7 +22,6 @@ function SpecBtn() {
     },
   };
 
-  const modeCondition = buttonSelector === "first";
   return (
     <div className="specs">
       <ul>
