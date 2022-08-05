@@ -6,7 +6,7 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 
 import PriceItem from "../item/PriceItem";
-import Oval from "../../assets/img/mobile_oval_me.svg";
+// import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
 import Fx5000 from "../../assets/img/fx-5000_main.png";
 
@@ -67,7 +67,7 @@ function Fx5000Cont() {
         }}
         scrollbar={{ draggable: true }}
       >
-        <img className="oval" src={Oval} ref={boxRef} alt="" />
+        {/* <img className="oval" src={Oval} ref={boxRef} alt="" /> */}
         <SwiperSlide>
           <div className="cont_3">
             <div className="contName_3">

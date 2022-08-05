@@ -77,10 +77,8 @@ function MeCont() {
           <div className="cont">
             <div className="contName">
               <span className="contHeader">홈 에스테틱 레이저의 시작</span>
-              <h1>
-                PURAXEL
-                <br /> ME
-              </h1>
+              <h1>PURAXEL</h1>
+              <p>ME</p>
             </div>
             <p className="contExplain">
               소형 레이저 기술로

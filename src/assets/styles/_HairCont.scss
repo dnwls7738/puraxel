@@ -1,0 +1,67 @@
+.cont_2 {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  .contName_2 {
+    margin: 0px 0px 0px 20px;
+    .contHeader_2 {
+      margin-bottom: 4px;
+      font-family: "Pretendard";
+      font-size: 1.2rem;
+      color: #55576f;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+    }
+
+    .contHeader2 {
+      color: #55576f;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 4rem;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      padding-top: 10px;
+      em {
+        font-weight: 700;
+      }
+    }
+
+    h1 {
+      width: 310px;
+      color: #55576f;
+      margin-top: 25px;
+      font-family: "Pretendard";
+      font-weight: 300;
+      font-size: 4.8rem;
+      line-height: 110%;
+      letter-spacing: -0.03em;
+    }
+  }
+  .contExplain_2 {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    width: 240px;
+    margin: 0 0 10px 20px;
+    color: #4d5058;
+    em {
+    }
+  }
+  .contMain_2 {
+    width: 100%;
+    height: 100%;
+    background-position: 75% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

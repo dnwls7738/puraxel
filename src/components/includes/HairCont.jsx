@@ -6,7 +6,7 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 
 import PriceItem from "../item/PriceItem";
-import Oval from "../../assets/img/mobile_oval_me.svg";
+// import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
 
 function HairCont() {
@@ -66,20 +66,19 @@ function HairCont() {
         }}
         scrollbar={{ draggable: true }}
       >
-        <img className="oval" src={Oval} ref={boxRef} alt="" />
+        {/* <img className="oval" src={Oval} ref={boxRef} alt="" /> */}
         <SwiperSlide>
-          <div className="cont">
-            <div className="contName">
-              <span className="contHeader">
-                <em>홈 에스테틱</em> 레이저의 시작
-              </span>
-              <h1>PURAXEL ME</h1>
+          <div className="cont_2">
+            <div className="contName_2">
+              <span className="contHeader_2">에스테틱 레이저의 시작</span>
+              <h1>PURAXEL HAIR</h1>
             </div>
-            <p className="contExplain">
-              소형 레이저 기술로
-              <br /> 가정용 미용기기에 혁신을 가져오다
+            <p className="contExplain_2">
+              레이저 기술로
+              <br />
+              <em>에스테틱에 혁신을 가져오다</em>
             </p>
-            <div className="contMain"></div>
+            <div className="contMain_2"></div>
           </div>
         </SwiperSlide>
 
