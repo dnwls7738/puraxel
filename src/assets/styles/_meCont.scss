@@ -6,6 +6,7 @@
 }
 
 .cont {
+  position: relative;
   background-image: url(../img/mobile_bg_me.png);
   background-size: cover;
   background-position: center center;
@@ -19,7 +20,8 @@
     text-align: center;
 
     img {
-      width: 100%;
+      margin-top: 30px;
+      max-width: 100%;
       height: auto;
     }
 
@@ -54,35 +56,32 @@
       letter-spacing: -0.03em;
       padding-top: 10px;
       em {
-        font-weight: 700;
+        font-weight: 800;
       }
     }
-  }
-  .header {
-    margin-bottom: 8px;
-    margin-left: 20px;
     h1 {
+      width: 310px;
       color: #55576f;
+      margin-top: 25px;
       font-family: "Pretendard";
-      font-size: 2rem;
+      font-weight: 300;
+      font-size: 4.8rem;
+      line-height: 110%;
       letter-spacing: -0.03em;
-      span {
-        font-family: "Pretendard";
-        font-weight: 1000;
-      }
+      margin-bottom: 8px;
     }
   }
 
   .contExplain {
     font-family: "Pretendard";
-    font-weight: 300;
-    font-size: 1.4rem;
+    font-weight: 600;
+    font-size: 1.6rem;
     line-height: 150%;
     letter-spacing: -0.01em;
     width: 32rem;
-    padding: 0 0 20px 20px;
     color: #4d5058;
   }
+
   .ModeExplain {
     width: 100%;
     height: 100%;
@@ -101,9 +100,6 @@
         font-family: Pretendard;
         font-weight: 600;
         font-size: 1.2rem;
-        color: #f8f9fa;
-        border: 1px solid #4d5058;
-        background-color: #4d5058;
         border-radius: 4px;
         padding: 8px 27px 8px 12px;
       }
@@ -113,20 +109,21 @@
         font-family: Pretendard;
         font-weight: 600;
         font-size: 1.2rem;
-        color: #a7abb6;
-        border: 1px solid #f2f3f6;
-        background-color: #f2f3f6;
         border-radius: 4px;
         padding: 8px 67px 8px 12px;
       }
       .modeEx {
-        padding: 0 15px;
         font-family: Pretendard;
         font-weight: 300;
         color: #4d5058;
         font-size: 1.4rem;
         margin-top: 12px;
         line-height: 150%;
+        p {
+          em {
+            font-weight: 600;
+          }
+        }
       }
     }
     .exs {
@@ -188,7 +185,7 @@
         left: 15px;
         position: absolute;
         .galvanicImg {
-          width: 100%;
+          width: 80%;
         }
         .galbanicEx {
           text-align: left;
@@ -208,11 +205,16 @@
   }
 
   .contPrice {
+    top: 50rem;
+    left: 0;
+    right: 0;
+    position: absolute;
     .price1 {
+      background: #fff;
       border: 1px solid #f2f3f6;
       border-radius: 4px;
       padding: 8px 16px 8px 16px;
-      margin: 20px 20px;
+      margin: 8px 20px;
       .name {
         display: flex;
         align-items: center;
@@ -247,10 +249,11 @@
     }
 
     .price2 {
+      background: #fff;
       border: 1px solid #f2f3f6;
       border-radius: 4px;
       padding: 8px 16px 8px 16px;
-      margin: 20px 20px;
+      margin: 0 20px;
       .name {
         display: flex;
         justify-content: space-between;
@@ -295,6 +298,36 @@
           background: #f8f9fa;
           padding: 2px 4px 2px 4px;
         }
+      }
+    }
+  }
+
+  .buttons {
+    width: 100%;
+    .button {
+      width: 100%;
+      display: flex;
+      margin-top: 8px;
+      .btn {
+        border-radius: 4px;
+        padding: 8px 12px 8px 12px;
+        width: 49.5%;
+        background: #55576f;
+        font-family: "Pretendard";
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+      }
+      .btn2 {
+        border-radius: 4px;
+        padding: 8px 12px 8px 12px;
+        width: 49.5%;
+        background: #55576f;
+        font-family: "Pretendard";
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 8px;
       }
     }
   }

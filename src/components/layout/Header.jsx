@@ -10,6 +10,7 @@ import Youtube from "../../assets/img/sns_youtube.svg";
 import Insta from "../../assets/img/sns_insta.svg";
 import Facebook from "../../assets/img/sns_facebook.svg";
 import Shortcut from "../../assets/img/shortcutMini.svg";
+import MainTag from "../../assets/img/appbar_mainTag_pura.svg";
 
 import {
   ListItem,
@@ -217,9 +218,15 @@ function Header({ name, text }) {
   return (
     <header id="header">
       <div className="header__logo">
-        <Link to="/">
-          {name === "puraxel" ? <img src={Logo} alt="" /> : <>{name}</>}
-        </Link>
+        <div className="logo">
+          <Link to="/">
+            {name === "puraxel" ? (
+              <img src={Logo} alt="" style={{ width: "100%" }} />
+            ) : (
+              <>{name}</>
+            )}
+          </Link>
+        </div>
       </div>
 
       <div className="right">
@@ -263,7 +270,7 @@ function Header({ name, text }) {
                   <img
                     src={Ham}
                     style={{
-                      width: "2.4rem",
+                      width: "3.2rem",
                       zIndex: 99999,
                     }}
                     alt=""

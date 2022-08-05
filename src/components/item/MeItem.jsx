@@ -48,8 +48,8 @@ const GalvanicExplain = () => {
 const LaserText = () => {
   return (
     <p>
-      한번의 레이저로 0.2mm 이하의 얕은 피부층에 작은 홀을 생성하여 크림과
-      앰플의 피부흡수율을 높여줍니다.
+      한번의 레이저로 0.2mm 이하의 얕은 피부층에 작은 홀을 생성하여
+      <em>크림과 앰플의 피부흡수율을 높여줍니다.</em>
     </p>
   );
 };
@@ -57,9 +57,9 @@ const LaserText = () => {
 const GarbanicText = () => {
   return (
     <p>
-      같은 극끼리 밀어내는 갈바닉 전류의 성질을 이용하여 이온화된 화장품의
-      흡수율을 높입니다. 레이저 모드를 함께 사용하면 피부 흡수율을 극대화할 수
-      있습니다.
+      같은 극끼리 밀어내는 <em>갈바닉 전류의 성질</em>을 이용하여
+      <em>이온화된 화장품의 흡수율을 높입니다.</em> 레이저 모드를 함께 사용하면
+      피부 흡수율을 극대화할 수 있습니다.
     </p>
   );
 };
@@ -86,8 +86,9 @@ function MeItem() {
               className="mode1"
               onClick={selectorLaser}
               style={{
-                backgroundColor: modeCondition ? "#4d5058" : "#f2f3f6",
-                borderColor: modeCondition ? "#4d5058" : "#f2f3f6",
+                background: modeCondition
+                  ? "linear-gradient(#4D5058, #8B7CCA)"
+                  : "#f2f3f6",
                 color: modeCondition ? "#f8f9fa" : "#a7abb6",
                 boxShadow: modeCondition ? "0 8px 8px #00000020" : "none",
               }}
@@ -102,7 +103,9 @@ function MeItem() {
               className="mode2"
               onClick={selectorGalvanic}
               style={{
-                backgroundColor: modeCondition ? "#f2f3f6" : "#4d5058",
+                background: modeCondition
+                  ? "#f2f3f6"
+                  : "linear-gradient(#4D5058, #8B7CCA)",
                 borderColor: modeCondition ? "#f2f3f6" : "#4d5058",
                 color: modeCondition ? "#a7abb6" : "#f8f9fa",
                 boxShadow: modeCondition ? "none" : "0 8px 8px #00000020",

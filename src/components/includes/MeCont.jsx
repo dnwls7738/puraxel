@@ -5,12 +5,11 @@ import { gsap } from "gsap";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/css/effect-fade";
-
 import MeModeItem from "../item/MeModeItem";
-import PriceItem from "../item/PriceItem";
 // import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
-import Main from "../../assets/img/me_main.svg";
+import Main from "../../assets/img/me_main.png";
+import ExpermentBtn from "../item/ExperimentBtn";
 
 function MeCont() {
   const boxRef = useRef();
@@ -77,16 +76,13 @@ function MeCont() {
           <div className="cont">
             <div className="contName">
               <span className="contHeader">홈 에스테틱 레이저의 시작</span>
+              <h1>PURAXEL ME</h1>
+              <p className="contExplain">
+                레이저 기술로
+                <br />
+                <em>에스테틱에 혁신을 가져오다</em>
+              </p>
             </div>
-            <div className="header">
-              <h1>
-                <span>빛</span>을 얼굴에 <span>물들이다</span>
-              </h1>
-            </div>
-            <p className="contExplain">
-              병원, 의료기관에서만 볼 수 있던 프락셔널 레이저 기기,
-              <br /> 이제는 집에서도 편리하게 사용하실 수 있습니다.
-            </p>
             <div className="contMain">
               <img src={Main} alt="" />
             </div>
@@ -116,11 +112,48 @@ function MeCont() {
                 셀프 홈케어 <em>팁</em>
               </p>
             </div>
+            <div
+              style={{
+                position: "relative",
+                height: "0",
+                paddingBottom: "56.25%",
+              }}
+            >
+              <iframe
+                title="How to use puraxel"
+                src="https://www.youtube.com/embed/YhWQp5RS_aU"
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  left: "0",
+                }}
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <PriceItem />
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">임상 실험 임시 페이지</span>
+              <p className="contHeader2">
+                퓨라셀 <em>임상실험 임시 내용 페이지</em>
+              </p>
+              <ExpermentBtn />
+            </div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">퓨라셀 ME</span>
+              <p className="contHeader2">제품 구성 및 사양</p>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>
