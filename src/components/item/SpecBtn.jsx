@@ -87,8 +87,9 @@ function SpecBtn() {
           </div>
         </li>
       </ul>
-      <div className="specImg"></div>
-      <SwipeableEdgeDrawer />
+      <div className="specImg">
+        <SwipeableEdgeDrawer />
+      </div>
     </div>
   );
 }

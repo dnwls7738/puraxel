@@ -82,7 +82,7 @@ function SwipeableEdgeDrawer(props) {
           }}
         >
           <Puller />
-          <Typography sx={{ p: 2, color: "text.secondary" }}>
+          <Typography sx={{ p: 3, color: "text.secondary" }}>
             51 results
           </Typography>
         </StyledBox>
