@@ -77,12 +77,15 @@ function MeCont() {
           <div className="cont">
             <div className="contName">
               <span className="contHeader">홈 에스테틱 레이저의 시작</span>
-              <h1>PURAXEL</h1>
-              <p>ME</p>
+            </div>
+            <div className="header">
+              <h1>
+                <span>빛</span>을 얼굴에 <span>물들이다</span>
+              </h1>
             </div>
             <p className="contExplain">
-              소형 레이저 기술로
-              <br /> 가정용 미용기기에 혁신을 가져오다
+              병원, 의료기관에서만 볼 수 있던 프락셔널 레이저 기기,
+              <br /> 이제는 집에서도 편리하게 사용하실 수 있습니다.
             </p>
             <div className="contMain">
               <img src={Main} alt="" />

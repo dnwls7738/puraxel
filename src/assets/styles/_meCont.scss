@@ -19,7 +19,7 @@
     text-align: center;
 
     img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
     }
 
@@ -57,36 +57,29 @@
         font-weight: 700;
       }
     }
-
+  }
+  .header {
+    margin-bottom: 8px;
+    margin-left: 20px;
     h1 {
-      width: 8.4rem;
-      padding: 8px 12px 8px 12px;
-      color: #ffffff;
-      margin-top: 25px;
-      font-family: "Pretendard";
-      font-size: 1.3rem;
-      line-height: 110%;
-      letter-spacing: -0.03em;
-      background: #55576f;
-      text-align: center;
-      border-radius: 4px;
-      margin-bottom: 8px;
-    }
-    p {
-      font-family: "Pretendard";
-      font-size: 5.6rem;
-      font-weight: 1000;
       color: #55576f;
+      font-family: "Pretendard";
+      font-size: 2rem;
+      letter-spacing: -0.03em;
+      span {
+        font-family: "Pretendard";
+        font-weight: 1000;
+      }
     }
   }
+
   .contExplain {
     font-family: "Pretendard";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6rem;
+    font-weight: 300;
+    font-size: 1.4rem;
     line-height: 150%;
     letter-spacing: -0.01em;
-    width: 280px;
+    width: 32rem;
     padding: 0 0 20px 20px;
     color: #4d5058;
   }
