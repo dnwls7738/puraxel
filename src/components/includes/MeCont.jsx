@@ -10,6 +10,7 @@ import MeModeItem from "../item/MeModeItem";
 import Line from "../../assets/img/pageLine.svg";
 import Main from "../../assets/img/me_main.png";
 import ExpermentBtn from "../item/ExperimentBtn";
+import SpecBtn from "../item/SpecBtn";
 
 function MeCont() {
   const boxRef = useRef();
@@ -151,8 +152,11 @@ function MeCont() {
           <div className="cont">
             <div className="contName">
               <span className="contHeader">퓨라셀 ME</span>
-              <p className="contHeader2">제품 구성 및 사양</p>
+              <p className="contHeader2">
+                제품 <em>구성 및 사양</em>
+              </p>
             </div>
+            <SpecBtn />
           </div>
         </SwiperSlide>
       </Swiper>

@@ -27,8 +27,8 @@ function ExperimentBtn() {
           className="btn"
           onClick={selector.onFirst}
           style={{
-            background: modeCondition ? "#55576F" : "#f2f3f6",
-            color: modeCondition ? "#f8f9fa" : "#a7abb6",
+            background: buttonSelector === "first" ? "#55576F" : "#f2f3f6",
+            color: buttonSelector === "first" ? "#f8f9fa" : "#a7abb6",
           }}
         >
           <p>01</p>
@@ -38,8 +38,8 @@ function ExperimentBtn() {
           className="btn2"
           onClick={selector.onSecond}
           style={{
-            background: modeCondition ? "#55576F" : "#f2f3f6",
-            color: modeCondition ? "#f8f9fa" : "#a7abb6",
+            background: buttonSelector === "second" ? "#55576F" : "#f2f3f6",
+            color: buttonSelector === "second" ? "#f8f9fa" : "#a7abb6",
           }}
         >
           <p>02</p>
@@ -51,8 +51,8 @@ function ExperimentBtn() {
           className="btn"
           onClick={selector.onThird}
           style={{
-            background: modeCondition ? "#55576F" : "#f2f3f6",
-            color: modeCondition ? "#f8f9fa" : "#a7abb6",
+            background: buttonSelector === "third" ? "#55576F" : "#f2f3f6",
+            color: buttonSelector === "third" ? "#f8f9fa" : "#a7abb6",
           }}
         >
           <p>03</p>
@@ -62,8 +62,8 @@ function ExperimentBtn() {
           className="btn2"
           onClick={selector.onForth}
           style={{
-            background: modeCondition ? "#55576F" : "#f2f3f6",
-            color: modeCondition ? "#f8f9fa" : "#a7abb6",
+            background: buttonSelector === "forth" ? "#55576F" : "#f2f3f6",
+            color: buttonSelector === "forth" ? "#f8f9fa" : "#a7abb6",
           }}
         >
           <p>04</p>

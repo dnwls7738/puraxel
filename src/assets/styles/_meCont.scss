@@ -331,6 +331,16 @@
       }
     }
   }
+
+  .specs {
+    .spec {
+      margin-left: 20px;
+      img {
+        margin-top: 8px;
+        width: 5rem;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
