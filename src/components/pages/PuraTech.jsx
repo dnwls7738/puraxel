@@ -1,10 +1,12 @@
 import React from "react";
+import TechCont from "../includes/TechCont";
 import Header from "../layout/Header";
 
 function PuraTech() {
   return (
     <>
-      <Header name="PURA-TECH" />
+      <Header name="tech" />
+      <TechCont />
     </>
   );
 }
