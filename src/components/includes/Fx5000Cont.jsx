@@ -82,19 +82,21 @@ function Fx5000Cont() {
             </p>
             <div
               className="contMain_3"
-              style={{
-                backgroundImage: `url(${Fx5000})`,
-              }}
+              // style={{
+              //   backgroundImage: `url(${Fx5000})`,
+              // }}
             >
-              {/* <img src={Fx5000} alt="" /> */}
+              <img src={Fx5000} alt="" />
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="cont">
-            <div className="contName">
-              <span className="contHeader">레이저와 초음파 기술을 활용한</span>
+          <div className="cont_3">
+            <div className="contName_3">
+              <span className="contHeader_3">
+                레이저와 초음파 기술을 활용한
+              </span>
               <p className="contHeader2">
                 퓨라셀의 <em>다섯가지 기능</em>
               </p>
@@ -104,9 +106,9 @@ function Fx5000Cont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="cont">
-            <div className="contName">
-              <span className="contHeader">
+          <div className="cont_3">
+            <div className="contName_3">
+              <span className="contHeader_3">
                 퓨라셀과 각 효능에 특화된 앰플 사용후 결과
               </span>
               <p className="contHeader2">

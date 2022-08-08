@@ -1,4 +1,8 @@
 .cont_3 {
+  background-image: url(../img/mobile_bg_fx-5000.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -21,10 +25,11 @@
       font-family: "Pretendard";
       font-style: normal;
       font-weight: 300;
-      font-size: 4rem;
+      font-size: 2rem;
       line-height: 144%;
       letter-spacing: -0.03em;
       padding-top: 10px;
+      margin-bottom: 12px;
       em {
         font-weight: 700;
       }
@@ -47,7 +52,7 @@
     font-size: 2rem;
     line-height: 150%;
     letter-spacing: -0.01em;
-    width: 240px;
+    width: 24rem;
     margin: 0 0 10px 20px;
     color: #4d5058;
     margin-bottom: 29px;
@@ -58,13 +63,88 @@
   }
   .contMain_3 {
     width: 100%;
-    height: 100%;
-    background-position: 75% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    text-align: center;
     img {
-      width: 100%;
+      width: 90%;
       height: 100%;
+    }
+  }
+  .exInfo {
+    margin: 12px 20px 24px 20px;
+    padding: 12px;
+    border: 0.5px solid #f2f3f6;
+    border-radius: 4px;
+    font-family: "Pretendard";
+    font-size: 1.2rem;
+    font-weight: 800;
+    p {
+      margin-top: 4px;
+      color: #7e818d;
+      span {
+        width: 100%;
+        margin-left: 8px;
+        color: #4d5058;
+      }
+    }
+  }
+  .laserConts {
+    margin: 0 20px;
+    .laserCont {
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 4px 40px #00000020;
+      background-color: #fff;
+      margin-top: 8px;
+      padding: 4px;
+      border-radius: 4px;
+      p {
+        padding: 12px;
+        font-family: "Pretendard";
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: #55576f;
+        em {
+          font-size: 1.2rem;
+          color: #a292a3;
+        }
+      }
+      img {
+        width: 30%;
+      }
+    }
+  }
+  .safes {
+    margin-top: 40px;
+    h1 {
+      font-family: "Pretendard";
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: #55576f;
+    }
+    .safe1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .safe1_1,
+      .safe1_2 {
+        align-items: center;
+        font-family: "Pretendard";
+        font-weight: 800;
+        font-size: 1.4rem;
+        color: #55576f;
+        border-radius: 4px;
+        margin-top: 8px;
+        width: 100%;
+        padding: 12px 8px;
+        background: #fff;
+        img {
+          width: 16px;
+          margin-right: 8px;
+        }
+      }
+      .safe1_2 {
+        margin-left: 8px;
+      }
     }
   }
 }
