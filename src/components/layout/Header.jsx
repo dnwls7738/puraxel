@@ -282,7 +282,7 @@ function Header({ name, text }) {
                   <img
                     src={Close}
                     style={{
-                      width: "2.4rem",
+                      width: "3.2rem",
                       zIndex: 99999,
                     }}
                     alt=""
