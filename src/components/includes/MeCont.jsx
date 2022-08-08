@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 import "swiper/scss";
 import "swiper/scss/pagination";
 import "swiper/css/effect-fade";
@@ -11,9 +11,10 @@ import Line from "../../assets/img/pageLine.svg";
 import Main from "../../assets/img/me_main.png";
 import ExpermentBtn from "../item/ExperimentBtn";
 import SpecBtn from "../item/SpecBtn";
+import SwipeableEdgeDrawer from "../item/SwipeableEdgeDrawer";
 
 function MeCont() {
-  const boxRef = useRef();
+  // const boxRef = useRef();
 
   return (
     <>
@@ -40,35 +41,39 @@ function MeCont() {
           },
         }}
         onSlideChange={(index) => {
-          if (index.activeIndex === 0) {
-            gsap.to(boxRef.current, {
-              x: "0px",
-              y: "0px",
-              duration: 1.5,
-            });
+          //   if (index.activeIndex === 0) {
+          //     gsap.to(boxRef.current, {
+          //       x: "0px",
+          //       y: "0px",
+          //       duration: 1.5,
+          //     });
+          //   }
+          //   if (index.activeIndex === 1) {
+          //     gsap.to(boxRef.current, {
+          //       x: "220px",
+          //       y: "60px",
+          //       duration: 1.5,
+          //     });
+          //   }
+          //   if (index.activeIndex === 2) {
+          //     gsap.to(boxRef.current, {
+          //       x: "270px",
+          //       y: "100px",
+          //       duration: 1.5,
+          //     });
+          //   }
+          //   if (index.activeIndex === 3) {
+          //     gsap.to(boxRef.current, {
+          //       x: "300px",
+          //       y: "100px",
+          //       duration: 1.5,
+          //     });
+          //   }
+
+          if (index.activeIndex === 4) {
+            return <SwipeableEdgeDrawer />;
           }
-          if (index.activeIndex === 1) {
-            gsap.to(boxRef.current, {
-              x: "220px",
-              y: "60px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 2) {
-            gsap.to(boxRef.current, {
-              x: "270px",
-              y: "100px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 3) {
-            gsap.to(boxRef.current, {
-              x: "300px",
-              y: "100px",
-              duration: 1.5,
-            });
-          }
-          console.log(index.activeIndex);
+          //   console.log(index.activeIndex);
         }}
         scrollbar={{ draggable: true }}
       >
@@ -157,6 +162,7 @@ function MeCont() {
               </p>
             </div>
             <SpecBtn />
+            <SwipeableEdgeDrawer />
           </div>
         </SwiperSlide>
       </Swiper>

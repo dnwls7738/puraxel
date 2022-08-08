@@ -3,7 +3,6 @@ import Active01 from "../../assets/img/me_01_active.png";
 import Active02 from "../../assets/img/me_02_active.png";
 import Active03 from "../../assets/img/me_03_active.png";
 import Active04 from "../../assets/img/me_04_active.png";
-import SwipeableEdgeDrawer from "./SwipeableEdgeDrawer";
 
 function SpecBtn() {
   const [buttonSelector, setButtonSelector] = useState("first");
@@ -87,9 +86,6 @@ function SpecBtn() {
           </div>
         </li>
       </ul>
-      <div className="specImg">
-        <SwipeableEdgeDrawer />
-      </div>
     </div>
   );
 }
