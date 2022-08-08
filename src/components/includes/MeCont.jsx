@@ -9,9 +9,8 @@ import MeModeItem from "../item/MeModeItem";
 // import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
 import Main from "../../assets/img/me_main.png";
-import ExpermentBtn from "../item/ExperimentBtn";
 import SpecBtn from "../item/SpecBtn";
-import SwipeableEdgeDrawer from "../item/SwipeableEdgeDrawer";
+import FxExperimentItem from "../item/FxExperimentItem";
 
 function MeCont() {
   // const boxRef = useRef();
@@ -69,10 +68,6 @@ function MeCont() {
           //       duration: 1.5,
           //     });
           //   }
-
-          if (index.activeIndex === 4) {
-            return <SwipeableEdgeDrawer />;
-          }
           //   console.log(index.activeIndex);
         }}
         scrollbar={{ draggable: true }}
@@ -142,15 +137,16 @@ function MeCont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="cont">
-            <div className="contName">
-              <span className="contHeader">임상 실험 임시 페이지</span>
+          <div className="cont_3">
+            <div className="contName_3">
+              <span className="contHeader_3">
+                퓨라셀과 각 효능에 특화된 앰플 사용후 결과
+              </span>
               <p className="contHeader2">
-                퓨라셀 <em>임상실험 임시 내용 페이지</em>
+                퓨라셀 <em>임상실험</em>
               </p>
             </div>
-
-            <ExpermentBtn />
+            <FxExperimentItem />
           </div>
         </SwiperSlide>
 
@@ -163,7 +159,6 @@ function MeCont() {
               </p>
             </div>
             <SpecBtn />
-            <SwipeableEdgeDrawer />
           </div>
         </SwiperSlide>
       </Swiper>
