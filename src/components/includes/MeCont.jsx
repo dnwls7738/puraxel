@@ -122,7 +122,7 @@ function MeCont() {
               style={{
                 position: "relative",
                 height: "0",
-                paddingBottom: "56.25%",
+                paddingBottom: "100%",
               }}
             >
               <iframe
@@ -148,8 +148,9 @@ function MeCont() {
               <p className="contHeader2">
                 퓨라셀 <em>임상실험 임시 내용 페이지</em>
               </p>
-              <ExpermentBtn />
             </div>
+
+            <ExpermentBtn />
           </div>
         </SwiperSlide>
 

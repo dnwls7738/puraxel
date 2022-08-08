@@ -62,7 +62,7 @@
     h1 {
       width: 310px;
       color: #55576f;
-      margin-top: 25px;
+      margin-top: 4px;
       font-family: "Pretendard";
       font-weight: 300;
       font-size: 4.8rem;
@@ -80,129 +80,6 @@
     letter-spacing: -0.01em;
     width: 32rem;
     color: #4d5058;
-  }
-
-  .ModeExplain {
-    width: 100%;
-    height: 100%;
-    .modes {
-      height: auto;
-      border: 1px solid #f2f3f6;
-      margin: 0 20px 0 20px;
-      padding: 10px 10px;
-      background: #fff;
-      .modeBox {
-        display: flex;
-        justify-content: space-evenly;
-      }
-      .mode1 {
-        width: 49%;
-        font-family: Pretendard;
-        font-weight: 600;
-        font-size: 1.2rem;
-        border-radius: 4px;
-        padding: 8px 27px 8px 12px;
-      }
-      .mode2 {
-        width: 49%;
-        margin-left: 8px;
-        height: auto;
-        font-family: Pretendard;
-        font-weight: 600;
-        font-size: 1.2rem;
-        border-radius: 4px;
-        padding: 8px 27px 8px 12px;
-      }
-      .modeEx {
-        font-family: Pretendard;
-        font-weight: 300;
-        color: #4d5058;
-        font-size: 1.4rem;
-        margin-top: 12px;
-        line-height: 150%;
-        p {
-          em {
-            font-weight: 600;
-          }
-        }
-      }
-    }
-    .exs {
-      position: relative;
-      margin-top: 40px;
-      width: 100%;
-      height: 100%;
-      .img {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        height: auto;
-        text-align: center;
-      }
-      .ex {
-        top: 90px;
-        left: 15px;
-        position: absolute;
-        .laserImg {
-          width: 100%;
-        }
-        .laserEx {
-          text-align: left;
-          margin-top: 5px;
-          font-family: "Pretendard";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 1.2rem;
-          line-height: 150%;
-          letter-spacing: -0.01em;
-          color: #7e818d;
-          width: 100%;
-          height: 35px;
-        }
-      }
-      .ex2 {
-        top: 0;
-        left: 15px;
-        position: absolute;
-        .senserImg {
-          width: 100%;
-        }
-        .senserEx {
-          text-align: left;
-          margin-top: 5px;
-          font-family: "Pretendard";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 1.2rem;
-          line-height: 150%;
-          letter-spacing: -0.01em;
-          color: #7e818d;
-          width: 100%;
-          height: 35px;
-        }
-      }
-      .ex3 {
-        top: 0;
-        left: 15px;
-        position: absolute;
-        .galvanicImg {
-          width: 80%;
-        }
-        .galbanicEx {
-          text-align: left;
-          margin: 5px;
-          font-family: "Pretendard";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 1.2rem;
-          line-height: 150%;
-          letter-spacing: -0.01em;
-          color: #7e818d;
-          width: 100%;
-          height: 35px;
-        }
-      }
-    }
   }
 
   .contPrice {
@@ -304,7 +181,7 @@
   }
 
   .buttons {
-    width: 100%;
+    padding: 0 20px 8px 20px;
     .button {
       width: 100%;
       display: flex;
@@ -329,6 +206,35 @@
         font-weight: 700;
         color: #fff;
         margin-left: 8px;
+      }
+    }
+  }
+
+  .buttonImg {
+    background: #fff;
+    margin-top: 8px;
+    margin: 0 20px 8px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    p {
+      font-family: "Pretendard";
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 8px;
+    }
+
+    .experimentImg {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div {
+        border-radius: 4px;
+        margin: 4px 0;
+        width: 95%;
+        height: 0;
+        padding-bottom: 47%;
+        background: rgb(242, 243, 246);
       }
     }
   }

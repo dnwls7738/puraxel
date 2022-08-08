@@ -1,1 +1,200 @@
-
+.ModeExplain {
+  width: 100%;
+  height: 100%;
+  .modes {
+    height: auto;
+    border: 1px solid #f2f3f6;
+    margin: 0 20px 0 20px;
+    padding: 10px 10px;
+    background: #fff;
+    .modeBox {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .mode1 {
+      width: 49%;
+      font-family: Pretendard;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      padding: 8px 27px 8px 12px;
+    }
+    .mode2 {
+      width: 49%;
+      margin-left: 8px;
+      height: auto;
+      font-family: Pretendard;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      padding: 8px 27px 8px 12px;
+    }
+    .modeEx {
+      font-family: Pretendard;
+      font-weight: 300;
+      color: #4d5058;
+      font-size: 1.4rem;
+      margin-top: 12px;
+      line-height: 150%;
+      p {
+        em {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .exs {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    height: 100%;
+    .img {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+    .ex {
+      top: 90px;
+      left: 15px;
+      position: absolute;
+      .laserImg {
+        width: 100%;
+      }
+      .laserEx {
+        text-align: left;
+        margin-top: 5px;
+        font-family: "Pretendard";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: #7e818d;
+        width: 100%;
+        height: 35px;
+      }
+    }
+    .ex2 {
+      top: 0;
+      left: 15px;
+      position: absolute;
+      .senserImg {
+        width: 100%;
+      }
+      .senserEx {
+        text-align: left;
+        margin-top: 5px;
+        font-family: "Pretendard";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: #7e818d;
+        width: 100%;
+        height: 35px;
+      }
+    }
+    .ex3 {
+      top: 0;
+      left: 15px;
+      position: absolute;
+      .galvanicImg {
+        width: 80%;
+      }
+      .galbanicEx {
+        text-align: left;
+        margin: 5px;
+        font-family: "Pretendard";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 150%;
+        letter-spacing: -0.01em;
+        color: #7e818d;
+        width: 100%;
+        height: 35px;
+      }
+    }
+  }
+  .exInfo {
+    margin: 12px 20px 24px 20px;
+    padding: 12px;
+    border: 0.5px solid #f2f3f6;
+    border-radius: 4px;
+    font-family: "Pretendard";
+    font-size: 1.2rem;
+    font-weight: 800;
+    p {
+      margin-top: 4px;
+      color: #7e818d;
+      span {
+        width: 100%;
+        margin-left: 8px;
+        color: #4d5058;
+      }
+    }
+  }
+  .laserConts {
+    margin: 0 20px;
+    .laserCont {
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 4px 40px #00000020;
+      background-color: #fff;
+      margin-top: 8px;
+      padding: 4px;
+      border-radius: 4px;
+      p {
+        padding: 12px;
+        font-family: "Pretendard";
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: #55576f;
+        em {
+          font-size: 1.2rem;
+          color: #a292a3;
+        }
+      }
+      img {
+        width: 95px;
+      }
+    }
+  }
+  .safes {
+    margin-top: 40px;
+    h1 {
+      font-family: "Pretendard";
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: #55576f;
+    }
+    .safe1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .safe1_1,
+      .safe1_2 {
+        align-items: center;
+        font-family: "Pretendard";
+        font-weight: 800;
+        font-size: 1.4rem;
+        color: #55576f;
+        border-radius: 4px;
+        margin-top: 8px;
+        width: 100%;
+        padding: 12px 8px;
+        background: #fff;
+        img {
+          width: 16px;
+          margin-right: 8px;
+        }
+      }
+      .safe1_2 {
+        margin-left: 8px;
+      }
+    }
+  }
+}

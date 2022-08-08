@@ -19,56 +19,65 @@ function ExperimentBtn() {
   };
 
   return (
-    <div className="buttons">
-      <div className="button">
-        <div
-          className="btn"
-          onClick={selector.onFirst}
-          style={{
-            background: buttonSelector === "first" ? "#55576F" : "#f2f3f6",
-            color: buttonSelector === "first" ? "#f8f9fa" : "#a7abb6",
-          }}
-        >
-          <p>01</p>
-          <p>미 임상실험</p>
+    <>
+      <div className="buttons">
+        <div className="button">
+          <div
+            className="btn"
+            onClick={selector.onFirst}
+            style={{
+              background: buttonSelector === "first" ? "#55576F" : "#f2f3f6",
+              color: buttonSelector === "first" ? "#f8f9fa" : "#a7abb6",
+            }}
+          >
+            <p>01</p>
+            <p>미 임상실험</p>
+          </div>
+          <div
+            className="btn2"
+            onClick={selector.onSecond}
+            style={{
+              background: buttonSelector === "second" ? "#55576F" : "#f2f3f6",
+              color: buttonSelector === "second" ? "#f8f9fa" : "#a7abb6",
+            }}
+          >
+            <p>02</p>
+            <p>미 임상실험</p>
+          </div>
         </div>
-        <div
-          className="btn2"
-          onClick={selector.onSecond}
-          style={{
-            background: buttonSelector === "second" ? "#55576F" : "#f2f3f6",
-            color: buttonSelector === "second" ? "#f8f9fa" : "#a7abb6",
-          }}
-        >
-          <p>02</p>
-          <p>미 임상실험</p>
+        <div className="button">
+          <div
+            className="btn"
+            onClick={selector.onThird}
+            style={{
+              background: buttonSelector === "third" ? "#55576F" : "#f2f3f6",
+              color: buttonSelector === "third" ? "#f8f9fa" : "#a7abb6",
+            }}
+          >
+            <p>03</p>
+            <p>미 임상실험</p>
+          </div>
+          <div
+            className="btn2"
+            onClick={selector.onForth}
+            style={{
+              background: buttonSelector === "forth" ? "#55576F" : "#f2f3f6",
+              color: buttonSelector === "forth" ? "#f8f9fa" : "#a7abb6",
+            }}
+          >
+            <p>04</p>
+            <p>미 임상실험</p>
+          </div>
         </div>
       </div>
-      <div className="button">
-        <div
-          className="btn"
-          onClick={selector.onThird}
-          style={{
-            background: buttonSelector === "third" ? "#55576F" : "#f2f3f6",
-            color: buttonSelector === "third" ? "#f8f9fa" : "#a7abb6",
-          }}
-        >
-          <p>03</p>
-          <p>미 임상실험</p>
-        </div>
-        <div
-          className="btn2"
-          onClick={selector.onForth}
-          style={{
-            background: buttonSelector === "forth" ? "#55576F" : "#f2f3f6",
-            color: buttonSelector === "forth" ? "#f8f9fa" : "#a7abb6",
-          }}
-        >
-          <p>04</p>
-          <p>미 임상실험</p>
+      <div className="buttonImg">
+        <p>01 내용</p>
+        <div className="experimentImg">
+          <div></div>
+          <div></div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

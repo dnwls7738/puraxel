@@ -5,10 +5,11 @@ import { gsap } from "gsap";
 import "swiper/scss";
 import "swiper/scss/pagination";
 
-import PriceItem from "../item/PriceItem";
 // import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
 import Fx5000 from "../../assets/img/fx-5000_main.png";
+import FxModeItem from "../item/FxModeItem";
+import FxExperimentItem from "../item/FxExperimentItem";
 
 function Fx5000Cont() {
   const boxRef = useRef();
@@ -71,9 +72,8 @@ function Fx5000Cont() {
         <SwiperSlide>
           <div className="cont_3">
             <div className="contName_3">
-              <span className="contHeader_3">
-                <em>홈 에스테틱</em> 레이저의 시작
-              </span>
+              <span className="contHeader_3">에스테틱 레이저의 시작</span>
+              <h1>PURAXEL FX-5000</h1>
             </div>
             <p className="contExplain_3">
               레이저 기술로
@@ -92,7 +92,29 @@ function Fx5000Cont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <PriceItem />
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">레이저와 초음파 기술을 활용한</span>
+              <p className="contHeader2">
+                퓨라셀의 <em>다섯가지 기능</em>
+              </p>
+            </div>
+            <FxModeItem />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">
+                퓨라셀과 각 효능에 특화된 앰플 사용후 결과
+              </span>
+              <p className="contHeader2">
+                퓨라셀 <em>임상실험</em>
+              </p>
+            </div>
+            <FxExperimentItem />
+          </div>
         </SwiperSlide>
       </Swiper>
     </>
