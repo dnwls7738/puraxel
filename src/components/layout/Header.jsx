@@ -270,7 +270,6 @@ function Header({ name, text }) {
                     src={Ham}
                     style={{
                       width: "3.2rem",
-                      zIndex: 99999,
                     }}
                     alt=""
                   />
