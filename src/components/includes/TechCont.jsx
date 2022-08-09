@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { gsap } from "gsap";
 import "swiper/scss";
 import "swiper/scss/pagination";
 
@@ -10,7 +9,6 @@ import PriceItem from "../item/PriceItem";
 import Line from "../../assets/img/pageLine.svg";
 
 function TechCont() {
-  const boxRef = useRef();
   return (
     <>
       <Swiper
@@ -33,40 +31,8 @@ function TechCont() {
             );
           },
         }}
-        onSlideChange={(index) => {
-          if (index.activeIndex === 0) {
-            gsap.to(boxRef.current, {
-              x: "0px",
-              y: "0px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 1) {
-            gsap.to(boxRef.current, {
-              x: "270px",
-              y: "170px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 2) {
-            gsap.to(boxRef.current, {
-              x: "350px",
-              y: "0px",
-              duration: 1.5,
-            });
-          }
-          if (index.activeIndex === 3) {
-            gsap.to(boxRef.current, {
-              x: "370px",
-              y: "50px",
-              duration: 1.5,
-            });
-          }
-          console.log(index.activeIndex);
-        }}
         scrollbar={{ draggable: true }}
       >
-        {/* <img className="oval" src={Oval} ref={boxRef} alt="" /> */}
         <SwiperSlide>
           <div className="cont_4">
             <div className="contName_4">
