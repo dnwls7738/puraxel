@@ -4,7 +4,7 @@ import Active02 from "../../assets/img/me_02_active.png";
 import Active03 from "../../assets/img/me_03_active.png";
 import Active04 from "../../assets/img/me_04_active.png";
 
-function SpecBtn() {
+function SpecItem() {
   const [buttonSelector, setButtonSelector] = useState("first");
 
   const selector = {
@@ -52,7 +52,6 @@ function SpecBtn() {
             style={{
               backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
               color: modeCondition ? "#A7ABB6" : "#FFFFFF",
-
               marginLeft: "8px",
             }}
           >
@@ -90,7 +89,7 @@ function SpecBtn() {
                 </p>
               </div>
             </div>
-            <div div className="specInfo" style={{ marginLeft: "18px" }}>
+            <div className="specInfo" style={{ marginLeft: "18px" }}>
               <div className="specCont">
                 <p className="specInfoTitle">레이저 파장</p>
                 <p className="specInfoText">2940nm(±1%)</p>
@@ -121,7 +120,7 @@ function SpecBtn() {
           <>
             <ul>
               <li>
-                <div className="spec" style={{}}>
+                <div className="spec">
                   <img
                     src={Active01}
                     alt=""
@@ -196,4 +195,4 @@ function SpecBtn() {
   );
 }
 
-export default SpecBtn;
+export default SpecItem;

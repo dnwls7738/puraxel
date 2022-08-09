@@ -593,14 +593,14 @@ function FxItem({ color1, color2 }) {
                     />
                   </IconButton>
                 </div>
-                <Typography
+                <div
                   id="modal-modal-description3"
-                  sx={{
+                  style={{
                     fontFamily: "Pretendard",
                     margin: "12px",
                   }}
                 >
-                  <span>
+                  <div>
                     <ul>
                       <li>
                         <div
@@ -746,7 +746,8 @@ function FxItem({ color1, color2 }) {
                         </div>
                       </li>
                     </ul>
-                  </span>
+                  </div>
+
                   <div
                     style={{
                       background: "#F8F9FA",
@@ -787,7 +788,7 @@ function FxItem({ color1, color2 }) {
                       합니다.
                     </div>
                   </div>
-                </Typography>
+                </div>
               </Box>
             </Modal>
           ) : (

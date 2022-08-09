@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Package from "../../assets/img/package.png";
 
-function SpecBtn({ img1, img2, img3, img4 }) {
+function SpecItem2({ img1, img2, img3, img4 }) {
   const [buttonSelector, setButtonSelector] = useState("first");
 
   const selector = {
@@ -49,7 +49,6 @@ function SpecBtn({ img1, img2, img3, img4 }) {
             style={{
               backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
               color: modeCondition ? "#A7ABB6" : "#FFFFFF",
-
               marginLeft: "8px",
             }}
           >
@@ -86,7 +85,7 @@ function SpecBtn({ img1, img2, img3, img4 }) {
                   </p>
                 </div>
               </div>
-              <div div className="specInfo" style={{ marginLeft: "18px" }}>
+              <div className="specInfo" style={{ marginLeft: "18px" }}>
                 <div className="specCont">
                   <p className="specInfoTitle">레이저 등급</p>
                   <p className="specInfoText">1등급(class 1)</p>
@@ -210,4 +209,4 @@ function SpecBtn({ img1, img2, img3, img4 }) {
   );
 }
 
-export default SpecBtn;
+export default SpecItem2;
