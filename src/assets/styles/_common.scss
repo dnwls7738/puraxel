@@ -1,48 +1,6 @@
 .ModeExplain {
   width: 100%;
   height: 100%;
-  .modes {
-    height: auto;
-    border: 1px solid #f2f3f6;
-    margin: 0 20px 0 20px;
-    padding: 10px 10px;
-    background: #fff;
-    .modeBox {
-      display: flex;
-      justify-content: space-evenly;
-    }
-    .mode1 {
-      width: 49%;
-      font-family: Pretendard;
-      font-weight: 600;
-      font-size: 1.2rem;
-      border-radius: 4px;
-      padding: 8px 27px 8px 12px;
-    }
-    .mode2 {
-      width: 49%;
-      margin-left: 8px;
-      height: auto;
-      font-family: Pretendard;
-      font-weight: 600;
-      font-size: 1.2rem;
-      border-radius: 4px;
-      padding: 8px 27px 8px 12px;
-    }
-    .modeEx {
-      font-family: Pretendard;
-      font-weight: 300;
-      color: #4d5058;
-      font-size: 1.4rem;
-      margin-top: 12px;
-      line-height: 150%;
-      p {
-        em {
-          font-weight: 600;
-        }
-      }
-    }
-  }
   .exs {
     position: relative;
     margin-top: 40px;
@@ -116,6 +74,223 @@
         color: #7e818d;
         width: 100%;
         height: 35px;
+      }
+    }
+  }
+  .modes {
+    margin: 0 20px;
+    height: auto;
+    border: 1px solid #f2f3f6;
+    padding: 10px 10px;
+    background: #fff;
+    .modeBox {
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .mode1 {
+      width: 49%;
+      font-family: Pretendard;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      padding: 8px 27px 8px 12px;
+    }
+    .mode2 {
+      width: 49%;
+      margin-left: 8px;
+      height: auto;
+      font-family: Pretendard;
+      font-weight: 600;
+      font-size: 1.2rem;
+      border-radius: 4px;
+      padding: 8px 27px 8px 12px;
+    }
+    .modeEx {
+      font-family: Pretendard;
+      font-weight: 300;
+      color: #4d5058;
+      font-size: 1.4rem;
+      margin-top: 12px;
+      line-height: 150%;
+      p {
+        em {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.cont {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  .contMain {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    img {
+      margin-top: 30px;
+      width: 90%;
+    }
+  }
+
+  .contName {
+    padding: 0 20px 8px 20px;
+    .contHeader {
+      font-family: "Pretendard";
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #55576f;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      em {
+        color: #55576f;
+      }
+    }
+
+    .contHeader2 {
+      color: #55576f;
+      font-family: "Pretendard";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      padding-top: 10px;
+      em {
+        font-weight: 800;
+      }
+    }
+    h1 {
+      color: #55576f;
+      margin-top: 4px;
+      font-family: "Pretendard";
+      font-weight: 300;
+      font-size: 4rem;
+      line-height: 110%;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+  }
+
+  .contExplain {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    width: 32rem;
+    color: #4d5058;
+  }
+  .exInfo {
+    margin: 12px 20px 24px 20px;
+    padding: 12px;
+    border: 0.5px solid #f2f3f6;
+    border-radius: 4px;
+    font-family: "Pretendard";
+    font-size: 1.2rem;
+    font-weight: 800;
+    p {
+      margin-top: 4px;
+      color: #7e818d;
+      span {
+        width: 100%;
+        margin-left: 8px;
+        color: #4d5058;
+      }
+    }
+  }
+  .laserConts {
+    margin: 0 20px;
+    .laserCont {
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 4px 40px #00000020;
+      background-color: #fff;
+      margin-top: 8px;
+      padding: 4px;
+      border-radius: 4px;
+      p {
+        padding: 12px;
+        font-family: "Pretendard";
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: #55576f;
+        em {
+          font-size: 1.2rem;
+          color: #a292a3;
+        }
+      }
+      img {
+        width: 30%;
+      }
+    }
+  }
+  .graphConts {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    .graphCont {
+      width: 49%;
+      border-radius: 4px;
+      background-color: #fff;
+      padding: 12px;
+      h1 {
+        font-family: "Pretendard";
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: #55576f;
+      }
+      .hairCont {
+        margin-top: 8px;
+        .graphPart {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #a7abb6;
+        }
+        .graphFigure {
+          font-family: "Pretendard";
+          font-weight: 800;
+          font-size: 1.6rem;
+          color: #55576f;
+        }
+      }
+    }
+  }
+  .safes {
+    margin-top: 40px;
+    h1 {
+      font-family: "Pretendard";
+      font-weight: 800;
+      font-size: 1.6rem;
+      color: #55576f;
+    }
+    .safe1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .safe1_1,
+      .safe1_2 {
+        align-items: center;
+        font-family: "Pretendard";
+        font-weight: 800;
+        font-size: 1.4rem;
+        color: #55576f;
+        border-radius: 4px;
+        margin-top: 8px;
+        width: 100%;
+        padding: 12px 8px;
+        background: #fff;
+        img {
+          width: 16px;
+          margin-right: 8px;
+        }
+      }
+      .safe1_2 {
+        margin-left: 8px;
       }
     }
   }

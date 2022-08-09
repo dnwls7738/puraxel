@@ -1,264 +1,172 @@
-.oval {
-  width: 136px;
-  position: absolute;
-  right: 220px;
-  top: 350px;
-}
-
-.cont {
-  position: relative;
-  background-image: url(../img/mobile_bg_me.png);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  .contMain {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-
-    img {
-      margin-top: 30px;
-      max-width: 100%;
-      height: auto;
-    }
-
-    .contExplain {
-      font-family: "Pretendard";
-      font-size: 10em;
-      width: 150px;
+.contPrice {
+  padding: 0 20px;
+  margin-top: 16px;
+  .priceConts {
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    .priceCont {
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 8px 40px #00000020;
+      img {
+        padding: 4px;
+        width: 15rem;
+      }
+      h1 {
+        font-family: "Pretendard";
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #4d5058;
+        margin: 8px 8px;
+      }
+      .mainPrice {
+        font-family: "Pretendard";
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #b298ad;
+        margin: 47px 12px 4px 0;
+        text-align: right;
+      }
+      .mainPrice2 {
+        margin: 20px 12px 4px 8px;
+        display: flex;
+        justify-content: space-between;
+        .mainText1 {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #b298ad;
+          padding: 2px 4px;
+          background: #f8f9fa;
+          border-radius: 4px;
+        }
+        .mainText2 {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #b298ad;
+        }
+      }
+      .subPrice {
+        margin: 0 12px 8px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .subText1 {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #c7cad3;
+        }
+        .subText2 {
+          font-family: "Pretendard";
+          font-weight: 600;
+          font-size: 1.6rem;
+          color: #4d5058;
+        }
+      }
     }
   }
+}
 
-  .contName {
-    padding: 0 20px 8px 20px;
-    .contHeader {
+.buttons {
+  padding: 0 20px 8px 20px;
+  .button {
+    width: 100%;
+    display: flex;
+    margin-top: 8px;
+    .btn {
+      border-radius: 4px;
+      padding: 8px 12px 8px 12px;
+      width: 49.5%;
+      background: #55576f;
+      font-family: "Pretendard";
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .btn2 {
+      border-radius: 4px;
+      padding: 8px 12px 8px 12px;
+      width: 49.5%;
+      background: #55576f;
+      font-family: "Pretendard";
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #fff;
+      margin-left: 8px;
+    }
+  }
+}
+
+.buttonImg {
+  background: #fff;
+  margin-top: 8px;
+  margin: 0 20px 8px 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  p {
+    font-family: "Pretendard";
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 8px;
+  }
+
+  .experimentImg {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      border-radius: 4px;
+      margin: 4px 0;
+      width: 95%;
+      height: 0;
+      padding-bottom: 47%;
+      background: rgb(242, 243, 246);
+    }
+  }
+}
+
+.specs {
+  width: 100%;
+  height: 100%;
+  .spec {
+    margin-left: 20px;
+    list-style-type: none;
+    float: left;
+    img {
+      margin-top: 11px;
+      width: 5rem;
+    }
+  }
+  .specInfoBtn {
+    font-family: "Pretendard";
+    margin-left: 20px;
+    display: flex;
+    div {
+      border-radius: 4px;
+      padding: 4px 16px;
+    }
+  }
+}
+.specInfos {
+  display: flex;
+  padding: 0 20px;
+  .specCont {
+    margin-top: 20px;
+    .specInfoTitle {
       font-family: "Pretendard";
       font-weight: 700;
       font-size: 1.2rem;
-      color: #55576f;
-      line-height: 144%;
-      letter-spacing: -0.03em;
-      em {
-        color: #55576f;
-      }
+      color: #a7abb6;
     }
-
-    .contHeader2 {
-      color: #55576f;
+    .specInfoText {
       font-family: "Pretendard";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 2rem;
-      line-height: 144%;
-      letter-spacing: -0.03em;
-      padding-top: 10px;
-      em {
-        font-weight: 800;
-      }
-    }
-    h1 {
-      width: 310px;
-      color: #55576f;
-      margin-top: 4px;
-      font-family: "Pretendard";
-      font-weight: 300;
-      font-size: 4.8rem;
-      line-height: 110%;
-      letter-spacing: -0.03em;
-      margin-bottom: 8px;
-    }
-  }
-
-  .contExplain {
-    font-family: "Pretendard";
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 150%;
-    letter-spacing: -0.01em;
-    width: 32rem;
-    color: #4d5058;
-  }
-
-  .contPrice {
-    top: 50rem;
-    left: 0;
-    right: 0;
-    position: absolute;
-    .price1 {
-      background: #fff;
-      border: 1px solid #f2f3f6;
-      border-radius: 4px;
-      padding: 8px 16px 8px 16px;
-      margin: 8px 20px;
-      .name {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .text {
-          font-family: "Pretendard";
-          font-weight: 600;
-          font-size: 1.6rem;
-          color: #4d5058;
-        }
-        .num {
-          font-family: "Pretendard";
-          font-weight: 700;
-          font-size: 1.2rem;
-          color: #b298ad;
-        }
-      }
-      .sub {
-        text-align: right;
-        margin-top: 10px;
-        .subText {
-          font-family: "Pretendard";
-          font-weight: 700;
-          color: #c7cad3;
-          em {
-            font-weight: 300;
-            font-size: 2rem;
-            color: #4d5058;
-          }
-        }
-      }
-    }
-
-    .price2 {
-      background: #fff;
-      border: 1px solid #f2f3f6;
-      border-radius: 4px;
-      padding: 8px 16px 8px 16px;
-      margin: 0 20px;
-      .name {
-        display: flex;
-        justify-content: space-between;
-        .text {
-          font-family: "Pretendard";
-          font-weight: 600;
-          font-size: 1.6rem;
-          color: #4d5058;
-        }
-        .num {
-          font-family: "Pretendard";
-          font-weight: 700;
-          font-size: 1.2rem;
-          color: #b298ad;
-          em {
-            font-family: "Pretendard";
-            font-weight: 700;
-            color: #c7cad3;
-          }
-        }
-      }
-      .sub {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 10px;
-        .subText {
-          font-family: "Pretendard";
-          font-weight: 700;
-          color: #c7cad3;
-          em {
-            font-weight: 300;
-            font-size: 2rem;
-            color: #4d5058;
-          }
-        }
-        .sale {
-          font-family: "Pretendard";
-          font-weight: 700;
-          font-size: 1.2rem;
-          color: #b298ad;
-          background: #f8f9fa;
-          padding: 2px 4px 2px 4px;
-        }
-      }
-    }
-  }
-
-  .buttons {
-    padding: 0 20px 8px 20px;
-    .button {
-      width: 100%;
-      display: flex;
-      margin-top: 8px;
-      .btn {
-        border-radius: 4px;
-        padding: 8px 12px 8px 12px;
-        width: 49.5%;
-        background: #55576f;
-        font-family: "Pretendard";
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #fff;
-      }
-      .btn2 {
-        border-radius: 4px;
-        padding: 8px 12px 8px 12px;
-        width: 49.5%;
-        background: #55576f;
-        font-family: "Pretendard";
-        font-size: 1.2rem;
-        font-weight: 700;
-        color: #fff;
-        margin-left: 8px;
-      }
-    }
-  }
-
-  .buttonImg {
-    background: #fff;
-    margin-top: 8px;
-    margin: 0 20px 8px 20px;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    p {
-      font-family: "Pretendard";
-      font-size: 1.4rem;
       font-weight: 600;
-      margin: 8px;
-    }
-
-    .experimentImg {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      div {
-        border-radius: 4px;
-        margin: 4px 0;
-        width: 95%;
-        height: 0;
-        padding-bottom: 47%;
-        background: rgb(242, 243, 246);
-      }
-    }
-  }
-
-  .specs {
-    width: 100%;
-    height: 100%;
-    .spec {
-      margin-left: 20px;
-      list-style-type: none;
-      float: left;
-      img {
-        margin-top: 8px;
-        width: 5rem;
-      }
-    }
-    .specInfo {
-      font-family: "Pretendard";
-      margin-left: 20px;
-      display: flex;
-      div {
-        border-radius: 4px;
-        padding: 4px 8px;
-      }
+      font-size: 1.4rem;
+      padding-top: 4px;
     }
   }
 }
