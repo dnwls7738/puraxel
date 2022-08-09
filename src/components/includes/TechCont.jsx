@@ -5,8 +5,14 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 
 import PriceItem from "../item/PriceItem";
-// import Oval from "../../assets/img/mobile_oval_me.svg";
 import Line from "../../assets/img/pageLine.svg";
+import BgImg from "../../assets/img/mobile_bg_tech.png";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Typography,
+} from "@mui/material";
 
 function TechCont() {
   return (
@@ -34,17 +40,67 @@ function TechCont() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <div className="cont_4">
-            <div className="contName_4">
-              <span className="contHeader_4">에스테틱 레이저의 시작</span>
-              <h1>tech</h1>
+          <div
+            className="cont"
+            style={{
+              backgroundImage: `url(${BgImg})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="contName">
+              <span className="contHeader">
+                하이브리드 레이저의 에스테틱 솔루션 퓨라셀의 기술력
+              </span>
+              <h1>
+                Fractional + <br /> MTS function
+              </h1>
+              <div className="g">
+                <div className="techExplain">
+                  갈바닉, 초음파, LED, Cooling으로 흡수율 향상
+                </div>
+                <div className="techExplain2">
+                  피부 재생 레이저를 적용,
+                  <br /> 피부에 Micro hole을 생성해
+                  <br /> 화장품 등의 영양물질의 흡수를 촉진합니다.
+                </div>
+              </div>
             </div>
-            <p className="contExplain_4">
-              레이저 기술로
-              <br />
-              <em>에스테틱에 혁신을 가져오다</em>
-            </p>
-            <div className="contMain_4"></div>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div
+            className="cont"
+            style={{
+              backgroundImage: `url(${BgImg})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="contName">
+              <span className="contHeader">Fractional 레이저 작동 방식</span>
+              <p className="contHeader2">
+                <em>프락셔널 레이저</em> 작동 방식
+              </p>
+            </div>
+            <div>
+              <Accordion>
+                <AccordionSummary
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <Typography>Accordion 1</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse malesuada lacus ex, sit amet blandit leo
+                    lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </div>
           </div>
         </SwiperSlide>
 

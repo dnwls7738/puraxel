@@ -153,34 +153,23 @@
 }
 .specInfos {
   display: flex;
+  justify-content: space-between;
   padding: 0 20px;
-  .specCont {
-    margin-top: 20px;
-    .specInfoTitle {
-      font-family: "Pretendard";
-      font-weight: 700;
-      font-size: 1.2rem;
-      color: #a7abb6;
-    }
-    .specInfoText {
-      font-family: "Pretendard";
-      font-weight: 600;
-      font-size: 1.4rem;
-      padding-top: 4px;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 20px;
-  }
-  .cont {
-    .ModeExplain {
-      .exs {
-        .ex {
-          top: 160px;
-        }
+  .specInfo {
+    width: 100%;
+    .specCont {
+      margin-top: 20px;
+      .specInfoTitle {
+        font-family: "Pretendard";
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #a7abb6;
+      }
+      .specInfoText {
+        font-family: "Pretendard";
+        font-weight: 600;
+        font-size: 1.4rem;
+        padding-top: 4px;
       }
     }
   }

@@ -295,3 +295,18 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  .cont {
+    .ModeExplain {
+      .exs {
+        .ex {
+          top: 160px;
+        }
+      }
+    }
+  }
+}
