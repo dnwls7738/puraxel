@@ -136,8 +136,27 @@ function Header({ name, text }) {
       }}
     >
       <List>
-        <div className="menuHead">
+        <div
+          className="menuHead"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
           <span>product</span>
+          <ThemeProvider theme={theme1}>
+            <IconButton onClick={toggleDrawer(false)}>
+              <img
+                src={Close}
+                style={{
+                  width: "3.2rem",
+                  zIndex: 99999,
+                }}
+                alt=""
+              />
+            </IconButton>
+          </ThemeProvider>
         </div>
 
         {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text) => (
@@ -280,43 +299,29 @@ function Header({ name, text }) {
 
         {["right"].map((anchor) => (
           <React.Fragment key={anchor}>
-            {!close ? (
-              <ThemeProvider theme={theme1}>
-                <IconButton onClick={toggleDrawer(anchor, true)}>
-                  <img
-                    src={Ham}
-                    style={{
-                      width: "3.2rem",
-                    }}
-                    alt=""
-                  />
-                </IconButton>
-              </ThemeProvider>
-            ) : (
-              <ThemeProvider theme={theme1}>
-                <IconButton onClick={toggleDrawer(anchor, false)}>
-                  <img
-                    src={Close}
-                    style={{
-                      width: "3.2rem",
-                      zIndex: 99999,
-                    }}
-                    alt=""
-                  />
-                </IconButton>
-              </ThemeProvider>
-            )}
+            <ThemeProvider theme={theme1}>
+              <IconButton onClick={toggleDrawer(anchor, true)}>
+                <img
+                  src={Ham}
+                  style={{
+                    width: "3.2rem",
+                  }}
+                  alt=""
+                />
+              </IconButton>
+            </ThemeProvider>
 
             <Drawer
               anchor={"right"}
               open={close}
+              hideBackdrop
               PaperProps={{
                 sx: {
                   width: 360,
                   color: "#55576F",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
-                  zIndex: 0,
-                  backdropFilter: "blur(4px)",
+                  zIndex: -1,
+                  backdropFilter: "blur(40px)",
                 },
               }}
             >
