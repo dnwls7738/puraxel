@@ -37,9 +37,9 @@ const theme = createTheme({
         root: {
           // Some CSS
           fontSize: "36px",
-          fontFamily: "CaviarDreams",
+          fontFamily: "Pretendard",
           height: "43px",
-          fontWeight: "bold",
+          fontWeight: "300",
         },
       },
     },
