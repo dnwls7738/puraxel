@@ -7,6 +7,8 @@ import "swiper/scss/pagination";
 import PriceItem from "../item/PriceItem";
 import Line from "../../assets/img/pageLine.svg";
 import BgImg from "../../assets/img/mobile_bg_tech.png";
+import MainImg from "../../assets/img/tech_main.png";
+
 import {
   Accordion,
   AccordionDetails,
@@ -55,15 +57,16 @@ function TechCont() {
               <h1>
                 Fractional + <br /> MTS function
               </h1>
-              <div className="g">
-                <div className="techExplain">
-                  갈바닉, 초음파, LED, Cooling으로 흡수율 향상
-                </div>
-                <div className="techExplain2">
-                  피부 재생 레이저를 적용,
-                  <br /> 피부에 Micro hole을 생성해
-                  <br /> 화장품 등의 영양물질의 흡수를 촉진합니다.
-                </div>
+              <div className="techExplain">
+                갈바닉, 초음파, LED, Cooling으로 흡수율 향상
+              </div>
+            </div>
+            <div className="contMain">
+              <img src={MainImg} alt="" />
+              <div className="techExplain2">
+                피부 재생 레이저를 적용,
+                <br /> 피부에 Micro hole을 생성해
+                <br /> 화장품 등의 영양물질의 흡수를 촉진합니다.
               </div>
             </div>
           </div>
@@ -89,9 +92,7 @@ function TechCont() {
                 <AccordionSummary
                   aria-controls="panel1a-content"
                   id="panel1a-header"
-                >
-                  <Typography>Accordion 1</Typography>
-                </AccordionSummary>
+                ></AccordionSummary>
                 <AccordionDetails>
                   <Typography>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.

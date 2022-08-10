@@ -13,13 +13,17 @@
   box-shadow: 0 20px 60px #00000008;
 }
 .techExplain2 {
+  text-align: left;
   margin-top: 8px;
   background: linear-gradient(#fff, rgba(255, 255, 255, 0)) padding-box;
   border: 1px solid transparent;
-  width: 260px;
+  width: 72%;
   padding: 12px 10px;
   font-family: "Pretendard";
   font-weight: 600;
   font-size: 1.4rem;
   color: #4d5058;
+  position: absolute;
+  top: 80%;
+  left: 24%;
 }

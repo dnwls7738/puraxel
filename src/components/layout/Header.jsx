@@ -26,6 +26,7 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
+import UserForm from "../inquiry/UserForm";
 
 const theme = createTheme({
   components: {
@@ -93,12 +94,30 @@ const style = {
   p: 2,
 };
 
+const style3 = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: "100%",
+  height: "100%",
+  bgcolor: "background.paper",
+  border: "none",
+  borderRadius: "4px",
+  boxShadow: 24,
+  p: 2,
+};
+
 function Header({ name, text }) {
   const [open, setOpen] = useState(false);
+  const [open2, setOpen2] = useState(false);
   const [close, setClose] = useState(false);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const handleOpen2 = () => setOpen2(true);
+  const handleClose2 = () => setOpen2(false);
 
   const toggleDrawer = () => () => {
     setClose(!close);
@@ -249,16 +268,14 @@ function Header({ name, text }) {
             </ThemeProvider>
           </Link>
         ) : (
-          <Link to="INQUIRY" className="shop">
-            <ThemeProvider theme={theme1}>
-              <IconButton>
-                <div className="shopIcon">
-                  <p className="shopText">{text}</p>
-                  <img src={Inquiry} alt="" />
-                </div>
-              </IconButton>
-            </ThemeProvider>
-          </Link>
+          <ThemeProvider theme={theme1}>
+            <IconButton onClick={handleOpen2}>
+              <div className="shopIcon">
+                <p className="shopText">{text}</p>
+                <img src={Inquiry} alt="" />
+              </div>
+            </IconButton>
+          </ThemeProvider>
         )}
 
         {["right"].map((anchor) => (
@@ -375,6 +392,48 @@ function Header({ name, text }) {
               </Typography>
             </Box>
           </Fade>
+        </Modal>
+        <Modal
+          open={open2}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style3}>
+            <div
+              id="modal-modal-title2"
+              variant="h6"
+              component="h2"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <p
+                  style={{
+                    fontFamily: "Pretendard",
+                    fontWeight: 300,
+                    fontSize: "2rem",
+                    color: "rgba(85, 87, 111, 1)",
+                    padding: "8px",
+                  }}
+                >
+                  제품문의
+                </p>
+              </div>
+              <IconButton onClick={handleClose2}>
+                <img
+                  src={Close}
+                  style={{
+                    width: "3.2rem",
+                  }}
+                  alt=""
+                />
+              </IconButton>
+            </div>
+            <UserForm />
+          </Box>
         </Modal>
       </div>
     </header>
