@@ -4,17 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
 
-import PriceItem from "../item/PriceItem";
 import Line from "../../assets/img/pageLine.svg";
 import BgImg from "../../assets/img/mobile_bg_tech.png";
 import MainImg from "../../assets/img/tech_main.png";
-
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Typography,
-} from "@mui/material";
+import CollapseItem from "../item/CollapseItem";
 
 function TechCont() {
   return (
@@ -87,26 +80,26 @@ function TechCont() {
                 <em>프락셔널 레이저</em> 작동 방식
               </p>
             </div>
-            <div>
-              <Accordion>
-                <AccordionSummary
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                ></AccordionSummary>
-                <AccordionDetails>
-                  <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse malesuada lacus ex, sit amet blandit leo
-                    lobortis eget.
-                  </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </div>
+            <CollapseItem />
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <PriceItem />
+          <div
+            className="cont"
+            style={{
+              backgroundImage: `url(${BgImg})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="contName">
+              <span className="contHeader">Critical Technology</span>
+              <p className="contHeader2">
+                에너지 세기에 따른 <em>천공 깊이</em>
+              </p>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>

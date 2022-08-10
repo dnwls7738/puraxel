@@ -1,17 +1,20 @@
 .contPrice {
-  padding: 0 20px;
+  width: 100%;
+  padding: 0 12px;
   margin-top: 16px;
   .priceConts {
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
     .priceCont {
+      margin-left: 8px;
+      width: 100%;
       border-radius: 4px;
       background: #fff;
       box-shadow: 0 8px 40px #00000020;
       img {
         padding: 4px;
-        width: 15rem;
+        width: 100%;
       }
       h1 {
         font-family: "Pretendard";
