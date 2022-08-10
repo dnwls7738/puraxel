@@ -13,6 +13,11 @@ function TechCont() {
   return (
     <>
       <Swiper
+        style={{
+          backgroundImage: `url(${BgImg})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={50}
@@ -35,14 +40,7 @@ function TechCont() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">
                 하이브리드 레이저의 에스테틱 솔루션 퓨라셀의 기술력
@@ -66,14 +64,7 @@ function TechCont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">Fractional 레이저 작동 방식</span>
               <p className="contHeader2">
@@ -85,14 +76,7 @@ function TechCont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">Critical Technology</span>
               <p className="contHeader2">

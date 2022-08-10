@@ -138,6 +138,7 @@ function FxExItem() {
                     fontWeight: 800,
                     fontSize: "2rem",
                     color: "#55576f",
+                    padding: "8px",
                   }}
                 >
                   정수리/M자 탈모 개선
@@ -246,6 +247,7 @@ function FxExItem() {
                   fontWeight: 800,
                   fontSize: "2rem",
                   color: "#55576f",
+                  padding: "8px",
                 }}
               >
                 모량/모발 테스트 결과
@@ -254,7 +256,6 @@ function FxExItem() {
                 <img
                   src={Close}
                   style={{
-                    marginLeft: "5.4rem",
                     width: "3.2rem",
                   }}
                   alt=""

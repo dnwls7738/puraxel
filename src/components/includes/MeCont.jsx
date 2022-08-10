@@ -20,6 +20,11 @@ function MeCont() {
   return (
     <>
       <Swiper
+        style={{
+          backgroundImage: `url(${BgImg})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={10}
@@ -48,14 +53,7 @@ function MeCont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">하나의 디바이스로</span>
               <p className="contHeader2">
@@ -100,14 +98,7 @@ function MeCont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">
                 퓨라셀과 각 효능에 특화된 앰플 사용후 결과
@@ -121,14 +112,7 @@ function MeCont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">퓨라셀 ME</span>
               <p className="contHeader2">
@@ -140,14 +124,7 @@ function MeCont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">쇼핑몰</span>
               <p className="contHeader2">추천제품</p>

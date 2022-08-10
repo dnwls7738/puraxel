@@ -22,6 +22,11 @@ function Fx5000Cont() {
   return (
     <>
       <Swiper
+        style={{
+          backgroundImage: `url(${BgImg})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={10}
@@ -48,14 +53,7 @@ function Fx5000Cont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">레이저와 초음파 기술을 활용한</span>
               <p className="contHeader2">
@@ -67,14 +65,7 @@ function Fx5000Cont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">
                 퓨라셀과 각 효능에 특화된 앰플 사용후 결과
@@ -88,14 +79,7 @@ function Fx5000Cont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">
                 이제는 집에서 혼자 쉽고 편하게!
@@ -128,14 +112,7 @@ function Fx5000Cont() {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="cont"
-            style={{
-              backgroundImage: `url(${BgImg})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-            }}
-          >
+          <div className="cont">
             <div className="contName">
               <span className="contHeader">FX-5000</span>
               <p className="contHeader2">

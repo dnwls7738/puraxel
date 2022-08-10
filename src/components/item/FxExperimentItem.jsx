@@ -131,7 +131,7 @@ function FxExItem() {
               variant="h6"
               component="h2"
               style={{
-                margin: "12px",
+                margin: "4px 4px 0 4px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -144,6 +144,7 @@ function FxExItem() {
                     fontWeight: 800,
                     fontSize: "2rem",
                     color: "#55576f",
+                    padding: "8px",
                   }}
                 >
                   피부 보습력 3배 증가
@@ -165,12 +166,11 @@ function FxExItem() {
                 fontFamily: "Pretendard",
                 fontSize: "1.4rem",
                 fontWeight: 300,
-                marginBottom: "24px",
-                margin: "12px",
+                margin: "0 20px 24px 12px",
               }}
             >
               피부 수분 변화에 대한 통계분석 결과, 화장품+퓨라셀 1회 사용 직후
-              300%이상 증가 시킵니다.
+              300%이상 증가
             </Typography>
             <img
               src={Skin6}
@@ -193,7 +193,7 @@ function FxExItem() {
               variant="h6"
               component="h2"
               style={{
-                margin: "12px",
+                margin: "4px 4px 0 4px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -206,6 +206,7 @@ function FxExItem() {
                     fontWeight: 800,
                     fontSize: "2rem",
                     color: "#55576f",
+                    padding: "8px",
                   }}
                 >
                   피부 치밀도 30% 증가
@@ -227,12 +228,11 @@ function FxExItem() {
                 fontFamily: "Pretendard",
                 fontSize: "1.4rem",
                 fontWeight: 300,
-                marginBottom: "24px",
-                margin: "12px",
+                margin: "0 20px 24px 12px",
               }}
             >
-              피부치밀도를 나타내는 Density 값이 퓨라셀 사용전과 비교하여 4주
-              사용후 30% 증가
+              피부치밀도를 나타내는 Density 값이 퓨라셀 <br />
+              사용전과 비교하여 4주 사용후 30% 증가
             </Typography>
             <img
               src={Skin7}
@@ -255,7 +255,7 @@ function FxExItem() {
               variant="h6"
               component="h2"
               style={{
-                margin: "12px",
+                margin: "4px 4px 0 4px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -268,6 +268,7 @@ function FxExItem() {
                     fontWeight: 800,
                     fontSize: "2rem",
                     color: "#55576f",
+                    padding: "8px ",
                   }}
                 >
                   피부톤(맑기) 2배 증가
@@ -289,8 +290,7 @@ function FxExItem() {
                 fontFamily: "Pretendard",
                 fontSize: "1.4rem",
                 fontWeight: 300,
-                marginBottom: "24px",
-                margin: "12px",
+                margin: "0 20px 24px 12px",
               }}
             >
               피부톤을 나타내는 L*value가 퓨라셀 사용전과 비교하여 2주 사용후

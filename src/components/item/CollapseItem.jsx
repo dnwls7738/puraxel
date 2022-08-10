@@ -33,12 +33,10 @@ function CollapseItem() {
     <Box>
       <Box
         sx={{
-          "& > :not(style)": {
-            width: "100%",
-          },
+          width: "100%",
         }}
       >
-        <Collapse in={checked} collapsedSize={180} onClick={handleChange}>
+        <Collapse in={checked} collapsedSize={170} onClick={handleChange}>
           <Paper sx={{ m: 2 }} elevation={4}>
             <Box sx={{ width: "100%", height: "auto" }}>
               {checked === false ? (
@@ -99,8 +97,8 @@ function CollapseItem() {
             </Box>
           </Paper>
         </Collapse>
-        <Collapse in={checked2} collapsedSize={180} onClick={handleChange2}>
-          <Paper sx={{ m: 2 }} elevation={4}>
+        <Collapse in={checked2} collapsedSize={168} onClick={handleChange2}>
+          <Paper sx={{ m: 2, maxWidth: "100%" }} elevation={4}>
             <Box sx={{ width: "100%", height: "auto" }}>
               {checked2 === false ? (
                 <img
@@ -173,7 +171,7 @@ function CollapseItem() {
             </Box>
           </Paper>
         </Collapse>
-        <Collapse in={checked3} collapsedSize={180} onClick={handleChange3}>
+        <Collapse in={checked3} collapsedSize={170} onClick={handleChange3}>
           <Paper sx={{ m: 2 }} elevation={4}>
             <Box sx={{ width: "100%", height: "auto" }}>
               {checked3 === false ? (

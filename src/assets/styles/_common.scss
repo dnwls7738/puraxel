@@ -123,9 +123,10 @@
 
 .cont {
   position: relative;
-  width: 100%;
+  width: 360px;
   height: 100vh;
   overflow: auto;
+  margin: 0 auto;
   .contMain {
     position: relative;
     text-align: center;
@@ -297,9 +298,26 @@
 
 @media (min-width: 768px) {
   html {
+    font-size: 15px;
+  }
+  .cont {
+    width: 768px;
+    .ModeExplain {
+      .exs {
+        .ex {
+          top: 160px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
     font-size: 20px;
   }
   .cont {
+    width: 1200px;
     .ModeExplain {
       .exs {
         .ex {

@@ -124,7 +124,7 @@ function Header({ name, text }) {
   };
 
   function Component2() {
-    if (name === "puraxel") {
+    if (name === "puraxel" || "tech") {
       return;
     }
   }
@@ -248,7 +248,7 @@ function Header({ name, text }) {
       </div>
 
       <div className="right">
-        {name === "puraxel" && "PURA-TECH" ? (
+        {name === "puraxel" || name === "tech" ? (
           <Component2 />
         ) : name === "ME" ? (
           <Link
