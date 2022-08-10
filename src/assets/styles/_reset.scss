@@ -1,11 +1,11 @@
 @charset "UTF-8";
 #root {
-  overflow: hidden;
   width: 100%;
 }
 
 body {
   -ms-overflow-style: none;
+  padding-top: 75px;
 }
 
 ::-webkit-scrollbar {

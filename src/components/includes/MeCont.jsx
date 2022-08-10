@@ -77,8 +77,8 @@ function MeCont() {
             <div
               style={{
                 position: "relative",
-                height: "0",
-                paddingBottom: "100%",
+                height: "100%",
+                marginTop: "16px",
               }}
             >
               <iframe
