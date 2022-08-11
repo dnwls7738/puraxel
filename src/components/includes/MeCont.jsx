@@ -74,10 +74,13 @@ function MeCont() {
                 셀프 홈케어 <em>팁</em>
               </p>
             </div>
+
             <div
+              className="iframe"
               style={{
                 position: "relative",
-                height: "100%",
+                height: "0",
+                paddingBottom: "56.25%",
                 marginTop: "16px",
               }}
             >
@@ -90,8 +93,8 @@ function MeCont() {
                   height: "100%",
                   left: "0",
                 }}
-                frameBorder="0"
-                allowFullScreen
+                frameborder="0"
+                allowfullscreen
               ></iframe>
             </div>
           </div>

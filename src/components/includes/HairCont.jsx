@@ -91,7 +91,8 @@ function HairCont() {
               style={{
                 position: "relative",
                 height: "0",
-                paddingBottom: "100%",
+                paddingBottom: "56.25%",
+                marginTop: "16px",
               }}
             >
               <iframe
@@ -103,8 +104,8 @@ function HairCont() {
                   height: "100%",
                   left: "0",
                 }}
-                frameBorder="0"
-                allowFullScreen
+                frameborder="0"
+                allowfullscreen
               ></iframe>
             </div>
           </div>

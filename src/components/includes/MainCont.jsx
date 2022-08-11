@@ -11,9 +11,8 @@ function MainCont() {
           <br /> 레이저의 시작
         </h1>
         <p className="contExplain">
-          레이저 기술로
-          <br />
-          <em>에스테틱에 혁신을 가져오다</em>
+          프락셔널 레이저 모듈로 생성되는
+          <br /> 5000개의 마이크로 홀.
         </p>
       </div>
       <div className="contMain">

@@ -295,6 +295,10 @@
   }
 }
 
+.iframe {
+  -webkit-overflow-scrolling: "touch";
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 15px;
