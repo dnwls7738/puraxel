@@ -134,6 +134,14 @@
       width: 90%;
     }
   }
+  .contMain2 {
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/main.svg);
+
+    background-repeat: no-repeat;
+  }
 
   .contName {
     padding: 0 20px 0 20px;
@@ -147,6 +155,17 @@
       em {
         color: #55576f;
       }
+    }
+    .contHeader_2 {
+      padding: 4px 8px;
+      font-family: "Pretendard";
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #55576f;
+      line-height: 144%;
+      letter-spacing: -0.03em;
+      background: rgba(242, 243, 246, 1);
+      border-radius: 4px;
     }
 
     .contHeader2 {
@@ -168,7 +187,7 @@
       font-family: "Pretendard";
       font-weight: 300;
       font-size: 4rem;
-      line-height: 110%;
+      line-height: 128%;
       letter-spacing: -0.03em;
       margin-bottom: 8px;
     }
@@ -180,8 +199,35 @@
     font-size: 1.6rem;
     line-height: 150%;
     letter-spacing: -0.01em;
-    width: 32rem;
+    width: 24rem;
     color: #4d5058;
+  }
+  .contExplain2 {
+    border-radius: 4px;
+    position: absolute;
+    background: rgba(248, 248, 255, 0.7);
+    box-shadow: 0 12px 24px 0 rgba(65, 29, 141, 0.08);
+    padding: 16px 16px;
+    width: 24rem;
+    p {
+      font-family: "Pretendard";
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+
+      color: #4d5058;
+      line-height: 150%;
+    }
+
+    .span {
+      margin-top: 8px;
+      font-family: "Pretendard";
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: rgba(126, 129, 141, 1);
+      line-height: 150%;
+    }
   }
   .exInfo {
     margin: 12px 20px 24px 20px;

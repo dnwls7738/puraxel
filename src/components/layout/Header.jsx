@@ -4,7 +4,7 @@ import Icon from "@mui/material/Icon";
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Close from "../../assets/img/gnb_close.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
-import Logo from "../../assets/img/gnb_logo.svg";
+import Logo from "../../assets/img/logo.png";
 import Inquiry from "../../assets/img/inquiry.svg";
 import Youtube from "../../assets/img/sns_youtube.svg";
 import Insta from "../../assets/img/sns_insta.svg";
@@ -137,29 +137,42 @@ function Header({ name, text }) {
     >
       <List>
         <div
-          className="menuHead"
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
+            padding: 16,
           }}
         >
-          <span>product</span>
+          <ThemeProvider theme={theme1}>
+            <IconButton>
+              <img
+                src={Logo}
+                style={{
+                  width: "4.8rem",
+                  verticalAlign: "middile",
+                }}
+                alt=""
+              />
+            </IconButton>
+          </ThemeProvider>
           <ThemeProvider theme={theme1}>
             <IconButton onClick={toggleDrawer(false)}>
               <img
                 src={Close}
                 style={{
                   width: "3.2rem",
-                  zIndex: 99999,
                 }}
                 alt=""
               />
             </IconButton>
           </ThemeProvider>
         </div>
+        <div className="menuHead">
+          <span>product</span>
+        </div>
 
-        {["ME", "HAIR", "FX-5000", "Pura-tech"].map((text) => (
+        {["ME", "HAIR", "FX-5000", "tech"].map((text) => (
           <Link key={text} to={text}>
             <ListItemButton>
               <ListItem disablePadding>
@@ -174,7 +187,7 @@ function Header({ name, text }) {
 
       <div className="mall">
         <div>
-          <span className="product">puraxel mall</span>
+          <p className="product">puraxel mall</p>
           <Link
             to={{
               pathname: "https://lmdt.cafe24.com",
@@ -182,65 +195,77 @@ function Header({ name, text }) {
             target="_blank"
           >
             <div className="toShop">
-              <span>Shop</span>
+              <p
+                style={{
+                  marginTop: 12,
+                }}
+              >
+                Shop
+              </p>
             </div>
           </Link>
         </div>
 
         <div className="sns">
-          <span className="product">sns</span>
-          <Link
-            to={{
-              pathname: "",
+          <p className="product">sns</p>
+          <div
+            style={{
+              marginTop: 12,
             }}
-            target="_blank"
           >
-            <Icon
-              sx={{
-                width: 32,
-                height: 32,
-                marginRight: "16px",
-                borderRadius: "6px",
+            <Link
+              to={{
+                pathname: "",
               }}
+              target="_blank"
             >
-              <img src={Facebook} alt="" />
-            </Icon>
-          </Link>
+              <Icon
+                sx={{
+                  width: 32,
+                  height: 32,
+                  marginRight: "16px",
+                  borderRadius: "6px",
+                }}
+              >
+                <img src={Facebook} alt="" />
+              </Icon>
+            </Link>
 
-          <Link
-            to={{
-              pathname: "",
-            }}
-            target="_blank"
-          >
-            <Icon
-              sx={{
-                width: 32,
-                height: 32,
-                marginRight: "16px",
-                borderRadius: "6px",
+            <Link
+              to={{
+                pathname: "",
               }}
+              target="_blank"
             >
-              <img src={Insta} alt="" />
-            </Icon>
-          </Link>
+              <Icon
+                sx={{
+                  width: 32,
+                  height: 32,
+                  marginRight: "16px",
+                  borderRadius: "6px",
+                }}
+              >
+                <img src={Insta} alt="" />
+              </Icon>
+            </Link>
 
-          <Link
-            to={{
-              pathname: "",
-            }}
-            target="_blank"
-          >
-            <Icon
-              sx={{
-                width: 32,
-                height: 32,
-                borderRadius: "6px",
+            <Link
+              to={{
+                pathname: "",
               }}
+              target="_blank"
             >
-              <img src={Youtube} alt="" />
-            </Icon>
-          </Link>
+              <Icon
+                sx={{
+                  width: 32,
+                  height: 32,
+                  borderRadius: "6px",
+                }}
+              >
+                <img src={Youtube} alt="" />
+              </Icon>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -258,7 +283,14 @@ function Header({ name, text }) {
         <div className="logo">
           <Link to="/">
             {name === "puraxel" ? (
-              <img src={Logo} alt="" style={{ width: "100%" }} />
+              <img
+                src={Logo}
+                alt=""
+                style={{
+                  width: "4.8rem",
+                  verticalAlign: "middle",
+                }}
+              />
             ) : (
               <>{name}</>
             )}
