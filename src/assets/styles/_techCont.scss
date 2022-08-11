@@ -130,9 +130,92 @@
     color: rgba(40, 41, 46, 1);
   }
 }
+
 .action {
   .actionImg {
     margin: 12px 20px 12px 20px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.puraCertfied {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  .puraCertText {
+    padding: 6px 12px;
+    background: rgba(85, 87, 111, 1);
+    border-radius: 4px;
+    font-family: "Pretendard";
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: rgba(248, 249, 250, 1);
+  }
+  .puraCertText2 {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: rgba(167, 171, 182, 1);
+    margin-left: 8px;
+  }
+}
+.puraCertImgs {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  .puraCertImg {
+    margin-right: 4px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .puraCertImg2 {
+    width: 100%;
+    margin-left: 4px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.lmdtCertfied {
+  display: flex;
+  align-items: center;
+  margin: 40px 20px 20px 20px;
+  .lmdtCertText {
+    padding: 6px 12px;
+    background: rgba(242, 243, 246, 1);
+    border-radius: 4px;
+    font-family: "Pretendard";
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: rgba(77, 80, 88, 1);
+  }
+  .lmdtCertText2 {
+    font-family: "Pretendard";
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: rgba(167, 171, 182, 1);
+    margin-left: 8px;
+  }
+}
+.lmdtCertImgs {
+  display: flex;
+  align-items: center;
+  margin: 8px 20px;
+  .lmdtCertImg {
+    margin-right: 4px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .lmdtCertImg2 {
+    width: 100%;
+    margin-left: 4px;
     img {
       width: 100%;
     }

@@ -14,6 +14,14 @@ import action2 from "../../assets/img/action2.png";
 import action3 from "../../assets/img/action3.png";
 import action4 from "../../assets/img/action4.png";
 
+import Pura1 from "../../assets/img/certifi_pura_01.png";
+import Pura2 from "../../assets/img/certifi_pura_02.png";
+import lmdt1 from "../../assets/img/certifi_lmdt_01.png";
+import lmdt2 from "../../assets/img/certifi_lmdt_02.png";
+import lmdt3 from "../../assets/img/certifi_lmdt_03.png";
+import lmdt4 from "../../assets/img/certifi_lmdt_04.png";
+import lmdt5 from "../../assets/img/certifi_lmdt_05.png";
+
 import CollapseItem from "../item/CollapseItem";
 
 function TechCont() {
@@ -152,6 +160,59 @@ function TechCont() {
               </div>
               <div className="actionImg">
                 <img src={action4} alt="" />
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">
+                인증 받은 레이저 기기로 마음까지 편한 관리!
+              </span>
+              <p className="contHeader2">퓨라셀 인증</p>
+            </div>
+            <div className="puraCertfied">
+              <p className="puraCertText">PURAXEL Certifications</p>
+              <p className="puraCertText2">퓨라셀 인증</p>
+            </div>
+            <div className="puraCertImgs">
+              <div className="puraCertImg">
+                <img src={Pura1} alt="" />
+              </div>
+              <div className="puraCertImg2">
+                <img src={Pura2} alt="" />
+              </div>
+            </div>
+            <div className="lmdtCertfied">
+              <p className="lmdtCertText">LaMeditech Certifications</p>
+              <p className="lmdtCertText2">기업 인증</p>
+            </div>
+            <div className="lmdtCertImgs">
+              <div className="lmdtCertImg">
+                <img src={lmdt1} alt="" />
+              </div>
+              <div className="lmdtCertImg2">
+                <img src={lmdt2} alt="" />
+              </div>
+            </div>
+            <div className="lmdtCertImgs">
+              <div className="lmdtCertImg">
+                <img src={lmdt3} alt="" />
+              </div>
+              <div className="lmdtCertImg2">
+                <img src={lmdt4} alt="" />
+              </div>
+            </div>
+            <div className="lmdtCertImgs">
+              <div className="lmdtCertImg">
+                <img
+                  src={lmdt5}
+                  alt=""
+                  style={{
+                    width: "156px",
+                  }}
+                />
               </div>
             </div>
           </div>
