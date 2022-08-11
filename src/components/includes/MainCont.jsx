@@ -1,4 +1,5 @@
 import React from "react";
+import MainImg from "../../assets/img/main.png";
 
 function MainCont() {
   return (
@@ -18,7 +19,9 @@ function MainCont() {
           </p>
         </div>
       </div>
-      <div className="contMain2"></div>
+      <div className="contMain2">
+        <img src={MainImg} alt="" />
+      </div>
     </div>
   );
 }
