@@ -1,18 +1,11 @@
 @charset "UTF-8";
 :root {
   --vh: 100%;
-  overflow: auto;
+  overflow: visible;
 }
 
 body {
-  overflow: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   padding-top: 75px;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 /* border-box 초기화 */
