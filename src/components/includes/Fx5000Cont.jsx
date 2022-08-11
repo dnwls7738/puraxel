@@ -19,6 +19,14 @@ import BgImg from "../../assets/img/mobile_bg_fx-5000.png";
 import Line from "../../assets/img/pageLine.svg";
 
 function Fx5000Cont() {
+  const params = {
+    on: {
+      slideChange: (index) => {
+        console.log(index.snapIndex);
+      },
+    },
+  };
+  console.log(params);
   return (
     <>
       <Swiper
@@ -51,7 +59,6 @@ function Fx5000Cont() {
         <SwiperSlide>
           <ContMain header="PURAXEL FX-5000" img={MainImg} bg={BgImg} />
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -63,7 +70,6 @@ function Fx5000Cont() {
             <FxModeItem color1="#CA7C98" color2="#866370" />
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -77,7 +83,6 @@ function Fx5000Cont() {
             <FxExperimentItem />
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -111,7 +116,6 @@ function Fx5000Cont() {
             </div>
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
