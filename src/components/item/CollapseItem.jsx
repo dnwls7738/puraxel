@@ -30,7 +30,12 @@ function CollapseItem() {
     setChecked3((prev) => !prev);
   };
   return (
-    <Box>
+    <Box
+      sx={{
+        width: "360px",
+        margin: "0 auto",
+      }}
+    >
       <Box
         sx={{
           width: "100%",
