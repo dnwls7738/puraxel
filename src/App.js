@@ -15,6 +15,7 @@ function App() {
   useEffect(() => {
     setScreenSize();
   });
+  window.addEventListener("resize", setScreenSize);
 
   return (
     <Router>

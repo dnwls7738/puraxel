@@ -36,7 +36,7 @@ function CollapseItem() {
           width: "100%",
         }}
       >
-        <Collapse in={checked} collapsedSize={170} onClick={handleChange}>
+        <Collapse in={checked} collapsedSize={168} onClick={handleChange}>
           <Paper sx={{ m: 2 }} elevation={4}>
             <Box sx={{ width: "100%", height: "auto" }}>
               {checked === false ? (
@@ -171,7 +171,7 @@ function CollapseItem() {
             </Box>
           </Paper>
         </Collapse>
-        <Collapse in={checked3} collapsedSize={170} onClick={handleChange3}>
+        <Collapse in={checked3} collapsedSize={168} onClick={handleChange3}>
           <Paper sx={{ m: 2 }} elevation={4}>
             <Box sx={{ width: "100%", height: "auto" }}>
               {checked3 === false ? (
