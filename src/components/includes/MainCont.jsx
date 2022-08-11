@@ -1,5 +1,4 @@
 import React from "react";
-import MainImg from "../../assets/img/main.png";
 
 function MainCont() {
   return (
