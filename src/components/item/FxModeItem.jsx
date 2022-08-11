@@ -276,7 +276,7 @@ function FxItem({ color1, color2 }) {
                   src={Laser2}
                   alt=""
                   style={{
-                    margin: "2px",
+                    padding: "4px",
                     width: "99%",
                   }}
                 />
@@ -365,7 +365,7 @@ function FxItem({ color1, color2 }) {
                   src={Ultrasonic2}
                   alt=""
                   style={{
-                    margin: "2px",
+                    padding: "4px",
                     width: "99%",
                   }}
                 />
@@ -448,7 +448,7 @@ function FxItem({ color1, color2 }) {
                   src={Option2}
                   alt=""
                   style={{
-                    margin: "2px",
+                    padding: "4px",
                     width: "99%",
                   }}
                 />
@@ -534,7 +534,7 @@ function FxItem({ color1, color2 }) {
                   src={Cooling2}
                   alt=""
                   style={{
-                    margin: "2px",
+                    padding: "4px",
                     width: "99%",
                   }}
                 />
@@ -881,15 +881,15 @@ function FxItem({ color1, color2 }) {
                     기능성 솔루션과 함께
                     <br /> 음이온(-ION)으로 영양분 침투에 도움
                   </span>
-                  <img
-                    src={Galvanic2}
-                    alt=""
-                    style={{
-                      margin: "2px",
-                      width: "99%",
-                    }}
-                  />
                 </Typography>
+                <img
+                  src={Galvanic2}
+                  alt=""
+                  style={{
+                    padding: "4px",
+                    width: "99%",
+                  }}
+                />
               </Box>
             </Modal>
           )}

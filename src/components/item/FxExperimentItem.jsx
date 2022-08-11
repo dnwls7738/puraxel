@@ -176,7 +176,7 @@ function FxExItem() {
               src={Skin6}
               alt=""
               style={{
-                margin: "2px",
+                padding: "4px",
                 width: "99%",
               }}
             />
@@ -238,7 +238,7 @@ function FxExItem() {
               src={Skin7}
               alt=""
               style={{
-                margin: "2px",
+                padding: "4px",
                 width: "99%",
               }}
             />
@@ -300,7 +300,7 @@ function FxExItem() {
               src={Skin8}
               alt=""
               style={{
-                margin: "2px",
+                padding: "4px",
                 width: "99%",
               }}
             />

@@ -207,7 +207,7 @@ function FxExItem() {
                 src={Hair2}
                 alt=""
                 style={{
-                  margin: "2px",
+                  padding: "4px",
                   width: "99%",
                 }}
               />
@@ -216,7 +216,7 @@ function FxExItem() {
                 src={Hair3}
                 alt=""
                 style={{
-                  margin: "2px",
+                  padding: "4px",
                   width: "99%",
                 }}
               />

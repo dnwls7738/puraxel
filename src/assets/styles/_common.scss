@@ -13,6 +13,14 @@
       height: auto;
       text-align: center;
     }
+    .img2 {
+      opacity: 0;
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
     .ex {
       top: 90px;
       left: 15px;
@@ -344,6 +352,18 @@
 
 .iframe {
   -webkit-overflow-scrolling: "touch";
+}
+
+.fadeIn {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
