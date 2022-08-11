@@ -5,7 +5,9 @@
 }
 
 body {
+  overflow: scroll;
   -ms-overflow-style: none;
+  scrollbar-width: none;
   padding-top: 75px;
 }
 

@@ -652,7 +652,7 @@ function FxItem({ color1, color2 }) {
                           }}
                         >
                           <img
-                            src={number1}
+                            src={number2}
                             alt=""
                             style={{
                               width: "1.6rem",
@@ -688,7 +688,7 @@ function FxItem({ color1, color2 }) {
                           }}
                         >
                           <img
-                            src={number1}
+                            src={number3}
                             alt=""
                             style={{
                               width: "1.6rem",
@@ -724,7 +724,7 @@ function FxItem({ color1, color2 }) {
                           }}
                         >
                           <img
-                            src={number1}
+                            src={number4}
                             alt=""
                             style={{
                               width: "1.6rem",
