@@ -27,13 +27,8 @@ const Accordion = styled((props) => (
     sx={{ mr: 2.5, ml: 2.5 }}
   />
 ))(({ theme }) => ({
-  "&:not(:last-child)": {
-    boxShadow: "0 12px 24px rgba(0, 0, 0, 0.12)",
-    borderRadius: "4px",
-  },
-  "&:before": {
-    display: "none",
-  },
+  boxShadow: "0 12px 24px rgba(0, 0, 0, 0.12)",
+  borderRadius: "4px",
 }));
 
 const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
