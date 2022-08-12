@@ -46,6 +46,7 @@ function SpecItem() {
               boxShadow: modeCondition
                 ? "0 4px 8px rgba(0, 0, 0, 0.15)"
                 : "none",
+              fontSize: "1.6rem",
             }}
           >
             정보
@@ -59,6 +60,7 @@ function SpecItem() {
               boxShadow: modeCondition
                 ? "none"
                 : "0 4px 8px rgba(0, 0, 0, 0.15)",
+              fontSize: "1.6rem",
             }}
           >
             사진
@@ -123,7 +125,7 @@ function SpecItem() {
             </div>
           </div>
         ) : (
-          <>
+          <div className="list">
             <ul>
               <li>
                 <div className="spec">
@@ -194,7 +196,7 @@ function SpecItem() {
                 </div>
               </li>
             </ul>
-          </>
+          </div>
         )}
       </div>
     </>

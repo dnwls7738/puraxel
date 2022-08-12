@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Div100vh from "react-div-100vh";
 
 import "swiper/scss";
 import "swiper/scss/pagination";
@@ -28,7 +29,7 @@ function Fx5000Cont() {
   };
   console.log(params);
   return (
-    <>
+    <Div100vh>
       <Swiper
         style={{
           backgroundImage: `url(${BgImg})`,
@@ -133,7 +134,7 @@ function Fx5000Cont() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </Div100vh>
   );
 }
 

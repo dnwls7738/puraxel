@@ -133,6 +133,7 @@
   width: 100%;
   height: 100%;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   position: relative;
   .contMain {
     width: 100%;
@@ -147,6 +148,8 @@
   .contMain2 {
     margin-top: 70px;
     width: 100%;
+    text-align: center;
+    margin: 0 auto;
     img {
       width: 100%;
     }
@@ -363,7 +366,8 @@
     font-size: 15px;
   }
   .cont {
-    width: 768px;
+    width: 100%;
+    height: 100%;
     .ModeExplain {
       .exs {
         .ex {
@@ -379,7 +383,8 @@
     font-size: 20px;
   }
   .cont {
-    width: 1200px;
+    width: 100%;
+    height: 100%;
     .ModeExplain {
       .exs {
         .ex {
