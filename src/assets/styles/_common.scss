@@ -134,6 +134,7 @@
   height: calc(var(--vh, 1vh) * 100);
   overflow: auto;
   margin: 0 auto;
+  position: relative;
   .contMain {
     width: 100%;
     position: relative;
