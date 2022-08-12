@@ -278,7 +278,7 @@ function FxItem({ color1, color2 }) {
                   alt=""
                   style={{
                     padding: "4px",
-                    width: "99%",
+                    width: "100%",
                   }}
                 />
               </Box>
@@ -367,7 +367,7 @@ function FxItem({ color1, color2 }) {
                   alt=""
                   style={{
                     padding: "4px",
-                    width: "99%",
+                    width: "100%",
                   }}
                 />
               </Box>
@@ -450,7 +450,7 @@ function FxItem({ color1, color2 }) {
                   alt=""
                   style={{
                     padding: "4px",
-                    width: "99%",
+                    width: "100%",
                   }}
                 />
               </Box>
@@ -536,7 +536,7 @@ function FxItem({ color1, color2 }) {
                   alt=""
                   style={{
                     padding: "4px",
-                    width: "99%",
+                    width: "100%",
                   }}
                 />
               </Box>
@@ -888,7 +888,7 @@ function FxItem({ color1, color2 }) {
                   alt=""
                   style={{
                     padding: "4px",
-                    width: "99%",
+                    width: "100%",
                   }}
                 />
               </Box>
