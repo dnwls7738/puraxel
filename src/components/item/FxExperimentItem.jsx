@@ -177,7 +177,7 @@ function FxExItem() {
               alt=""
               style={{
                 padding: "4px",
-                width: "99%",
+                width: "100%",
               }}
             />
           </Box>
@@ -239,7 +239,7 @@ function FxExItem() {
               alt=""
               style={{
                 padding: "4px",
-                width: "99%",
+                width: "100%",
               }}
             />
           </Box>
@@ -301,7 +301,7 @@ function FxExItem() {
               alt=""
               style={{
                 padding: "4px",
-                width: "99%",
+                width: "100%",
               }}
             />
           </Box>

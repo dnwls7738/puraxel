@@ -4,7 +4,6 @@ import Senser from "../../assets/img/senser.svg";
 import GalbanicEx from "../../assets/img/galvanicMode.svg";
 import LaserImg from "../../assets/img/me_02_laser.svg";
 import GalbanicImg from "../../assets/img/me_02_galvanic.svg";
-import { createTheme, Fade } from "@mui/material";
 
 const LaserExplain = () => {
   return (
@@ -67,7 +66,6 @@ const GarbanicText = () => {
 
 function MeItem() {
   const [modeSelector, setModeSelector] = useState("Laser");
-  const [select, setSelect] = useState(false);
 
   const selectorLaser = () => {
     setModeSelector("Laser");
@@ -75,7 +73,6 @@ function MeItem() {
 
   const selectorGalvanic = () => {
     setModeSelector("Galvanic");
-    setSelect(false);
   };
 
   const modeCondition = modeSelector === "Laser";

@@ -43,6 +43,9 @@ function SpecItem() {
             style={{
               backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
               color: modeCondition ? "#FFFFFF" : "#A7ABB6",
+              boxShadow: modeCondition
+                ? "0 4px 8px rgba(0, 0, 0, 0.15)"
+                : "none",
             }}
           >
             정보
@@ -53,6 +56,9 @@ function SpecItem() {
               backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
               color: modeCondition ? "#A7ABB6" : "#FFFFFF",
               marginLeft: "8px",
+              boxShadow: modeCondition
+                ? "none"
+                : "0 4px 8px rgba(0, 0, 0, 0.15)",
             }}
           >
             사진

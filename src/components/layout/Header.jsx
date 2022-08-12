@@ -190,7 +190,7 @@ function Header({ name, text }) {
           <p className="product">puraxel mall</p>
           <Link
             to={{
-              pathname: "https://lmdt.cafe24.com",
+              pathname: "https://m.lmdt.cafe24.com",
             }}
             target="_blank"
           >

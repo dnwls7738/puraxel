@@ -110,8 +110,8 @@ function Fx5000Cont() {
                   height: "100%",
                   left: "0",
                 }}
-                frameborder="0"
-                allowfullscreen
+                frameBorder="0"
+                allowFullScreen
               ></iframe>
             </div>
           </div>

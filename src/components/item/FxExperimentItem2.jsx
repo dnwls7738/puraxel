@@ -208,7 +208,7 @@ function FxExItem() {
                 alt=""
                 style={{
                   padding: "4px",
-                  width: "99%",
+                  width: "100%",
                 }}
               />
             ) : (
@@ -217,7 +217,7 @@ function FxExItem() {
                 alt=""
                 style={{
                   padding: "4px",
-                  width: "99%",
+                  width: "100%",
                 }}
               />
             )}
@@ -424,7 +424,7 @@ function FxExItem() {
                   alt=""
                   style={{
                     margin: "16px",
-                    width: "90%",
+                    width: "89%",
                   }}
                 />
               ) : (
@@ -433,7 +433,7 @@ function FxExItem() {
                   alt=""
                   style={{
                     margin: "16px",
-                    width: "90%",
+                    width: "89%",
                   }}
                 />
               )}
