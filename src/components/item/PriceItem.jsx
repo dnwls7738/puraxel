@@ -10,6 +10,7 @@ function PriceItem() {
       <div className="contPrice">
         <div className="priceConts">
           <Link
+            className="a"
             to={{
               pathname:
                 "http://lmdt.cafe24.com/product/detail.html?product_no=11",
@@ -29,6 +30,7 @@ function PriceItem() {
             </div>
           </Link>
           <Link
+            className="a"
             to={{
               pathname:
                 "http://lmdt.cafe24.com/product/detail.html?product_no=11",
@@ -54,6 +56,7 @@ function PriceItem() {
         </div>
         <div className="priceConts">
           <Link
+            className="a"
             to={{
               pathname:
                 "http://lmdt.cafe24.com/product/detail.html?product_no=11",
@@ -73,6 +76,7 @@ function PriceItem() {
             </div>
           </Link>
           <Link
+            className="a"
             to={{
               pathname:
                 "http://lmdt.cafe24.com/product/detail.html?product_no=11",

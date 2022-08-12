@@ -5,67 +5,74 @@
   .priceConts {
     margin-top: 8px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    .priceCont {
+    .a {
+      margin-left: 4px;
+      margin-right: 4px;
       width: 100%;
       border-radius: 4px;
       background: #fff;
       box-shadow: 0 8px 40px #00000020;
-      img {
-        padding: 4px;
-        width: 100%;
-      }
-      h1 {
-        font-family: "Pretendard";
-        font-weight: 600;
-        font-size: 1.6rem;
-        color: #4d5058;
-        margin: 8px 8px;
-      }
-      .mainPrice {
-        font-family: "Pretendard";
-        font-weight: 700;
-        font-size: 1.2rem;
-        color: #b298ad;
-        margin: 47px 12px 4px 0;
-        text-align: right;
-      }
-      .mainPrice2 {
-        margin: 20px 12px 4px 8px;
-        display: flex;
-        justify-content: space-between;
-        .mainText1 {
-          font-family: "Pretendard";
-          font-weight: 700;
-          font-size: 1.2rem;
-          color: #b298ad;
-          padding: 2px 4px;
-          background: #f8f9fa;
-          border-radius: 4px;
+      .priceCont {
+        border-radius: 4px;
+        background: #fff;
+        img {
+          padding: 4px;
+          width: 100%;
         }
-        .mainText2 {
-          font-family: "Pretendard";
-          font-weight: 700;
-          font-size: 1.2rem;
-          color: #b298ad;
-        }
-      }
-      .subPrice {
-        margin: 0 12px 8px 8px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .subText1 {
-          font-family: "Pretendard";
-          font-weight: 700;
-          font-size: 1.2rem;
-          color: #c7cad3;
-        }
-        .subText2 {
+        h1 {
           font-family: "Pretendard";
           font-weight: 600;
           font-size: 1.6rem;
           color: #4d5058;
+          margin: 8px 8px;
+        }
+        .mainPrice {
+          font-family: "Pretendard";
+          font-weight: 700;
+          font-size: 1.2rem;
+          color: #b298ad;
+          margin: 47px 12px 4px 0;
+          text-align: right;
+        }
+        .mainPrice2 {
+          margin: 20px 12px 4px 8px;
+          display: flex;
+          justify-content: space-between;
+          .mainText1 {
+            font-family: "Pretendard";
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #b298ad;
+            padding: 2px 4px;
+            background: #f8f9fa;
+            border-radius: 4px;
+          }
+          .mainText2 {
+            font-family: "Pretendard";
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #b298ad;
+          }
+        }
+        .subPrice {
+          margin: 0 12px 8px 8px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .subText1 {
+            font-family: "Pretendard";
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: #c7cad3;
+          }
+          .subText2 {
+            font-family: "Pretendard";
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: #4d5058;
+          }
         }
       }
     }
