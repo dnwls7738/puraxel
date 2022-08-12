@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import LaserEx from "../../assets/img/03.svg";
 import Senser from "../../assets/img/senser.svg";
 import GalbanicEx from "../../assets/img/galvanicMode.svg";
-import LaserImg from "../../assets/img/me_02_laser.svg";
-import GalbanicImg from "../../assets/img/me_02_galvanic.svg";
+import LaserImg from "../../assets/img/me_02_laser.png";
+import GalbanicImg from "../../assets/img/me_02_galvanic.png";
 
 const LaserExplain = () => {
   return (
@@ -89,7 +89,7 @@ function MeItem() {
               onClick={selectorLaser}
               style={{
                 background: modeCondition
-                  ? "linear-gradient(#4D5058, #8B7CCA)"
+                  ? "linear-gradient(rgba(147, 132, 234, 1), rgba(105, 101, 155, 1))"
                   : "#f2f3f6",
                 color: modeCondition ? "#f8f9fa" : "#a7abb6",
                 boxShadow: modeCondition ? "0 8px 8px #00000020" : "none",
@@ -107,7 +107,7 @@ function MeItem() {
               style={{
                 background: modeCondition
                   ? "#f2f3f6"
-                  : "linear-gradient(#4D5058, #8B7CCA)",
+                  : "linear-gradient(rgba(147, 132, 234, 1), rgba(105, 101, 155, 1))",
                 borderColor: modeCondition ? "#f2f3f6" : "#4d5058",
                 color: modeCondition ? "#a7abb6" : "#f8f9fa",
                 boxShadow: modeCondition ? "none" : "0 8px 8px #00000020",
