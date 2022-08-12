@@ -11,7 +11,8 @@ function PriceItem() {
         <div className="priceConts">
           <Link
             to={{
-              pathname: "https://m.lmdt.cafe24.com",
+              pathname:
+                "http://lmdt.cafe24.com/product/detail.html?product_no=11",
             }}
             target="_blank"
           >
@@ -29,7 +30,8 @@ function PriceItem() {
           </Link>
           <Link
             to={{
-              pathname: "https://m.lmdt.cafe24.com",
+              pathname:
+                "http://lmdt.cafe24.com/product/detail.html?product_no=11",
             }}
             target="_blank"
           >
@@ -53,7 +55,8 @@ function PriceItem() {
         <div className="priceConts">
           <Link
             to={{
-              pathname: "https://m.lmdt.cafe24.com",
+              pathname:
+                "http://lmdt.cafe24.com/product/detail.html?product_no=11",
             }}
             target="_blank"
           >
@@ -71,7 +74,8 @@ function PriceItem() {
           </Link>
           <Link
             to={{
-              pathname: "https://m.lmdt.cafe24.com",
+              pathname:
+                "http://lmdt.cafe24.com/product/detail.html?product_no=11",
             }}
             target="_blank"
           >

@@ -144,18 +144,20 @@ function Header({ name, text }) {
             padding: 16,
           }}
         >
-          <ThemeProvider theme={theme1}>
-            <IconButton>
-              <img
-                src={Logo}
-                style={{
-                  width: "4.8rem",
-                  verticalAlign: "middile",
-                }}
-                alt=""
-              />
-            </IconButton>
-          </ThemeProvider>
+          <Link to="/">
+            <ThemeProvider theme={theme1}>
+              <IconButton>
+                <img
+                  src={Logo}
+                  style={{
+                    width: "4.8rem",
+                    verticalAlign: "middile",
+                  }}
+                  alt=""
+                />
+              </IconButton>
+            </ThemeProvider>
+          </Link>
           <ThemeProvider theme={theme1}>
             <IconButton onClick={toggleDrawer(false)}>
               <img
@@ -190,7 +192,7 @@ function Header({ name, text }) {
           <p className="product">puraxel mall</p>
           <Link
             to={{
-              pathname: "https://m.lmdt.cafe24.com",
+              pathname: "http://m.lmdt.cafe24.com",
             }}
             target="_blank"
           >
@@ -304,7 +306,7 @@ function Header({ name, text }) {
         ) : name === "ME" ? (
           <Link
             to={{
-              pathname: "https://lmdt.cafe24.com",
+              pathname: "http://m.lmdt.cafe24.com",
             }}
             target="_blank"
             className="shop"
