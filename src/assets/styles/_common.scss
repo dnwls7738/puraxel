@@ -131,9 +131,8 @@
 
 .cont {
   width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
-  overflow: auto;
-  margin: 0 auto;
+  height: 100%;
+  overflow: scroll;
   position: relative;
   .contMain {
     width: 100%;
@@ -148,7 +147,6 @@
   .contMain2 {
     margin-top: 70px;
     width: 100%;
-
     img {
       width: 100%;
     }

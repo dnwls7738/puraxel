@@ -1,8 +1,8 @@
 @charset "UTF-8";
-:root {
-  --vh: 100%;
+html,
+body {
+  height: 100%;
 }
-
 /* border-box 초기화 */
 *,
 *:before,

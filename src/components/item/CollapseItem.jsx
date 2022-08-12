@@ -24,11 +24,12 @@ const Accordion = styled((props) => (
     elevation={0}
     square
     {...props}
-    sx={{ mr: 2.5, ml: 2.5 }}
+    sx={{ mr: 2.5, ml: 2.5, mb: 2 }}
   />
 ))(({ theme }) => ({
   boxShadow: "0 12px 24px rgba(0, 0, 0, 0.12)",
   borderRadius: "4px",
+  marginBottom: "4px",
 }));
 
 const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
@@ -246,7 +247,7 @@ function CollapseItem() {
           />
         )}
       </Box>
-      <Accordion onClick={handleChange3}>
+      <Accordion onClick={handleChange3} sx={{ mb: 1 }}>
         <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
           <Typography>
             <>
