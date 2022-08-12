@@ -13,10 +13,47 @@ import Tech2_2 from "../../assets/img/tech2_2.png";
 import Tech3 from "../../assets/img/tech3.png";
 import Tech3_3 from "../../assets/img/tech3_3.png";
 
-import { Collapse, Paper, Box } from "@mui/material";
+import MuiAccordion from "@mui/material/Accordion";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import { Box, Typography, styled } from "@mui/material";
+
+const Accordion = styled((props) => (
+  <MuiAccordion
+    disableGutters
+    elevation={0}
+    square
+    {...props}
+    sx={{ mr: 2.5, ml: 2.5 }}
+  />
+))(({ theme }) => ({
+  "&:not(:last-child)": {
+    boxShadow: "0 12px 24px rgba(0, 0, 0, 0.12)",
+    borderRadius: "4px",
+  },
+  "&:before": {
+    display: "none",
+  },
+}));
+
+const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
+  ({ theme }) => ({
+    backgroundColor: "rgba(255, 255, 255, .05)",
+
+    flexDirection: "row-reverse",
+    "& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+      transform: "rotate(90deg)",
+    },
+    "& .MuiAccordionSummary-content": {},
+  })
+);
+
+const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
+  padding: 0,
+}));
 
 function CollapseItem() {
-  const [checked, setChecked] = React.useState(true);
+  const [checked, setChecked] = React.useState(false);
   const [checked2, setChecked2] = React.useState(false);
   const [checked3, setChecked3] = React.useState(false);
 
@@ -30,228 +67,242 @@ function CollapseItem() {
     setChecked3((prev) => !prev);
   };
   return (
-    <Box
-      sx={{
-        width: "360px",
-        margin: "0 auto",
-      }}
-    >
-      <Box
-        sx={{
-          width: "100%",
-        }}
-      >
-        <Collapse in={checked} collapsedSize={168} onClick={handleChange}>
-          <Paper sx={{ m: 2 }} elevation={4}>
-            <Box sx={{ width: "100%", height: "auto" }}>
-              {checked === false ? (
-                <img
-                  src={TechImg_1}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
-              ) : (
-                <img
-                  src={TechImg}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
-              )}
-
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingTop: "12px",
-                  paddingLeft: "12px",
-                }}
-              >
-                <div>
-                  {checked === false ? (
-                    <img src={Tech1_1} alt="" style={{ width: "20px" }} />
-                  ) : (
-                    <img src={Tech1} alt="" style={{ width: "20px" }} />
-                  )}
-                </div>
-                <h1
-                  style={{
-                    fontFamily: "Pretendard",
-                    fontWeight: "800",
-                    fontSize: "1.4rem",
-                    color: "rgba(77, 80, 88, 1)",
-                    paddingLeft: "8px",
-                    paddingBottom: "4px",
-                  }}
-                >
-                  레이저 출력
-                </h1>
-              </div>
-              <p
-                style={{
-                  fontFamily: "Pretendard",
-                  fontWeight: "600",
-                  fontSize: "1.4rem",
-                  color: "rgba(126, 129, 141, 1)",
-                  paddingLeft: "38px",
-                  paddingBottom: "12px",
-                }}
-              >
-                Array Lens를 사용한 Fractional 형태의 레이저 <br />
-                출력
-              </p>
-            </Box>
-          </Paper>
-        </Collapse>
-        <Collapse in={checked2} collapsedSize={168} onClick={handleChange2}>
-          <Paper sx={{ m: 2, maxWidth: "100%" }} elevation={4}>
-            <Box sx={{ width: "100%", height: "auto" }}>
-              {checked2 === false ? (
-                <img
-                  src={TechImg_2}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
-              ) : (
-                <img
-                  src={TechImg2}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
-              )}
-
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingTop: "12px",
-                  paddingLeft: "12px",
-                }}
-              >
-                <div>
-                  {checked2 === false ? (
-                    <img src={Tech2_2} alt="" style={{ width: "20px" }} />
-                  ) : (
-                    <img src={Tech2} alt="" style={{ width: "20px" }} />
-                  )}
-                </div>
-                <h1
-                  style={{
-                    fontFamily: "Pretendard",
-                    fontWeight: "800",
-                    fontSize: "1.4rem",
-                    color: "rgba(77, 80, 88, 1)",
-                    paddingLeft: "8px",
-                    paddingBottom: "4px",
-                  }}
-                >
-                  마이크로 홀 생성
-                </h1>
-              </div>
-              <p
-                style={{
-                  fontFamily: "Pretendard",
-                  fontWeight: "600",
-                  fontSize: "1.4rem",
-                  color: "rgba(126, 129, 141, 1)",
-                  paddingLeft: "38px",
-                  paddingBottom: "12px",
-                }}
-              >
-                방사되는 레이저 에너지는 생체에 흡수되며
-                <br /> 피부 내 물분자의 결합을 파괴하며 나오는 높은
-                <br /> 에너지 통해 피부를 증발 시켜 Micro hole 생성 출력
-              </p>
-              <p
-                style={{
-                  fontFamily: "Pretendard",
-                  fontWeight: "700",
-                  fontSize: "1.2rem",
-                  color: "rgba(167, 171, 182, 1)",
-                  paddingLeft: "38px",
-                  paddingBottom: "12px",
-                }}
-              >
-                *1회 레이저 조사 시 약 100개 Micro holes생성
-              </p>
-            </Box>
-          </Paper>
-        </Collapse>
-        <Collapse in={checked3} collapsedSize={168} onClick={handleChange3}>
-          <Paper sx={{ m: 2 }} elevation={4}>
-            <Box sx={{ width: "100%", height: "auto" }}>
-              {checked3 === false ? (
-                <img
-                  src={TechImg_3}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
-              ) : (
-                <img
-                  src={TechImg3}
-                  alt=""
-                  style={{ width: "100%", height: "auto" }}
-                />
-              )}
-
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  paddingTop: "12px",
-                  paddingLeft: "12px",
-                }}
-              >
-                <div>
-                  {checked3 === false ? (
-                    <img src={Tech3_3} alt="" style={{ width: "20px" }} />
-                  ) : (
-                    <img src={Tech3} alt="" style={{ width: "20px" }} />
-                  )}
-                </div>
-                <h1
-                  style={{
-                    fontFamily: "Pretendard",
-                    fontWeight: "800",
-                    fontSize: "1.4rem",
-                    color: "rgba(77, 80, 88, 1)",
-                    paddingLeft: "8px",
-                    paddingBottom: "4px",
-                  }}
-                >
-                  영양 성분 흡수율 향상
-                </h1>
-              </div>
-              <p
-                style={{
-                  fontFamily: "Pretendard",
-                  fontWeight: "600",
-                  fontSize: "1.4rem",
-                  color: "rgba(126, 129, 141, 1)",
-                  paddingLeft: "38px",
-                  paddingBottom: "12px",
-                }}
-              >
-                0.2mm 이하 표피조직에만 최소한 침습 되어 <br />
-                기능성 화장품 등의 영양물질 흡수율 향상 시킴
-              </p>
-              <p
-                style={{
-                  fontFamily: "Pretendard",
-                  fontWeight: "700",
-                  fontSize: "1.2rem",
-                  color: "rgba(167, 171, 182, 1)",
-                  paddingLeft: "38px",
-                  paddingBottom: "12px",
-                }}
-              >
-                퓨라셀 레이저는 표피 조직에만 침입하여 부작용을 최소화 할 <br />
-                수 있습니다.
-              </p>
-            </Box>
-          </Paper>
-        </Collapse>
+    <>
+      <Box sx={{ mt: 1.5, mr: 2.5, ml: 2.5, borderRadius: "4px" }}>
+        {checked === false ? (
+          <img
+            src={TechImg_1}
+            alt=""
+            style={{
+              width: "100%",
+              height: "auto",
+              borderTopLeftRadius: "4px",
+              borderTopRightRadius: "4px",
+            }}
+          />
+        ) : (
+          <img
+            src={TechImg}
+            alt=""
+            style={{
+              width: "100%",
+              height: "auto",
+              borderTopLeftRadius: "4px",
+              borderTopRightRadius: "4px",
+            }}
+          />
+        )}
       </Box>
-    </Box>
+      <Accordion onClick={handleChange}>
+        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+          <Typography>
+            <>
+              <>
+                {checked === false ? (
+                  <img src={Tech1_1} alt="" style={{ width: "20px" }} />
+                ) : (
+                  <img src={Tech1} alt="" style={{ width: "20px" }} />
+                )}
+              </>
+              <span
+                style={{
+                  fontFamily: "Pretendard",
+                  fontWeight: "800",
+                  fontSize: "1.4rem",
+                  color: "rgba(77, 80, 88, 1)",
+                  paddingLeft: "8px",
+                  paddingBottom: "4px",
+                }}
+              >
+                레이저 출력
+              </span>
+            </>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <div>
+            <p
+              style={{
+                fontFamily: "Pretendard",
+                fontWeight: "600",
+                fontSize: "1.4rem",
+                color: "rgba(126, 129, 141, 1)",
+                paddingLeft: "40px",
+                marginBottom: "12px",
+              }}
+            >
+              Array Lens를 사용한 Fractional 형태의 레이저
+              <br /> 출력
+            </p>
+          </div>
+        </AccordionDetails>
+      </Accordion>
+
+      <Box sx={{ mt: 1.5, mr: 2.5, ml: 2.5 }}>
+        {checked2 === false ? (
+          <img
+            src={TechImg_2}
+            alt=""
+            style={{
+              width: "100%",
+              height: "auto",
+              borderTopLeftRadius: "4px",
+              borderTopRightRadius: "4px",
+            }}
+          />
+        ) : (
+          <img
+            src={TechImg2}
+            alt=""
+            style={{
+              width: "100%",
+              height: "auto",
+              borderTopLeftRadius: "4px",
+              borderTopRightRadius: "4px",
+            }}
+          />
+        )}
+      </Box>
+      <Accordion onClick={handleChange2}>
+        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+          <Typography>
+            <>
+              <>
+                {checked2 === false ? (
+                  <img src={Tech2_2} alt="" style={{ width: "20px" }} />
+                ) : (
+                  <img src={Tech2} alt="" style={{ width: "20px" }} />
+                )}
+              </>
+              <span
+                style={{
+                  fontFamily: "Pretendard",
+                  fontWeight: "800",
+                  fontSize: "1.4rem",
+                  color: "rgba(77, 80, 88, 1)",
+                  paddingLeft: "8px",
+                  paddingBottom: "4px",
+                }}
+              >
+                마이크로 홀 생성
+              </span>
+            </>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <div>
+            <p
+              style={{
+                fontFamily: "Pretendard",
+                fontWeight: "600",
+                fontSize: "1.4rem",
+                color: "rgba(126, 129, 141, 1)",
+                paddingLeft: "40px",
+                marginBottom: "12px",
+              }}
+            >
+              방사되는 레이저 에너지는 생체에 흡수되며
+              <br /> 피부 내 물분자의 결합을 파괴하며 나오는 높은
+              <br /> 에너지 통해 피부를 증발 시켜 Micro hole 생성
+            </p>
+            <p
+              style={{
+                fontFamily: "Pretendard",
+                fontWeight: "700",
+                fontSize: "1.2rem",
+                color: "rgba(167, 171, 182, 1)",
+                paddingLeft: "38px",
+                paddingBottom: "12px",
+              }}
+            >
+              *1회 레이저 조사 시 약 100개 Micro holes생성
+            </p>
+          </div>
+        </AccordionDetails>
+      </Accordion>
+      <Box sx={{ mt: 1.5, mr: 2.5, ml: 2.5 }}>
+        {checked3 === false ? (
+          <img
+            src={TechImg_3}
+            alt=""
+            style={{
+              width: "100%",
+              height: "auto",
+              borderTopLeftRadius: "4px",
+              borderTopRightRadius: "4px",
+            }}
+          />
+        ) : (
+          <img
+            src={TechImg3}
+            alt=""
+            style={{
+              width: "100%",
+              height: "auto",
+              borderTopLeftRadius: "4px",
+              borderTopRightRadius: "4px",
+            }}
+          />
+        )}
+      </Box>
+      <Accordion onClick={handleChange3}>
+        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+          <Typography>
+            <>
+              <>
+                {checked3 === false ? (
+                  <img src={Tech3_3} alt="" style={{ width: "20px" }} />
+                ) : (
+                  <img src={Tech3} alt="" style={{ width: "20px" }} />
+                )}
+              </>
+              <span
+                style={{
+                  fontFamily: "Pretendard",
+                  fontWeight: "800",
+                  fontSize: "1.4rem",
+                  color: "rgba(77, 80, 88, 1)",
+                  paddingLeft: "8px",
+                  paddingBottom: "4px",
+                }}
+              >
+                영양성분 흡수율 향상
+              </span>
+            </>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <div>
+            <p
+              style={{
+                fontFamily: "Pretendard",
+                fontWeight: "600",
+                fontSize: "1.4rem",
+                color: "rgba(126, 129, 141, 1)",
+                paddingLeft: "40px",
+                marginBottom: "12px",
+              }}
+            >
+              0.2mm 이하 표피조직에만 최소한 침습 되어 <br />
+              기능성 화장품 등의 영양물질 흡수율 향상 시킴
+            </p>
+            <p
+              style={{
+                fontFamily: "Pretendard",
+                fontWeight: "700",
+                fontSize: "1.2rem",
+                color: "rgba(167, 171, 182, 1)",
+                paddingLeft: "38px",
+                paddingBottom: "12px",
+              }}
+            >
+              퓨라셀 레이저는 표피 조직에만 침입하여 부작용을 최소화 할 <br />수
+              있습니다.
+            </p>
+          </div>
+        </AccordionDetails>
+      </Accordion>
+    </>
   );
 }
 
