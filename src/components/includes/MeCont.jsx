@@ -49,7 +49,7 @@ function MeCont() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <ContMain header="PURAXEL ME" img={MainImg} bg={BgImg} />
+          <ContMain header="PURAXEL ME" img={MainImg} />
         </SwiperSlide>
 
         <SwiperSlide>

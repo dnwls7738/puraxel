@@ -45,6 +45,7 @@ const AccordionSummary = styled((props) => <MuiAccordionSummary {...props} />)(
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: 0,
+  height: "100%",
 }));
 
 function CollapseItem() {
@@ -106,6 +107,7 @@ function CollapseItem() {
                   fontSize: "1.4rem",
                   color: "rgba(77, 80, 88, 1)",
                   paddingLeft: "8px",
+                  paddingRight: "12px",
                   paddingBottom: "4px",
                 }}
               >
@@ -123,6 +125,7 @@ function CollapseItem() {
                 fontSize: "1.4rem",
                 color: "rgba(126, 129, 141, 1)",
                 paddingLeft: "40px",
+                paddingRight: "12px",
                 marginBottom: "12px",
               }}
             >
@@ -176,6 +179,7 @@ function CollapseItem() {
                   fontSize: "1.4rem",
                   color: "rgba(77, 80, 88, 1)",
                   paddingLeft: "8px",
+                  paddingRight: "12px",
                   paddingBottom: "4px",
                 }}
               >
@@ -193,6 +197,7 @@ function CollapseItem() {
                 fontSize: "1.4rem",
                 color: "rgba(126, 129, 141, 1)",
                 paddingLeft: "40px",
+                paddingRight: "12px",
                 marginBottom: "12px",
               }}
             >
@@ -207,6 +212,7 @@ function CollapseItem() {
                 fontSize: "1.2rem",
                 color: "rgba(167, 171, 182, 1)",
                 paddingLeft: "38px",
+                paddingRight: "12px",
                 paddingBottom: "12px",
               }}
             >
@@ -275,6 +281,7 @@ function CollapseItem() {
                 fontSize: "1.4rem",
                 color: "rgba(126, 129, 141, 1)",
                 paddingLeft: "40px",
+                paddingRight: "12px",
                 marginBottom: "12px",
               }}
             >
@@ -283,15 +290,17 @@ function CollapseItem() {
             </p>
             <p
               style={{
+                width: "100%",
                 fontFamily: "Pretendard",
                 fontWeight: "700",
                 fontSize: "1.2rem",
                 color: "rgba(167, 171, 182, 1)",
                 paddingLeft: "38px",
+                paddingRight: "12px",
                 paddingBottom: "12px",
               }}
             >
-              퓨라셀 레이저는 표피 조직에만 침입하여 부작용을 최소화 할 <br />수
+              퓨라셀 레이저는 표피 조직에만 침입하여 부작용을 최소화 할 수
               있습니다.
             </p>
           </div>

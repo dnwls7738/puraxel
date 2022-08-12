@@ -48,7 +48,7 @@ function HairCont() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <ContMain header="PURAXEL HAIR" img={MainImg} bg={BgImg} />
+          <ContMain header="PURAXEL HAIR" img={MainImg} />
         </SwiperSlide>
 
         <SwiperSlide>

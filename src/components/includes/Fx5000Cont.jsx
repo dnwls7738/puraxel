@@ -57,7 +57,7 @@ function Fx5000Cont() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <ContMain header="PURAXEL FX-5000" img={MainImg} bg={BgImg} />
+          <ContMain header="PURAXEL FX-5000" img={MainImg} />
         </SwiperSlide>
         <SwiperSlide>
           <div className="cont">
