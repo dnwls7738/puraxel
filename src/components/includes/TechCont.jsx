@@ -26,13 +26,14 @@ import CollapseItem from "../item/CollapseItem";
 
 function TechCont() {
   return (
-    <>
+    <div
+      style={{
+        backgroundImage: `url(${BgImg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
       <Swiper
-        style={{
-          backgroundImage: `url(${BgImg})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-        }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={50}
@@ -218,7 +219,7 @@ function TechCont() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 
