@@ -101,7 +101,7 @@ function FxModeItem() {
             </div>
           </div>
           <div className="etcM">
-            <div style={{}}>
+            <div style={{ marginRight: "8px" }}>
               <div
                 className="fx2"
                 onClick={selector2}
