@@ -68,7 +68,7 @@ function Fx5000Cont() {
                 퓨라셀의 <em>다섯가지 기능</em>
               </p>
             </div>
-            <FxModeItem color1="#CA7C98" color2="#866370" />
+            <FxModeItem />
           </div>
         </SwiperSlide>
         <SwiperSlide>

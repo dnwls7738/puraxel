@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
 
-import FxModeItem from "../item/FxModeItem";
+import FxModeItem from "../item/HairModeItem";
 import FxExperimentItem2 from "../item/FxExperimentItem2";
 import ContMain from "../layout/ContMain";
 import SpecItem2 from "../item/SpecItem2";
@@ -59,7 +59,7 @@ function HairCont() {
                 퓨라셀의 <em>다섯가지 기능</em>
               </p>
             </div>
-            <FxModeItem color1="#CA937C" color2="#866A63" />
+            <FxModeItem />
           </div>
         </SwiperSlide>
 

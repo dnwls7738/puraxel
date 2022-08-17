@@ -26,7 +26,6 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material";
-import UserForm from "../inquiry/UserForm";
 
 const theme = createTheme({
   components: {
@@ -471,7 +470,6 @@ function Header({ name, text }) {
                 />
               </IconButton>
             </div>
-            <UserForm />
           </Box>
         </Modal>
       </div>
