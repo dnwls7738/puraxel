@@ -13,7 +13,6 @@ import Shortcut from "../../assets/img/shortcutMini.svg";
 
 import {
   ListItem,
-  ListItemButton,
   ListItemText,
   Box,
   Drawer,
@@ -35,9 +34,9 @@ const theme = createTheme({
         // Name of the slot
         root: {
           // Some CSS
-          fontSize: "32px",
+          marginLeft: "20px",
+          fontSize: "3.2rem",
           fontFamily: "Pretendard",
-          height: "43px",
           fontWeight: "300",
         },
       },
@@ -53,6 +52,7 @@ const theme1 = createTheme({
         // Name of the slot
         root: {
           // Some CSS
+          padding: 0,
         },
       },
     },
@@ -84,7 +84,7 @@ const style = {
   top: "82%",
   left: "50%",
   transform: "translate(-50%, -60%)",
-  width: 300,
+  minWidth: 300,
   bgcolor: "background.paper",
   border: "none",
   borderRadius: "4px",
@@ -174,150 +174,148 @@ function Header({ name, text }) {
 
         {["ME", "FX-5000", "HAIR", "핵심기술"].map((text) => (
           <Link key={text} to={text}>
-            <ListItemButton>
-              <ListItem disablePadding>
-                <ThemeProvider theme={theme}>
-                  <ListItemText primary={text} />
-                </ThemeProvider>
-              </ListItem>
-            </ListItemButton>
+            <ListItem disablePadding>
+              <ThemeProvider theme={theme}>
+                <ListItemText primary={text} />
+              </ThemeProvider>
+            </ListItem>
           </Link>
         ))}
-      </List>
 
-      <div className="mall">
-        <div>
-          <p className="product">puraxel mall</p>
-          <Link
-            to={{
-              pathname: "http://m.lmdt.cafe24.com",
-            }}
-            target="_blank"
-          >
-            <div className="toShop">
-              <p
-                style={{
-                  marginTop: 12,
-                }}
-              >
-                Shop
-              </p>
-            </div>
-          </Link>
-        </div>
-      </div>
-      <div className="service">
-        <div>
-          <p className="product">customer service</p>
-          <Link
-            to={{
-              pathname: "",
-            }}
-            target="_blank"
-          >
-            <div className="toShop">
-              <p
-                style={{
-                  marginTop: 12,
-                }}
-              >
-                notice
-              </p>
-            </div>
-          </Link>
-          <Link
-            to={{
-              pathname: "",
-            }}
-            target="_blank"
-          >
-            <div className="toShop">
-              <p
-                style={{
-                  marginTop: 12,
-                }}
-              >
-                news letter
-              </p>
-            </div>
-          </Link>
-        </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          position: "relative",
-        }}
-      >
-        <div className="sns">
-          <p className="product">sns</p>
-          <div
-            style={{
-              marginTop: 12,
-            }}
-          >
+        <div className="mall">
+          <div>
+            <p className="product">puraxel mall</p>
             <Link
               to={{
-                pathname: "",
+                pathname: "http://m.lmdt.cafe24.com",
               }}
               target="_blank"
             >
-              <Icon
-                sx={{
-                  width: 32,
-                  height: 32,
-                  marginRight: "16px",
-                  borderRadius: "6px",
-                }}
-              >
-                <img src={Facebook} alt="" />
-              </Icon>
-            </Link>
-
-            <Link
-              to={{
-                pathname: "",
-              }}
-              target="_blank"
-            >
-              <Icon
-                sx={{
-                  width: 32,
-                  height: 32,
-                  marginRight: "16px",
-                  borderRadius: "6px",
-                }}
-              >
-                <img src={Insta} alt="" />
-              </Icon>
-            </Link>
-
-            <Link
-              to={{
-                pathname: "",
-              }}
-              target="_blank"
-            >
-              <Icon
-                sx={{
-                  width: 32,
-                  height: 32,
-                  borderRadius: "6px",
-                }}
-              >
-                <img src={Youtube} alt="" />
-              </Icon>
+              <div className="toShop">
+                <p
+                  style={{
+                    marginTop: 12,
+                  }}
+                >
+                  Shop
+                </p>
+              </div>
             </Link>
           </div>
         </div>
-        <div className="info">
-          <span>EN</span>
-          <span>KR</span>
-          <span onClick={handleOpen}>사업자정보</span>
+        <div className="service">
+          <div>
+            <p className="product">customer service</p>
+            <Link
+              to={{
+                pathname: "",
+              }}
+              target="_blank"
+            >
+              <div className="toShop">
+                <p
+                  style={{
+                    marginTop: 12,
+                  }}
+                >
+                  notice
+                </p>
+              </div>
+            </Link>
+            <Link
+              to={{
+                pathname: "",
+              }}
+              target="_blank"
+            >
+              <div className="toShop">
+                <p
+                  style={{
+                    marginTop: 12,
+                  }}
+                >
+                  news letter
+                </p>
+              </div>
+            </Link>
+          </div>
         </div>
-      </div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            position: "relative",
+          }}
+        >
+          <div className="sns">
+            <p className="product">sns</p>
+            <div
+              style={{
+                marginTop: 12,
+              }}
+            >
+              <Link
+                to={{
+                  pathname: "",
+                }}
+                target="_blank"
+              >
+                <Icon
+                  sx={{
+                    width: 32,
+                    height: 32,
+                    marginRight: "16px",
+                    borderRadius: "6px",
+                  }}
+                >
+                  <img src={Facebook} alt="" />
+                </Icon>
+              </Link>
+
+              <Link
+                to={{
+                  pathname: "",
+                }}
+                target="_blank"
+              >
+                <Icon
+                  sx={{
+                    width: 32,
+                    height: 32,
+                    marginRight: "16px",
+                    borderRadius: "6px",
+                  }}
+                >
+                  <img src={Insta} alt="" />
+                </Icon>
+              </Link>
+
+              <Link
+                to={{
+                  pathname: "",
+                }}
+                target="_blank"
+              >
+                <Icon
+                  sx={{
+                    width: 32,
+                    height: 32,
+                    borderRadius: "6px",
+                  }}
+                >
+                  <img src={Youtube} alt="" />
+                </Icon>
+              </Link>
+            </div>
+          </div>
+          <div className="info">
+            <span>EN</span>
+            <span>KR</span>
+            <span onClick={handleOpen}>사업자정보</span>
+          </div>
+        </div>
+      </List>
     </Box>
   );
 
@@ -396,7 +394,7 @@ function Header({ name, text }) {
                   width: 360,
                   color: "#55576F",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
-                  zIndex: -1,
+                  zIndex: 99999,
                   backdropFilter: "blur(40px)",
                 },
               }}
@@ -457,7 +455,7 @@ function Header({ name, text }) {
                 </div>
               </Typography>
 
-              <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+              <div id="transition-modal-description" style={{ marginTop: 12 }}>
                 <p style={style2}>
                   대표자 최종석 | 사업자번호 : 119-86-51786 <br />
                   통신판매업신고번호 : 제2017-서울금천-0999호
@@ -470,7 +468,7 @@ function Header({ name, text }) {
                   <br /> F. 02-852-7983
                   <br /> E. sales@lameditech.com
                 </p>
-              </Typography>
+              </div>
             </Box>
           </Fade>
         </Modal>
