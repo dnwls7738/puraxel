@@ -19,12 +19,18 @@ import MainImg from "../../assets/img/hair_main.png";
 
 function HairCont() {
   return (
-    <>
+    <div
+      style={{
+        backgroundImage: `url(${BgImg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        height: "100vh",
+      }}
+    >
       <Swiper
         style={{
-          backgroundImage: `url(${BgImg})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          height: "100vh",
+          overflow: "visible",
         }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
@@ -45,7 +51,6 @@ function HairCont() {
             );
           },
         }}
-        scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
           <ContMain header="PURAXEL HAIR" img={MainImg} />
@@ -129,7 +134,7 @@ function HairCont() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 
