@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
 
 import num from "../../assets/img/num.png";
 import num2 from "../../assets/img/num2.png";
@@ -41,6 +42,19 @@ function FxItem() {
       return <HairItem4 />;
     }
   }
+
+  const HairFade = () => {
+    const styles = useSpring({
+      to: [{ opacity: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 500 },
+    });
+    return (
+      <>
+        <animated.div style={styles}>{Mode()}</animated.div>;
+      </>
+    );
+  };
 
   return (
     <>
@@ -202,7 +216,7 @@ function FxItem() {
             </div>
           </div>
         </div>
-        {Mode()}
+        <HairFade />
       </div>
     </>
   );

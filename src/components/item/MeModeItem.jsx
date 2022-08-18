@@ -5,7 +5,7 @@ import GalbanicEx from "../../assets/img/galvanicMode.svg";
 import LaserImg from "../../assets/img/me_02_laser.png";
 import GalbanicImg from "../../assets/img/me_02_galvanic.png";
 
-import { useSpring, animated, useTransition } from "react-spring";
+import { useSpring, animated } from "react-spring";
 
 const LaserExplain = () => {
   return (
@@ -68,6 +68,13 @@ const GarbanicText = () => {
   );
 };
 
+const LaserImage = () => {
+  return <img className="img" src={LaserImg} alt="" />;
+};
+const GalvanicImage = () => {
+  return <img className="img" src={GalbanicImg} alt="" />;
+};
+
 function MeItem() {
   const [modeSelector, setModeSelector] = useState("Laser");
 
@@ -81,11 +88,28 @@ function MeItem() {
 
   const modeCondition = modeSelector === "Laser";
 
-  const styles = useSpring({
-    to: [{ opacity: 1 }],
-    from: { opacity: 0.25 },
-    config: { duration: 500 },
-  });
+  const Exs = () => {
+    const styles = useSpring({
+      to: [{ opacity: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 500 },
+    });
+    return (
+      <>
+        {modeCondition ? (
+          <animated.div style={styles}>
+            <LaserImage />
+            <LaserExplain />
+          </animated.div>
+        ) : (
+          <animated.div style={styles}>
+            <GalvanicImage />
+            <GalvanicExplain />
+          </animated.div>
+        )}
+      </>
+    );
+  };
 
   return (
     <>
@@ -133,14 +157,7 @@ function MeItem() {
         </div>
 
         <div className="exs">
-          {modeCondition ? (
-            <animated.div style={styles}>
-              <img className="img" src={LaserImg} alt="" />
-            </animated.div>
-          ) : (
-            <img className="img" src={GalbanicImg} alt="" />
-          )}
-          {modeCondition ? <LaserExplain /> : <GalvanicExplain />}
+          <Exs />
         </div>
       </div>
     </>

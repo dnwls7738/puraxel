@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
 
 import Active01 from "../../assets/img/me_01_active.png";
 import Active02 from "../../assets/img/me_02_active.png";
@@ -96,6 +97,87 @@ function SpecItem() {
 
   const modeCondition = modeSelector === "Laser";
 
+  const MeFade = () => {
+    const styles = useSpring({
+      to: [{ opacity: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 500 },
+    });
+    return (
+      <>
+        <animated.div style={styles}>{Product()}</animated.div>
+        <div className="list">
+          <ul>
+            <li>
+              <div className="spec">
+                <img
+                  src={Active01}
+                  alt=""
+                  onClick={selector.onFirst}
+                  style={{
+                    opacity: buttonSelector === "first" ? "1" : "0.5",
+                    boxShadow:
+                      buttonSelector === "first"
+                        ? "0px 0px 20px #5c549626"
+                        : "none",
+                  }}
+                />
+              </div>
+            </li>
+            <li>
+              <div className="spec">
+                <img
+                  src={Active02}
+                  alt=""
+                  onClick={selector.onSecond}
+                  style={{
+                    opacity: buttonSelector === "second" ? "1" : "0.5",
+                    boxShadow:
+                      buttonSelector === "first"
+                        ? "0px 0px 20px #5c549626"
+                        : "none",
+                  }}
+                />
+              </div>
+            </li>
+            <li>
+              <div className="spec">
+                <img
+                  src={Active03}
+                  alt=""
+                  onClick={selector.onThird}
+                  style={{
+                    opacity: buttonSelector === "third" ? "1" : "0.5",
+                    boxShadow:
+                      buttonSelector === "first"
+                        ? "0 4px 8px #5c549626"
+                        : "none",
+                  }}
+                />
+              </div>
+            </li>
+            <li>
+              <div className="spec">
+                <img
+                  src={Active04}
+                  alt=""
+                  onClick={selector.onForth}
+                  style={{
+                    opacity: buttonSelector === "forth" ? "1" : "0.5",
+                    boxShadow:
+                      buttonSelector === "first"
+                        ? "0px 0px 20px #5c549626"
+                        : "none",
+                  }}
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </>
+    );
+  };
+
   return (
     <>
       <div className="specs">
@@ -187,78 +269,7 @@ function SpecItem() {
             </div>
           </div>
         ) : (
-          <>
-            {Product()}
-
-            <div className="list">
-              <ul>
-                <li>
-                  <div className="spec">
-                    <img
-                      src={Active01}
-                      alt=""
-                      onClick={selector.onFirst}
-                      style={{
-                        opacity: buttonSelector === "first" ? "1" : "0.5",
-                        boxShadow:
-                          buttonSelector === "first"
-                            ? "0px 0px 20px #5c549626"
-                            : "none",
-                      }}
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div className="spec">
-                    <img
-                      src={Active02}
-                      alt=""
-                      onClick={selector.onSecond}
-                      style={{
-                        opacity: buttonSelector === "second" ? "1" : "0.5",
-                        boxShadow:
-                          buttonSelector === "first"
-                            ? "0px 0px 20px #5c549626"
-                            : "none",
-                      }}
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div className="spec">
-                    <img
-                      src={Active03}
-                      alt=""
-                      onClick={selector.onThird}
-                      style={{
-                        opacity: buttonSelector === "third" ? "1" : "0.5",
-                        boxShadow:
-                          buttonSelector === "first"
-                            ? "0 4px 8px #5c549626"
-                            : "none",
-                      }}
-                    />
-                  </div>
-                </li>
-                <li>
-                  <div className="spec">
-                    <img
-                      src={Active04}
-                      alt=""
-                      onClick={selector.onForth}
-                      style={{
-                        opacity: buttonSelector === "forth" ? "1" : "0.5",
-                        boxShadow:
-                          buttonSelector === "first"
-                            ? "0px 0px 20px #5c549626"
-                            : "none",
-                      }}
-                    />
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </>
+          <MeFade />
         )}
       </div>
     </>

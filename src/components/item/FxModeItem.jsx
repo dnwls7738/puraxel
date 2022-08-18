@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSpring, animated } from "react-spring";
 
 import num from "../../assets/img/num.png";
 import num2 from "../../assets/img/num2.png";
@@ -51,6 +52,19 @@ function FxModeItem() {
     }
   }
 
+  const FxFade = () => {
+    const styles = useSpring({
+      to: [{ opacity: 1 }],
+      from: { opacity: 0 },
+      config: { duration: 500 },
+    });
+    return (
+      <>
+        <animated.div style={styles}>{Mode()}</animated.div>;
+      </>
+    );
+  };
+
   return (
     <>
       <div className="ModeExplain">
@@ -64,7 +78,7 @@ function FxModeItem() {
                   modeSelector === "num1"
                     ? "rgba(255, 255, 255, 1)"
                     : "#f2f3f6",
-                border:
+                outline:
                   modeSelector === "num1"
                     ? "1px solid rgba(223, 225, 232, 1)"
                     : "none",
@@ -110,7 +124,7 @@ function FxModeItem() {
                     modeSelector === "num2"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  border:
+                  outline:
                     modeSelector === "num2"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",
@@ -159,7 +173,7 @@ function FxModeItem() {
                     modeSelector === "num4"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  border:
+                  outline:
                     modeSelector === "num4"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",
@@ -209,7 +223,7 @@ function FxModeItem() {
                     modeSelector === "num3"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  border:
+                  outline:
                     modeSelector === "num3"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",
@@ -258,7 +272,7 @@ function FxModeItem() {
                     modeSelector === "num5"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  border:
+                  outline:
                     modeSelector === "num5"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",
@@ -301,7 +315,7 @@ function FxModeItem() {
             </div>
           </div>
         </div>
-        {Mode()}
+        <FxFade />
       </div>
     </>
   );
