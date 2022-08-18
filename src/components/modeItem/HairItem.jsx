@@ -34,7 +34,7 @@ function HairItem() {
         <div className="modeEx">
           <div
             style={{
-              width: "160px",
+              width: "100%",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
@@ -69,8 +69,8 @@ function HairItem() {
               src={hair}
               alt=""
               style={{
-                width: "180px",
-                heigth: "auto",
+                width: "100%",
+                heigth: "100%",
                 marginLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",

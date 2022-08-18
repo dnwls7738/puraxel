@@ -124,6 +124,7 @@ function HairCont() {
               img2={Active02}
               img3={Active03}
               img4={Active04}
+              Bs="0px 0px 20px #A4693326"
             />
           </div>
         </SwiperSlide>

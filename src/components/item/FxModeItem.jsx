@@ -64,7 +64,7 @@ function FxModeItem() {
                   modeSelector === "num1"
                     ? "rgba(255, 255, 255, 1)"
                     : "#f2f3f6",
-                outline:
+                border:
                   modeSelector === "num1"
                     ? "1px solid rgba(223, 225, 232, 1)"
                     : "none",
@@ -110,7 +110,7 @@ function FxModeItem() {
                     modeSelector === "num2"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  outline:
+                  border:
                     modeSelector === "num2"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",
@@ -159,7 +159,7 @@ function FxModeItem() {
                     modeSelector === "num4"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  outline:
+                  border:
                     modeSelector === "num4"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",
@@ -209,7 +209,7 @@ function FxModeItem() {
                     modeSelector === "num3"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  outline:
+                  border:
                     modeSelector === "num3"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",
@@ -258,7 +258,7 @@ function FxModeItem() {
                     modeSelector === "num5"
                       ? "rgba(255, 255, 255, 1)"
                       : "#f2f3f6",
-                  outline:
+                  border:
                     modeSelector === "num5"
                       ? "1px solid rgba(223, 225, 232, 1)"
                       : "none",

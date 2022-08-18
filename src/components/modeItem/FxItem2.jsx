@@ -1,6 +1,6 @@
 import React from "react";
 
-import hair from "../../assets/img/functionIllust_ultrasonicH.png";
+import hair from "../../assets/img/functionIllust_ultrasonic.png";
 
 function HairItem2() {
   return (
@@ -45,7 +45,7 @@ function HairItem2() {
               alt=""
               style={{
                 width: "180px",
-                heigth: "auto",
+                heigth: "100%",
                 marginLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",

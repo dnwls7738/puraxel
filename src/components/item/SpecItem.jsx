@@ -44,7 +44,7 @@ function SpecItem() {
               backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
               color: modeCondition ? "#FFFFFF" : "#A7ABB6",
               boxShadow: modeCondition
-                ? "0 4px 8px rgba(0, 0, 0, 0.15)"
+                ? "0px 0px 20px rgba(0, 0, 0, 0.15)"
                 : "none",
               fontSize: "1.6rem",
             }}
@@ -59,7 +59,7 @@ function SpecItem() {
               marginLeft: "8px",
               boxShadow: modeCondition
                 ? "none"
-                : "0 4px 8px rgba(0, 0, 0, 0.15)",
+                : "0px 0px 20px rgba(0, 0, 0, 0.15)",
               fontSize: "1.6rem",
             }}
           >
@@ -134,12 +134,11 @@ function SpecItem() {
                     alt=""
                     onClick={selector.onFirst}
                     style={{
-                      filter:
+                      opacity: buttonSelector === "first" ? "1" : "0.5",
+                      boxShadow:
                         buttonSelector === "first"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "first" ? "8px" : "0",
-                      marginTop: buttonSelector === "first" ? "0" : "11px",
+                          ? "0px 0px 20px #5c549626"
+                          : "none",
                     }}
                   />
                 </div>
@@ -151,12 +150,11 @@ function SpecItem() {
                     alt=""
                     onClick={selector.onSecond}
                     style={{
-                      filter:
-                        buttonSelector === "second"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "second" ? "8px" : "0",
-                      marginTop: buttonSelector === "second" ? "0" : "11px",
+                      opacity: buttonSelector === "second" ? "1" : "0.5",
+                      boxShadow:
+                        buttonSelector === "first"
+                          ? "0px 0px 20px #5c549626"
+                          : "none",
                     }}
                   />
                 </div>
@@ -168,12 +166,11 @@ function SpecItem() {
                     alt=""
                     onClick={selector.onThird}
                     style={{
-                      filter:
-                        buttonSelector === "third"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "third" ? "8px" : "0",
-                      marginTop: buttonSelector === "third" ? "0" : "11px",
+                      opacity: buttonSelector === "third" ? "1" : "0.5",
+                      boxShadow:
+                        buttonSelector === "first"
+                          ? "0 4px 8px #5c549626"
+                          : "none",
                     }}
                   />
                 </div>
@@ -185,12 +182,11 @@ function SpecItem() {
                     alt=""
                     onClick={selector.onForth}
                     style={{
-                      filter:
-                        buttonSelector === "forth"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "forth" ? "8px" : "0",
-                      marginTop: buttonSelector === "forth" ? "0" : "11px",
+                      opacity: buttonSelector === "forth" ? "1" : "0.5",
+                      boxShadow:
+                        buttonSelector === "first"
+                          ? "0px 0px 20px #5c549626"
+                          : "none",
                     }}
                   />
                 </div>

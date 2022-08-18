@@ -1,6 +1,6 @@
 import React from "react";
 
-import hair from "../../assets/img/functionIllust_coolingH.png";
+import hair from "../../assets/img/functionIllust_cooling.png";
 
 function HairItem4() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 
-import hair from "../../assets/img/functionIllust_coolingH.png";
+import hair from "../../assets/img/functionIllust_led.png";
 
 function FxItem5() {
   return (

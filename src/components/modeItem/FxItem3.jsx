@@ -1,6 +1,6 @@
 import React from "react";
 
-import hair from "../../assets/img/functionIllust_galvanicH.png";
+import hair from "../../assets/img/functionIllust_galvanic.png";
 
 function HairItem3() {
   return (

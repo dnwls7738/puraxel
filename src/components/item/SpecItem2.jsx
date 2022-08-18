@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Package from "../../assets/img/package.png";
 
-function SpecItem2({ img1, img2, img3, img4 }) {
+function SpecItem2({ img1, img2, img3, img4, Bs }) {
   const [buttonSelector, setButtonSelector] = useState("first");
 
   const selector = {
@@ -148,12 +148,8 @@ function SpecItem2({ img1, img2, img3, img4 }) {
                     alt=""
                     onClick={selector.onFirst}
                     style={{
-                      filter:
-                        buttonSelector === "first"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "first" ? "8px" : "0",
-                      marginTop: buttonSelector === "first" ? "0" : "11px",
+                      opacity: buttonSelector === "first" ? "1" : "0.5",
+                      boxShadow: buttonSelector === "first" ? `${Bs}` : "none",
                     }}
                   />
                 </div>
@@ -165,12 +161,8 @@ function SpecItem2({ img1, img2, img3, img4 }) {
                     alt=""
                     onClick={selector.onSecond}
                     style={{
-                      filter:
-                        buttonSelector === "second"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "second" ? "8px" : "0",
-                      marginTop: buttonSelector === "second" ? "0" : "11px",
+                      opacity: buttonSelector === "second" ? "1" : "0.5",
+                      boxShadow: buttonSelector === "second" ? `${Bs}` : "none",
                     }}
                   />
                 </div>
@@ -182,12 +174,8 @@ function SpecItem2({ img1, img2, img3, img4 }) {
                     alt=""
                     onClick={selector.onThird}
                     style={{
-                      filter:
-                        buttonSelector === "third"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "third" ? "8px" : "0",
-                      marginTop: buttonSelector === "third" ? "0" : "11px",
+                      opacity: buttonSelector === "third" ? "1" : "0.5",
+                      boxShadow: buttonSelector === "third" ? `${Bs}` : "none",
                     }}
                   />
                 </div>
@@ -199,12 +187,8 @@ function SpecItem2({ img1, img2, img3, img4 }) {
                     alt=""
                     onClick={selector.onForth}
                     style={{
-                      filter:
-                        buttonSelector === "forth"
-                          ? "grayscale(0)"
-                          : "grayscale(80%)",
-                      marginBottom: buttonSelector === "forth" ? "8px" : "0",
-                      marginTop: buttonSelector === "forth" ? "0" : "11px",
+                      opacity: buttonSelector === "forth" ? "1" : "0.5",
+                      boxShadow: buttonSelector === "forth" ? `${Bs}` : "none",
                     }}
                   />
                 </div>

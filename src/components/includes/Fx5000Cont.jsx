@@ -11,10 +11,10 @@ import FxExperimentItem from "../item/FxExperimentItem";
 import ContMain from "../layout/ContMain";
 import SpecItem2 from "../item/SpecItem2";
 
-import Active01 from "../../assets/img/fx-5000_01_active.png";
-import Active02 from "../../assets/img/fx-5000_02_active.png";
-import Active03 from "../../assets/img/fx-5000_03_active.png";
-import Active04 from "../../assets/img/fx-5000_04_active.png";
+import Active01 from "../../assets/img/hair_01_active.png";
+import Active02 from "../../assets/img/hair_02_active.png";
+import Active03 from "../../assets/img/hair_03_active.png";
+import Active04 from "../../assets/img/hair_04_active.png";
 import MainImg from "../../assets/img/fx-5000_main.png";
 import BgImg from "../../assets/img/mobile_bg_fx-5000.png";
 import Line from "../../assets/img/pageLine.svg";
@@ -130,6 +130,7 @@ function Fx5000Cont() {
               img2={Active02}
               img3={Active03}
               img4={Active04}
+              Bs="0px 0px 20px #96547426"
             />
           </div>
         </SwiperSlide>
