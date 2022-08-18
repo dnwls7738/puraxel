@@ -35,7 +35,7 @@ const theme = createTheme({
         // Name of the slot
         root: {
           // Some CSS
-          fontSize: "36px",
+          fontSize: "32px",
           fontFamily: "Pretendard",
           height: "43px",
           fontWeight: "300",
@@ -53,7 +53,6 @@ const theme1 = createTheme({
         // Name of the slot
         root: {
           // Some CSS
-          padding: "0px",
         },
       },
     },
@@ -64,7 +63,7 @@ const header = {
   fontFamily: "Pretendard",
   fontStyle: "normal",
   fontWeight: "700",
-  fontSize: "14px",
+  fontSize: "1.4rem",
   lineHeight: "150%",
   letterSpacing: "-0.01em",
   color: "#4D5058",
@@ -74,7 +73,7 @@ const style2 = {
   fontFamily: "Pretendard",
   fontStyle: "normal",
   fontWeight: "400",
-  fontSize: "12px",
+  fontSize: "1.2rem",
   lineHeight: "140%",
   letterSpacing: "-0.01em",
   color: "#7E818D",
@@ -123,7 +122,7 @@ function Header({ name, text }) {
   };
 
   function Component2() {
-    if (name === "puraxel" || "tech") {
+    if (name === "puraxel" || "핵심기술") {
       return;
     }
   }
@@ -173,7 +172,7 @@ function Header({ name, text }) {
           <span>product</span>
         </div>
 
-        {["ME", "HAIR", "FX-5000", "tech"].map((text) => (
+        {["ME", "FX-5000", "HAIR", "핵심기술"].map((text) => (
           <Link key={text} to={text}>
             <ListItemButton>
               <ListItem disablePadding>
@@ -206,7 +205,52 @@ function Header({ name, text }) {
             </div>
           </Link>
         </div>
-
+      </div>
+      <div className="service">
+        <div>
+          <p className="product">customer service</p>
+          <Link
+            to={{
+              pathname: "",
+            }}
+            target="_blank"
+          >
+            <div className="toShop">
+              <p
+                style={{
+                  marginTop: 12,
+                }}
+              >
+                notice
+              </p>
+            </div>
+          </Link>
+          <Link
+            to={{
+              pathname: "",
+            }}
+            target="_blank"
+          >
+            <div className="toShop">
+              <p
+                style={{
+                  marginTop: 12,
+                }}
+              >
+                news letter
+              </p>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          position: "relative",
+        }}
+      >
         <div className="sns">
           <p className="product">sns</p>
           <div
@@ -268,12 +312,11 @@ function Header({ name, text }) {
             </Link>
           </div>
         </div>
-      </div>
-
-      <div className="info">
-        <span>EN</span>
-        <span>KR</span>
-        <span onClick={handleOpen}>사업자정보</span>
+        <div className="info">
+          <span>EN</span>
+          <span>KR</span>
+          <span onClick={handleOpen}>사업자정보</span>
+        </div>
       </div>
     </Box>
   );
@@ -300,7 +343,7 @@ function Header({ name, text }) {
       </div>
 
       <div className="right">
-        {name === "puraxel" || name === "tech" ? (
+        {name === "puraxel" || name === "핵심기술" ? (
           <Component2 />
         ) : name === "ME" ? (
           <Link

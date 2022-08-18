@@ -171,7 +171,9 @@ function FxExItem() {
                   style={{
                     backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
                     color: modeCondition ? "#FFFFFF" : "#A7ABB6",
+                    boxShadow: modeCondition ? "0 4px 8px #00000026" : "none",
                     fontSize: "1.6rem",
+                    fontWeight: 800,
                   }}
                 >
                   정수리 탈모
@@ -181,8 +183,10 @@ function FxExItem() {
                   style={{
                     backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
                     color: modeCondition ? "#A7ABB6" : "#FFFFFF",
+                    boxShadow: modeCondition ? "none" : "0 4px 8px #00000026",
                     fontSize: "1.6rem",
                     marginLeft: "8px",
+                    fontWeight: 800,
                   }}
                 >
                   M자 탈모
@@ -279,7 +283,9 @@ function FxExItem() {
                   style={{
                     backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
                     color: modeCondition ? "#FFFFFF" : "#A7ABB6",
+                    boxShadow: modeCondition ? "0 4px 8px #00000026" : "none",
                     fontSize: "1.6rem",
+                    fontWeight: 800,
                   }}
                 >
                   모량 테스트
@@ -289,8 +295,10 @@ function FxExItem() {
                   style={{
                     backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
                     color: modeCondition ? "#A7ABB6" : "#FFFFFF",
+                    boxShadow: modeCondition ? "none" : "0 4px 8px #00000026",
                     marginLeft: "8px",
                     fontSize: "1.6rem",
+                    fontWeight: 800,
                   }}
                 >
                   모발 테스트

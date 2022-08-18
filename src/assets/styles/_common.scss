@@ -153,14 +153,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         height: 40px;
         margin-left: 8px;
         .fx2Img {
           padding-top: 6px;
           padding-right: 6px;
           float: right;
-          width: 80px;
+          width: 79px;
           height: 40px;
         }
       }
@@ -178,7 +177,7 @@
         .fx4Img {
           padding-right: 6px;
           float: right;
-          width: 80px;
+          width: 79px;
           height: 40px;
         }
       }
@@ -226,6 +225,7 @@
       .fx5 {
         position: relative;
         border-radius: 4px;
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -285,18 +285,19 @@
     }
   }
   .contMain2 {
-    margin-top: 70px;
     width: 100%;
+    height: 100%;
     text-align: center;
     margin: 0 auto;
     img {
+      margin-top: 55px;
       width: 100%;
       height: auto;
     }
   }
 
   .contName {
-    padding: 0 20px 0 20px;
+    margin: 3px 20px 0 20px;
     .contHeader {
       font-family: "Pretendard";
       font-weight: 700;
@@ -309,6 +310,7 @@
       }
     }
     .contHeader_2 {
+      margin-top: 10px;
       padding: 4px 8px;
       font-family: "Pretendard";
       font-weight: 700;
@@ -357,7 +359,7 @@
   .contExplain2 {
     border-radius: 4px;
     position: absolute;
-    background: rgba(248, 248, 255, 0.7);
+    background: #f8f8ffb2;
     box-shadow: 0 12px 24px 0 rgba(65, 29, 141, 0.08);
     padding: 16px 16px;
     width: 24rem;
@@ -481,6 +483,8 @@
         width: 100%;
         padding: 12px 8px;
         background: #fff;
+        display: flex;
+        align-items: center;
         img {
           width: 16px;
           margin-right: 8px;

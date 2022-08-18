@@ -5,6 +5,8 @@ import GalbanicEx from "../../assets/img/galvanicMode.svg";
 import LaserImg from "../../assets/img/me_02_laser.png";
 import GalbanicImg from "../../assets/img/me_02_galvanic.png";
 
+import { useSpring, animated, useTransition } from "react-spring";
+
 const LaserExplain = () => {
   return (
     <>
@@ -79,6 +81,12 @@ function MeItem() {
 
   const modeCondition = modeSelector === "Laser";
 
+  const styles = useSpring({
+    to: [{ opacity: 1 }],
+    from: { opacity: 0.25 },
+    config: { duration: 500 },
+  });
+
   return (
     <>
       <div className="ModeExplain">
@@ -126,9 +134,9 @@ function MeItem() {
 
         <div className="exs">
           {modeCondition ? (
-            <div>
+            <animated.div style={styles}>
               <img className="img" src={LaserImg} alt="" />
-            </div>
+            </animated.div>
           ) : (
             <img className="img" src={GalbanicImg} alt="" />
           )}

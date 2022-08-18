@@ -14,7 +14,7 @@ function App() {
       <Route path="/ME" exact component={Me} />
       <Route path="/FX-5000" exact component={Fx5000} />
       <Route path="/HAIR" exact component={Hair} />
-      <Route path="/tech" exact component={PuraTech} />
+      <Route path="/핵심기술" exact component={PuraTech} />
     </Router>
   );
 }

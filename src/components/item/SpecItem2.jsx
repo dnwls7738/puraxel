@@ -33,7 +33,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           style={{
             width: "90%",
             height: "auto",
-            margin: "30% auto",
+            margin: "20% auto",
             display: "block",
           }}
         />
@@ -46,7 +46,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           style={{
             width: "90%",
             height: "auto",
-            margin: "30% auto",
+            margin: "20% auto",
             display: "block",
           }}
         />
@@ -72,7 +72,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           style={{
             width: "100%",
             height: "auto",
-            margin: "40% auto",
+            margin: "20% auto",
             display: "block",
           }}
         />
