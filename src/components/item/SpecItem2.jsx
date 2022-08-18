@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Package from "../../assets/img/package.png";
 
+import Product01 from "../../assets/img/fx-5000_pic_01.png";
+import Product02 from "../../assets/img/fx-5000_pic_02.png";
+import Product03 from "../../assets/img/fx-5000_03 - laser.png";
+import Product04 from "../../assets/img/fx-5000_04 - set.png";
+
 function SpecItem2({ img1, img2, img3, img4, Bs }) {
   const [buttonSelector, setButtonSelector] = useState("first");
 
@@ -18,6 +23,62 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
       setButtonSelector("forth");
     },
   };
+
+  function Product() {
+    if (buttonSelector === "first") {
+      return (
+        <img
+          src={Product01}
+          alt=""
+          style={{
+            width: "90%",
+            height: "auto",
+            margin: "30% auto",
+            display: "block",
+          }}
+        />
+      );
+    } else if (buttonSelector === "second") {
+      return (
+        <img
+          src={Product02}
+          alt=""
+          style={{
+            width: "90%",
+            height: "auto",
+            margin: "30% auto",
+            display: "block",
+          }}
+        />
+      );
+    } else if (buttonSelector === "third") {
+      return (
+        <img
+          src={Product03}
+          alt=""
+          style={{
+            width: "50%",
+            height: "auto",
+            margin: "20% auto",
+            display: "block",
+          }}
+        />
+      );
+    } else {
+      return (
+        <img
+          src={Product04}
+          alt=""
+          style={{
+            width: "100%",
+            height: "auto",
+            margin: "40% auto",
+            display: "block",
+          }}
+        />
+      );
+    }
+  }
 
   const [modeSelector, setModeSelector] = useState("Laser");
 
@@ -139,62 +200,69 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
             </div>
           </>
         ) : (
-          <div className="list">
-            <ul>
-              <li>
-                <div className="spec">
-                  <img
-                    src={img1}
-                    alt=""
-                    onClick={selector.onFirst}
-                    style={{
-                      opacity: buttonSelector === "first" ? "1" : "0.5",
-                      boxShadow: buttonSelector === "first" ? `${Bs}` : "none",
-                    }}
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="spec">
-                  <img
-                    src={img2}
-                    alt=""
-                    onClick={selector.onSecond}
-                    style={{
-                      opacity: buttonSelector === "second" ? "1" : "0.5",
-                      boxShadow: buttonSelector === "second" ? `${Bs}` : "none",
-                    }}
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="spec">
-                  <img
-                    src={img3}
-                    alt=""
-                    onClick={selector.onThird}
-                    style={{
-                      opacity: buttonSelector === "third" ? "1" : "0.5",
-                      boxShadow: buttonSelector === "third" ? `${Bs}` : "none",
-                    }}
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="spec">
-                  <img
-                    src={img4}
-                    alt=""
-                    onClick={selector.onForth}
-                    style={{
-                      opacity: buttonSelector === "forth" ? "1" : "0.5",
-                      boxShadow: buttonSelector === "forth" ? `${Bs}` : "none",
-                    }}
-                  />
-                </div>
-              </li>
-            </ul>
-          </div>
+          <>
+            {Product()}
+            <div className="list">
+              <ul>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={img1}
+                      alt=""
+                      onClick={selector.onFirst}
+                      style={{
+                        opacity: buttonSelector === "first" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "first" ? `${Bs}` : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={img2}
+                      alt=""
+                      onClick={selector.onSecond}
+                      style={{
+                        opacity: buttonSelector === "second" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "second" ? `${Bs}` : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={img3}
+                      alt=""
+                      onClick={selector.onThird}
+                      style={{
+                        opacity: buttonSelector === "third" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "third" ? `${Bs}` : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={img4}
+                      alt=""
+                      onClick={selector.onForth}
+                      style={{
+                        opacity: buttonSelector === "forth" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "forth" ? `${Bs}` : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </>
         )}
       </div>
     </>
