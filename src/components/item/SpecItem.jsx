@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+
 import Active01 from "../../assets/img/me_01_active.png";
 import Active02 from "../../assets/img/me_02_active.png";
 import Active03 from "../../assets/img/me_03_active.png";
 import Active04 from "../../assets/img/me_04_active.png";
+
+import Product01 from "../../assets/img/me_04 - laser-cradle.png";
+import Product02 from "../../assets/img/me_28 - gal.png";
+import Product03 from "../../assets/img/me_14 - laser.png";
+import Product04 from "../../assets/img/me_01 - cradle.png";
 
 function SpecItem() {
   const [buttonSelector, setButtonSelector] = useState("first");
@@ -21,6 +27,62 @@ function SpecItem() {
       setButtonSelector("forth");
     },
   };
+
+  function Product() {
+    if (buttonSelector === "first") {
+      return (
+        <img
+          src={Product01}
+          alt=""
+          style={{
+            width: "55%",
+            height: "auto",
+            margin: "10% auto",
+            display: "block",
+          }}
+        />
+      );
+    } else if (buttonSelector === "second") {
+      return (
+        <img
+          src={Product02}
+          alt=""
+          style={{
+            width: "90%",
+            height: "auto",
+            margin: "10% auto",
+            display: "block",
+          }}
+        />
+      );
+    } else if (buttonSelector === "third") {
+      return (
+        <img
+          src={Product03}
+          alt=""
+          style={{
+            width: "30%",
+            height: "auto",
+            margin: "10% auto",
+            display: "block",
+          }}
+        />
+      );
+    } else {
+      return (
+        <img
+          src={Product04}
+          alt=""
+          style={{
+            width: "90%",
+            height: "auto",
+            margin: "50% auto",
+            display: "block",
+          }}
+        />
+      );
+    }
+  }
 
   const [modeSelector, setModeSelector] = useState("Laser");
 
@@ -44,7 +106,7 @@ function SpecItem() {
               backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
               color: modeCondition ? "#FFFFFF" : "#A7ABB6",
               boxShadow: modeCondition
-                ? "0px 0px 20px rgba(0, 0, 0, 0.15)"
+                ? "0px 4px 8px rgba(0, 0, 0, 0.15)"
                 : "none",
               fontSize: "1.6rem",
             }}
@@ -59,7 +121,7 @@ function SpecItem() {
               marginLeft: "8px",
               boxShadow: modeCondition
                 ? "none"
-                : "0px 0px 20px rgba(0, 0, 0, 0.15)",
+                : "0px 4px 8px rgba(0, 0, 0, 0.15)",
               fontSize: "1.6rem",
             }}
           >
@@ -125,74 +187,78 @@ function SpecItem() {
             </div>
           </div>
         ) : (
-          <div className="list">
-            <ul>
-              <li>
-                <div className="spec">
-                  <img
-                    src={Active01}
-                    alt=""
-                    onClick={selector.onFirst}
-                    style={{
-                      opacity: buttonSelector === "first" ? "1" : "0.5",
-                      boxShadow:
-                        buttonSelector === "first"
-                          ? "0px 0px 20px #5c549626"
-                          : "none",
-                    }}
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="spec">
-                  <img
-                    src={Active02}
-                    alt=""
-                    onClick={selector.onSecond}
-                    style={{
-                      opacity: buttonSelector === "second" ? "1" : "0.5",
-                      boxShadow:
-                        buttonSelector === "first"
-                          ? "0px 0px 20px #5c549626"
-                          : "none",
-                    }}
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="spec">
-                  <img
-                    src={Active03}
-                    alt=""
-                    onClick={selector.onThird}
-                    style={{
-                      opacity: buttonSelector === "third" ? "1" : "0.5",
-                      boxShadow:
-                        buttonSelector === "first"
-                          ? "0 4px 8px #5c549626"
-                          : "none",
-                    }}
-                  />
-                </div>
-              </li>
-              <li>
-                <div className="spec">
-                  <img
-                    src={Active04}
-                    alt=""
-                    onClick={selector.onForth}
-                    style={{
-                      opacity: buttonSelector === "forth" ? "1" : "0.5",
-                      boxShadow:
-                        buttonSelector === "first"
-                          ? "0px 0px 20px #5c549626"
-                          : "none",
-                    }}
-                  />
-                </div>
-              </li>
-            </ul>
-          </div>
+          <>
+            {Product()}
+
+            <div className="list">
+              <ul>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={Active01}
+                      alt=""
+                      onClick={selector.onFirst}
+                      style={{
+                        opacity: buttonSelector === "first" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "first"
+                            ? "0px 0px 20px #5c549626"
+                            : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={Active02}
+                      alt=""
+                      onClick={selector.onSecond}
+                      style={{
+                        opacity: buttonSelector === "second" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "first"
+                            ? "0px 0px 20px #5c549626"
+                            : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={Active03}
+                      alt=""
+                      onClick={selector.onThird}
+                      style={{
+                        opacity: buttonSelector === "third" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "first"
+                            ? "0 4px 8px #5c549626"
+                            : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+                <li>
+                  <div className="spec">
+                    <img
+                      src={Active04}
+                      alt=""
+                      onClick={selector.onForth}
+                      style={{
+                        opacity: buttonSelector === "forth" ? "1" : "0.5",
+                        boxShadow:
+                          buttonSelector === "first"
+                            ? "0px 0px 20px #5c549626"
+                            : "none",
+                      }}
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </>
         )}
       </div>
     </>
