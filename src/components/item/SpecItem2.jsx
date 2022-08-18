@@ -175,6 +175,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
                 ? "0 4px 8px rgba(0, 0, 0, 0.15)"
                 : "none",
               fontSize: "1.6rem",
+              fontWeight: "800",
             }}
           >
             정보
@@ -189,6 +190,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
                 ? "none"
                 : "0 4px 8px rgba(0, 0, 0, 0.15)",
               fontSize: "1.6rem",
+              fontWeight: "800",
             }}
           >
             사진
