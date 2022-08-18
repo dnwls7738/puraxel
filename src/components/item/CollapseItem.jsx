@@ -90,8 +90,12 @@ function CollapseItem() {
           />
         )}
       </Box>
-      <Accordion onClick={handleChange}>
-        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+      <Accordion>
+        <AccordionSummary
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          onClick={handleChange}
+        >
           <Typography>
             <>
               <>
@@ -162,8 +166,12 @@ function CollapseItem() {
           />
         )}
       </Box>
-      <Accordion onClick={handleChange2}>
-        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+      <Accordion>
+        <AccordionSummary
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          onClick={handleChange2}
+        >
           <Typography>
             <>
               <>
@@ -247,8 +255,12 @@ function CollapseItem() {
           />
         )}
       </Box>
-      <Accordion onClick={handleChange3} sx={{ mb: 1 }}>
-        <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
+      <Accordion sx={{ mb: 1 }}>
+        <AccordionSummary
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+          onClick={handleChange3}
+        >
           <Typography>
             <>
               <>

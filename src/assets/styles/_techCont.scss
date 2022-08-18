@@ -76,7 +76,7 @@
     linear-gradient(to bottom, #ffffff00, #55576f4d) border-box;
   border: 1px solid transparent;
   border-radius: 4px;
-  width: 210px;
+  width: 60%;
   padding: 12px;
   margin-left: 20px;
   .ErYagText1 {
@@ -93,10 +93,10 @@
   }
 }
 .ErYagConts {
-  position: relative;
-  top: -2%;
+  position: absolute;
+  top: 85%;
   z-index: -1;
-  margin-left: 40px;
+  margin-left: 30px;
   margin-right: 20px;
   border: 1px solid rgba(242, 243, 246, 1);
   border-radius: 4px;
@@ -127,7 +127,7 @@
     margin: 20px 20px 0 20px;
     padding-bottom: 17px;
   }
-  span {
+  em {
     color: rgba(40, 41, 46, 1);
   }
 }
