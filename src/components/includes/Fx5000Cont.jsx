@@ -38,6 +38,7 @@ function Fx5000Cont() {
       <Swiper
         style={{
           overflow: "auto",
+          height: "100vh",
         }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
