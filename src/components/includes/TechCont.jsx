@@ -37,7 +37,7 @@ function TechCont() {
       <Swiper
         style={{
           height: "100vh",
-          overflow: "visible",
+          overflow: "auto",
         }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
