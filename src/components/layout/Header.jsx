@@ -218,22 +218,6 @@ function Header({ name, text }) {
                     marginTop: 12,
                   }}
                 >
-                  notice
-                </p>
-              </div>
-            </Link>
-            <Link
-              to={{
-                pathname: "",
-              }}
-              target="_blank"
-            >
-              <div className="toShop">
-                <p
-                  style={{
-                    marginTop: 12,
-                  }}
-                >
                   news letter
                 </p>
               </div>
