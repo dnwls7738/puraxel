@@ -88,7 +88,7 @@ function Fx5000Cont() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="cont">
+          <div className="cont" style={{ height: "100vh" }}>
             <div className="contName">
               <span className="contHeader">
                 이제는 집에서 혼자 쉽고 편하게!
