@@ -23,7 +23,9 @@ function HairCont() {
       style={{
         backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundSize: "100% 100%",
+        width: "100%",
+        heigth: "100%",
       }}
     >
       <Swiper

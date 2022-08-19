@@ -72,10 +72,10 @@ function HairItem2() {
       </div>
       <div
         style={{
-          position: "relative",
           marginLeft: "20px",
-          marginRight: "20px",
           height: "auto",
+          width: "32rem",
+          position: "relative",
         }}
       >
         <div className="etcEx" style={{ width: "25rem" }}>
@@ -94,11 +94,10 @@ function HairItem2() {
           className="etcEx"
           style={{
             width: "25rem",
-            marginLeft: "20px",
+            marginBottom: "65px",
             position: "absolute",
             top: "80%",
             right: "0",
-            marginBottom: "65px",
           }}
         >
           <p

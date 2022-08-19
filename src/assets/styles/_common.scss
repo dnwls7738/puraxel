@@ -266,6 +266,7 @@
         font-size: 1.2rem;
         font-weight: 600;
         color: #7e818d;
+        width: 25rem;
       }
     }
   }
@@ -518,9 +519,13 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   html {
     font-size: 15px;
+  }
+  .cont {
+    margin: 0 auto;
+    max-width: 1000px;
   }
 
   .ModeExplain {

@@ -105,7 +105,14 @@ function SpecItem() {
     });
     return (
       <>
-        <animated.div style={styles}>{Product()}</animated.div>
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <animated.div style={styles}>{Product()}</animated.div>
+        </div>
         <div className="list">
           <ul>
             <li>
@@ -215,7 +222,7 @@ function SpecItem() {
         <div
           style={{
             position: "relative",
-            height: "100%",
+            height: "52rem",
             width: "100%",
             display: "inline-block",
           }}

@@ -33,6 +33,8 @@ function Fx5000Cont() {
         backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        width: "100%",
+        heigth: "100%",
       }}
     >
       <Swiper
