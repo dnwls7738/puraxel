@@ -41,6 +41,7 @@ function SpecItem() {
             margin: "10% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else if (buttonSelector === "second") {
@@ -54,6 +55,7 @@ function SpecItem() {
             margin: "10% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else if (buttonSelector === "third") {
@@ -67,6 +69,7 @@ function SpecItem() {
             margin: "10% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else {
@@ -80,6 +83,7 @@ function SpecItem() {
             margin: "50% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     }

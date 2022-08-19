@@ -37,6 +37,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
             margin: "20% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else if (buttonSelector === "second") {
@@ -50,6 +51,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
             margin: "20% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else if (buttonSelector === "third") {
@@ -63,6 +65,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
             margin: "20% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else {
@@ -76,6 +79,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
             margin: "20% auto",
             display: "block",
           }}
+          onLoad={() => console.log("img 위치 완료")}
         />
       );
     }
