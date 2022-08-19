@@ -29,7 +29,7 @@ function MeCont() {
       <Swiper
         style={{
           height: "100vh",
-          overflow: "visible",
+          overflow: "scroll",
         }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
