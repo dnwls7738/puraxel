@@ -36,7 +36,7 @@ function SpecItem() {
           src={Product01}
           alt=""
           style={{
-            width: "55%",
+            width: "50%",
             height: "auto",
             margin: "10% auto",
             display: "block",
@@ -49,7 +49,7 @@ function SpecItem() {
           src={Product02}
           alt=""
           style={{
-            width: "90%",
+            width: "97.76%",
             height: "auto",
             margin: "10% auto",
             display: "block",
@@ -62,7 +62,7 @@ function SpecItem() {
           src={Product03}
           alt=""
           style={{
-            width: "30%",
+            width: "27.4%",
             height: "auto",
             margin: "10% auto",
             display: "block",
@@ -75,7 +75,7 @@ function SpecItem() {
           src={Product04}
           alt=""
           style={{
-            width: "90%",
+            width: "62.6%",
             height: "auto",
             margin: "50% auto",
             display: "block",
@@ -133,7 +133,7 @@ function SpecItem() {
                   style={{
                     opacity: buttonSelector === "second" ? "1" : "0.5",
                     boxShadow:
-                      buttonSelector === "first"
+                      buttonSelector === "second"
                         ? "0px 0px 20px #5c549626"
                         : "none",
                   }}
@@ -149,8 +149,8 @@ function SpecItem() {
                   style={{
                     opacity: buttonSelector === "third" ? "1" : "0.5",
                     boxShadow:
-                      buttonSelector === "first"
-                        ? "0 4px 8px #5c549626"
+                      buttonSelector === "third"
+                        ? "0px 0px 20px #5c549626"
                         : "none",
                   }}
                 />
@@ -165,7 +165,7 @@ function SpecItem() {
                   style={{
                     opacity: buttonSelector === "forth" ? "1" : "0.5",
                     boxShadow:
-                      buttonSelector === "first"
+                      buttonSelector === "forth"
                         ? "0px 0px 20px #5c549626"
                         : "none",
                   }}
@@ -215,7 +215,7 @@ function SpecItem() {
         <div
           style={{
             position: "relative",
-            height: "500px",
+            height: "100%",
             width: "100%",
             display: "inline-block",
           }}

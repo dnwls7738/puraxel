@@ -46,7 +46,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           src={Product02}
           alt=""
           style={{
-            width: "90%",
+            width: "87%",
             height: "auto",
             margin: "10% auto",
             display: "block",
@@ -60,7 +60,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           src={Product03}
           alt=""
           style={{
-            width: "40%",
+            width: "40.2%",
             height: "auto",
             margin: "10% auto",
             display: "block",
@@ -203,7 +203,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
         <div
           style={{
             position: "relative",
-            height: "500px",
+            height: "auto",
             width: "100%",
             display: "inline-block",
           }}
