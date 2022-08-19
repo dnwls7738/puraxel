@@ -215,7 +215,7 @@
         align-items: center;
         height: 64px;
         .fx2Img {
-          width: 100%;
+          width: 88px;
           height: 64px;
           border-radius: 4px;
         }
@@ -233,9 +233,12 @@
         .fx3Img,
         .fx4Img,
         .fx5Img {
-          width: 100%;
+          width: 88px;
           height: 64px;
           border-radius: 4px;
+        }
+        .fx5Img {
+          float: right;
         }
       }
     }
@@ -270,7 +273,6 @@
 
 .cont {
   width: 100%;
-  height: 100vh;
   position: relative;
   .contMain {
     width: 100%;
@@ -284,7 +286,6 @@
   }
   .contMain2 {
     width: 100%;
-    height: 100%;
     text-align: center;
     margin: 0 auto;
     img {

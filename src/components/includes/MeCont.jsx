@@ -18,12 +18,18 @@ import MeModeItem from "../item/MeModeItem";
 
 function MeCont() {
   return (
-    <>
+    <div
+      style={{
+        backgroundImage: `url(${BgImg})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        height: "100vh",
+      }}
+    >
       <Swiper
         style={{
-          backgroundImage: `url(${BgImg})`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          height: "100vh",
+          overflow: "visible",
         }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
@@ -136,7 +142,7 @@ function MeCont() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
 

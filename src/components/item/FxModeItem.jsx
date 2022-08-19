@@ -60,7 +60,7 @@ function FxModeItem() {
     });
     return (
       <>
-        <animated.div style={styles}>{Mode()}</animated.div>;
+        <animated.div style={styles}>{Mode()}</animated.div>
       </>
     );
   };
@@ -115,7 +115,7 @@ function FxModeItem() {
             </div>
           </div>
           <div className="etcM">
-            <div style={{ marginRight: "8px" }}>
+            <div style={{ marginRight: "8px", width: "100%" }}>
               <div
                 className="fx2"
                 onClick={selector2}
@@ -135,10 +135,10 @@ function FxModeItem() {
               >
                 <div
                   style={{
+                    width: "100%",
                     paddingLeft: "6px",
                     position: "absolute",
                     bottom: 0,
-                    paddingBottom: "8px",
                   }}
                 >
                   <img
@@ -214,7 +214,7 @@ function FxModeItem() {
                 />
               </div>
             </div>
-            <div>
+            <div style={{ width: "100%" }}>
               <div
                 className="fx4"
                 onClick={selector3}
@@ -251,7 +251,6 @@ function FxModeItem() {
                       fontWeight: 800,
                       color: "#55576F",
                       fontSize: "1.4rem",
-                      marginLeft: "4px",
                     }}
                   >
                     갈바닉
@@ -288,22 +287,24 @@ function FxModeItem() {
                     paddingBottom: "8px",
                   }}
                 >
-                  <img
-                    src={num5}
-                    alt=""
-                    style={{ width: "2rem", height: "2rem" }}
-                  />
-                  <span
-                    style={{
-                      fontFamily: "Pretendard",
-                      fontWeight: 800,
-                      color: "#55576F",
-                      fontSize: "1.4rem",
-                      marginLeft: "4px",
-                    }}
-                  >
-                    LED
-                  </span>
+                  <div>
+                    <img
+                      src={num5}
+                      alt=""
+                      style={{ width: "2rem", height: "2rem" }}
+                    />
+                    <span
+                      style={{
+                        fontFamily: "Pretendard",
+                        fontWeight: 800,
+                        color: "#55576F",
+                        fontSize: "1.4rem",
+                        marginLeft: "4px",
+                      }}
+                    >
+                      LED
+                    </span>
+                  </div>
                 </div>
                 <img
                   className="fx5Img"

@@ -28,109 +28,119 @@ function Fx5000Cont() {
   };
   console.log(params);
   return (
-    <Swiper
+    <div
       style={{
         backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        height: "100vh",
       }}
-      className="swiper"
-      modules={[Navigation, Pagination, Scrollbar]}
-      spaceBetween={10}
-      slidesPerView={1}
-      pagination={{
-        type: "fraction",
-        renderFraction: function (currentClass, totalClass) {
-          return (
-            '<span class="' +
-            currentClass +
-            '"></span>' +
-            `<img src=${Line}
-              }}>` +
-            '<span class="' +
-            totalClass +
-            '"></span>'
-          );
-        },
-      }}
-      scrollbar={{ draggable: true }}
     >
-      <SwiperSlide>
-        <ContMain header="PURAXEL FX-5000" img={MainImg} />
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="cont">
-          <div className="contName">
-            <span className="contHeader">레이저와 초음파 기술을 활용한</span>
-            <p className="contHeader2">
-              퓨라셀의 <em>다섯가지 기능</em>
-            </p>
+      <Swiper
+        style={{
+          height: "100vh",
+          overflow: "visible",
+        }}
+        className="swiper"
+        modules={[Navigation, Pagination, Scrollbar]}
+        spaceBetween={10}
+        slidesPerView={1}
+        pagination={{
+          type: "fraction",
+          renderFraction: function (currentClass, totalClass) {
+            return (
+              '<span class="' +
+              currentClass +
+              '"></span>' +
+              `<img src=${Line}
+              }}>` +
+              '<span class="' +
+              totalClass +
+              '"></span>'
+            );
+          },
+        }}
+        scrollbar={{ draggable: true }}
+      >
+        <SwiperSlide>
+          <ContMain header="PURAXEL FX-5000" img={MainImg} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">레이저와 초음파 기술을 활용한</span>
+              <p className="contHeader2">
+                퓨라셀의 <em>다섯가지 기능</em>
+              </p>
+            </div>
+            <FxModeItem />
           </div>
-          <FxModeItem />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="cont">
-          <div className="contName">
-            <span className="contHeader">
-              퓨라셀과 각 효능에 특화된 앰플 사용후 결과
-            </span>
-            <p className="contHeader2">
-              퓨라셀 <em>임상실험</em>
-            </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">
+                퓨라셀과 각 효능에 특화된 앰플 사용후 결과
+              </span>
+              <p className="contHeader2">
+                퓨라셀 <em>임상실험</em>
+              </p>
+            </div>
+            <FxExperimentItem />
           </div>
-          <FxExperimentItem />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="cont">
-          <div className="contName">
-            <span className="contHeader">이제는 집에서 혼자 쉽고 편하게!</span>
-            <p className="contHeader2">
-              셀프 홈케어 <em>팁</em>
-            </p>
-          </div>
-          <div
-            style={{
-              position: "relative",
-              height: "0",
-              paddingBottom: "56.25%",
-              marginTop: "16px",
-            }}
-          >
-            <iframe
-              title="How to use puraxel"
-              src="https://www.youtube.com/embed/YhWQp5RS_aU"
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">
+                이제는 집에서 혼자 쉽고 편하게!
+              </span>
+              <p className="contHeader2">
+                셀프 홈케어 <em>팁</em>
+              </p>
+            </div>
+            <div
               style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                left: "0",
+                position: "relative",
+                height: "0",
+                paddingBottom: "56.25%",
+                marginTop: "16px",
               }}
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
+            >
+              <iframe
+                title="How to use puraxel"
+                src="https://www.youtube.com/embed/YhWQp5RS_aU"
+                style={{
+                  position: "absolute",
+                  width: "100%",
+                  height: "100%",
+                  left: "0",
+                }}
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="cont">
-          <div className="contName">
-            <span className="contHeader">FX-5000</span>
-            <p className="contHeader2">
-              제품 <em>구성 및 사양</em>
-            </p>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">FX-5000</span>
+              <p className="contHeader2">
+                제품 <em>구성 및 사양</em>
+              </p>
+            </div>
+            <SpecItem2
+              img1={Active01}
+              img2={Active02}
+              img3={Active03}
+              img4={Active04}
+              Bs="0px 0px 20px #96547426"
+            />
           </div>
-          <SpecItem2
-            img1={Active01}
-            img2={Active02}
-            img3={Active03}
-            img4={Active04}
-            Bs="0px 0px 20px #96547426"
-          />
-        </div>
-      </SwiperSlide>
-    </Swiper>
+        </SwiperSlide>
+      </Swiper>
+    </div>
   );
 }
 

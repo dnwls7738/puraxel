@@ -51,7 +51,7 @@ function FxItem() {
     });
     return (
       <>
-        <animated.div style={styles}>{Mode()}</animated.div>;
+        <animated.div style={styles}>{Mode()}</animated.div>
       </>
     );
   };

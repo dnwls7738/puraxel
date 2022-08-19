@@ -78,7 +78,7 @@ function HairItem2() {
           height: "auto",
         }}
       >
-        <div className="etcEx" style={{ width: "252px" }}>
+        <div className="etcEx" style={{ width: "25rem" }}>
           <p
             style={{
               padding: "12px 22px 25px 12px",
@@ -93,7 +93,7 @@ function HairItem2() {
         <div
           className="etcEx"
           style={{
-            width: "252px",
+            width: "25rem",
             marginLeft: "20px",
             position: "absolute",
             top: "80%",
