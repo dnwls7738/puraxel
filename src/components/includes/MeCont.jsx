@@ -23,13 +23,11 @@ function MeCont() {
         backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "100vh",
       }}
     >
       <Swiper
         style={{
-          height: "100vh",
-          overflow: "scroll",
+          overflow: "auto",
         }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}

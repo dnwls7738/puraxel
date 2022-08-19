@@ -33,12 +33,10 @@ function Fx5000Cont() {
         backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "100vh",
       }}
     >
       <Swiper
         style={{
-          height: "100vh",
           overflow: "auto",
         }}
         className="swiper"

@@ -272,10 +272,10 @@
 }
 
 .cont {
-  width: 100%;
+  min-width: 360px;
   position: relative;
   .contMain {
-    width: 100%;
+    min-width: 360px;
     position: relative;
     text-align: center;
     img {
@@ -285,7 +285,7 @@
     }
   }
   .contMain2 {
-    width: 100%;
+    min-width: 360px;
     text-align: center;
     margin: 0 auto;
     img {
