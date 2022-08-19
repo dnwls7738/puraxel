@@ -67,7 +67,7 @@ function FxExItem() {
             src={Hair1}
             alt=""
             style={{
-              width: "65%",
+              width: "50%",
               height: "100%",
             }}
           />

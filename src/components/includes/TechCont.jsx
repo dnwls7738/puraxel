@@ -39,8 +39,10 @@ function TechCont() {
         }}
         className="swiper"
         modules={[Navigation, Pagination, Scrollbar]}
-        spaceBetween={50}
+        spaceBetween={10}
         slidesPerView={1}
+        observer="true"
+        observeParents="true"
         pagination={{
           type: "fraction",
           renderFraction: function (currentClass, totalClass) {
@@ -49,7 +51,7 @@ function TechCont() {
               currentClass +
               '"></span>' +
               `<img src=${Line}
-                }}>` +
+                    }}>` +
               '<span class="' +
               totalClass +
               '"></span>'

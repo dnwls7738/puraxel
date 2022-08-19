@@ -287,7 +287,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
                   src={Package}
                   alt=""
                   style={{
-                    width: "280px",
+                    width: "28rem",
                     marginLeft: "20px",
                     marginTop: "8px",
                   }}
