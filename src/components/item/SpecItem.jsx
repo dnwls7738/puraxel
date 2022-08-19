@@ -41,7 +41,6 @@ function SpecItem() {
             margin: "10% auto",
             display: "block",
           }}
-          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else if (buttonSelector === "second") {
@@ -55,7 +54,6 @@ function SpecItem() {
             margin: "10% auto",
             display: "block",
           }}
-          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else if (buttonSelector === "third") {
@@ -69,7 +67,6 @@ function SpecItem() {
             margin: "10% auto",
             display: "block",
           }}
-          onLoad={() => console.log("img 위치 완료")}
         />
       );
     } else {
@@ -83,7 +80,6 @@ function SpecItem() {
             margin: "50% auto",
             display: "block",
           }}
-          onLoad={() => console.log("img 위치 완료")}
         />
       );
     }
@@ -216,67 +212,76 @@ function SpecItem() {
             사진
           </div>
         </div>
-        {modeCondition ? (
-          <div className="specInfos">
-            <div className="specInfo">
-              <div className="specCont">
-                <p className="specInfoTitle">레이저 종류</p>
-                <p className="specInfoText">Er:YAG</p>
+        <div
+          style={{
+            position: "relative",
+            height: "500px",
+            width: "100%",
+            display: "inline-block",
+          }}
+        >
+          {modeCondition ? (
+            <div className="specInfos">
+              <div className="specInfo">
+                <div className="specCont">
+                  <p className="specInfoTitle">레이저 종류</p>
+                  <p className="specInfoText">Er:YAG</p>
+                </div>
+                <div className="specCont">
+                  <p className="specInfoTitle">레이저 출력 범위</p>
+                  <p className="specInfoText">80~140mJ (±20%)</p>
+                </div>
+                <div className="specCont">
+                  <p className="specInfoTitle">레이저 레벨 범위</p>
+                  <p className="specInfoText">1~2 level</p>
+                </div>
+                <div className="specCont">
+                  <p className="specInfoTitle">제품 무게</p>
+                  <p className="specInfoText">
+                    Main Body: 350g
+                    <br /> Cradle: 110g
+                  </p>
+                </div>
+                <div className="specCont">
+                  <p className="specInfoTitle">배터리 사양</p>
+                  <p className="specInfoText">
+                    Built-in Rechargeable
+                    <br /> 11.1V 850mAh
+                    <br /> Lithium-Polymer Battery
+                  </p>
+                </div>
               </div>
-              <div className="specCont">
-                <p className="specInfoTitle">레이저 출력 범위</p>
-                <p className="specInfoText">80~140mJ (±20%)</p>
-              </div>
-              <div className="specCont">
-                <p className="specInfoTitle">레이저 레벨 범위</p>
-                <p className="specInfoText">1~2 level</p>
-              </div>
-              <div className="specCont">
-                <p className="specInfoTitle">제품 무게</p>
-                <p className="specInfoText">
-                  Main Body: 350g
-                  <br /> Cradle: 110g
-                </p>
-              </div>
-              <div className="specCont">
-                <p className="specInfoTitle">배터리 사양</p>
-                <p className="specInfoText">
-                  Built-in Rechargeable
-                  <br /> 11.1V 850mAh
-                  <br /> Lithium-Polymer Battery
-                </p>
+              <div className="specInfo" style={{ marginLeft: "18px" }}>
+                <div className="specCont">
+                  <p className="specInfoTitle">레이저 파장</p>
+                  <p className="specInfoText">2940nm(±1%)</p>
+                </div>
+                <div className="specCont">
+                  <p className="specInfoTitle">레이저 반복</p>
+                  <p className="specInfoText">3~5seconds interval</p>
+                </div>
+                <div className="specCont">
+                  <p className="specInfoTitle">기능 모드</p>
+                  <p className="specInfoText">
+                    1) Fractional Laser
+                    <br /> 2) Galvanic
+                  </p>
+                </div>
+                <div className="specCont">
+                  <p className="specInfoTitle">제품 사이즈</p>
+                  <p className="specInfoText">
+                    Main body:
+                    <br /> 50x57x220 mm
+                    <br /> Cradle:
+                    <br /> 98x98x85 mm
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="specInfo" style={{ marginLeft: "18px" }}>
-              <div className="specCont">
-                <p className="specInfoTitle">레이저 파장</p>
-                <p className="specInfoText">2940nm(±1%)</p>
-              </div>
-              <div className="specCont">
-                <p className="specInfoTitle">레이저 반복</p>
-                <p className="specInfoText">3~5seconds interval</p>
-              </div>
-              <div className="specCont">
-                <p className="specInfoTitle">기능 모드</p>
-                <p className="specInfoText">
-                  1) Fractional Laser
-                  <br /> 2) Galvanic
-                </p>
-              </div>
-              <div className="specCont">
-                <p className="specInfoTitle">제품 사이즈</p>
-                <p className="specInfoText">
-                  Main body:
-                  <br /> 50x57x220 mm
-                  <br /> Cradle:
-                  <br /> 98x98x85 mm
-                </p>
-              </div>
-            </div>
-          </div>
-        ) : (
-          <MeFade />
-        )}
+          ) : (
+            <MeFade />
+          )}
+        </div>
       </div>
     </>
   );

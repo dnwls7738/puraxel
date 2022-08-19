@@ -34,7 +34,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           style={{
             width: "90%",
             height: "auto",
-            margin: "20% auto",
+            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -48,7 +48,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           style={{
             width: "90%",
             height: "auto",
-            margin: "20% auto",
+            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -60,9 +60,9 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           src={Product03}
           alt=""
           style={{
-            width: "50%",
+            width: "40%",
             height: "auto",
-            margin: "20% auto",
+            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -76,7 +76,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           style={{
             width: "100%",
             height: "auto",
-            margin: "20% auto",
+            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -200,86 +200,99 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
             사진
           </div>
         </div>
-        {modeCondition ? (
-          <>
-            <div className="specInfos">
-              <div className="specInfo">
-                <div className="specCont">
-                  <p className="specInfoTitle">레이저 종류</p>
-                  <p className="specInfoText">Er:YAG</p>
-                </div>
-                <div className="specCont">
-                  <p className="specInfoTitle">레이저 레벨 범위</p>
-                  <p className="specInfoText">1~3 level</p>
-                </div>
-                <div className="specCont">
-                  <p className="specInfoTitle">제품 무게</p>
-                  <p className="specInfoText">
-                    Main Body: 616g
-                    <br /> Cradle(배터리 포함): 503g
-                  </p>
-                </div>
+        <div
+          style={{
+            position: "relative",
+            height: "500px",
+            width: "100%",
+            display: "inline-block",
+          }}
+        >
+          {modeCondition ? (
+            <>
+              <div className="specInfos">
+                <div className="specInfo">
+                  <div className="specCont">
+                    <p className="specInfoTitle">레이저 종류</p>
+                    <p className="specInfoText">Er:YAG</p>
+                  </div>
+                  <div className="specCont">
+                    <p className="specInfoTitle">레이저 레벨 범위</p>
+                    <p className="specInfoText">1~3 level</p>
+                  </div>
+                  <div className="specCont">
+                    <p className="specInfoTitle">제품 무게</p>
+                    <p className="specInfoText">
+                      Main Body: 616g
+                      <br /> Cradle(배터리 포함): 503g
+                    </p>
+                  </div>
 
-                <div className="specCont">
-                  <p className="specInfoTitle">제품 사이즈</p>
-                  <p className="specInfoText">
-                    Main body:
-                    <br /> 82x201x225.3 mm
-                    <br /> Cradle:
-                    <br /> 250x169x135 mm
-                  </p>
+                  <div className="specCont">
+                    <p className="specInfoTitle">제품 사이즈</p>
+                    <p className="specInfoText">
+                      Main body:
+                      <br /> 82x201x225.3 mm
+                      <br /> Cradle:
+                      <br /> 250x169x135 mm
+                    </p>
+                  </div>
+                </div>
+                <div className="specInfo" style={{ marginLeft: "18px" }}>
+                  <div className="specCont">
+                    <p className="specInfoTitle">레이저 등급</p>
+                    <p className="specInfoText">1등급(class 1)</p>
+                  </div>
+                  <div className="specCont">
+                    <p className="specInfoTitle">기능 모드</p>
+                    <p className="specInfoText">
+                      1) 레이저 모드
+                      <br /> 2) 초음파 모드
+                      <br /> 3) 갈바닉 모드(옵션)
+                      <br /> 4) 쿨링 모드(옵션)
+                      <br /> 5) LED 모드(옵션)
+                    </p>
+                  </div>
+                  <div className="specCont">
+                    <p className="specInfoTitle">배터리 사양</p>
+                    <p className="specInfoText">
+                      11.1V 1,300mAh
+                      <br /> Lithium-Polymer Battery
+                      <br /> 충전 어댑터: <br /> 14VDC / 1.71A
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="specInfo" style={{ marginLeft: "18px" }}>
-                <div className="specCont">
-                  <p className="specInfoTitle">레이저 등급</p>
-                  <p className="specInfoText">1등급(class 1)</p>
-                </div>
-                <div className="specCont">
-                  <p className="specInfoTitle">기능 모드</p>
-                  <p className="specInfoText">
-                    1) 레이저 모드
-                    <br /> 2) 초음파 모드
-                    <br /> 3) 갈바닉 모드(옵션)
-                    <br /> 4) 쿨링 모드(옵션)
-                    <br /> 5) LED 모드(옵션)
-                  </p>
-                </div>
-                <div className="specCont">
-                  <p className="specInfoTitle">배터리 사양</p>
-                  <p className="specInfoText">
-                    11.1V 1,300mAh
-                    <br /> Lithium-Polymer Battery
-                    <br /> 충전 어댑터: <br /> 14VDC / 1.71A
-                  </p>
-                </div>
+              <div>
+                <h1
+                  style={{
+                    fontFamily: "Pretendard",
+                    fontWeight: 700,
+                    fontSize: "1.2rem",
+                    color: "#A7ABB6",
+                    marginLeft: "20px",
+                    marginTop: "20px",
+                  }}
+                >
+                  구성품
+                </h1>
+                <img
+                  src={Package}
+                  alt=""
+                  style={{
+                    width: "280px",
+                    marginLeft: "20px",
+                    marginTop: "8px",
+                  }}
+                />
               </div>
-            </div>
-            <div>
-              <h1
-                style={{
-                  fontFamily: "Pretendard",
-                  fontWeight: 700,
-                  fontSize: "1.2rem",
-                  color: "#A7ABB6",
-                  marginLeft: "20px",
-                  marginTop: "20px",
-                }}
-              >
-                구성품
-              </h1>
-              <img
-                src={Package}
-                alt=""
-                style={{ width: "280px", marginLeft: "20px", marginTop: "8px" }}
-              />
-            </div>
-          </>
-        ) : (
-          <>
-            <FxHairFade />
-          </>
-        )}
+            </>
+          ) : (
+            <>
+              <FxHairFade />
+            </>
+          )}
+        </div>
       </div>
     </>
   );
