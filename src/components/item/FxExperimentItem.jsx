@@ -59,7 +59,7 @@ function FxExItem() {
             src={Skin1}
             alt=""
             style={{
-              width: "50%",
+              width: "60%",
               height: "100%",
             }}
           />
@@ -73,7 +73,7 @@ function FxExItem() {
             src={Skin2}
             alt=""
             style={{
-              width: "50%",
+              width: "60%",
               height: "100%",
             }}
           />
@@ -87,7 +87,7 @@ function FxExItem() {
             src={Skin3}
             alt=""
             style={{
-              width: "50%",
+              width: "60%",
               height: "100%",
             }}
           />
@@ -101,7 +101,7 @@ function FxExItem() {
             src={Skin4}
             alt=""
             style={{
-              width: "50%",
+              width: "60%",
               height: "100%",
             }}
           />
@@ -115,7 +115,7 @@ function FxExItem() {
             src={Skin5}
             alt=""
             style={{
-              width: "50%",
+              width: "60%",
               height: "100%",
             }}
           />

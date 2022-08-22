@@ -126,6 +126,10 @@ function Header({ name, text }) {
       return;
     }
   }
+
+  function Reload() {
+    window.location.reload({ name });
+  }
   const list = () => (
     <Box
       role="presentation"
@@ -319,7 +323,7 @@ function Header({ name, text }) {
               />
             </Link>
           ) : (
-            <Link to={name}>
+            <Link onClick={Reload} to={name}>
               <>{name}</>
             </Link>
           )}

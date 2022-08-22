@@ -5,7 +5,7 @@ import Header from "../layout/Header";
 function Main() {
   return (
     <>
-      <Header name="puraxel" text="inquery" />
+      <Header name="puraxel" />
       <MainCont />
     </>
   );

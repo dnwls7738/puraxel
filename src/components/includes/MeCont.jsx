@@ -87,20 +87,7 @@ function MeCont() {
                 paddingBottom: "56.25%",
                 marginTop: "16px",
               }}
-            >
-              <iframe
-                title="How to use puraxel"
-                src="https://www.youtube.com/embed/YhWQp5RS_aU"
-                style={{
-                  position: "absolute",
-                  width: "100%",
-                  height: "100%",
-                  left: "0",
-                }}
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
-            </div>
+            ></div>
           </div>
         </SwiperSlide>
 

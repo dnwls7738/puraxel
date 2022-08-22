@@ -47,16 +47,16 @@ function Fx5000Cont() {
         spaceBetween={10}
         slidesPerView={1}
         pagination={{
-          type: "custom",
-          renderCustom: (swiper, current, total) => {
+          type: "fraction",
+          renderFraction: function (currentClass, totalClass) {
             return (
               '<span class="' +
-              current +
+              currentClass +
               '"></span>' +
               `<img src=${Line}
               }}>` +
               '<span class="' +
-              total +
+              totalClass +
               '"></span>'
             );
           },
@@ -107,20 +107,7 @@ function Fx5000Cont() {
                 paddingBottom: "56.25%",
                 marginTop: "16px",
               }}
-            >
-              <iframe
-                title="How to use puraxel"
-                src="https://www.youtube.com/embed/YhWQp5RS_aU"
-                style={{
-                  position: "absolute",
-                  width: "100%",
-                  height: "100%",
-                  left: "0",
-                }}
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
-            </div>
+            ></div>
           </div>
         </SwiperSlide>
         <SwiperSlide>

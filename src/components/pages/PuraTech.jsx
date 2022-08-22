@@ -5,7 +5,7 @@ import Header from "../layout/Header";
 function PuraTech() {
   return (
     <>
-      <Header name="핵심기술" text="inquiry" />
+      <Header name="핵심기술" />
       <TechCont />
     </>
   );
