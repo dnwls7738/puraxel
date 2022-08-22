@@ -6,9 +6,9 @@ import Close from "../../assets/img/gnb_close.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
 import Logo from "../../assets/img/logo.png";
 import Inquiry from "../../assets/img/inquiry.svg";
-import Youtube from "../../assets/img/sns_youtube.svg";
-import Insta from "../../assets/img/sns_insta.svg";
-import Facebook from "../../assets/img/sns_facebook.svg";
+import Youtube from "../../assets/img/youtube.svg";
+import Insta from "../../assets/img/insta.svg";
+import Facebook from "../../assets/img/facebook.svg";
 import Shortcut from "../../assets/img/shortcutMini.svg";
 
 import {
@@ -307,8 +307,8 @@ function Header({ name, text }) {
     <header id="header">
       <div className="header__logo">
         <div className="logo">
-          <Link to="/">
-            {name === "puraxel" ? (
+          {name === "puraxel" ? (
+            <Link to="/">
               <img
                 src={Logo}
                 alt=""
@@ -317,10 +317,12 @@ function Header({ name, text }) {
                   verticalAlign: "middle",
                 }}
               />
-            ) : (
+            </Link>
+          ) : (
+            <Link to={name}>
               <>{name}</>
-            )}
-          </Link>
+            </Link>
+          )}
         </div>
       </div>
 

@@ -47,16 +47,16 @@ function Fx5000Cont() {
         spaceBetween={10}
         slidesPerView={1}
         pagination={{
-          type: "fraction",
-          renderFraction: function (currentClass, totalClass) {
+          type: "custom",
+          renderCustom: (swiper, current, total) => {
             return (
               '<span class="' +
-              currentClass +
+              current +
               '"></span>' +
               `<img src=${Line}
               }}>` +
               '<span class="' +
-              totalClass +
+              total +
               '"></span>'
             );
           },
