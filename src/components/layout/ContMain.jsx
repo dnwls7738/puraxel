@@ -1,16 +1,18 @@
 import React from "react";
 
-function Main({ header, img, bg }) {
+function Main({ header, img, miniHeader, text1, text2, text3 }) {
   return (
     <div className="cont">
       <div className="contName">
-        <span className="contHeader">홈 에스테틱 레이저의 시작</span>
+        <span className="contHeader">{miniHeader}</span>
         <h1>{header}</h1>
-        <p className="contExplain">
-          레이저 기술로
+        <div className="contExplain">
+          {text1}
           <br />
-          <em>에스테틱에 혁신을 가져오다</em>
-        </p>
+          <em>{text2}</em>
+          <br />
+          <p>{text3}</p>
+        </div>
       </div>
       <div className="contMain">
         <img src={img} alt="" />

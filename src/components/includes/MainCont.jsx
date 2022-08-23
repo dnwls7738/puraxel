@@ -5,17 +5,29 @@ function MainCont() {
   return (
     <div className="cont">
       <div className="contName">
-        <span className="contHeader_2">고품격 홈 레이저 퓨라셀</span>
-        <h1>
-          홈 에스테틱
-          <br /> 레이저의 시작
+        <h1
+          style={{
+            fontSize: "4.8rem",
+          }}
+        >
+          <em style={{ fontWeight: "600" }}>홀</em>로 빛나다
         </h1>
+        <p
+          style={{
+            fontFamily: "Pretendard",
+            fontWeight: "400",
+            fontSize: "1.6rem",
+            color: "#55576F",
+            marginBottom: "24px",
+          }}
+        >
+          레이저의 미세한 홀이 당신의 피부를 지켜줍니다.
+        </p>
         <div className="contExplain2">
-          <p>프락셔널 레이저 모듈로 생성되는 5000개의 마이크로 홀.</p>
+          <p>소형 미용기기의 혁신</p>
           <p className="span">
-            레이저, 시작부터 프로페셔널.
-            <br /> 홈 레이저 뷰티 케어의 시작.
-            <br /> 퓨라셀 ME.
+            레이저 전문 기업이 만들어
+            <br /> 더욱 안전한 소형 프락셔널 레이저
           </p>
         </div>
       </div>

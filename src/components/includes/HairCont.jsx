@@ -53,7 +53,15 @@ function HairCont() {
         }}
       >
         <SwiperSlide>
-          <ContMain header="PURAXEL HAIR" img={MainImg} />
+          <ContMain
+            header="PURAXEL HAIR"
+            img={MainImg}
+            miniHeader="두피 전문가를 위한 프락셔널 레이저"
+            text1="소형 레이저 기술로"
+            text2="에스테틱에 혁신을 가져오다"
+            text3="HAIR는 에스테틱 샵에서만 구매 가능한
+            전문가용 제품입니다."
+          />
         </SwiperSlide>
 
         <SwiperSlide>

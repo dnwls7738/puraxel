@@ -64,7 +64,15 @@ function Fx5000Cont() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <ContMain header="PURAXEL FX-5000" img={MainImg} />
+          <ContMain
+            header="PURAXEL FX-5000"
+            img={MainImg}
+            miniHeader="피부 전문가를 위한 프락셔널 레이저"
+            text1="소형 레이저 기술로"
+            text2="에스테틱에 혁신을 가져오다"
+            text3="FX-5000은 에스테틱 샵에서만 구매 가능한<br/>
+            전문가용 제품입니다."
+          />
         </SwiperSlide>
         <SwiperSlide>
           <div className="cont">

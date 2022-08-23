@@ -153,6 +153,7 @@ function TechCont() {
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
@@ -175,6 +176,7 @@ function TechCont() {
             </div>
           </div>
         </SwiperSlide>
+
         <SwiperSlide>
           <div className="cont">
             <div className="contName">

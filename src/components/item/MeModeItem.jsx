@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import LaserEx from "../../assets/img/03.svg";
 import Senser from "../../assets/img/senser.svg";
 import GalbanicEx from "../../assets/img/galvanicMode.svg";
@@ -6,6 +6,8 @@ import LaserImg from "../../assets/img/me_02_laser.png";
 import GalbanicImg from "../../assets/img/me_02_galvanic.png";
 
 import { useSpring, animated } from "react-spring";
+import { useRecoilState } from "recoil";
+import { modeState } from "../../Atom";
 
 const LaserExplain = () => {
   return (
@@ -75,8 +77,8 @@ const GalvanicImage = () => {
   return <img className="img" src={GalbanicImg} alt="" />;
 };
 
-function MeItem() {
-  const [modeSelector, setModeSelector] = useState("Laser");
+function MeModeItem() {
+  const [modeSelector, setModeSelector] = useRecoilState(modeState);
 
   const selectorLaser = () => {
     setModeSelector("Laser");
@@ -164,4 +166,4 @@ function MeItem() {
   );
 }
 
-export default MeItem;
+export default MeModeItem;

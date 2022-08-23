@@ -53,7 +53,14 @@ function MeCont() {
         scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
-          <ContMain header="PURAXEL ME" img={MainImg} />
+          <ContMain
+            header="PURAXEL ME"
+            img={MainImg}
+            miniHeader="홈 에스테틱 레이저의 시작"
+            text1="전문 피부과에서만 사용하던"
+            text2="프락셔널 레이저의 문턱을 낮췄습니다."
+            text3="하루 10분, 이제 집에서 관리하세요."
+          />
         </SwiperSlide>
 
         <SwiperSlide>

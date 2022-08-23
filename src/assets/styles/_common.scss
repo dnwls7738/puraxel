@@ -291,7 +291,7 @@
     margin: 0 auto;
     img {
       width: 100%;
-      margin-top: 55px;
+      margin-top: 3rem;
       height: auto;
     }
   }
@@ -349,13 +349,22 @@
 
   .contExplain {
     font-family: "Pretendard";
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 150%;
+    font-weight: 400;
+    font-size: 2rem;
     letter-spacing: -0.01em;
-    width: 24rem;
-    color: #4d5058;
+    color: #55576f;
+    em {
+      font-weight: 600;
+      line-height: 28.8px;
+    }
+    p {
+      width: 23.5rem;
+      margin-top: 8px;
+      font-size: 1.4rem;
+      color: #7e818d;
+    }
   }
+
   .contExplain2 {
     border-radius: 4px;
     position: absolute;

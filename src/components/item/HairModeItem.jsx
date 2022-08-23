@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSpring, animated } from "react-spring";
+import { useRecoilState } from "recoil";
+import { modeState2 } from "../../Atom";
 
 import num from "../../assets/img/num.png";
 import num2 from "../../assets/img/num2.png";
@@ -10,13 +12,14 @@ import Fx1 from "../../assets/img/fx_01.png";
 import Fx2 from "../../assets/img/hair_01.png";
 import Fx3 from "../../assets/img/hair_02.png";
 import Fx4 from "../../assets/img/hair_03.png";
+
 import HairItem from "../modeItem/HairItem";
 import HairItem2 from "../modeItem/HairItem2";
 import HairItem3 from "../modeItem/HairItem3";
 import HairItem4 from "../modeItem/HairItem4";
 
 function FxItem() {
-  const [modeSelector, setModeSelector] = useState("num1");
+  const [modeSelector, setModeSelector] = useRecoilState(modeState2);
 
   const selector = () => {
     setModeSelector("num1");
