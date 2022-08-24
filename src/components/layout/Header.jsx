@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 import Icon from "@mui/material/Icon";
+
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Close from "../../assets/img/gnb_close.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
@@ -24,6 +26,15 @@ import {
   Typography,
   createTheme,
   ThemeProvider,
+  TextField,
+  FormControl,
+  Grid,
+  FormHelperText,
+  FormControlLabel,
+  Checkbox,
+  Button,
+  Container,
+  CssBaseline,
 } from "@mui/material";
 
 const theme = createTheme({
@@ -307,6 +318,78 @@ function Header({ name, text }) {
     </Box>
   );
 
+  const theme3 = createTheme();
+  const [checked, setChecked] = useState(false);
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [nameError, setNameError] = useState("");
+  // const [registerError, setRegisterError] = useState("");
+  // const history = useHistory();
+
+  const handleAgree = (event) => {
+    setChecked(event.target.checked);
+  };
+
+  // const onhandlePost = async (data) => {
+  //   const { email, name, password } = data;
+  //   const postData = { email, name, password };
+
+  //   // post
+  //   await axios
+  //     .post("/member/join", postData)
+  //     .then(function (response) {
+  //       console.log(response, "성공");
+  //       history.push("/login");
+  //     })
+  //     .catch(function (err) {
+  //       console.log(err);
+  //       setRegisterError("회원가입에 실패하였습니다. 다시한번 확인해 주세요.");
+  //     });
+  // };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = new FormData(e.currentTarget);
+    const joinData = {
+      email: data.get("email"),
+      name: data.get("name"),
+      phone: data.get("phone"),
+    };
+    const { email, name, phone } = joinData;
+
+    // 이메일 유효성 체크
+    const emailRegex =
+      /([\w-.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    if (!emailRegex.test(email))
+      setEmailError("올바른 이메일 형식이 아닙니다.");
+    else setEmailError("");
+
+    // 이름 유효성 검사
+    const nameRegex = /^[가-힣a-zA-Z]+$/;
+    if (!nameRegex.test(name) || name.length < 1)
+      setNameError("올바른 이름을 입력해주세요.");
+    else setNameError("");
+
+    // 전화번호 유효성 체크
+    const phoneRegex = /^(010|011|016|017|018|019)-[0-9]{3,4}-[0-9]{4}$/;
+    if (!phoneRegex.test(phone))
+      setPhoneError("올바른 전화번호 형식이 아닙니다.");
+    else setPhoneError("");
+
+    // 개인정보 수집 동의 체크
+    if (!checked) alert("개인정보 수집 및 활용에 동의해주세요.");
+
+    if (
+      emailRegex.test(email) &&
+      nameRegex.test(name) &&
+      checked &&
+      phoneRegex.test(phone)
+    ) {
+      // onhandlePost(joinData);
+    }
+  };
+
   return (
     <header id="header">
       <div className="header__logo">
@@ -393,6 +476,7 @@ function Header({ name, text }) {
             </Drawer>
           </React.Fragment>
         ))}
+
         <Modal
           aria-labelledby="transition-modal-title"
           aria-describedby="transition-modal-description"
@@ -462,6 +546,7 @@ function Header({ name, text }) {
             </Box>
           </Fade>
         </Modal>
+
         <Modal
           open={open2}
           aria-labelledby="modal-modal-title"
@@ -476,6 +561,7 @@ function Header({ name, text }) {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
+                borderBottom: "1px solid #F2F3F6",
               }}
             >
               <div>
@@ -501,6 +587,104 @@ function Header({ name, text }) {
                 />
               </IconButton>
             </div>
+            <ThemeProvider theme={theme3}>
+              <Container component="main" maxWidth="xs">
+                <CssBaseline />
+                <Box
+                  sx={{
+                    marginTop: 8,
+                    display: "flex",
+                    flexDirection: "row",
+                  }}
+                >
+                  <Box
+                    component="form"
+                    noValidate
+                    onSubmit={handleSubmit}
+                    sx={{ mt: 3 }}
+                  >
+                    <FormControl component="fieldset" variant="standard">
+                      <Grid container spacing={4}>
+                        <Grid item xs={6}>
+                          <TextField
+                            variant="standard"
+                            required
+                            fullWidth
+                            id="name"
+                            name="name"
+                            label="이름"
+                            error={nameError !== "" || false}
+                          />
+                          <FormHelperText>{nameError}</FormHelperText>
+                        </Grid>
+
+                        <Grid item xs={6}>
+                          <TextField
+                            required
+                            fullWidth
+                            variant="standard"
+                            type="text"
+                            id="phone"
+                            name="phone"
+                            label="연락처(000-0000-0000)"
+                            error={phoneError !== "" || false}
+                          />
+                          <FormHelperText>{phoneError}</FormHelperText>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                          <TextField
+                            required
+                            autoFocus
+                            fullWidth
+                            variant="standard"
+                            type="email"
+                            id="email"
+                            name="email"
+                            label="이메일 주소"
+                            error={emailError !== "" || false}
+                          />
+                          <FormHelperText>{emailError}</FormHelperText>
+                        </Grid>
+
+                        <Grid item xs={6}>
+                          <TextField
+                            required
+                            fullWidth
+                            variant="standard"
+                            type="text"
+                            id="password"
+                            name="password"
+                            label="상호명"
+                          />
+                        </Grid>
+                        <Grid item xs={12}>
+                          <FormControlLabel
+                            control={
+                              <Checkbox
+                                onChange={handleAgree}
+                                color="primary"
+                              />
+                            }
+                            label="회원가입 약관에 동의합니다."
+                          />
+                        </Grid>
+                      </Grid>
+                      <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        sx={{ mt: 3, mb: 2 }}
+                        size="large"
+                      >
+                        문의신청
+                      </Button>
+                      {/* <FormHelperText>{registerError}</FormHelperText> */}
+                    </FormControl>
+                  </Box>
+                </Box>
+              </Container>
+            </ThemeProvider>
           </Box>
         </Modal>
       </div>
