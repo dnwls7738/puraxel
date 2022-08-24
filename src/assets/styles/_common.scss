@@ -275,6 +275,7 @@
 .cont {
   min-width: 360px;
   position: relative;
+
   .contMain {
     min-width: 360px;
     position: relative;
@@ -285,6 +286,7 @@
       height: auto;
     }
   }
+
   .contMain2 {
     width: 100%;
     text-align: center;
@@ -293,6 +295,28 @@
       width: 100%;
       margin-top: 3rem;
       height: auto;
+    }
+  }
+
+  .techMove {
+    display: flex;
+    padding: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 19.7rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background: linear-gradient(#ffffff, #ffffff4d);
+    p {
+      display: inline-block;
+      font-family: "Pretendard";
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #4d5058;
+      margin-right: 8px;
+    }
+    img {
+      text-align: center;
     }
   }
 
@@ -325,7 +349,6 @@
     .contHeader2 {
       color: #55576f;
       font-family: "Pretendard";
-      font-style: normal;
       font-weight: 300;
       font-size: 2rem;
       line-height: 144%;
@@ -334,6 +357,14 @@
       em {
         font-weight: 800;
       }
+    }
+    .contHeader3 {
+      margin-top: 4px;
+
+      font-family: "Pretendard";
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #7e818d;
     }
     h1 {
       color: #55576f;
@@ -392,6 +423,7 @@
       line-height: 150%;
     }
   }
+
   .exInfo {
     margin: 12px 20px 24px 20px;
     padding: 12px;
@@ -410,6 +442,7 @@
       }
     }
   }
+
   .laserConts {
     margin: 0 20px;
     .laserCont {
@@ -436,6 +469,7 @@
       }
     }
   }
+
   .graphConts {
     margin-top: 8px;
     display: flex;
@@ -468,6 +502,7 @@
       }
     }
   }
+
   .safes {
     margin-top: 40px;
     h1 {

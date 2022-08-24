@@ -17,6 +17,8 @@ import Active04 from "../../assets/img/hair_04_active.png";
 import MainImg from "../../assets/img/fx-5000_main.png";
 import BgImg from "../../assets/img/mobile_bg_fx-5000.png";
 import Line from "../../assets/img/pageLine.svg";
+import Move from "../../assets/img/Vector 254.svg";
+import { Link } from "react-router-dom";
 
 function Fx5000Cont() {
   const params = {
@@ -70,19 +72,27 @@ function Fx5000Cont() {
             miniHeader="피부 전문가를 위한 프락셔널 레이저"
             text1="소형 레이저 기술로"
             text2="에스테틱에 혁신을 가져오다"
-            text3="FX-5000은 에스테틱 샵에서만 구매 가능한<br/>
+            text3="FX-5000은 에스테틱 샵에서만 구매 가능한
             전문가용 제품입니다."
           />
         </SwiperSlide>
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
-              <span className="contHeader">레이저와 초음파 기술을 활용한</span>
+              <span className="contHeader">FX-5000은 전문가용 기기로서</span>
               <p className="contHeader2">
-                퓨라셀의 <em>다섯가지 기능</em>
+                <em>다섯가지 기능</em>을 제공합니다.
               </p>
             </div>
             <FxModeItem />
+            <Link to="/핵심기술">
+              <div className="techMove">
+                <p>
+                  프락셔널 레이저 <em>작동 방식 보기</em>
+                </p>
+                <img src={Move} alt="" />
+              </div>
+            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>

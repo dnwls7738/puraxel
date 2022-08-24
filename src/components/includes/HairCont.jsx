@@ -16,6 +16,8 @@ import Active04 from "../../assets/img/hair_04_active.png";
 import BgImg from "../../assets/img/mobile_bg_hair.png";
 import Line from "../../assets/img/pageLine.svg";
 import MainImg from "../../assets/img/hair_main.png";
+import Move from "../../assets/img/Vector 254.svg";
+import { Link } from "react-router-dom";
 
 function HairCont() {
   return (
@@ -67,12 +69,25 @@ function HairCont() {
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
-              <span className="contHeader">레이저와 초음파 기술을 활용한</span>
+              <span className="contHeader">PURAXEL Hair는</span>
               <p className="contHeader2">
-                퓨라셀의 <em>다섯가지 기능</em>
+                <em>4가지 기능</em>을 제공합니다.
+              </p>
+              <p className="contHeader3">
+                레이저 조사 후, 초음파, 갈바닉, 쿨링 등의 모드를 함께 사용하시면
+                <br />
+                효과를 높일 수 있습니다.
               </p>
             </div>
             <FxModeItem />
+            <Link to="/핵심기술">
+              <div className="techMove">
+                <p>
+                  프락셔널 레이저 <em>작동 방식 보기</em>
+                </p>
+                <img src={Move} alt="" />
+              </div>
+            </Link>
           </div>
         </SwiperSlide>
 

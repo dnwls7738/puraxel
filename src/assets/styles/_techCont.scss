@@ -1,32 +1,27 @@
-.techExplain {
-  margin-top: 14px;
-  width: 245px;
-  padding: 12px 10px;
+.techExHeader {
+  margin-top: 24px;
+  margin-left: 20px;
   font-family: "Pretendard";
-  font-weight: 800;
-  font-size: 1.6rem;
-  color: #4d5058;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(to bottom, #ffffff00, #55576f4d) border-box;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  box-shadow: 0 20px 60px #00000008;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #55576f;
+  text-align: left;
+  em {
+    font-weight: 800;
+  }
 }
 .techExplain2 {
   text-align: left;
-  margin-top: 8px;
-  background: linear-gradient(#fff, rgba(255, 255, 255, 0)) padding-box;
+  margin: 8px 20px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to bottom, #ffffff1f, #ffffff) border-box;
   border: 1px solid transparent;
   border-radius: 4px;
-  width: 72%;
   padding: 12px 10px;
   font-family: "Pretendard";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.4rem;
-  color: #4d5058;
-  position: absolute;
-  top: 80%;
-  left: 24%;
+  color: #7e818d;
 }
 .criticalTech {
   width: 100%;
@@ -178,6 +173,21 @@
     margin-left: 4px;
     img {
       width: 100%;
+    }
+  }
+  .puraCertImg3 {
+    margin-top: 8px;
+    img {
+      width: 75%;
+    }
+    p {
+      width: 75%;
+      font-family: "Pretendard";
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #28292e;
+      margin-top: 4px;
+      text-align: right;
     }
   }
 }
