@@ -92,7 +92,7 @@ function Fx5000Cont() {
                 퓨라셀과 각 효능에 특화된 앰플 사용후 결과
               </span>
               <p className="contHeader2">
-                퓨라셀 <em>임상실험</em>
+                FX-5000 <em>임상실험</em>
               </p>
             </div>
             <FxExperimentItem />

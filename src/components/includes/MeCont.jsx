@@ -66,7 +66,7 @@ function MeCont() {
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
-              <span className="contHeader">하나의 디바이스로</span>
+              <span className="contHeader">하나의 기기로</span>
               <p className="contHeader2">
                 <em>레이저</em>와 <em>갈바닉 케어</em>를 한번에
               </p>

@@ -88,7 +88,7 @@ function HairCont() {
                 퓨라셀과 각 효능에 특화된 앰플 사용후 결과
               </span>
               <p className="contHeader2">
-                퓨라셀 <em>임상실험</em>
+                PURAXEL HAIR <em>임상실험</em>
               </p>
             </div>
             <FxExperimentItem2 />
@@ -104,11 +104,11 @@ function HairCont() {
                 <br /> 에스테틱샵에서도 제공하실 수 있습니다.
               </p>
               <p className="contHeader2">
-                바로 일상생활이 가능한
+                PURAXEL HAIR가
                 <br />
-                <em>소형 프락셔널 레이저,</em>
+                <em>자신 있는 일상을</em>
                 <br />
-                직접 경험해보세요.
+                찾아드립니다.
               </p>
             </div>
             <div
