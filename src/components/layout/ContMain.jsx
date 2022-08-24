@@ -7,7 +7,7 @@ function Main({ header, img, miniHeader, text1, text2, text3 }) {
         <span className="contHeader">{miniHeader}</span>
         <h1>{header}</h1>
         <div className="contExplain">
-          <em>{text1}</em>
+          {text1}
           <br />
           {text2}
           <br />
