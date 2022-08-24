@@ -17,8 +17,6 @@ import Active04 from "../../assets/img/hair_04_active.png";
 import MainImg from "../../assets/img/fx-5000_main.png";
 import BgImg from "../../assets/img/mobile_bg_fx-5000.png";
 import Line from "../../assets/img/pageLine.svg";
-import Move from "../../assets/img/Vector 254.svg";
-import { Link } from "react-router-dom";
 
 function Fx5000Cont() {
   const params = {
@@ -85,14 +83,6 @@ function Fx5000Cont() {
               </p>
             </div>
             <FxModeItem />
-            <Link to="/핵심기술">
-              <div className="techMove">
-                <p>
-                  프락셔널 레이저 <em>작동 방식 보기</em>
-                </p>
-                <img src={Move} alt="" />
-              </div>
-            </Link>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -111,11 +101,17 @@ function Fx5000Cont() {
         <SwiperSlide>
           <div className="cont" style={{ height: "100vh" }}>
             <div className="contName">
-              <span className="contHeader">
-                이제는 집에서 혼자 쉽고 편하게!
-              </span>
+              <span className="contHeader">영상으로 자세히 보기</span>
+              <p className="contHeader4">
+                이제 병원에서만 가능하던 프락셔널 레이저 시술을
+                <br /> 에스테틱샵에서도 제공하실 수 있습니다.
+              </p>
               <p className="contHeader2">
-                셀프 홈케어 <em>팁</em>
+                바로 일상생활이 가능한
+                <br />
+                <em>소형 프락셔널 레이저,</em>
+                <br />
+                직접 경험해보세요.
               </p>
             </div>
             <div

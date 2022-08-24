@@ -78,23 +78,19 @@ function MeCont() {
         <SwiperSlide>
           <div className="cont" style={{ height: "100vh" }}>
             <div className="contName">
-              <span className="contHeader">
-                이제는 집에서 혼자 쉽고 편하게!
-              </span>
+              <span className="contHeader">영상으로 자세히 보기</span>
+              <p className="contHeader4">
+                이제 병원에서만 가능하던 프락셔널 레이저 시술을
+                <br /> 에스테틱샵에서도 제공하실 수 있습니다.
+              </p>
               <p className="contHeader2">
-                셀프 홈케어 <em>팁</em>
+                바로 일상생활이 가능한
+                <br />
+                <em>소형 프락셔널 레이저,</em>
+                <br />
+                직접 경험해보세요.
               </p>
             </div>
-
-            <div
-              className="iframe"
-              style={{
-                position: "relative",
-                height: "0",
-                paddingBottom: "56.25%",
-                marginTop: "16px",
-              }}
-            ></div>
           </div>
         </SwiperSlide>
 

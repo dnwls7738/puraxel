@@ -52,7 +52,7 @@ function TechCont() {
               currentClass +
               '"></span>' +
               `<img src=${Line}
-                    }}>` +
+                      }}>` +
               '<span class="' +
               totalClass +
               '"></span>'

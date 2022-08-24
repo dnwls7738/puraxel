@@ -58,11 +58,9 @@ function HairCont() {
           <ContMain
             header="PURAXEL HAIR"
             img={MainImg}
-            miniHeader="두피 전문가를 위한 프락셔널 레이저"
-            text1="소형 레이저 기술로"
-            text2="에스테틱에 혁신을 가져오다"
-            text3="HAIR는 에스테틱 샵에서만 구매 가능한
-            전문가용 제품입니다."
+            miniHeader="레이저 기술로 극복하는 탈모 증상, 자신있는 삶의 회복"
+            text1="머리카락이 돋아나는 마법을"
+            text2="경험하실 수 있습니다."
           />
         </SwiperSlide>
 
@@ -80,14 +78,6 @@ function HairCont() {
               </p>
             </div>
             <FxModeItem />
-            <Link to="/핵심기술">
-              <div className="techMove">
-                <p>
-                  프락셔널 레이저 <em>작동 방식 보기</em>
-                </p>
-                <img src={Move} alt="" />
-              </div>
-            </Link>
           </div>
         </SwiperSlide>
 
@@ -108,11 +98,17 @@ function HairCont() {
         <SwiperSlide>
           <div className="cont" style={{ height: "100vh" }}>
             <div className="contName">
-              <span className="contHeader">
-                이제는 집에서 혼자 쉽고 편하게!
-              </span>
+              <span className="contHeader">영상으로 자세히 보기</span>
+              <p className="contHeader4">
+                이제 병원에서만 가능하던 프락셔널 레이저 시술을
+                <br /> 에스테틱샵에서도 제공하실 수 있습니다.
+              </p>
               <p className="contHeader2">
-                셀프 홈케어 <em>팁</em>
+                바로 일상생활이 가능한
+                <br />
+                <em>소형 프락셔널 레이저,</em>
+                <br />
+                직접 경험해보세요.
               </p>
             </div>
             <div

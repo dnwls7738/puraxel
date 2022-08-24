@@ -6,11 +6,13 @@ import number3 from "../../assets/img/number3.png";
 import number4 from "../../assets/img/number4.png";
 
 import hair from "../../assets/img/functionIllust_laserH.png";
-
+import Move from "../../assets/img/Vector 254.svg";
 import Alert from "../../assets/img/alert_line.png";
 import Close from "../../assets/img/gnb_close.svg";
+
 import { IconButton, Modal } from "@mui/material";
 import { Box } from "@mui/system";
+import { Link } from "react-router-dom";
 
 const style = {
   position: "absolute",
@@ -122,6 +124,14 @@ function HairItem() {
           </div>
         </div>
       </div>
+      <Link to="/핵심기술">
+        <div className="techMove">
+          <p>
+            프락셔널 레이저 <em>작동 방식 보기</em>
+          </p>
+          <img src={Move} alt="" />
+        </div>
+      </Link>
       <Modal
         open={open3}
         aria-labelledby="modal-modal-title3"
