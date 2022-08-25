@@ -164,11 +164,6 @@ const style = {
   p: 2,
 };
 
-const modalStyle1 = {
-  overflow: "scroll",
-  height: "100%",
-};
-
 const style3 = {
   height: "100%",
   width: "100%",
@@ -617,7 +612,6 @@ function Header({ name, text }) {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
           hideBackdrop="true"
-          style={modalStyle1}
         >
           <Box sx={style3}>
             <div
