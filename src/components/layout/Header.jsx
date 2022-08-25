@@ -36,6 +36,7 @@ import {
   Container,
   CssBaseline,
   Alert,
+  TextareaAutosize,
 } from "@mui/material";
 import { CheckCircle, CheckCircleOutline } from "@mui/icons-material";
 
@@ -66,6 +67,66 @@ const theme1 = createTheme({
         root: {
           // Some CSS
           padding: 0,
+        },
+      },
+    },
+  },
+});
+
+const theme3 = createTheme({
+  components: {
+    // Name of the component
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          "&:hover": {
+            backgroundColor: "#55576F",
+          },
+          boxShadow: "none",
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          color: "#A7ABB6",
+          fontFamily: "Pretendard",
+          fontSize: "1.4rem",
+          "&.Mui-checked": { color: "#4D5058" },
+        },
+      },
+    },
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          color: "#A7ABB6",
+          "&.Mui-checked": { color: "#4D5058" },
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          "&.Mui-focused": { color: "#A7ABB6" },
+          color: "#A7ABB6",
+          fontFamily: "Pretendard",
+          fontSize: "1.2rem",
+        },
+      },
+    },
+    MuiInput: {
+      styleOverrides: {
+        root: {
+          borderBottom: "#DFE1E8",
+          "&:after": { borderBottom: "#DFE1E8" },
+          "&:hover": { borderBottom: "#DFE1E8" },
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          border: "none",
         },
       },
     },
@@ -324,20 +385,6 @@ function Header({ name, text }) {
     </Box>
   );
 
-  const theme3 = createTheme({
-    components: {
-      // Name of the component
-      MuiContainer: {
-        styleOverrides: {
-          // Name of the slot
-          root: {
-            // Some CSS
-            fontFamily: "Pretendard",
-          },
-        },
-      },
-    },
-  });
   const [checked, setChecked] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
@@ -570,6 +617,7 @@ function Header({ name, text }) {
           open={open2}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
+          hideBackdrop="true"
         >
           <Box sx={style3}>
             <div
@@ -616,11 +664,7 @@ function Header({ name, text }) {
                   onSubmit={handleSubmit}
                   sx={{ mt: 3 }}
                 >
-                  <FormControl
-                    component="fieldset"
-                    variant="standard"
-                    sx={{ fontFamily: "Pretendard", fontSize: "1.2rem" }}
-                  >
+                  <FormControl component="fieldset" variant="standard">
                     <Grid container spacing={3}>
                       <Grid item xs={6}>
                         <TextField
@@ -686,26 +730,46 @@ function Header({ name, text }) {
                         />
                       </Grid>
                       <Grid item xs={12}>
-                        <FormControlLabel
-                          control={
-                            <Checkbox
-                              sx={{ width: 20, height: 20 }}
-                              onChange={handleAgree}
-                              bgcolor="#4D5058"
-                              icon={<CheckCircleOutline />}
-                              checkedIcon={<CheckCircle />}
-                            />
-                          }
-                          label="개인정보 수집 및 활용에 동의합니다."
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                          <FormControlLabel
+                            control={
+                              <Checkbox
+                                sx={{ width: 20, height: 20 }}
+                                onChange={handleAgree}
+                                icon={<CheckCircleOutline />}
+                                checkedIcon={<CheckCircle />}
+                              />
+                            }
+                            label="개인정보 수집 및 활용에 동의합니다."
+                          />
+                          <p
+                            onClick={handleOpen3}
+                            style={{
+                              fontFamily: "Pretendard",
+                              fontSize: "1.2rem",
+                              color: "#A7ABB6",
+                            }}
+                          >
+                            자세히 보기 &gt;
+                          </p>
+                        </div>
+                      </Grid>
+                      <Grid item xs={12}>
+                        <textarea
+                          style={{
+                            borderTop: "1px solid #F2F3F6",
+                            width: "100%",
+                            height: "33rem",
+                            resize: "none",
+                            border: "none",
+                            padding: "20px",
+                            fontFamily: "Pretendard",
+                            fontSize: "1.4rem",
+                            color: "#A7ABB6",
+                          }}
+                          type="text"
+                          placeholder="문의 내용을 입력해 주세요"
                         />
-                        <span onClick={handleOpen3}>자세히 보기 &gt;</span>
-                        {checked ? (
-                          <Alert severity={"error"}>
-                            개인정보 수집 및 활용에 동의해주세요.
-                          </Alert>
-                        ) : (
-                          <></>
-                        )}
                       </Grid>
                     </Grid>
                     <Button
@@ -714,7 +778,7 @@ function Header({ name, text }) {
                       sx={{
                         mt: 3,
                         mb: 2,
-                        bgcolor: "#55576F",
+                        bgcolor: "#DFE1E8",
                         height: "5.6rem",
                         fontSize: "1.6rem",
                         fontWeight: 800,
