@@ -67,7 +67,7 @@ function HairCont() {
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
-              <span className="contHeader">PURAXEL Hair는</span>
+              <span className="contHeader">PURAXEL HAIR는</span>
               <p className="contHeader2">
                 <em>4가지 기능</em>을 제공합니다.
               </p>
