@@ -105,14 +105,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
     });
     return (
       <>
-        <div
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-        >
-          <animated.div style={styles}>{Product()}</animated.div>
-        </div>
+        <animated.div style={styles}>{Product()}</animated.div>
         <div className="list">
           <ul>
             <li>
@@ -295,9 +288,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
               </div>
             </>
           ) : (
-            <>
-              <FxHairFade />
-            </>
+            <FxHairFade />
           )}
         </div>
       </div>
