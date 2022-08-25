@@ -35,6 +35,7 @@ import {
   Button,
   Container,
   CssBaseline,
+  Alert,
 } from "@mui/material";
 import { CheckCircle, CheckCircleOutline } from "@mui/icons-material";
 
@@ -390,7 +391,7 @@ function Header({ name, text }) {
     else setNameError("");
 
     // 전화번호 유효성 체크
-    const phoneRegex = /^(010|011|016|017|018|019)-[0-9]{3,4}-[0-9]{4}$/;
+    const phoneRegex = /^(010|011|016|017|018|019)[0-9]{3,4}[0-9]{4}$/;
     if (!phoneRegex.test(phone))
       setPhoneError("올바른 전화번호 형식이 아닙니다.");
     else setPhoneError("");
@@ -643,7 +644,7 @@ function Header({ name, text }) {
                           type="text"
                           id="phone"
                           name="phone"
-                          label="연락처(000-0000-0000)"
+                          label="연락처(숫자만 입력)"
                           error={phoneError !== "" || false}
                         />
                         <FormHelperText>{phoneError}</FormHelperText>
@@ -698,6 +699,13 @@ function Header({ name, text }) {
                           label="개인정보 수집 및 활용에 동의합니다."
                         />
                         <span onClick={handleOpen3}>자세히 보기 &gt;</span>
+                        {checked ? (
+                          <Alert severity={"error"}>
+                            개인정보 수집 및 활용에 동의해주세요.
+                          </Alert>
+                        ) : (
+                          <></>
+                        )}
                       </Grid>
                     </Grid>
                     <Button
@@ -710,6 +718,7 @@ function Header({ name, text }) {
                         height: "5.6rem",
                         fontSize: "1.6rem",
                         fontWeight: 800,
+                        fontFamily: "Pretendard",
                       }}
                     >
                       문의신청
