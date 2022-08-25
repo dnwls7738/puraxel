@@ -164,13 +164,14 @@ const style = {
   p: 2,
 };
 
-const style3 = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "100%",
+const modalStyle1 = {
+  overflow: "scroll",
   height: "100%",
+};
+
+const style3 = {
+  height: "100%",
+  width: "100%",
   bgcolor: "background.paper",
   border: "none",
   borderRadius: "4px",
@@ -616,6 +617,7 @@ function Header({ name, text }) {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
           hideBackdrop="true"
+          style={modalStyle1}
         >
           <Box sx={style3}>
             <div
@@ -757,7 +759,7 @@ function Header({ name, text }) {
                           style={{
                             borderTop: "1px solid #F2F3F6",
                             width: "100%",
-                            height: "33rem",
+                            height: "20rem",
                             resize: "none",
                             border: "none",
                             padding: "20px",
