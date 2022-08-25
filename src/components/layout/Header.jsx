@@ -750,21 +750,22 @@ function Header({ name, text }) {
                         </div>
                       </Grid>
                       <Grid item xs={12}>
-                        <textarea
-                          style={{
-                            borderTop: "1px solid #F2F3F6",
-                            width: "100%",
-                            height: "20rem",
-                            resize: "none",
-                            border: "none",
-                            padding: "20px",
-                            fontFamily: "Pretendard",
-                            fontSize: "1.4rem",
-                            color: "#A7ABB6",
-                          }}
-                          type="text"
-                          placeholder="문의 내용을 입력해 주세요"
-                        />
+                        <div style={{ borderTop: "1px solid #F2F3F6" }}>
+                          <textarea
+                            style={{
+                              width: "100%",
+                              height: "20rem",
+                              resize: "none",
+                              border: "none",
+                              padding: "20px",
+                              fontFamily: "Pretendard",
+                              fontSize: "1.4rem",
+                              color: "#A7ABB6",
+                            }}
+                            type="text"
+                            placeholder="문의 내용을 입력해 주세요"
+                          />
+                        </div>
                       </Grid>
                     </Grid>
                     <Button
