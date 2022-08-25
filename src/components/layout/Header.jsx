@@ -165,6 +165,7 @@ const style = {
 };
 
 const style3 = {
+  overflow: "scroll",
   height: "100%",
   width: "100%",
   bgcolor: "background.paper",
