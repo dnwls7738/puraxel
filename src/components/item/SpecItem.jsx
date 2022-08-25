@@ -105,12 +105,7 @@ function SpecItem() {
     });
     return (
       <>
-        <div
-          style={{
-            width: "100%",
-            height: "100%",
-          }}
-        >
+        <div>
           <animated.div style={styles}>{Product()}</animated.div>
         </div>
         <div className="list">

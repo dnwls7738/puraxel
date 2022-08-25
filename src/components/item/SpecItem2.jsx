@@ -105,7 +105,9 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
     });
     return (
       <>
-        <animated.div style={styles}>{Product()}</animated.div>
+        <div>
+          <animated.div style={styles}>{Product()}</animated.div>
+        </div>
         <div className="list">
           <ul>
             <li>
