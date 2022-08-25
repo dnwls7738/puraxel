@@ -16,8 +16,8 @@ import Active04 from "../../assets/img/hair_04_active.png";
 import BgImg from "../../assets/img/mobile_bg_hair.png";
 import Line from "../../assets/img/pageLine.svg";
 import MainImg from "../../assets/img/hair_main.png";
-import Move from "../../assets/img/Vector 254.svg";
-import { Link } from "react-router-dom";
+// import Move from "../../assets/img/Vector 254.svg";
+// import { Link } from "react-router-dom";
 
 function HairCont() {
   return (

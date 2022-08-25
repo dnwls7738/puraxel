@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import axios from "axios";
+import { Link } from "react-router-dom";
+// import axios from "axios";
 import Icon from "@mui/material/Icon";
 
 import Ham from "../../assets/img/gnb_ic_ham.svg";
@@ -36,6 +36,7 @@ import {
   Container,
   CssBaseline,
 } from "@mui/material";
+import { CheckCircle, CheckCircleOutline } from "@mui/icons-material";
 
 const theme = createTheme({
   components: {
@@ -120,6 +121,7 @@ const style3 = {
 function Header({ name, text }) {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
   const [close, setClose] = useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -127,6 +129,9 @@ function Header({ name, text }) {
 
   const handleOpen2 = () => setOpen2(true);
   const handleClose2 = () => setOpen2(false);
+
+  const handleOpen3 = () => setOpen3(true);
+  const handleClose3 = () => setOpen3(false);
 
   const toggleDrawer = () => () => {
     setClose(!close);
@@ -318,7 +323,20 @@ function Header({ name, text }) {
     </Box>
   );
 
-  const theme3 = createTheme();
+  const theme3 = createTheme({
+    components: {
+      // Name of the component
+      MuiContainer: {
+        styleOverrides: {
+          // Name of the slot
+          root: {
+            // Some CSS
+            fontFamily: "Pretendard",
+          },
+        },
+      },
+    },
+  });
   const [checked, setChecked] = useState(false);
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
@@ -587,105 +605,129 @@ function Header({ name, text }) {
                 />
               </IconButton>
             </div>
+
             <ThemeProvider theme={theme3}>
               <Container component="main" maxWidth="xs">
                 <CssBaseline />
                 <Box
-                  sx={{
-                    marginTop: 8,
-                    display: "flex",
-                    flexDirection: "row",
-                  }}
+                  component="form"
+                  noValidate
+                  onSubmit={handleSubmit}
+                  sx={{ mt: 3 }}
                 >
-                  <Box
-                    component="form"
-                    noValidate
-                    onSubmit={handleSubmit}
-                    sx={{ mt: 3 }}
+                  <FormControl
+                    component="fieldset"
+                    variant="standard"
+                    sx={{ fontFamily: "Pretendard", fontSize: "1.2rem" }}
                   >
-                    <FormControl component="fieldset" variant="standard">
-                      <Grid container spacing={4}>
-                        <Grid item xs={6}>
-                          <TextField
-                            variant="standard"
-                            required
-                            fullWidth
-                            id="name"
-                            name="name"
-                            label="이름"
-                            error={nameError !== "" || false}
-                          />
-                          <FormHelperText>{nameError}</FormHelperText>
-                        </Grid>
-
-                        <Grid item xs={6}>
-                          <TextField
-                            required
-                            fullWidth
-                            variant="standard"
-                            type="text"
-                            id="phone"
-                            name="phone"
-                            label="연락처(000-0000-0000)"
-                            error={phoneError !== "" || false}
-                          />
-                          <FormHelperText>{phoneError}</FormHelperText>
-                        </Grid>
-
-                        <Grid item xs={12}>
-                          <TextField
-                            required
-                            autoFocus
-                            fullWidth
-                            variant="standard"
-                            type="email"
-                            id="email"
-                            name="email"
-                            label="이메일 주소"
-                            error={emailError !== "" || false}
-                          />
-                          <FormHelperText>{emailError}</FormHelperText>
-                        </Grid>
-
-                        <Grid item xs={6}>
-                          <TextField
-                            required
-                            fullWidth
-                            variant="standard"
-                            type="text"
-                            id="password"
-                            name="password"
-                            label="상호명"
-                          />
-                        </Grid>
-                        <Grid item xs={12}>
-                          <FormControlLabel
-                            control={
-                              <Checkbox
-                                onChange={handleAgree}
-                                color="primary"
-                              />
-                            }
-                            label="회원가입 약관에 동의합니다."
-                          />
-                        </Grid>
+                    <Grid container spacing={3}>
+                      <Grid item xs={6}>
+                        <TextField
+                          variant="standard"
+                          required
+                          fullWidth
+                          id="name"
+                          name="name"
+                          label="성명"
+                          error={nameError !== "" || false}
+                          sx={{}}
+                        />
+                        <FormHelperText>{nameError}</FormHelperText>
                       </Grid>
-                      <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        sx={{ mt: 3, mb: 2 }}
-                        size="large"
-                      >
-                        문의신청
-                      </Button>
-                      {/* <FormHelperText>{registerError}</FormHelperText> */}
-                    </FormControl>
-                  </Box>
+
+                      <Grid item xs={6}>
+                        <TextField
+                          required
+                          fullWidth
+                          variant="standard"
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          label="연락처(000-0000-0000)"
+                          error={phoneError !== "" || false}
+                        />
+                        <FormHelperText>{phoneError}</FormHelperText>
+                      </Grid>
+
+                      <Grid item xs={12}>
+                        <TextField
+                          required
+                          autoFocus
+                          fullWidth
+                          variant="standard"
+                          type="email"
+                          id="email"
+                          name="email"
+                          label="이메일"
+                          error={emailError !== "" || false}
+                        />
+                        <FormHelperText>{emailError}</FormHelperText>
+                      </Grid>
+
+                      <Grid item xs={6}>
+                        <TextField
+                          fullWidth
+                          variant="standard"
+                          type="text"
+                          id="password"
+                          name="password"
+                          label="상호명"
+                        />
+                      </Grid>
+
+                      <Grid item xs={3}>
+                        <TextField
+                          required
+                          id="standard-required"
+                          label="Required"
+                          defaultValue="Hello World"
+                          variant="standard"
+                        />
+                      </Grid>
+                      <Grid item xs={12}>
+                        <FormControlLabel
+                          control={
+                            <Checkbox
+                              sx={{ width: 20, height: 20 }}
+                              onChange={handleAgree}
+                              bgcolor="#4D5058"
+                              icon={<CheckCircleOutline />}
+                              checkedIcon={<CheckCircle />}
+                            />
+                          }
+                          label="개인정보 수집 및 활용에 동의합니다."
+                        />
+                        <span onClick={handleOpen3}>자세히 보기 &gt;</span>
+                      </Grid>
+                    </Grid>
+                    <Button
+                      type="submit"
+                      variant="contained"
+                      sx={{
+                        mt: 3,
+                        mb: 2,
+                        bgcolor: "#55576F",
+                        height: "5.6rem",
+                        fontSize: "1.6rem",
+                        fontWeight: 800,
+                      }}
+                    >
+                      문의신청
+                    </Button>
+                    {/* <FormHelperText>{registerError}</FormHelperText> */}
+                  </FormControl>
                 </Box>
               </Container>
             </ThemeProvider>
           </Box>
+        </Modal>
+        <Modal
+          onClick={handleClose3}
+          open={open3}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box></Box>
         </Modal>
       </div>
     </header>
