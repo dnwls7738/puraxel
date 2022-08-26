@@ -90,7 +90,6 @@ const theme3 = createTheme({
           color: "#A7ABB6",
           fontFamily: "Pretendard",
           fontSize: "1.4rem",
-          "&.Mui-checked": { color: "#4D5058" },
         },
       },
     },
@@ -612,7 +611,7 @@ function Header({ name, text }) {
           open={open2}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
-          hideBackdrop="true"
+          hideBackdrop={true}
         >
           <Box sx={style3}>
             <div
@@ -715,14 +714,53 @@ function Header({ name, text }) {
                         />
                       </Grid>
 
-                      <Grid item xs={3}>
-                        <TextField
-                          required
-                          id="standard-required"
-                          label="Required"
-                          defaultValue="Hello World"
-                          variant="standard"
-                        />
+                      <Grid item xs={6}>
+                        <p
+                          style={{
+                            fontFamily: "Pretendard",
+                            fontSize: "1.2rem",
+                            color: "#A7ABB6",
+                            marginTop: "-2px",
+                          }}
+                        >
+                          연락 가능 시간대
+                        </p>
+                        <Grid container spacing={1}>
+                          <Grid item xs={3}>
+                            <TextField
+                              id="standard-required"
+                              variant="standard"
+                            />
+                          </Grid>
+                          <Grid
+                            item
+                            sx={{
+                              fontFamily: "Pretendard",
+                              fontSize: "1.4rem",
+                              fontWeight: 600,
+                              color: "#7E818D",
+                            }}
+                          >
+                            ~
+                          </Grid>
+                          <Grid item xs={3}>
+                            <TextField
+                              id="standard-required"
+                              variant="standard"
+                            />
+                          </Grid>
+                          <Grid
+                            item
+                            sx={{
+                              fontFamily: "Pretendard",
+                              fontSize: "1.2rem",
+                              fontWeight: 700,
+                              color: "#7E818D",
+                            }}
+                          >
+                            시
+                          </Grid>
+                        </Grid>
                       </Grid>
                       <Grid item xs={12}>
                         <div style={{ display: "flex", alignItems: "center" }}>
@@ -737,12 +775,14 @@ function Header({ name, text }) {
                             }
                             label="개인정보 수집 및 활용에 동의합니다."
                           />
+
                           <p
                             onClick={handleOpen3}
                             style={{
                               fontFamily: "Pretendard",
                               fontSize: "1.2rem",
                               color: "#A7ABB6",
+                              cursor: "pointer",
                             }}
                           >
                             자세히 보기 &gt;
@@ -761,6 +801,7 @@ function Header({ name, text }) {
                               fontFamily: "Pretendard",
                               fontSize: "1.4rem",
                               color: "#A7ABB6",
+                              outline: "none",
                             }}
                             type="text"
                             placeholder="문의 내용을 입력해 주세요"
