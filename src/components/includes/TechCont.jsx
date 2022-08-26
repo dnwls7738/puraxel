@@ -32,6 +32,8 @@ function TechCont() {
         backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        width: "100%",
+        heigth: "100%",
       }}
     >
       <Swiper
@@ -42,8 +44,6 @@ function TechCont() {
         modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={10}
         slidesPerView={1}
-        observer="true"
-        observeParents="true"
         pagination={{
           type: "fraction",
           renderFraction: function (currentClass, totalClass) {
@@ -59,7 +59,6 @@ function TechCont() {
             );
           },
         }}
-        scrollbar={{ draggable: true }}
       >
         <SwiperSlide>
           <div className="cont">

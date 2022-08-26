@@ -33,8 +33,6 @@ function MeCont() {
         modules={[Navigation, Pagination, Scrollbar]}
         spaceBetween={10}
         slidesPerView={1}
-        observer="true"
-        observeParents="true"
         pagination={{
           type: "fraction",
           renderFraction: function (currentClass, totalClass) {

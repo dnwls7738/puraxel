@@ -1,3 +1,7 @@
+.swiper {
+  min-width: 360px;
+  height: 100vh;
+}
 .swiper-pagination-fraction {
   float: left;
   display: flex;
@@ -13,7 +17,4 @@
     opacity: 30%;
     padding: 10px;
   }
-}
-.swiper {
-  min-width: 360px;
 }

@@ -548,17 +548,14 @@
   }
 }
 
-.iframe {
-  -webkit-overflow-scrolling: "touch";
-}
-
-.swiper {
-  height: 100%;
-}
-
 @media (min-width: 768px) {
   html {
     font-size: 13px;
+  }
+
+  .cont {
+    margin: 0 auto;
+    max-width: 768px;
   }
 
   .ModeExplain {
@@ -573,10 +570,6 @@
 @media (min-width: 1000px) {
   html {
     font-size: 13px;
-  }
-  .cont {
-    margin: 0 auto;
-    max-width: 1000px;
   }
 
   .ModeExplain {

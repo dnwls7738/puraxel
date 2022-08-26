@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-// import axios from "axios";
+import { Link, useHistory } from "react-router-dom";
+import axios from "axios";
 import Icon from "@mui/material/Icon";
 
 import Ham from "../../assets/img/gnb_ic_ham.svg";
@@ -94,7 +94,7 @@ const theme3 = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
-          color: "#A7ABB6",
+          color: "#4D5058",
           fontFamily: "Pretendard",
           fontSize: "1.4rem",
         },
@@ -111,7 +111,7 @@ const theme3 = createTheme({
     MuiInputLabel: {
       styleOverrides: {
         root: {
-          "&.Mui-focused": { color: "#A7ABB6" },
+          "&.Mui-focused": { color: "#A7ABB6", fontSize: "1.2rem" },
           color: "#A7ABB6",
           fontFamily: "Pretendard",
           fontSize: "1.2rem",
@@ -123,7 +123,11 @@ const theme3 = createTheme({
         root: {
           borderBottom: "#DFE1E8",
           "&:after": { borderBottom: "#DFE1E8" },
-          "&:hover": { borderBottom: "#DFE1E8" },
+          "&.Mui-hover": { borderBottom: "#DFE1E8" },
+          fontSize: "1.6rem",
+          fontFamily: "Pretendard",
+          color: "#4D5058",
+          fontWeight: "600",
         },
       },
     },
@@ -131,6 +135,15 @@ const theme3 = createTheme({
       styleOverrides: {
         root: {
           border: "none",
+        },
+      },
+    },
+    MuiFormHelperText: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Pretendard",
+          fontSize: "1rem",
+          color: "#DD5C54",
         },
       },
     },
@@ -209,6 +222,7 @@ function Header({ name, text }) {
   function Reload() {
     window.location.reload({ name });
   }
+
   const list = () => (
     <Box
       role="presentation"
@@ -390,29 +404,29 @@ function Header({ name, text }) {
   const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
   const [nameError, setNameError] = useState("");
-  // const [registerError, setRegisterError] = useState("");
-  // const history = useHistory();
+  const [registerError, setRegisterError] = useState("");
+  const history = useHistory();
 
   const handleAgree = (event) => {
     setChecked(event.target.checked);
   };
 
-  // const onhandlePost = async (data) => {
-  //   const { email, name, password } = data;
-  //   const postData = { email, name, password };
+  const onhandlePost = async (data) => {
+    const { email, name, phone } = data;
+    const postData = { email, name, phone };
 
-  //   // post
-  //   await axios
-  //     .post("/member/join", postData)
-  //     .then(function (response) {
-  //       console.log(response, "성공");
-  //       history.push("/login");
-  //     })
-  //     .catch(function (err) {
-  //       console.log(err);
-  //       setRegisterError("회원가입에 실패하였습니다. 다시한번 확인해 주세요.");
-  //     });
-  // };
+    // post
+    await axios
+      .post("/member/join", postData)
+      .then(function (response) {
+        console.log(response, "성공");
+        history.push("/login");
+      })
+      .catch(function (err) {
+        console.log(err);
+        setRegisterError("회원가입에 실패하였습니다. 다시한번 확인해 주세요.");
+      });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -453,7 +467,7 @@ function Header({ name, text }) {
       checked &&
       phoneRegex.test(phone)
     ) {
-      // onhandlePost(joinData);
+      onhandlePost(joinData);
     }
   };
 
@@ -619,6 +633,9 @@ function Header({ name, text }) {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
           hideBackdrop={true}
+          sx={{
+            minWidth: "360px",
+          }}
         >
           <Box sx={style3}>
             <div
@@ -676,7 +693,6 @@ function Header({ name, text }) {
                           name="name"
                           label="성명"
                           error={nameError !== "" || false}
-                          sx={{}}
                         />
                         <FormHelperText>{nameError}</FormHelperText>
                       </Grid>
@@ -733,7 +749,7 @@ function Header({ name, text }) {
                           연락 가능 시간대
                         </p>
                         <Grid container spacing={1}>
-                          <Grid item xs={3}>
+                          <Grid item xs={2.2}>
                             <TextField
                               id="standard-required"
                               variant="standard"
@@ -750,7 +766,7 @@ function Header({ name, text }) {
                           >
                             ~
                           </Grid>
-                          <Grid item xs={3}>
+                          <Grid item xs={2.2}>
                             <TextField
                               id="standard-required"
                               variant="standard"
@@ -763,6 +779,8 @@ function Header({ name, text }) {
                               fontSize: "1.2rem",
                               fontWeight: 700,
                               color: "#7E818D",
+                              textAlign: "center",
+                              verticalAlign: "center",
                             }}
                           >
                             시
@@ -774,7 +792,7 @@ function Header({ name, text }) {
                           <FormControlLabel
                             control={
                               <Checkbox
-                                sx={{ width: 20, height: 20 }}
+                                sx={{ width: "2rem", height: "2rem" }}
                                 onChange={handleAgree}
                                 icon={<CheckCircleOutline />}
                                 checkedIcon={<CheckCircle />}
@@ -807,8 +825,9 @@ function Header({ name, text }) {
                               padding: "20px",
                               fontFamily: "Pretendard",
                               fontSize: "1.4rem",
-                              color: "#A7ABB6",
+                              color: "#4D5058",
                               outline: "none",
+                              placeholder: "A7ABB6",
                             }}
                             type="text"
                             placeholder="문의 내용을 입력해 주세요"
@@ -831,13 +850,14 @@ function Header({ name, text }) {
                     >
                       문의신청
                     </Button>
-                    {/* <FormHelperText>{registerError}</FormHelperText> */}
+                    <FormHelperText>{registerError}</FormHelperText>
                   </FormControl>
                 </Box>
               </Container>
             </ThemeProvider>
           </Box>
         </Modal>
+
         <Modal
           onClick={handleClose3}
           open={open3}
