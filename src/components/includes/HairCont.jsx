@@ -98,7 +98,9 @@ function HairCont() {
         <SwiperSlide>
           <div className="cont" style={{ height: "100vh" }}>
             <div className="contName">
-              <span className="contHeader">영상으로 자세히 보기</span>
+              <span className="contHeader">
+                PURAXEL Hair와 함께 하는 탈모 클리닉
+              </span>
               <p className="contHeader4">
                 이제 병원에서만 가능하던 프락셔널 레이저 시술을
                 <br /> 에스테틱샵에서도 제공하실 수 있습니다.

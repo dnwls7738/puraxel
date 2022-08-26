@@ -353,13 +353,13 @@
     .contHeader2 {
       color: #55576f;
       font-family: "Pretendard";
-      font-weight: 300;
+      font-weight: 400;
       font-size: 2rem;
       line-height: 144%;
       letter-spacing: -0.03em;
       padding-top: 4px;
       em {
-        font-weight: 600;
+        font-weight: 800;
       }
     }
     .contHeader3 {
@@ -569,6 +569,10 @@
 @media (min-width: 768px) {
   html {
     font-size: 13px;
+  }
+  .cont {
+    margin: 0 auto;
+    max-width: 600px;
   }
 
   .ModeExplain {
