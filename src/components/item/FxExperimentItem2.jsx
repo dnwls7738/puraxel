@@ -125,7 +125,7 @@ function FxExItem() {
               variant="h6"
               component="h2"
               style={{
-                margin: "12px",
+                marginLeft: "4px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -138,7 +138,7 @@ function FxExItem() {
                     fontWeight: 800,
                     fontSize: "2rem",
                     color: "#55576f",
-                    padding: "8px",
+                    padding: "12px",
                   }}
                 >
                   정수리/M자 탈모 개선
@@ -157,7 +157,7 @@ function FxExItem() {
             <div
               className="specs"
               style={{
-                margin: "12px",
+                margin: "0 16px",
               }}
             >
               <div
@@ -198,9 +198,10 @@ function FxExItem() {
               sx={{
                 fontFamily: "Pretendard",
                 fontSize: "1.4rem",
-                fontWeight: 300,
+                fontWeight: 400,
                 marginBottom: "24px",
-                margin: "12px",
+                margin: "12px 16px 22px 16px ",
+                color: "#4D5058",
               }}
             >
               퓨라셀 + 미스터케어 발모개선 앰플
@@ -239,7 +240,7 @@ function FxExItem() {
               variant="h6"
               component="h2"
               style={{
-                margin: "12px",
+                marginLeft: "4px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -251,7 +252,7 @@ function FxExItem() {
                   fontWeight: 800,
                   fontSize: "2rem",
                   color: "#55576f",
-                  padding: "8px",
+                  padding: "12px",
                 }}
               >
                 모량/모발 테스트 결과
@@ -269,7 +270,7 @@ function FxExItem() {
             <div
               className="specs"
               style={{
-                margin: "12px",
+                margin: "0 16px",
               }}
             >
               <div
@@ -307,7 +308,7 @@ function FxExItem() {
             </div>
             <div
               style={{
-                margin: "12px",
+                margin: "16px 0 16px 16px",
               }}
             >
               {modeCondition ? (
@@ -323,7 +324,7 @@ function FxExItem() {
                         fontFamily: "Pretendard",
                         fontWeight: 600,
                         fontSize: "1.4rem",
-                        color: "#55576f",
+                        color: "#4D5058",
                       }}
                     >
                       원형 탈모 부위
@@ -333,7 +334,7 @@ function FxExItem() {
                         fontFamily: "Pretendard",
                         fontWeight: 800,
                         fontSize: "2.4rem",
-                        color: "#55576f",
+                        color: "#4D5058",
                       }}
                     >
                       31.0% 증가

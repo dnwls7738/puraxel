@@ -319,6 +319,9 @@
       color: #4d5058;
       margin-right: 8px;
     }
+    img {
+      text-align: center;
+    }
   }
 
   .contName {
@@ -549,7 +552,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
   html {
     font-size: 8px;
   }
