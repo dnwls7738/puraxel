@@ -147,6 +147,11 @@ const theme3 = createTheme({
         },
       },
     },
+    MuiList: {
+      styleOverrides: {
+        root: { position: "fixed", width: "100%" },
+      },
+    },
   },
 });
 
@@ -227,10 +232,11 @@ function Header({ name, text }) {
     <Box
       role="presentation"
       sx={{
-        position: "relative",
+        position: "fixed",
+        width: "100%",
       }}
     >
-      <List>
+      <List theme={theme3}>
         <div
           style={{
             display: "flex",
@@ -550,6 +556,7 @@ function Header({ name, text }) {
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   zIndex: 99999,
                   backdropFilter: "blur(40px)",
+                  position: "fixed",
                 },
               }}
             >
