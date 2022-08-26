@@ -84,6 +84,13 @@ const theme3 = createTheme({
         },
       },
     },
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          maxWidth: "1000px",
+        },
+      },
+    },
     MuiTypography: {
       styleOverrides: {
         root: {
@@ -650,7 +657,7 @@ function Header({ name, text }) {
             </div>
 
             <ThemeProvider theme={theme3}>
-              <Container component="main" maxWidth="xs">
+              <Container component="main" maxWidth="500px">
                 <CssBaseline />
                 <Box
                   component="form"
@@ -718,7 +725,7 @@ function Header({ name, text }) {
                         <p
                           style={{
                             fontFamily: "Pretendard",
-                            fontSize: "1.2rem",
+                            fontSize: "12px",
                             color: "#A7ABB6",
                             marginTop: "-2px",
                           }}
