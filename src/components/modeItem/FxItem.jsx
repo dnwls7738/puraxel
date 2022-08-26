@@ -124,14 +124,16 @@ function HairItem() {
           </div>
         </div>
       </div>
-      <Link to="/핵심기술">
-        <div className="techMove">
+
+      <div className="techMove">
+        <Link to="/핵심기술">
           <p>
-            프락셔널 레이저 <em>작동 방식 보기</em>
+            프락셔널 레이저 <em>작동 방식 보기 </em>
           </p>
           <img src={Move} alt="" />
-        </div>
-      </Link>
+        </Link>
+      </div>
+
       <Modal
         open={open3}
         aria-labelledby="modal-modal-title3"

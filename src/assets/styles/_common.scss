@@ -1,5 +1,5 @@
 .ModeExplain {
-  width: 100%;
+  min-width: 320px;
   height: 100%;
   .exs {
     position: relative;
@@ -273,11 +273,12 @@
 }
 
 .cont {
-  min-width: 360px;
+  min-width: 320px;
+  height: auto;
   position: relative;
 
   .contMain {
-    min-width: 360px;
+    min-width: 320px;
     position: relative;
     text-align: center;
     img {
@@ -299,7 +300,6 @@
   }
 
   .techMove {
-    display: flex;
     padding: 12px;
     margin-top: 20px;
     margin-left: 20px;
@@ -307,6 +307,10 @@
     border: 1px solid #fff;
     border-radius: 4px;
     background: linear-gradient(#ffffff, #ffffff4d);
+    a {
+      display: flex;
+      align-items: center;
+    }
     p {
       display: inline-block;
       font-family: "Pretendard";
@@ -314,9 +318,6 @@
       font-size: 1.2rem;
       color: #4d5058;
       margin-right: 8px;
-    }
-    img {
-      text-align: center;
     }
   }
 
@@ -548,14 +549,23 @@
   }
 }
 
+@media (max-width: 320px) {
+  html {
+    font-size: 8px;
+  }
+
+  .ModeExplain {
+    .exs {
+      .ex {
+        top: 160px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 13px;
-  }
-
-  .cont {
-    margin: 0 auto;
-    max-width: 768px;
   }
 
   .ModeExplain {

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/scss";
@@ -42,7 +42,7 @@ function Fx5000Cont() {
           overflow: "auto",
         }}
         className="swiper"
-        modules={[Navigation, Pagination, Scrollbar]}
+        modules={[Navigation, Pagination]}
         spaceBetween={10}
         slidesPerView={1}
         pagination={{

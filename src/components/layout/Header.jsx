@@ -545,7 +545,7 @@ function Header({ name, text }) {
               hideBackdrop
               PaperProps={{
                 sx: {
-                  width: 360,
+                  minWidth: 320,
                   color: "#55576F",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   zIndex: 99999,
@@ -634,7 +634,7 @@ function Header({ name, text }) {
           aria-describedby="modal-modal-description"
           hideBackdrop={true}
           sx={{
-            minWidth: "360px",
+            minWidth: "320px",
           }}
         >
           <Box sx={style3}>
@@ -686,6 +686,7 @@ function Header({ name, text }) {
                     <Grid container spacing={3}>
                       <Grid item xs={6}>
                         <TextField
+                          autoFocus
                           variant="standard"
                           required
                           fullWidth
@@ -714,7 +715,6 @@ function Header({ name, text }) {
                       <Grid item xs={12}>
                         <TextField
                           required
-                          autoFocus
                           fullWidth
                           variant="standard"
                           type="email"
