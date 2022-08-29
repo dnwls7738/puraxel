@@ -72,8 +72,6 @@ function HairItem() {
               alt=""
               style={{
                 width: "100%",
-                heigth: "100%",
-                marginLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",
               }}

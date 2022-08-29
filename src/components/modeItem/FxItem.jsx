@@ -71,9 +71,8 @@ function HairItem() {
               src={hair}
               alt=""
               style={{
-                width: "180px",
+                width: "100%",
                 heigth: "auto",
-                marginLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",
               }}

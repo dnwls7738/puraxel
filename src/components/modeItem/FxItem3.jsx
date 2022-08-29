@@ -9,7 +9,7 @@ function HairItem3() {
         <div className="modeEx">
           <div
             style={{
-              width: "160px",
+              width: "100%",
               display: "flex",
               flexDirection: "column",
               justifyContent: "space-between",
@@ -45,9 +45,8 @@ function HairItem3() {
               src={hair}
               alt=""
               style={{
-                width: "180px",
+                width: "100%",
                 heigth: "auto",
-                marginLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",
               }}
