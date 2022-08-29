@@ -276,7 +276,7 @@
 
 .cont {
   min-width: 320px;
-  height: auto;
+  height: 100%;
   position: relative;
 
   .contMain {
@@ -574,6 +574,7 @@
   }
   .cont {
     margin: 0 auto;
+    height: 100%;
     max-width: 600px;
   }
 
