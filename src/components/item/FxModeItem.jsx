@@ -135,7 +135,6 @@ function FxModeItem() {
               >
                 <div
                   style={{
-                    width: "100%",
                     paddingLeft: "6px",
                     position: "absolute",
                     bottom: 0,

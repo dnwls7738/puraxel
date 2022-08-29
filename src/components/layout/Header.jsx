@@ -88,6 +88,8 @@ const theme3 = createTheme({
       styleOverrides: {
         root: {
           maxWidth: "1000px",
+          paddingLeft: "4px",
+          paddingRight: "4px",
         },
       },
     },
@@ -144,6 +146,13 @@ const theme3 = createTheme({
           fontFamily: "Pretendard",
           fontSize: "1rem",
           color: "#DD5C54",
+        },
+      },
+    },
+    MuiFormControlLabel: {
+      styleOverrides: {
+        root: {
+          marginLeft: 0,
         },
       },
     },
@@ -430,7 +439,7 @@ function Header({ name, text }) {
       })
       .catch(function (err) {
         console.log(err);
-        setRegisterError("회원가입에 실패하였습니다. 다시한번 확인해 주세요.");
+        setRegisterError("문의하기에 실패했습니다. 다시한번 확인해 주세요.");
       });
   };
 
@@ -447,7 +456,7 @@ function Header({ name, text }) {
 
     // 이메일 유효성 체크
     const emailRegex =
-      /^[_\.0-9a-zA-Z-]+@([0-9a-zA-Z][0-9a-zA-Z-]+\.)+[a-zA-Z]{2,6}$/i;
+      /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
     if (!emailRegex.test(email))
       setEmailError("올바른 이메일 형식이 아닙니다.");
     else setEmailError("");
@@ -693,6 +702,7 @@ function Header({ name, text }) {
                     <Grid container spacing={3}>
                       <Grid item xs={6}>
                         <TextField
+                          inputProps={{ maxLength: 12 }}
                           autoFocus
                           variant="standard"
                           required
@@ -707,6 +717,7 @@ function Header({ name, text }) {
 
                       <Grid item xs={6}>
                         <TextField
+                          inputProps={{ maxLength: 12 }}
                           required
                           fullWidth
                           variant="standard"
@@ -721,6 +732,7 @@ function Header({ name, text }) {
 
                       <Grid item xs={12}>
                         <TextField
+                          inputProps={{ maxLength: 20 }}
                           required
                           fullWidth
                           variant="standard"
@@ -735,6 +747,8 @@ function Header({ name, text }) {
 
                       <Grid item xs={6}>
                         <TextField
+                          inputProps={{ maxLength: 12 }}
+                          maxLength="10"
                           fullWidth
                           variant="standard"
                           type="text"
@@ -758,6 +772,7 @@ function Header({ name, text }) {
                         <Grid container spacing={1}>
                           <Grid item xs={2.2}>
                             <TextField
+                              inputProps={{ maxLength: 2 }}
                               id="standard-required"
                               variant="standard"
                             />
@@ -775,6 +790,7 @@ function Header({ name, text }) {
                           </Grid>
                           <Grid item xs={2.2}>
                             <TextField
+                              inputProps={{ maxLength: 2 }}
                               id="standard-required"
                               variant="standard"
                             />
@@ -795,7 +811,13 @@ function Header({ name, text }) {
                         </Grid>
                       </Grid>
                       <Grid item xs={12}>
-                        <div style={{ display: "flex", alignItems: "center" }}>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                          }}
+                        >
                           <FormControlLabel
                             control={
                               <Checkbox
