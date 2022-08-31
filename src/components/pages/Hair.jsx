@@ -5,7 +5,7 @@ import Header from "../layout/Header";
 function Hair() {
   return (
     <>
-      <Header name="HAIR" text="inquiry" />
+      <Header name="PURAXEL-Hair" text="inquiry" />
       <HairCont />
     </>
   );

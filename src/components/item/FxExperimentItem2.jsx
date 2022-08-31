@@ -135,7 +135,7 @@ function FxExItem() {
                 <p
                   style={{
                     fontFamily: "Pretendard",
-                    fontWeight: 800,
+                    fontWeight: 700,
                     fontSize: "2rem",
                     color: "#55576f",
                     padding: "12px",
@@ -169,11 +169,11 @@ function FxExItem() {
                 <div
                   onClick={selectorLaser}
                   style={{
-                    backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
+                    backgroundColor: modeCondition ? "#808591" : "#F2F3F6",
                     color: modeCondition ? "#FFFFFF" : "#A7ABB6",
                     boxShadow: modeCondition ? "0 4px 8px #00000026" : "none",
                     fontSize: "1.6rem",
-                    fontWeight: 800,
+                    fontWeight: 600,
                   }}
                 >
                   정수리 탈모
@@ -181,12 +181,12 @@ function FxExItem() {
                 <div
                   onClick={selectorGalvanic}
                   style={{
-                    backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
+                    backgroundColor: modeCondition ? "#F2F3F6" : "#808591",
                     color: modeCondition ? "#A7ABB6" : "#FFFFFF",
                     boxShadow: modeCondition ? "none" : "0 4px 8px #00000026",
                     fontSize: "1.6rem",
                     marginLeft: "8px",
-                    fontWeight: 800,
+                    fontWeight: 600,
                   }}
                 >
                   M자 탈모
@@ -198,7 +198,7 @@ function FxExItem() {
               sx={{
                 fontFamily: "Pretendard",
                 fontSize: "1.4rem",
-                fontWeight: 400,
+                fontWeight: 300,
                 marginBottom: "24px",
                 margin: "12px 16px 22px 16px ",
                 color: "#4D5058",
@@ -249,7 +249,7 @@ function FxExItem() {
               <p
                 style={{
                   fontFamily: "Pretendard",
-                  fontWeight: 800,
+                  fontWeight: 700,
                   fontSize: "2rem",
                   color: "#55576f",
                   padding: "12px",
@@ -282,11 +282,11 @@ function FxExItem() {
                 <div
                   onClick={selectorLaser}
                   style={{
-                    backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
-                    color: modeCondition ? "#FFFFFF" : "#A7ABB6",
+                    backgroundColor: modeCondition ? "#808591" : "#F2F3F6",
+                    color: modeCondition ? "#FFFFFF" : "#B6BCC7",
                     boxShadow: modeCondition ? "0 4px 8px #00000026" : "none",
                     fontSize: "1.6rem",
-                    fontWeight: 800,
+                    fontWeight: 700,
                   }}
                 >
                   모량 테스트
@@ -294,12 +294,12 @@ function FxExItem() {
                 <div
                   onClick={selectorGalvanic}
                   style={{
-                    backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
-                    color: modeCondition ? "#A7ABB6" : "#FFFFFF",
+                    backgroundColor: modeCondition ? "#F2F3F6" : "#808591",
+                    color: modeCondition ? "#B6BCC7" : "#FFFFFF",
                     boxShadow: modeCondition ? "none" : "0 4px 8px #00000026",
                     marginLeft: "8px",
                     fontSize: "1.6rem",
-                    fontWeight: 800,
+                    fontWeight: 700,
                   }}
                 >
                   모발 테스트
@@ -324,7 +324,7 @@ function FxExItem() {
                         fontFamily: "Pretendard",
                         fontWeight: 600,
                         fontSize: "1.4rem",
-                        color: "#4D5058",
+                        color: "#808591",
                       }}
                     >
                       원형 탈모 부위
@@ -332,9 +332,9 @@ function FxExItem() {
                     <span
                       style={{
                         fontFamily: "Pretendard",
-                        fontWeight: 800,
+                        fontWeight: 700,
                         fontSize: "2.4rem",
-                        color: "#4D5058",
+                        color: "#808591",
                       }}
                     >
                       31.0% 증가
@@ -350,7 +350,7 @@ function FxExItem() {
                         fontFamily: "Pretendard",
                         fontWeight: 600,
                         fontSize: "1.4rem",
-                        color: "#55576f",
+                        color: "#808591",
                       }}
                     >
                       M자 탈모 부위
@@ -358,9 +358,9 @@ function FxExItem() {
                     <span
                       style={{
                         fontFamily: "Pretendard",
-                        fontWeight: 800,
+                        fontWeight: 700,
                         fontSize: "2.4rem",
-                        color: "#55576f",
+                        color: "#808591",
                       }}
                     >
                       11.5% 증가
@@ -380,7 +380,7 @@ function FxExItem() {
                         fontFamily: "Pretendard",
                         fontWeight: 600,
                         fontSize: "1.4rem",
-                        color: "#55576f",
+                        color: "#808591",
                       }}
                     >
                       원형 탈모 부위
@@ -388,9 +388,9 @@ function FxExItem() {
                     <span
                       style={{
                         fontFamily: "Pretendard",
-                        fontWeight: 800,
+                        fontWeight: 700,
                         fontSize: "2.4rem",
-                        color: "#55576f",
+                        color: "#808591",
                       }}
                     >
                       28.6% 증가
@@ -406,7 +406,7 @@ function FxExItem() {
                         fontFamily: "Pretendard",
                         fontWeight: 600,
                         fontSize: "1.4rem",
-                        color: "#55576f",
+                        color: "#808591",
                       }}
                     >
                       M자 탈모 부위
@@ -414,9 +414,9 @@ function FxExItem() {
                     <span
                       style={{
                         fontFamily: "Pretendard",
-                        fontWeight: 800,
+                        fontWeight: 700,
                         fontSize: "2.4rem",
-                        color: "#55576f",
+                        color: "#808591",
                       }}
                     >
                       51.5% 증가

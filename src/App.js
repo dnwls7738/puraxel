@@ -12,9 +12,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/" exact component={Main} />
-        <Route path="/ME" exact component={Me} />
-        <Route path="/FX-5000" exact component={Fx5000} />
-        <Route path="/HAIR" exact component={Hair} />
+        <Route path="/PURAXEL-Me" exact component={Me} />
+        <Route path="/PURAXEL" exact component={Fx5000} />
+        <Route path="/PURAXEL-Hair" exact component={Hair} />
         <Route path="/핵심기술" exact component={PuraTech} />
       </Switch>
     </Router>

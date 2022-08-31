@@ -21,7 +21,7 @@ function HairItem3() {
                 fontFamily: "Pretendard",
                 fontSize: "1.6rem",
                 color: "rgba(85, 87, 111, 1)",
-                fontWeight: "800",
+                fontWeight: "700",
               }}
             >
               갈바닉 모드
@@ -31,7 +31,7 @@ function HairItem3() {
                 fontFamily: "Pretendard",
                 fontSize: "1.2rem",
                 color: "#A292A3",
-                fontWeight: "700",
+                fontWeight: "600",
                 lineHeight: "144%",
               }}
             >
@@ -46,7 +46,7 @@ function HairItem3() {
               alt=""
               style={{
                 width: "100%",
-                heigth: "auto",
+                paddingLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",
               }}
@@ -58,15 +58,16 @@ function HairItem3() {
             style={{
               fontFamily: "Pretendard",
               fontSize: "1.6rem",
-              color: "#4D5058",
-              fontWeight: "600",
+              color: "#808591",
+              fontWeight: "500",
               marginTop: "12px",
               lineHeight: "150%",
             }}
           >
-            같은 극끼리 밀어내는 갈바닉 기술을 활용하여 이온화된 화장품의
-            흡수율을 높입니다. 레이저 모드와 함께 사용하면 피부 흡수율을
-            극대화할 수 있습니다.
+            같은 극끼리 밀어내는 갈바닉 기술을 활용하여
+            <br /> 이온화된 화장품의 흡수율을 높입니다. 레이저
+            <br /> 모드와 함께 사용하면 피부 흡수율을 극대화할
+            <br /> 수 있습니다.
           </p>
         </div>
       </div>

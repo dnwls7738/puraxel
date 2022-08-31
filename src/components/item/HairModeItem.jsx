@@ -96,7 +96,7 @@ function FxItem() {
                 <span
                   style={{
                     fontFamily: "Pretendard",
-                    fontWeight: 800,
+                    fontWeight: 700,
                     color: "#55576F",
                     fontSize: "1.4rem",
                     marginLeft: "4px",
@@ -134,7 +134,7 @@ function FxItem() {
                 <span
                   style={{
                     fontFamily: "Pretendard",
-                    fontWeight: 800,
+                    fontWeight: 700,
                     color: "#55576F",
                     fontSize: "1.4rem",
                     marginLeft: "4px",
@@ -170,7 +170,7 @@ function FxItem() {
                 <span
                   style={{
                     fontFamily: "Pretendard",
-                    fontWeight: 800,
+                    fontWeight: 700,
                     color: "#55576F",
                     fontSize: "1.4rem",
                     marginLeft: "4px",
@@ -206,7 +206,7 @@ function FxItem() {
                 <span
                   style={{
                     fontFamily: "Pretendard",
-                    fontWeight: 800,
+                    fontWeight: 700,
                     color: "#55576F",
                     fontSize: "1.4rem",
                     marginLeft: "4px",

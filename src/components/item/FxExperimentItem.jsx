@@ -141,7 +141,7 @@ function FxExItem() {
                 <p
                   style={{
                     fontFamily: "Pretendard",
-                    fontWeight: 800,
+                    fontWeight: 700,
                     fontSize: "2rem",
                     color: "#55576f",
                     padding: "8px",
@@ -169,8 +169,8 @@ function FxExItem() {
                 margin: "0 20px 24px 12px",
               }}
             >
-              피부 수분 변화에 대한 통계분석 결과, 화장품+퓨라셀 1회 사용 직후
-              300%이상 증가
+              피부 수분 변화에 대한 통계분석 결과,
+              <br /> 화장품+퓨라셀 1회 사용 직후 300%이상 증가
             </Typography>
             <img
               src={Skin6}
@@ -203,7 +203,7 @@ function FxExItem() {
                 <p
                   style={{
                     fontFamily: "Pretendard",
-                    fontWeight: 800,
+                    fontWeight: 700,
                     fontSize: "2rem",
                     color: "#55576f",
                     padding: "8px",

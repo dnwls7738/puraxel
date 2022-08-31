@@ -48,7 +48,7 @@ function HairItem() {
                 fontFamily: "Pretendard",
                 fontSize: "1.6rem",
                 color: "rgba(85, 87, 111, 1)",
-                fontWeight: "800",
+                fontWeight: "700",
               }}
             >
               레이저 모드
@@ -58,7 +58,7 @@ function HairItem() {
                 fontFamily: "Pretendard",
                 fontSize: "1.2rem",
                 color: "#A292A3",
-                fontWeight: "700",
+                fontWeight: "600",
                 lineHeight: "144%",
               }}
             >
@@ -84,15 +84,14 @@ function HairItem() {
             style={{
               fontFamily: "Pretendard",
               fontSize: "1.6rem",
-              color: "#4D5058",
-              fontWeight: "600",
+              color: "#808591",
+              fontWeight: "500",
               marginTop: "12px",
               lineHeight: "150%",
             }}
           >
-            두피 두께에 맞는 단계 설정으로 원하는 부위에 <br /> 레이저를
-            조사하여 두피 속 마이크로 채널을 <br />
-            생성합니다.
+            두피 두께에 맞는 단계 설정으로 원하는 부위에
+            <br /> 레이저를 조사하여 두피 속 마이크로 채널을 생성합니다.
           </p>
         </div>
       </div>
@@ -153,8 +152,7 @@ function HairItem() {
             <div>
               <p
                 style={{
-                  fontFamily: "Pretendard",
-                  fontWeight: 800,
+                  fontWeight: 700,
                   fontSize: "2rem",
                   color: "#55576f",
                 }}
@@ -188,7 +186,7 @@ function HairItem() {
                       width: "100%",
                       display: "flex",
                       fontSize: "1.6rem",
-                      fontWeight: 800,
+                      fontWeight: 700,
                       color: "#55576F",
                       alignItems: "center",
                       background: "#F8F9FA",
@@ -209,7 +207,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#4D5058",
+                      color: "#808591",
                       margin: "8px 0 20px 35px",
                     }}
                   >
@@ -223,7 +221,7 @@ function HairItem() {
                       width: "100%",
                       display: "flex",
                       fontSize: "1.6rem",
-                      fontWeight: 800,
+                      fontWeight: 700,
                       color: "#55576F",
                       alignItems: "center",
                       background: "#F8F9FA",
@@ -244,7 +242,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#4D5058",
+                      color: "#808591",
                       margin: "8px 0 20px 35px",
                     }}
                   >
@@ -259,7 +257,7 @@ function HairItem() {
                       width: "100%",
                       display: "flex",
                       fontSize: "1.6rem",
-                      fontWeight: 800,
+                      fontWeight: 700,
                       color: "#55576F",
                       alignItems: "center",
                       background: "#F8F9FA",
@@ -280,7 +278,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#4D5058",
+                      color: "#808591",
                       margin: "8px 0 20px 35px",
                     }}
                   >
@@ -295,7 +293,7 @@ function HairItem() {
                       width: "100%",
                       display: "flex",
                       fontSize: "1.6rem",
-                      fontWeight: 800,
+                      fontWeight: 700,
                       color: "#55576F",
                       alignItems: "center",
                       background: "#F8F9FA",
@@ -316,7 +314,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#4D5058",
+                      color: "#808591",
                       margin: "8px 0 20px 34px",
                     }}
                   >
@@ -337,7 +335,6 @@ function HairItem() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  fontFamily: "Pretendard",
                   fontSize: "1.2rem",
                 }}
               >
@@ -349,14 +346,15 @@ function HairItem() {
                     marginRight: "2px",
                   }}
                 />
-                주의
+                <span style={{ fontWeight: "600", color: "#A0A5B1" }}>
+                  주의
+                </span>
               </div>
               <div
                 style={{
-                  fontFamily: "Pretendard",
                   fontSize: "1.2rem",
-                  fontWeight: "500",
-                  color: "#7E818D",
+                  fontWeight: "400",
+                  color: "#A0A5B1",
                   marginTop: "8px",
                 }}
               >

@@ -2,15 +2,10 @@
   min-width: 320px;
   height: 100%;
   .exs {
-    position: relative;
-    margin-top: 40px;
     width: 100%;
     .img {
-      display: block;
-      margin: 0 auto;
-      width: 90%;
+      width: 100%;
       height: auto;
-      text-align: center;
     }
     .img2 {
       opacity: 0;
@@ -23,35 +18,13 @@
     .ex {
       top: 90px;
       left: 15px;
-      position: absolute;
       .laserImg {
         width: 100%;
       }
       .laserEx {
         text-align: left;
         margin-top: 5px;
-        font-family: "Pretendard";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 150%;
-        letter-spacing: -0.01em;
-        color: #7e818d;
-        width: 100%;
-        height: 35px;
-      }
-    }
-    .ex2 {
-      top: 0;
-      left: 15px;
-      position: absolute;
-      .senserImg {
-        width: 100%;
-      }
-      .senserEx {
-        text-align: left;
-        margin-top: 5px;
-        font-family: "Pretendard";
+
         font-style: normal;
         font-weight: 500;
         font-size: 1.2rem;
@@ -72,7 +45,7 @@
       .galbanicEx {
         text-align: left;
         margin: 5px;
-        font-family: "Pretendard";
+
         font-style: normal;
         font-weight: 500;
         font-size: 1.2rem;
@@ -258,8 +231,8 @@
         border: 1px solid transparent;
         font-family: Pretendard;
         font-size: 1.2rem;
-        font-weight: 600;
-        color: #7e818d;
+        font-weight: 500;
+        color: #a0a5b1;
         width: 25rem;
       }
     }
@@ -274,7 +247,6 @@
     position: relative;
     text-align: center;
     img {
-      margin-top: 40px;
       width: 90%;
       height: auto;
     }
@@ -306,11 +278,15 @@
     }
     p {
       display: inline-block;
-      font-family: "Pretendard";
+
       font-weight: 800;
-      font-size: 1.2rem;
-      color: #4d5058;
+      font-size: 1.4rem;
+      color: #808591;
       margin-right: 8px;
+      em {
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
     }
     img {
       text-align: center;
@@ -320,8 +296,7 @@
   .contName {
     margin: 3px 20px 8px 20px;
     .contHeader {
-      font-family: "Pretendard";
-      font-weight: 700;
+      font-weight: 600;
       font-size: 1.2rem;
       color: #55576f;
       line-height: 144%;
@@ -333,8 +308,8 @@
     .contHeader_2 {
       margin-top: 10px;
       padding: 4px 8px;
-      font-family: "Pretendard";
-      font-weight: 700;
+
+      font-weight: 600;
       font-size: 1.2rem;
       color: #55576f;
       line-height: 144%;
@@ -345,27 +320,26 @@
 
     .contHeader2 {
       color: #55576f;
-      font-family: "Pretendard";
-      font-weight: 400;
+
+      font-weight: 300;
       font-size: 2rem;
       line-height: 144%;
       letter-spacing: -0.03em;
       padding-top: 4px;
       em {
-        font-weight: 800;
+        font-weight: 500;
       }
     }
     .contHeader3 {
       margin-top: 4px;
-      font-family: "Pretendard";
-      font-weight: 700;
+
+      font-weight: 600;
       font-size: 1.2rem;
-      color: #7e818d;
+      color: #a0a5b1;
     }
     .contHeader4 {
       margin-top: 20px;
-      font-family: "Pretendard";
-      font-weight: 600;
+      font-weight: 500;
       font-size: 1.4rem;
       color: #a7abb6;
       margin-bottom: 4px;
@@ -373,7 +347,7 @@
     h1 {
       color: #55576f;
       margin-top: 4px;
-      font-family: "Pretendard";
+
       font-weight: 300;
       font-size: 4rem;
       line-height: 128%;
@@ -383,7 +357,6 @@
   }
 
   .contExplain {
-    font-family: "Pretendard";
     font-weight: 300;
     font-size: 2rem;
     letter-spacing: -0.01em;
@@ -393,10 +366,10 @@
       line-height: 28.8px;
     }
     p {
-      width: 23.5rem;
+      font-weight: 300;
       margin-top: 8px;
       font-size: 1.4rem;
-      color: #7e818d;
+      color: #a0a5b1;
     }
   }
 
@@ -408,7 +381,6 @@
     padding: 16px 16px;
     width: 24rem;
     p {
-      font-family: "Pretendard";
       font-weight: 600;
       font-size: 1.6rem;
       line-height: 150%;
@@ -420,7 +392,7 @@
 
     .span {
       margin-top: 8px;
-      font-family: "Pretendard";
+
       font-weight: 600;
       font-size: 1.4rem;
       color: rgba(126, 129, 141, 1);
@@ -433,16 +405,15 @@
     padding: 12px;
     border: 0.5px solid #f2f3f6;
     border-radius: 4px;
-    font-family: "Pretendard";
     font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 600;
     p {
       margin-top: 4px;
-      color: #7e818d;
+      color: #a0a5b1;
       span {
         width: 100%;
         margin-left: 8px;
-        color: #4d5058;
+        color: #808591;
       }
     }
   }
@@ -459,8 +430,7 @@
       border-radius: 4px;
       p {
         padding: 12px;
-        font-family: "Pretendard";
-        font-weight: 800;
+        font-weight: 700;
         font-size: 1.6rem;
         color: #55576f;
         em {
@@ -484,22 +454,19 @@
       background-color: #fff;
       padding: 12px;
       h1 {
-        font-family: "Pretendard";
-        font-weight: 800;
+        font-weight: 700;
         font-size: 1.6rem;
         color: #55576f;
       }
       .hairCont {
         margin-top: 8px;
         .graphPart {
-          font-family: "Pretendard";
-          font-weight: 700;
+          font-weight: 600;
           font-size: 1.2rem;
           color: #a7abb6;
         }
         .graphFigure {
-          font-family: "Pretendard";
-          font-weight: 800;
+          font-weight: 700;
           font-size: 1.6rem;
           color: #55576f;
         }
@@ -510,8 +477,7 @@
   .safes {
     margin-top: 40px;
     h1 {
-      font-family: "Pretendard";
-      font-weight: 800;
+      font-weight: 600;
       font-size: 1.6rem;
       color: #55576f;
     }
@@ -522,15 +488,15 @@
       .safe1_1,
       .safe1_2 {
         align-items: center;
-        font-family: "Pretendard";
-        font-weight: 800;
+
+        font-weight: 600;
         font-size: 1.4rem;
         color: #55576f;
         border-radius: 4px;
         margin-top: 8px;
         width: 100%;
         padding: 12px 8px;
-        background: #fff;
+        background: linear-gradient(#ffffff, #ffffff4d);
         display: flex;
         align-items: center;
         img {

@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
 import Package from "../../assets/img/package.png";
-import Product01 from "../../assets/img/fx-5000_pic_01.png";
-import Product02 from "../../assets/img/fx-5000_pic_02.png";
-import Product03 from "../../assets/img/fx-5000_03 - laser.png";
-import Product04 from "../../assets/img/fx-5000_04 - set.png";
+import Product01 from "../../assets/img/fx-5000_product_pic_01.png";
+import Product02 from "../../assets/img/fx-5000_product_pic_02.png";
+import Product03 from "../../assets/img/fx-5000_product_pic_03.png";
+import Product04 from "../../assets/img/fx-5000_product_pic_04.png";
 
 function SpecItem2({ img1, img2, img3, img4, Bs }) {
   const [buttonSelector, setButtonSelector] = useState("first");
@@ -32,9 +32,8 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           src={Product01}
           alt=""
           style={{
-            width: "90%",
+            width: "100%",
             height: "auto",
-            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -46,9 +45,8 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           src={Product02}
           alt=""
           style={{
-            width: "87%",
+            width: "100%",
             height: "auto",
-            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -60,9 +58,8 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           src={Product03}
           alt=""
           style={{
-            width: "40.2%",
+            width: "100%",
             height: "auto",
-            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -76,7 +73,6 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           style={{
             width: "100%",
             height: "auto",
-            margin: "10% auto",
             display: "block",
           }}
           onLoad={() => console.log("img 위치 완료")}
@@ -175,13 +171,13 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           <div
             onClick={selectorLaser}
             style={{
-              backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
+              backgroundColor: modeCondition ? "#808591" : "#F2F3F6",
               color: modeCondition ? "#FFFFFF" : "#A7ABB6",
               boxShadow: modeCondition
                 ? "0 4px 8px rgba(0, 0, 0, 0.15)"
                 : "none",
               fontSize: "1.6rem",
-              fontWeight: "800",
+              fontWeight: "700",
             }}
           >
             정보
@@ -189,14 +185,14 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           <div
             onClick={selectorGalvanic}
             style={{
-              backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
+              backgroundColor: modeCondition ? "#F2F3F6" : "#808591",
               color: modeCondition ? "#A7ABB6" : "#FFFFFF",
               marginLeft: "8px",
               boxShadow: modeCondition
                 ? "none"
                 : "0 4px 8px rgba(0, 0, 0, 0.15)",
               fontSize: "1.6rem",
-              fontWeight: "800",
+              fontWeight: "700",
             }}
           >
             사진

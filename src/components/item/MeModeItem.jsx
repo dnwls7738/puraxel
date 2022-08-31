@@ -1,7 +1,5 @@
 import React from "react";
-import LaserEx from "../../assets/img/03.svg";
-import Senser from "../../assets/img/senser.svg";
-import GalbanicEx from "../../assets/img/galvanicMode.svg";
+
 import LaserImg from "../../assets/img/me_02_laser.png";
 import GalbanicImg from "../../assets/img/me_02_galvanic.png";
 
@@ -14,35 +12,7 @@ const LaserExplain = () => {
     <>
       <div>
         <div className="ex2">
-          <img className="senserImg" src={Senser} alt="senser" />
-          <p className="senserEx">
-            피부에 닿을 때만 <br />
-            레이저가 나와 안전합니다.
-          </p>
-        </div>
-        <div className="ex">
-          <img className="laserImg" src={LaserEx} alt="laser" />
-          <p className="laserEx">
-            피부 두께에 따라
-            <br /> 레이저 세기를
-            <br /> 조정할 수 있습니다.
-          </p>
-        </div>
-      </div>
-    </>
-  );
-};
-
-const GalvanicExplain = () => {
-  return (
-    <>
-      <div>
-        <div className="ex3">
-          <img className="galvanicImg" src={GalbanicEx} alt="galbanic" />
-          <p className="galbanicEx">
-            갈바닉 전류 기술을 활용하여
-            <br /> 크림, 앰플을 피부에 <br /> 깊숙이 스며들게 합니다.
-          </p>
+          <img className="img" src={LaserImg} alt="" />
         </div>
       </div>
     </>
@@ -52,9 +22,9 @@ const GalvanicExplain = () => {
 const LaserText = () => {
   return (
     <p>
-      한번의 레이저로 0.2mm 이하의 얕은 피부층에 작은
-      <br /> 홀을 생성하여
-      <em>크림과 앰플의 피부흡수율을 높여줍니다.</em>
+      피부층에 레이저로 한 번에 100개의 0.02mm 이하의 작은 홀을 생성하여 화장품
+      및 앰플 등의 피부 흡수를 높여줍니다.(5~10분 사용시 약 5,000개이상의 홀
+      생성)
     </p>
   );
 };
@@ -62,17 +32,13 @@ const LaserText = () => {
 const GarbanicText = () => {
   return (
     <p>
-      같은 극끼리 밀어내는 <em>갈바닉 전류의 성질</em>을 이용하여
-      <br />
-      <em>이온화된 화장품의 흡수율을 높입니다.</em> 레이저 모드를
-      <br /> 함께 사용하면 피부 흡수율을 극대화할 수 있습니다.
+      갈바닉은 같은 극끼리 밀어내고, 반대 극끼리는 당기는 성질의 갈바닉 전류를
+      활용하여 화장품 및 앰플 등의 유효성분을 이온화시켜 피부 깊숙이
+      침투시킵니다.
     </p>
   );
 };
 
-const LaserImage = () => {
-  return <img className="img" src={LaserImg} alt="" />;
-};
 const GalvanicImage = () => {
   return <img className="img" src={GalbanicImg} alt="" />;
 };
@@ -100,13 +66,11 @@ function MeModeItem() {
       <>
         {modeCondition ? (
           <animated.div style={styles}>
-            <LaserImage />
             <LaserExplain />
           </animated.div>
         ) : (
           <animated.div style={styles}>
             <GalvanicImage />
-            <GalvanicExplain />
           </animated.div>
         )}
       </>
@@ -130,7 +94,7 @@ function MeModeItem() {
               }}
             >
               <p>
-                PURAXEL LASER <br />
+                LASER MODE <br />
                 <em>레이저 모드</em>
               </p>
             </div>

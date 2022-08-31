@@ -21,7 +21,7 @@ function FxItem5() {
                 fontFamily: "Pretendard",
                 fontSize: "1.6rem",
                 color: "rgba(85, 87, 111, 1)",
-                fontWeight: "800",
+                fontWeight: "700",
               }}
             >
               LED 모드
@@ -31,14 +31,13 @@ function FxItem5() {
                 fontFamily: "Pretendard",
                 fontSize: "1.2rem",
                 color: "#A292A3",
-                fontWeight: "700",
+                fontWeight: "600",
                 lineHeight: "144%",
               }}
             >
               #보습
               <br /> #탄력
-              <br />
-              #트러블 진정
+              <br /> #트러블 진정
             </p>
           </div>
           <div>
@@ -47,7 +46,7 @@ function FxItem5() {
               alt=""
               style={{
                 width: "100%",
-                heigth: "auto",
+                paddingLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",
               }}
@@ -59,14 +58,14 @@ function FxItem5() {
             style={{
               fontFamily: "Pretendard",
               fontSize: "1.6rem",
-              color: "#4D5058",
-              fontWeight: "600",
+              color: "#808591",
+              fontWeight: "500",
               marginTop: "12px",
               lineHeight: "150%",
             }}
           >
-            3가지 파장의 빛으로 피부 깊숙한 곳까지 <br />
-            건강하고 탄력 있게 관리해줍니다.
+            3가지 파장의 빛으로 피부 깊숙한 곳까지
+            <br /> 건강하고 탄력 있게 관리해줍니다.
           </p>
         </div>
       </div>

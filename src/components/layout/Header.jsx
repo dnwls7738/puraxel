@@ -284,7 +284,7 @@ function Header({ name, text }) {
           <span>product</span>
         </div>
 
-        {["ME", "FX-5000", "HAIR", "핵심기술"].map((text) => (
+        {["PURAXEL-Me", "PURAXEL", "PURAXEL-Hair", "핵심기술"].map((text) => (
           <Link key={text} to={text}>
             <ListItem disablePadding>
               <ThemeProvider theme={theme}>
@@ -512,7 +512,7 @@ function Header({ name, text }) {
       <div className="right">
         {name === "puraxel" || name === "핵심기술" ? (
           <Component2 />
-        ) : name === "ME" ? (
+        ) : name === "PURAXEL-Me" ? (
           <Link
             to={{
               pathname: "http://m.lmdt.cafe24.com",

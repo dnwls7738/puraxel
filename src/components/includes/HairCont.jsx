@@ -16,8 +16,14 @@ import Active04 from "../../assets/img/hair_04_active.png";
 import BgImg from "../../assets/img/mobile_bg_hair.png";
 import Line from "../../assets/img/pageLine.svg";
 import MainImg from "../../assets/img/hair_main.png";
-// import Move from "../../assets/img/Vector 254.svg";
-// import { Link } from "react-router-dom";
+import Pura1 from "../../assets/img/certifi_pura_01.png";
+import Pura2 from "../../assets/img/certifi_pura_02.png";
+import Pura3 from "../../assets/img/certifi_pura_03.png";
+import lmdt1 from "../../assets/img/certifi_lmdt_01.png";
+import lmdt2 from "../../assets/img/certifi_lmdt_02.png";
+import lmdt3 from "../../assets/img/certifi_lmdt_03.png";
+import lmdt4 from "../../assets/img/certifi_lmdt_04.png";
+import lmdt5 from "../../assets/img/certifi_lmdt_05.png";
 
 function HairCont() {
   return (
@@ -64,7 +70,7 @@ function HairCont() {
         <SwiperSlide>
           <div className="cont">
             <div className="contName">
-              <span className="contHeader">PURAXEL HAIR는</span>
+              <span className="contHeader">PURAXEL Hair는</span>
               <p className="contHeader2">
                 <em>4가지 기능</em>을 제공합니다.
               </p>
@@ -136,6 +142,62 @@ function HairCont() {
               img4={Active04}
               Bs="0px 0px 20px #A4693326"
             />
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="cont">
+            <div className="contName">
+              <span className="contHeader">
+                인증 받은 레이저 기기로 마음까지 편한 관리!
+              </span>
+              <p className="contHeader2">퓨라셀 인증</p>
+            </div>
+            <div className="puraCertfied">
+              <p className="puraCertText">PURAXEL Certifications</p>
+              <p className="puraCertText2">제품 인증</p>
+            </div>
+            <div className="puraCertImgs">
+              <div className="puraCertImg">
+                <img src={Pura1} alt="" />
+              </div>
+              <div className="puraCertImg2">
+                <img src={Pura2} alt="" />
+              </div>
+            </div>
+            <div className="puraCertImgs">
+              <div className="puraCertImg3">
+                <img src={Pura3} alt="" />
+                <p>IEC60825인증(Class 1)</p>
+              </div>
+              <div className="puraCertImg3"></div>
+            </div>
+            <div className="lmdtCertfied">
+              <p className="lmdtCertText">LaMeditech Certifications</p>
+              <p className="lmdtCertText2">기업 인증</p>
+            </div>
+            <div className="lmdtCertImgs">
+              <div className="lmdtCertImg">
+                <img src={lmdt1} alt="" />
+              </div>
+              <div className="lmdtCertImg2">
+                <img src={lmdt2} alt="" />
+              </div>
+            </div>
+            <div className="lmdtCertImgs">
+              <div className="lmdtCertImg">
+                <img src={lmdt3} alt="" />
+              </div>
+              <div className="lmdtCertImg2">
+                <img src={lmdt4} alt="" />
+              </div>
+            </div>
+            <div className="lmdtCertImgs">
+              <div className="lmdtCertImg">
+                <img src={lmdt5} alt="" />
+              </div>
+              <div className="lmdtCertImg2"></div>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>

@@ -21,7 +21,7 @@ function HairItem4() {
                 fontFamily: "Pretendard",
                 fontSize: "1.6rem",
                 color: "rgba(85, 87, 111, 1)",
-                fontWeight: "800",
+                fontWeight: "700",
               }}
             >
               쿨링 모드
@@ -31,7 +31,7 @@ function HairItem4() {
                 fontFamily: "Pretendard",
                 fontSize: "1.2rem",
                 color: "#A292A3",
-                fontWeight: "700",
+                fontWeight: "600",
                 lineHeight: "144%",
               }}
             >
@@ -45,7 +45,7 @@ function HairItem4() {
               alt=""
               style={{
                 width: "100%",
-                heigth: "auto",
+                paddingLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",
               }}
@@ -57,8 +57,8 @@ function HairItem4() {
             style={{
               fontFamily: "Pretendard",
               fontSize: "1.6rem",
-              color: "#4D5058",
-              fontWeight: "600",
+              color: "#808591",
+              fontWeight: "500",
               marginTop: "12px",
               lineHeight: "150%",
             }}

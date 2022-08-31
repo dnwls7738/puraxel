@@ -21,7 +21,7 @@ function HairItem2() {
                 fontFamily: "Pretendard",
                 fontSize: "1.6rem",
                 color: "rgba(85, 87, 111, 1)",
-                fontWeight: "800",
+                fontWeight: "700",
               }}
             >
               초음파 모드
@@ -31,7 +31,7 @@ function HairItem2() {
                 fontFamily: "Pretendard",
                 fontSize: "1.2rem",
                 color: "#A292A3",
-                fontWeight: "700",
+                fontWeight: "600",
                 lineHeight: "144%",
               }}
             >
@@ -45,7 +45,7 @@ function HairItem2() {
               alt=""
               style={{
                 width: "100%",
-                heigth: "100%",
+                paddingLeft: "12px",
                 marginBottom: "12px",
                 borderRadius: "4px",
               }}
@@ -57,18 +57,19 @@ function HairItem2() {
             style={{
               fontFamily: "Pretendard",
               fontSize: "1.6rem",
-              color: "#4D5058",
-              fontWeight: "600",
+              color: "#808591",
+              fontWeight: "500",
               marginTop: "12px",
               lineHeight: "150%",
             }}
           >
-            기능성 솔루션을 바른 후 마사지하면 높은
-            <br /> 흡수력으로 더 탄력있고 촘촘한 피부 관리를 <br />
-            도와줍니다.
+            기능성 솔루션을 바른 후 마사지하면 높은 <br /> 흡수력으로 더
+            탄력있고 촘촘한 피부 관리를
+            <br /> 도와줍니다.
           </p>
         </div>
       </div>
+
       <div
         style={{
           marginLeft: "20px",

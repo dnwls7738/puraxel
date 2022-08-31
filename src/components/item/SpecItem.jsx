@@ -6,10 +6,10 @@ import Active02 from "../../assets/img/me_02_active.png";
 import Active03 from "../../assets/img/me_03_active.png";
 import Active04 from "../../assets/img/me_04_active.png";
 
-import Product01 from "../../assets/img/me_04 - laser-cradle.png";
-import Product02 from "../../assets/img/me_28 - gal.png";
-import Product03 from "../../assets/img/me_14 - laser.png";
-import Product04 from "../../assets/img/me_01 - cradle.png";
+import Product01 from "../../assets/img/me_product_pic_01.png";
+import Product02 from "../../assets/img/me_product_pic_02.png";
+import Product03 from "../../assets/img/me_product_pic_03.png";
+import Product04 from "../../assets/img/me_product_pic_04.png";
 
 function SpecItem() {
   const [buttonSelector, setButtonSelector] = useState("first");
@@ -36,9 +36,9 @@ function SpecItem() {
           src={Product01}
           alt=""
           style={{
-            width: "50%",
+            width: "100%",
             height: "auto",
-            margin: "10% auto",
+            marginTop: "16px",
             display: "block",
           }}
         />
@@ -49,9 +49,9 @@ function SpecItem() {
           src={Product02}
           alt=""
           style={{
-            width: "97.76%",
+            width: "100%",
             height: "auto",
-            margin: "10% auto",
+            marginTop: "16px",
             display: "block",
           }}
         />
@@ -62,9 +62,9 @@ function SpecItem() {
           src={Product03}
           alt=""
           style={{
-            width: "27.4%",
+            width: "100%",
             height: "auto",
-            margin: "10% auto",
+            marginTop: "16px",
             display: "block",
           }}
         />
@@ -75,9 +75,9 @@ function SpecItem() {
           src={Product04}
           alt=""
           style={{
-            width: "62.6%",
+            width: "100%",
             height: "auto",
-            margin: "50% auto",
+            marginTop: "16px",
             display: "block",
           }}
         />
@@ -187,13 +187,13 @@ function SpecItem() {
           <div
             onClick={selectorLaser}
             style={{
-              backgroundColor: modeCondition ? "#4D5058" : "#F2F3F6",
+              backgroundColor: modeCondition ? "#808591" : "#F2F3F6",
               color: modeCondition ? "#FFFFFF" : "#A7ABB6",
               boxShadow: modeCondition
                 ? "0px 4px 8px rgba(0, 0, 0, 0.15)"
                 : "none",
               fontSize: "1.6rem",
-              fontWeight: "800",
+              fontWeight: "700",
             }}
           >
             정보
@@ -201,14 +201,14 @@ function SpecItem() {
           <div
             onClick={selectorGalvanic}
             style={{
-              backgroundColor: modeCondition ? "#F2F3F6" : "#4D5058",
+              backgroundColor: modeCondition ? "#F2F3F6" : "#808591",
               color: modeCondition ? "#A7ABB6" : "#FFFFFF",
               marginLeft: "8px",
               boxShadow: modeCondition
                 ? "none"
                 : "0px 4px 8px rgba(0, 0, 0, 0.15)",
               fontSize: "1.6rem",
-              fontWeight: "800",
+              fontWeight: "700",
             }}
           >
             사진
