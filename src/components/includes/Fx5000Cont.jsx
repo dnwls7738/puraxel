@@ -19,28 +19,15 @@ import BgImg from "../../assets/img/mobile_bg_fx-5000.png";
 import Line from "../../assets/img/pageLine.svg";
 
 function Fx5000Cont() {
-  const params = {
-    on: {
-      slideChange: (index) => {
-        console.log(index.snapIndex);
-      },
-    },
-  };
-  console.log(params);
   return (
     <div
       style={{
         backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
-        width: "100%",
-        heigth: "100%",
       }}
     >
       <Swiper
-        style={{
-          overflow: "auto",
-        }}
         className="swiper"
         modules={[Navigation, Pagination]}
         spaceBetween={10}
@@ -102,8 +89,7 @@ function Fx5000Cont() {
             <div className="contName">
               <span className="contHeader">영상으로 자세히 보기</span>
               <p className="contHeader4">
-                이제 병원에서만 가능하던 프락셔널 레이저 시술을
-                <br /> 에스테틱샵에서도 제공하실 수 있습니다.
+                합리적인 비용의 퓨라셀로 에스테틱의 프리미엄 가치를 높여보세요.
               </p>
               <p className="contHeader2">
                 바로 일상생활이 가능한

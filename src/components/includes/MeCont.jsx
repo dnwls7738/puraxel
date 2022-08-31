@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, Pagination, Scrollbar } from "swiper";
+import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/scss";
@@ -26,11 +26,8 @@ function MeCont() {
       }}
     >
       <Swiper
-        style={{
-          overflow: "auto",
-        }}
         className="swiper"
-        modules={[Navigation, Pagination, Scrollbar]}
+        modules={[Navigation, Pagination]}
         spaceBetween={10}
         slidesPerView={1}
         pagination={{
@@ -48,7 +45,37 @@ function MeCont() {
             );
           },
         }}
-        scrollbar={{ draggable: true }}
+        onSlideChange={(index) => {
+          if (index.activeIndex === 0) {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }
+          if (index.activeIndex === 1) {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }
+          if (index.activeIndex === 2) {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }
+          if (index.activeIndex === 3) {
+            window.scroll({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }
+          console.log(index.activeIndex);
+        }}
       >
         <SwiperSlide>
           <ContMain

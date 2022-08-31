@@ -136,6 +136,7 @@ function FxModeItem() {
                 <div
                   style={{
                     paddingLeft: "6px",
+                    paddingBottom: "8px",
                     position: "absolute",
                     bottom: 0,
                   }}
@@ -157,12 +158,7 @@ function FxModeItem() {
                     초음파
                   </span>
                 </div>
-                <img
-                  className="fx2Img"
-                  src={Fx2}
-                  alt=""
-                  style={{ paddingLeft: "15px", paddingTop: 5 }}
-                />
+                <img className="fx2Img" src={Fx2} alt="" />
               </div>
               <div
                 className="fx3"
@@ -205,12 +201,7 @@ function FxModeItem() {
                     쿨링
                   </span>
                 </div>
-                <img
-                  className="fx3Img"
-                  src={Fx4}
-                  alt=""
-                  style={{ paddingRight: "8px", paddingTop: 7 }}
-                />
+                <img className="fx3Img" src={Fx4} alt="" />
               </div>
             </div>
             <div style={{ width: "100%" }}>
@@ -255,12 +246,7 @@ function FxModeItem() {
                     갈바닉
                   </span>
                 </div>
-                <img
-                  className="fx4Img"
-                  src={Fx3}
-                  alt=""
-                  style={{ paddingRight: "8px" }}
-                />
+                <img className="fx4Img" src={Fx3} alt="" />
               </div>
               <div
                 className="fx5"
@@ -305,12 +291,7 @@ function FxModeItem() {
                     </span>
                   </div>
                 </div>
-                <img
-                  className="fx5Img"
-                  src={Fx5}
-                  alt=""
-                  style={{ paddingLeft: "20px", paddingTop: "5px" }}
-                />
+                <img className="fx5Img" src={Fx5} alt="" />
               </div>
             </div>
           </div>

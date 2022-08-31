@@ -31,9 +31,6 @@ function HairCont() {
       }}
     >
       <Swiper
-        style={{
-          overflow: "auto",
-        }}
         className="swiper"
         modules={[Navigation, Pagination]}
         spaceBetween={10}

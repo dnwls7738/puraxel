@@ -125,7 +125,7 @@ function FxItem() {
                   modeSelector === "num2" ? "0px 4px 40px #00000014" : "none",
               }}
             >
-              <div style={{ paddingLeft: "6px" }}>
+              <div style={{ paddingLeft: "6px", width: "100%" }}>
                 <img
                   src={num2}
                   alt=""
@@ -161,7 +161,7 @@ function FxItem() {
                   modeSelector === "num3" ? "0px 4px 40px #00000014" : "none",
               }}
             >
-              <div style={{ paddingLeft: "6px" }}>
+              <div style={{ paddingLeft: "6px", width: "100%" }}>
                 <img
                   src={num3}
                   alt=""
@@ -197,7 +197,7 @@ function FxItem() {
                   modeSelector === "num4" ? "0px 4px 40px #00000014" : "none",
               }}
             >
-              <div style={{ paddingLeft: "6px" }}>
+              <div style={{ paddingLeft: "6px", width: "100%" }}>
                 <img
                   src={num4}
                   alt=""

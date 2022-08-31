@@ -133,14 +133,16 @@
     display: flex;
     align-items: center;
     .laserM {
-      width: 70%;
+      width: 69%;
       background: #fff;
       .fx1 {
         position: relative;
-        height: 13.6rem;
         border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         .fxImg {
-          width: 12.8rem;
+          width: 100%;
           height: 100%;
           float: right;
         }
@@ -153,13 +155,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 4rem;
         margin-left: 8px;
         .fx2Img {
           padding-top: 6px;
           padding-right: 6px;
           float: right;
-          width: 7.9rem;
+          width: 55%;
           height: 100%;
         }
       }
@@ -171,13 +172,12 @@
         justify-content: space-between;
         align-items: center;
         margin-left: 8px;
-        height: 4rem;
         margin-top: 8px;
         .fx3Img,
         .fx4Img {
           padding-right: 6px;
           float: right;
-          width: 7.9rem;
+          width: 55%;
           height: 100%;
         }
       }
@@ -188,18 +188,16 @@
     height: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     .laserM {
-      width: 70%;
-      height: 13.2rem;
+      width: 72%;
       background: #fff;
       .fx1 {
         position: relative;
-        height: 100%;
         border-radius: 4px;
+        display: flex;
         .fxImg {
           width: 100%;
-          height: 100%;
-          float: right;
           border-radius: 4px;
         }
       }
@@ -214,7 +212,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 6.4rem;
+        width: 100%;
         .fx2Img {
           width: 100%;
           height: 100%;
@@ -224,22 +222,17 @@
       .fx3,
       .fx4,
       .fx5 {
+        width: 100%;
         position: relative;
         border-radius: 4px;
-        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 6.4rem;
         .fx3Img,
         .fx4Img,
         .fx5Img {
           width: 100%;
-          height: 100%;
           border-radius: 4px;
-        }
-        .fx5Img {
-          float: right;
         }
       }
     }
@@ -275,9 +268,7 @@
 
 .cont {
   min-width: 320px;
-  height: 100%;
   position: relative;
-
   .contMain {
     min-width: 320px;
     position: relative;
@@ -327,7 +318,7 @@
   }
 
   .contName {
-    margin: 3px 20px 0 20px;
+    margin: 3px 20px 8px 20px;
     .contHeader {
       font-family: "Pretendard";
       font-weight: 700;
@@ -558,45 +549,33 @@
   html {
     font-size: 8px;
   }
-
   .ModeExplain {
     .exs {
       .ex {
-        top: 160px;
+        top: 80px;
       }
     }
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   html {
-    font-size: 13px;
+    font-size: 12px;
   }
-  .cont {
-    margin: 0 auto;
-    height: 100%;
-    max-width: 600px;
-  }
-
   .ModeExplain {
     .exs {
       .ex {
-        top: 160px;
+        top: 120px;
       }
     }
+  }
+
+  .cont {
+    margin: 0 auto;
+    height: 100%;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 1000px) {
-  html {
-    font-size: 13px;
-  }
-
-  .ModeExplain {
-    .exs {
-      .ex {
-        top: 160px;
-      }
-    }
-  }
 }
