@@ -8,8 +8,8 @@ const rootNode = document.getElementById("root");
 
 ReactDOM.createRoot(rootNode).render(
   <RecoilRoot>
-    <>
+    <React.StrictMode>
       <App />
-    </>
+    </React.StrictMode>
   </RecoilRoot>
 );

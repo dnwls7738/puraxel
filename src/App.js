@@ -15,7 +15,7 @@ function App() {
         <Route path="/PURAXEL-Me" exact component={Me} />
         <Route path="/PURAXEL" exact component={Fx5000} />
         <Route path="/PURAXEL-Hair" exact component={Hair} />
-        <Route path="/핵심기술" exact component={PuraTech} />
+        <Route path="/tech" exact component={PuraTech} />
       </Switch>
     </Router>
   );

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Box, Menu, Button, MenuItem } from "@mui/material";
+import { Box, Menu, Button, MenuItem, createTheme } from "@mui/material";
 
 import navStyle from "./Nav.module.css";
 
@@ -8,27 +8,72 @@ import layoutHeaderKr from "./layoutHeader.json";
 import NavIconButton from "./NavIconButton";
 
 export default function Navbars() {
-  const style4 = {
-    fontFamily: "Pretendard",
-    color: "#7E818D",
-    fontSize: "1.2rem",
-    marginRight: "2rem",
-    lineHeight: "140%",
-    display: "inline-flex",
-    alignItems: "center",
-    letteSpacing: "-0.01em",
-  };
+  const theme = createTheme({
+    components: {
+      // Name of the component
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            fontFamily: "Pretendard",
+            color: "var(--primary01)",
+            opacity: "0.5",
+            marginRight: "3.1rem",
+            fontWeight: "500",
+            fontSize: "2rem",
+            lineHeight: "120%",
+            letterSpacing: "-0.03em",
+          },
+        },
+      },
+      MuiMenuItem: {
+        styleOverrides: {
+          root: {
+            fontFamily: "Pretendard",
+            color: "var(--primary01)",
+            opacity: "0.5",
+            marginRight: "4rem",
+            fontWeight: "600",
+            fontSize: "1.6rem",
+            lineHeight: "140%",
+            letterSpacing: "-0.03em",
+          },
+        },
+      },
+    },
+  });
 
-  const style5 = {
-    fontFamily: "Pretendard",
-    color: "var(--primary01)",
-    opacity: "0.5",
-    marginRight: "4rem",
-    fontWeight: "500",
-    fontSize: "2rem",
-    lineHeight: "120%",
-    letterSpacing: "-0.03em",
-  };
+  const theme2 = createTheme({
+    components: {
+      // Name of the component
+      MuiButton: {
+        styleOverrides: {
+          root: {
+            fontFamily: "Pretendard",
+            color: "var(--primary01)",
+            opacity: "0.5",
+            fontWeight: "600",
+            fontSize: "1.2rem",
+            padding: 0,
+            marginRight: "31px",
+          },
+        },
+      },
+      MuiMenuItem: {
+        styleOverrides: {
+          root: {
+            fontFamily: "Pretendard",
+            color: "var(--primary01)",
+            opacity: "0.5",
+            marginRight: "4rem",
+            fontWeight: "600",
+            fontSize: "1.2rem",
+            lineHeight: "140%",
+            letterSpacing: "-0.03em",
+          },
+        },
+      },
+    },
+  });
 
   const [companyOpenState, setCompanyInfoOpenState] = useState(false);
   const [companyInfoAnchorState, setCompanyInfoAnchorState] =
@@ -73,27 +118,21 @@ export default function Navbars() {
   const [currentPage, setCurrentPage] = useState(undefined);
 
   const currentPageChecker = () => {
-    if (document.documentURI.includes("tech")) {
-      return setCurrentPage("tech");
-    } else {
-      return setCurrentPage("product");
+    if (document.documentURI.includes("hair")) {
+      setCurrentPage("product");
     }
 
-    // if (document.documentURI.includes("hair")) {
-    //   setCurrentPage("hair");
-    // }
+    if (document.documentURI.includes("fx5000")) {
+      setCurrentPage("product");
+    }
 
-    // if (document.documentURI.includes("fx5000")) {
-    //   setCurrentPage("fx5000");
-    // }
+    if (document.documentURI.includes("me")) {
+      setCurrentPage("product");
+    }
 
-    // if (document.documentURI.includes("me")) {
-    //   setCurrentPage("me");
-    // }
-
-    // if (document.documentURI.includes("tech")) {
-    //   setCurrentPage("tech");
-    // }
+    if (document.documentURI.includes("tech")) {
+      setCurrentPage("tech");
+    }
   };
 
   useEffect(() => {
@@ -117,40 +156,40 @@ export default function Navbars() {
               currentPage === "product" ? navStyle.underliner__gnb : undefined
             }`}
             disableRipple
-            sx={style5}
+            theme={theme}
           >
             제품
             <Menu
               open={productOpenState}
               onClose={handleProductInfoCloseButton}
               anchorEl={productAnchorState}
-              className={navStyle.gnb__location__menu}
+              sx={{ marginTop: "20px" }}
             >
               <div className={navStyle.gnb__container}>
                 <MenuItem
                   disableRipple
-                  className={`${navStyle.gnb__location__menu} ${navStyle.SNSMenuFirst}`}
                   onClick={() => {
                     window.location.href = "/PURAXEL-Me";
                   }}
+                  theme={theme}
                 >
                   PURAXEL-Me
                 </MenuItem>
                 <MenuItem
                   disableRipple
-                  className={navStyle.gnb__location__menu}
                   onClick={() => {
                     window.location.href = "/PURAXEL";
                   }}
+                  theme={theme}
                 >
                   PURAXEL
                 </MenuItem>
                 <MenuItem
                   disableRipple
-                  className={`${navStyle.gnb__location__menu} ${navStyle.SNSMenuLast}`}
                   onClick={() => {
                     window.location.href = "/PURAXEL-Hair";
                   }}
+                  theme={theme}
                 >
                   PURAXEL-Hair
                 </MenuItem>
@@ -160,11 +199,11 @@ export default function Navbars() {
 
           <NavIconButton
             onClick={() => {
-              window.location.href = "/핵심기술";
+              window.location.href = "/tech";
             }}
             title={"핵심기술"}
             className={`${navStyle.gnbMenu} ${
-              currentPage === "핵심기술" ? navStyle.underliner : undefined
+              currentPage === "tech" ? navStyle.underliner : undefined
             }`}
           />
         </div>
@@ -182,13 +221,19 @@ export default function Navbars() {
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
         ></NavIconButton> */}
 
-        <Button onClick={handleSNSButton} sx={style4} disableRipple>
+        <Button
+          onClick={handleSNSButton}
+          className={`${navStyle.subMenu}`}
+          disableRipple
+          theme={theme2}
+        >
           {layoutHeaderKr.sns}
           <Menu
             open={snsOpenState}
             onClose={handleSNSCloseButton}
             anchorEl={snsAnchorState}
             className={navStyle.menu__sns__container}
+            sx={{ marginTop: "20px" }}
           >
             <div className={navStyle.SNSContainer}>
               <MenuItem
@@ -197,6 +242,7 @@ export default function Navbars() {
                 onClick={() => {
                   window.open("https://www.instagram.com/puraxel/", "_blank");
                 }}
+                theme={theme2}
               >
                 INSTAGRAM
               </MenuItem>
@@ -209,6 +255,7 @@ export default function Navbars() {
                     "_blank"
                   );
                 }}
+                theme={theme2}
               >
                 FACEBOOK
               </MenuItem>
@@ -221,6 +268,7 @@ export default function Navbars() {
                     "_blank"
                   );
                 }}
+                theme={theme2}
               >
                 YOUTUBE
               </MenuItem>
@@ -232,7 +280,12 @@ export default function Navbars() {
 
         {/* <NavIconButton title={layoutHeaderKr.lameditech}></NavIconButton> */}
 
-        <Button disableRipple onClick={handleCompanyInfoButton} sx={style4}>
+        <Button
+          disableRipple
+          onClick={handleCompanyInfoButton}
+          className={`${navStyle.buttonStyleKr} ${navStyle.subMenu}`}
+          theme={theme2}
+        >
           {companyInfoOpenStateCodition
             ? layoutHeaderKr.lameditechInfoOpen
             : layoutHeaderKr.lameditechInfoClose}
@@ -285,18 +338,12 @@ export default function Navbars() {
           sx={{
             textDecoration: "underline",
             textDecorationThickness: "0.2rem",
-            fontFamily: "Pretendard",
-            fontWeight: "600",
+            // opacity: 1,
           }}
         ></NavIconButton>
         <NavIconButton
           title={layoutHeaderKr.en}
           className={`${navStyle.buttonStyleKr} ${navStyle.subMenu} ${navStyle.lang__button_en}`}
-          sx={{
-            color: "#7E818D",
-            fontFamily: "Pretendard",
-            fontWeight: "600",
-          }}
         ></NavIconButton>
       </section>
     </nav>

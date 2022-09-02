@@ -232,7 +232,7 @@ function Header({ name, text }) {
   };
 
   function Component2() {
-    if (name === "puraxel" || "핵심기술") {
+    if (name === "puraxel" || "tech") {
       return;
     }
   }
@@ -288,7 +288,7 @@ function Header({ name, text }) {
           <span>product</span>
         </div>
 
-        {["PURAXEL-Me", "PURAXEL", "PURAXEL-Hair", "핵심기술"].map((text) => (
+        {["PURAXEL-Me", "PURAXEL", "PURAXEL-Hair", "tech"].map((text) => (
           <Link key={text} to={text}>
             <ListItem disablePadding>
               <ThemeProvider theme={theme}>
