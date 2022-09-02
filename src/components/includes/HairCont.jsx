@@ -59,11 +59,12 @@ function HairCont() {
       >
         <SwiperSlide>
           <ContMain
-            header="PURAXEL HAIR"
+            header="PURAXEL Hair"
             img={MainImg}
-            miniHeader="레이저 기술로 극복하는 탈모 증상, 자신있는 삶의 회복"
-            text1="머리카락이 돋아나는 마법을"
-            text2="경험하실 수 있습니다."
+            miniHeader="레이저 기술을 이용한 두피 관리, 자신있는 삶의 회복"
+            text1="프락셔널 레이저는 기능성 앰플의 두피"
+            text2="흡수를 도와 탈모관리에 효과적입니다."
+            text4="※ 이 제품은 “두피관리기기” 입니다"
           />
         </SwiperSlide>
 

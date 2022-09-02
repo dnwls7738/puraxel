@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import axios from "axios";
 import Icon from "@mui/material/Icon";
+import Navbars from "./Navbars";
 
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Close from "../../assets/img/gnb_close.svg";
@@ -209,6 +211,8 @@ const style3 = {
 };
 
 function Header({ name, text }) {
+  const matches = useMediaQuery("(max-width:1024px)");
+
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
@@ -486,7 +490,7 @@ function Header({ name, text }) {
     }
   };
 
-  return (
+  return matches === true ? (
     <header id="header">
       <div className="header__logo">
         <div className="logo">
@@ -508,7 +512,6 @@ function Header({ name, text }) {
           )}
         </div>
       </div>
-
       <div className="right">
         {name === "puraxel" || name === "핵심기술" ? (
           <Component2 />
@@ -897,6 +900,8 @@ function Header({ name, text }) {
         </Modal>
       </div>
     </header>
+  ) : (
+    <Navbars />
   );
 }
 

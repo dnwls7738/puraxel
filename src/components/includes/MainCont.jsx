@@ -27,7 +27,8 @@ function MainCont() {
           <p>소형 미용기기의 혁신</p>
           <p className="span">
             레이저 전문 기업이 만들어
-            <br /> 더욱 안전한 소형 프락셔널 레이저
+            <br />
+            안전한 소형 프락셔널 레이저
           </p>
         </div>
       </div>

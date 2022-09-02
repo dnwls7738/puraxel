@@ -1,6 +1,6 @@
 import React from "react";
 
-function Main({ header, img, miniHeader, text1, text2, text3 }) {
+function Main({ header, img, miniHeader, text1, text2, text3, text4 }) {
   return (
     <div className="cont">
       <div className="contName">
@@ -16,6 +16,7 @@ function Main({ header, img, miniHeader, text1, text2, text3 }) {
       </div>
       <div className="contMain">
         <img src={img} alt="" />
+        <p className="warning">{text4}</p>
       </div>
     </div>
   );
