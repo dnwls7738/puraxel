@@ -14,15 +14,6 @@ import action2 from "../../assets/img/action2.png";
 import action3 from "../../assets/img/action3.png";
 import action4 from "../../assets/img/action4.png";
 
-import Pura1 from "../../assets/img/certifi_pura_01.png";
-import Pura2 from "../../assets/img/certifi_pura_02.png";
-import Pura3 from "../../assets/img/certifi_pura_03.png";
-import lmdt1 from "../../assets/img/certifi_lmdt_01.png";
-import lmdt2 from "../../assets/img/certifi_lmdt_02.png";
-import lmdt3 from "../../assets/img/certifi_lmdt_03.png";
-import lmdt4 from "../../assets/img/certifi_lmdt_04.png";
-import lmdt5 from "../../assets/img/certifi_lmdt_05.png";
-
 // import CollapseItem from "../item/CollapseItem";
 
 function TechCont() {
