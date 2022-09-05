@@ -90,8 +90,8 @@ function MeCont() {
             header="PURAXEL ME"
             img={MainImg}
             miniHeader="홈 에스테틱 레이저의 시작"
-            text1="전문적으로 사용하던"
-            text2="프락셔널 레이저의 문턱을 낮췄습니다."
+            text1="프락셔널 레이저의 효능을"
+            text2="직접 확인하실 수 있습니다."
             text3="하루 10분, 이제 집에서 관리하세요."
           />
         </SwiperSlide>

@@ -199,7 +199,7 @@ export default function Navbars() {
 
           <NavIconButton
             onClick={() => {
-              window.location.href = "/tech";
+              window.location.href = "/핵심기술";
             }}
             title={"핵심기술"}
             className={`${navStyle.gnbMenu} ${
