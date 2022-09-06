@@ -15,7 +15,7 @@ import Active02 from "../../assets/img/hair_02_active.png";
 import Active03 from "../../assets/img/hair_03_active.png";
 import Active04 from "../../assets/img/hair_04_active.png";
 import MainImg from "../../assets/img/fx-5000_main.png";
-import BgImg from "../../assets/img/mobile_bg_fx-5000.png";
+// import BgImg from "../../assets/img/mobile_bg_fx-5000.png";
 import Line from "../../assets/img/pageLine.svg";
 import Pura1 from "../../assets/img/certifi_pura_01.png";
 import Pura2 from "../../assets/img/certifi_pura_02.png";
@@ -30,9 +30,10 @@ function Fx5000Cont() {
   return (
     <div
       style={{
-        backgroundImage: `url(${BgImg})`,
+        // backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        background: "linear-gradient(#FFFFFFCC 40%, #FFD6F1CC)",
       }}
     >
       <Swiper

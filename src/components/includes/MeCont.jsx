@@ -8,7 +8,7 @@ import "swiper/css/effect-fade";
 
 import Line from "../../assets/img/pageLine.svg";
 import MainImg from "../../assets/img/me_main.png";
-import BgImg from "../../assets/img/mobile_bg_me.png";
+// import BgImg from "../../assets/img/mobile_bg_me.png";
 import Pura1 from "../../assets/img/certifi_pura_01.png";
 import Pura2 from "../../assets/img/certifi_pura_02.png";
 import Pura3 from "../../assets/img/certifi_pura_03.png";
@@ -28,9 +28,10 @@ function MeCont() {
   return (
     <div
       style={{
-        backgroundImage: `url(${BgImg})`,
+        // backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        background: "linear-gradient(#FFFFFFCC 40%, #F4EDFF)",
       }}
     >
       <Swiper

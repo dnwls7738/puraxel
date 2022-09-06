@@ -5,7 +5,7 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 
 import Line from "../../assets/img/pageLine.svg";
-import BgImg from "../../assets/img/mobile_bg_tech.png";
+// import BgImg from "../../assets/img/mobile_bg_tech.png";
 import MainImg from "../../assets/img/tech_main.png";
 // import criticalImg1 from "../../assets/img/criticaltech.png";
 // import criticalImg2 from "../../assets/img/criticaltech2.png";
@@ -20,9 +20,10 @@ function TechCont() {
   return (
     <div
       style={{
-        backgroundImage: `url(${BgImg})`,
+        // backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        background: "linear-gradient(#FFFFFFCC 40%, #AFCFFFCC)",
       }}
     >
       <Swiper
@@ -72,76 +73,6 @@ function TechCont() {
             </div>
           </div>
         </SwiperSlide>
-
-        {/* <SwiperSlide>
-          <div className="cont">
-            <div className="contName">
-              <span className="contHeader">Fractional 레이저 작동 방식</span>
-              <p className="contHeader2">
-                <em>프락셔널 레이저</em> 작동 방식
-              </p>
-            </div>
-            <CollapseItem />
-          </div>
-        </SwiperSlide> */}
-
-        {/* <SwiperSlide>
-          <div className="cont">
-            <div className="contName">
-              <span className="contHeader">Critical Technology</span>
-              <p className="contHeader2">
-                에너지 세기에 따른 <em>천공 깊이</em>
-              </p>
-            </div>
-            <div className="criticalTech">
-              <div className="criticalCont">
-                <img src={criticalImg1} alt="" />
-                <p>
-                  단위 면적당
-                  <br /> 에너지 세기에 따른 피부 깊이
-                </p>
-              </div>
-              <div className="criticalCont2">
-                <img src={criticalImg2} alt="" />
-                <p>
-                  동일 에너지에서
-                  <br /> 단위면적이 다를 때 천공 깊이
-                </p>
-              </div>
-            </div>
-            <div style={{ position: "relative" }}>
-              <div className="ErYag">
-                <p className="ErYagText1">
-                  퓨라셀에 사용된 미용 레이저, 어븀야그
-                </p>
-                <p className="ErYagText2"> Er : Yag, 2940nm</p>
-              </div>
-              <div className="ErYagConts">
-                <p className="ErYagCont">
-                  수분에 대한 에너지 흡수도가 높아 레이저 조사 시
-                  <em>
-                    피부의 물분자 결합을 깨면서 나오는 높은 에너지로 피부표면을
-                    순간적으로 증발시켜 미세한 홀을 만드는 원리
-                  </em>
-                  의 미용 레이저입니다.
-                </p>
-                <p className="ErYagCont2">
-                  레이저로 인한 천공 깊이는&nbsp;
-                  <em>
-                    단위면적당 레이저
-                    <br /> 에너지 밀도(세기)
-                  </em>
-                  에 따라 실제 피부에 천공되는 깊이에 차이를 줍니다.
-                </p>
-                <p className="ErYagCont3">
-                  때문에 <em>동일한 에너지로 단위면적이 작으면</em> 에너지
-                  밀도가 높아 레이저 침투 깊이가 깊어지고 이에 따라 &nbsp;
-                  <em>천공되는 깊이도 차이</em>가 발생됩니다.
-                </p>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide> */}
 
         <SwiperSlide>
           <div className="cont">
