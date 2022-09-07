@@ -31,7 +31,7 @@ function MeCont() {
         // backgroundImage: `url(${BgImg})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
-        background: "linear-gradient(#FFFFFFCC 40%, #F4EDFF)",
+        background: "linear-gradient(#FFFFFFCC, #F4EDFFCC)",
       }}
     >
       <Swiper

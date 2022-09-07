@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import axios from "axios";
 import Icon from "@mui/material/Icon";
 import Navbars from "./Navbars";
+import emailjs from "@emailjs/browser";
+// import useInput from "../hooks/useInput";
 
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Close from "../../assets/img/gnb_close.svg";
@@ -211,6 +212,7 @@ const style3 = {
 };
 
 function Header({ name, text }) {
+  const form = useRef();
   const matches = useMediaQuery("(max-width:1024px)");
 
   const [open, setOpen] = useState(false);
@@ -424,40 +426,16 @@ function Header({ name, text }) {
   const [phoneError, setPhoneError] = useState("");
   const [nameError, setNameError] = useState("");
   const [registerError, setRegisterError] = useState("");
-  const history = useHistory();
 
   const handleAgree = (event) => {
     setChecked(event.target.checked);
   };
 
-  const onhandlePost = async (data) => {
-    const { email, name, phone } = data;
-    const postData = { email, name, phone };
-
-    // post
-    await axios
-      .post("/member/join", postData)
-      .then(function (response) {
-        console.log(response, "성공");
-        history.push("/login");
-      })
-      .catch(function (err) {
-        console.log(err);
-        setRegisterError("문의하기에 실패했습니다. 다시한번 확인해 주세요.");
-      });
-  };
-
   const handleSubmit = (e) => {
+    const email = e.target.value;
+    const name = e.target.value;
+    const phone = e.target.value;
     e.preventDefault();
-
-    const data = new FormData(e.currentTarget);
-    const joinData = {
-      email: data.get("email"),
-      name: data.get("name"),
-      phone: data.get("phone"),
-    };
-    const { email, name, phone } = joinData;
-
     // 이메일 유효성 체크
     const emailRegex =
       /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
@@ -466,9 +444,8 @@ function Header({ name, text }) {
     else setEmailError("");
 
     // 이름 유효성 검사
-    const nameRegex = /^[가-힣a-zA-Z]+$/;
-    if (!nameRegex.test(name) || name.length < 1)
-      setNameError("올바른 이름을 입력해주세요.");
+    const nameRegex = /[^가-힣a-zA-Z]/g;
+    if (!nameRegex.test(name)) setNameError("올바른 이름을 입력해주세요.");
     else setNameError("");
 
     // 전화번호 유효성 체크
@@ -486,8 +463,28 @@ function Header({ name, text }) {
       checked &&
       phoneRegex.test(phone)
     ) {
-      onhandlePost(joinData);
+      sendEmail(e);
     }
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_peys2qi",
+        "template_clgp9bs",
+        form.current,
+        "53H2U-Njd_JLqmLIf"
+      )
+      .then(
+        (result) => {
+          alert("문의가 완료되었습니다.");
+        },
+        (error) => {
+          setRegisterError("문의하기에 실패했습니다. 다시한번 확인해 주세요.");
+        }
+      );
   };
 
   return matches === true ? (
@@ -691,15 +688,25 @@ function Header({ name, text }) {
                 />
               </IconButton>
             </div>
-
+            {/* <form className="contact-form" onSubmit={sendEmail}>
+              <input type="hidden" name="contact_number" />
+              <label>Name</label>
+              <input type="text" name="user_name" />
+              <label>Email</label>
+              <input type="email" name="user_email" />
+              <label>Message</label>
+              <textarea name="message" />
+              <input type="submit" value="Send" />
+            </form> */}
             <ThemeProvider theme={theme3}>
               <Container component="main" maxWidth="500px">
                 <CssBaseline />
                 <Box
                   component="form"
                   noValidate
-                  onSubmit={handleSubmit}
                   sx={{ mt: 3 }}
+                  onSubmit={handleSubmit}
+                  ref={form}
                 >
                   <FormControl component="fieldset" variant="standard">
                     <Grid container spacing={3}>
@@ -711,7 +718,7 @@ function Header({ name, text }) {
                           required
                           fullWidth
                           id="name"
-                          name="name"
+                          name="user_name"
                           label="성명"
                           error={nameError !== "" || false}
                         />
@@ -726,7 +733,7 @@ function Header({ name, text }) {
                           variant="standard"
                           type="text"
                           id="phone"
-                          name="phone"
+                          name="contact_number"
                           label="연락처(숫자만 입력)"
                           error={phoneError !== "" || false}
                         />
@@ -741,7 +748,7 @@ function Header({ name, text }) {
                           variant="standard"
                           type="email"
                           id="email"
-                          name="email"
+                          name="user_email"
                           label="이메일"
                           error={emailError !== "" || false}
                         />
@@ -756,7 +763,7 @@ function Header({ name, text }) {
                           variant="standard"
                           type="text"
                           id="password"
-                          name="password"
+                          name="brand_name"
                           label="상호명"
                         />
                       </Grid>
@@ -778,6 +785,7 @@ function Header({ name, text }) {
                               inputProps={{ maxLength: 2 }}
                               id="standard-required"
                               variant="standard"
+                              name="time1"
                             />
                           </Grid>
                           <Grid
@@ -796,6 +804,7 @@ function Header({ name, text }) {
                               inputProps={{ maxLength: 2 }}
                               id="standard-required"
                               variant="standard"
+                              name="time2"
                             />
                           </Grid>
                           <Grid
@@ -863,6 +872,7 @@ function Header({ name, text }) {
                             }}
                             type="text"
                             placeholder="문의 내용을 입력해 주세요"
+                            name="message"
                           />
                         </div>
                       </Grid>
