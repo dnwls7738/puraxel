@@ -5,6 +5,7 @@ import Icon from "@mui/material/Icon";
 import Navbars from "./Navbars";
 import emailjs from "@emailjs/browser";
 // import useInput from "../hooks/useInput";
+import style5 from "./ModalComponent.module.css";
 
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Close from "../../assets/img/gnb_close.svg";
@@ -38,6 +39,9 @@ import {
   Button,
   Container,
   CssBaseline,
+  Dialog,
+  DialogTitle,
+  DialogActions,
 } from "@mui/material";
 import { CheckCircle, CheckCircleOutline } from "@mui/icons-material";
 
@@ -224,13 +228,39 @@ function Header({ name, text }) {
   const handleClose = () => setOpen(false);
 
   const handleOpen2 = () => setOpen2(true);
-  const handleClose2 = () => setOpen2(false);
+  const handleClose2 = () => {
+    setOpen2(false);
+    handleCloseNoticeDialog(false);
+  };
 
   const handleOpen3 = () => setOpen3(true);
   const handleClose3 = () => setOpen3(false);
 
+  const [closeNoticeDialogOpen, setCloseNoticeDialogOpen] = useState(false);
+
+  const handleOpenNoticeDialog = () => {
+    setCloseNoticeDialogOpen(true);
+  };
+  const handleCloseNoticeDialog = () => {
+    setCloseNoticeDialogOpen(false);
+  };
+
+  const handleCloseNoticeYesOrNo = () => {
+    setCloseNoticeDialogOpen(false);
+  };
+
   const toggleDrawer = () => () => {
     setClose(!close);
+  };
+
+  const [sendAgreeDialogOpen, setSendAgreeDialogOpen] = useState(false);
+
+  const handleOpenSendAgreeDialog = () => {
+    setSendAgreeDialogOpen(true);
+  };
+
+  const handleCloseSendAgreeDialog = () => {
+    setSendAgreeDialogOpen(false);
   };
 
   function Component2() {
@@ -432,20 +462,15 @@ function Header({ name, text }) {
   };
 
   const handleSubmit = (e) => {
-    const email = e.target.value;
-    const name = e.target.value;
-    const phone = e.target.value;
+    const email = document.getElementById("email").value;
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
     e.preventDefault();
-    // 이메일 유효성 체크
-    const emailRegex =
-      /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-    if (!emailRegex.test(email))
-      setEmailError("올바른 이메일 형식이 아닙니다.");
-    else setEmailError("");
 
     // 이름 유효성 검사
-    const nameRegex = /[^가-힣a-zA-Z]/g;
-    if (!nameRegex.test(name)) setNameError("올바른 이름을 입력해주세요.");
+    const nameRegex = /^[가-힣]{2,15}$/;
+    if (!nameRegex.test(name) || name.length < 1 || name === "")
+      setNameError("올바른 이름을 입력해주세요.");
     else setNameError("");
 
     // 전화번호 유효성 체크
@@ -453,6 +478,13 @@ function Header({ name, text }) {
     if (!phoneRegex.test(phone))
       setPhoneError("올바른 전화번호 형식이 아닙니다.");
     else setPhoneError("");
+
+    // 이메일 유효성 체크
+    const emailRegex =
+      /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if (!emailRegex.test(email))
+      setEmailError("올바른 이메일 형식이 아닙니다.");
+    else setEmailError("");
 
     // 개인정보 수집 동의 체크
     if (!checked) alert("개인정보 수집 및 활용에 동의해주세요.");
@@ -462,9 +494,10 @@ function Header({ name, text }) {
       nameRegex.test(name) &&
       checked &&
       phoneRegex.test(phone)
-    ) {
+    )
       sendEmail(e);
-    }
+    else alert("필수항목을 작성해주세요");
+    setSendAgreeDialogOpen(false);
   };
 
   const sendEmail = (e) => {
@@ -480,6 +513,7 @@ function Header({ name, text }) {
       .then(
         (result) => {
           alert("문의가 완료되었습니다.");
+          handleClose2();
         },
         (error) => {
           setRegisterError("문의하기에 실패했습니다. 다시한번 확인해 주세요.");
@@ -678,7 +712,7 @@ function Header({ name, text }) {
                   제품문의
                 </p>
               </div>
-              <IconButton onClick={handleClose2}>
+              <IconButton onClick={handleOpenNoticeDialog}>
                 <img
                   src={Close}
                   style={{
@@ -688,16 +722,33 @@ function Header({ name, text }) {
                 />
               </IconButton>
             </div>
-            {/* <form className="contact-form" onSubmit={sendEmail}>
-              <input type="hidden" name="contact_number" />
-              <label>Name</label>
-              <input type="text" name="user_name" />
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <label>Message</label>
-              <textarea name="message" />
-              <input type="submit" value="Send" />
-            </form> */}
+
+            <Dialog
+              open={closeNoticeDialogOpen}
+              onClose={handleCloseNoticeDialog}
+              onClick={(e) => e.preventDefault}
+            >
+              <section className={style5.dialog__exit__contaier}>
+                <DialogTitle className={style5.dialog__exit__contaier}>
+                  <span className={style5.dialogTopPara}>
+                    작성된 내용은 저장되지 않습니다.
+                  </span>
+                  <span className={style5.dialogBotPara}>나가시겠습니까?</span>
+                </DialogTitle>
+                <DialogActions>
+                  <div className={style5.exitButton} onClick={handleClose2}>
+                    나가기
+                  </div>
+                  <div
+                    className={style5.stayButton}
+                    onClick={handleCloseNoticeYesOrNo}
+                  >
+                    아니오
+                  </div>
+                </DialogActions>
+              </section>
+            </Dialog>
+
             <ThemeProvider theme={theme3}>
               <Container component="main" maxWidth="500px">
                 <CssBaseline />
@@ -705,8 +756,8 @@ function Header({ name, text }) {
                   component="form"
                   noValidate
                   sx={{ mt: 3 }}
-                  onSubmit={handleSubmit}
                   ref={form}
+                  onSubmit={handleSubmit}
                 >
                   <FormControl component="fieldset" variant="standard">
                     <Grid container spacing={3}>
@@ -878,7 +929,7 @@ function Header({ name, text }) {
                       </Grid>
                     </Grid>
                     <Button
-                      type="submit"
+                      onClick={handleOpenSendAgreeDialog}
                       variant="contained"
                       sx={{
                         mt: 3,
@@ -893,6 +944,39 @@ function Header({ name, text }) {
                       문의신청
                     </Button>
                     <FormHelperText>{registerError}</FormHelperText>
+
+                    <Dialog
+                      open={sendAgreeDialogOpen}
+                      onClose={handleCloseSendAgreeDialog}
+                      onClick={(e) => e.preventDefault}
+                    >
+                      <section className={style5.dialog__exit__contaier}>
+                        <DialogTitle className={style5.dialog__exit__contaier}>
+                          <span className={style5.dialogTopPara}>
+                            문의 내용을 전달하시겠습니까?
+                          </span>
+                          <span className={style5.dialogBotPara}>
+                            한 번 전달한 문의는 수정할 수 없습니다.
+                          </span>
+                        </DialogTitle>
+                        <DialogActions>
+                          <div
+                            className={style5.exitButton}
+                            onClick={handleCloseSendAgreeDialog}
+                          >
+                            {/* {modalKr.modalExitModalYes} */}
+                            아니오
+                          </div>
+                          <div
+                            type="submit"
+                            className={style5.stayButton}
+                            onClick={handleSubmit}
+                          >
+                            네
+                          </div>
+                        </DialogActions>
+                      </section>
+                    </Dialog>
                   </FormControl>
                 </Box>
               </Container>
