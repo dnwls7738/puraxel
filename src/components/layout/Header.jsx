@@ -463,13 +463,13 @@ function Header({ name, text }) {
 
   const handleSubmit = (e) => {
     const email = document.getElementById("email").value;
-    const name = document.getElementById("name").value;
+    const user_name = document.getElementById("name").value;
     const phone = document.getElementById("phone").value;
     e.preventDefault();
 
     // 이름 유효성 검사
     const nameRegex = /^[가-힣]{2,15}$/;
-    if (!nameRegex.test(name) || name.length < 1 || name === "")
+    if (!nameRegex.test(user_name) || user_name.length < 1 || user_name === "")
       setNameError("올바른 이름을 입력해주세요.");
     else setNameError("");
 
@@ -491,12 +491,12 @@ function Header({ name, text }) {
 
     if (
       emailRegex.test(email) &&
-      nameRegex.test(name) &&
+      nameRegex.test(user_name) &&
       checked &&
       phoneRegex.test(phone)
-    )
+    ) {
       sendEmail(e);
-    else alert("필수항목을 작성해주세요");
+    } else alert("필수항목을 작성해주세요");
     setSendAgreeDialogOpen(false);
   };
 
