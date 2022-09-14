@@ -8,10 +8,10 @@ import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
 function App() {
-  const MINWIDTH = 1024;
-  const REDIRECT_MOBILE = "https://puraxel.vercel.app/";
-  const aaaa = () => (window.location.href = REDIRECT_MOBILE);
-  const Mobile = window.innerHeight >= MINWIDTH;
+  const Minwidth = 1024;
+  const Redirect_Web = "https://puraxel.vercel.app/";
+  const aaaa = () => (window.location.href = Redirect_Web);
+  const Mobile = window.innerHeight <= Minwidth;
 
   useEffect(() => {
     if (Mobile) {
@@ -24,15 +24,14 @@ function App() {
       console.log(e);
       console.log(window.innerHeight);
       console.log(window.innerWidth);
-      console.log(window.location);
       if (Mobile) {
         aaaa();
       } else {
         return;
       }
-      // bbbb ? aaaa : "";
     };
   });
+
   return (
     <Router>
       <Switch>
