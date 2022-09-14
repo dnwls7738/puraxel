@@ -22,18 +22,15 @@ function App() {
     //   return;
     // }
 
-    window.onresize = function (e) {
-      console.log(e);
-      console.log(window.innerHeight);
-      console.log(window.innerWidth);
-      console.log(window.location);
-      if (Mobile) {
-        aaaa();
-      } else {
-        bbbb();
-        return;
-      }
-    };
+    console.log(e);
+    console.log(window.innerHeight);
+    console.log(window.innerWidth);
+    console.log(window.location);
+    if (Mobile) {
+      aaaa();
+    } else {
+      bbbb();
+    }
   });
   return (
     <Router>
