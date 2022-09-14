@@ -31,8 +31,8 @@ function App() {
         aaaa();
       } else {
         bbbb();
+        return;
       }
-      // bbbb ? aaaa : "";
     };
   });
   return (
