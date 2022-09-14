@@ -8,10 +8,10 @@ import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
 function App() {
-  const Minwidth = 1024;
+  const Minwidth = "1024px";
   const Redirect_Web = "https://puraxel.vercel.app/";
   const aaaa = () => (window.location.href = Redirect_Web);
-  const Mobile = window.innerHeight <= Minwidth;
+  const Mobile = window.innerWidth <= Minwidth;
 
   useEffect(() => {
     if (Mobile) {
