@@ -35,20 +35,16 @@ function App() {
       // bbbb ? aaaa : "";
     };
   });
-  return isMobile || isTablet ? (
-    <MobileView>
-      <Router>
-        <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/PURAXEL-Me" exact component={Me} />
-          <Route path="/PURAXEL" exact component={Fx5000} />
-          <Route path="/PURAXEL-Hair" exact component={Hair} />
-          <Route path="/핵심기술" exact component={PuraTech} />
-        </Switch>
-      </Router>
-    </MobileView>
-  ) : (
-    <>{(window.location.href = REDIRECT_MOBILE)}</>
+  return (
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Main} />
+        <Route path="/PURAXEL-Me" exact component={Me} />
+        <Route path="/PURAXEL" exact component={Fx5000} />
+        <Route path="/PURAXEL-Hair" exact component={Hair} />
+        <Route path="/핵심기술" exact component={PuraTech} />
+      </Switch>
+    </Router>
   );
 }
 
