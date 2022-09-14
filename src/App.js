@@ -27,6 +27,7 @@ function App() {
     } else {
       bbbb();
     }
+    return;
   });
   return (
     <Router>
