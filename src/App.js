@@ -8,30 +8,33 @@ import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
 function App() {
-  const Minwidth = 1024;
-  const Redirect_Web = "https://puraxel.vercel.app/";
-  const aaaa = () => (window.location.href = Redirect_Web);
-  const Mobile = window.innerWidth >= Minwidth;
+  const MINWIDTH = 1024;
+  const REDIRECT_WEB = "https://puraxel.vercel.app/";
+  const REDIRECT_MOBILE = "https://lmdtwoo.netlify.app/";
+  const aaaa = () => (window.location.href = REDIRECT_WEB);
+  const bbbb = () => (window.location.href = REDIRECT_MOBILE);
+  const Mobile = window.innerHeight >= MINWIDTH;
 
   useEffect(() => {
-    if (Mobile) {
-      aaaa();
-    } else {
-      return;
-    }
+    // if (Mobile) {
+    //   aaaa();
+    // } else {
+    //   return;
+    // }
 
     window.onresize = function (e) {
       console.log(e);
       console.log(window.innerHeight);
       console.log(window.innerWidth);
+      console.log(window.location);
       if (Mobile) {
         aaaa();
       } else {
-        return;
+        bbbb();
       }
+      // bbbb ? aaaa : "";
     };
   });
-
   return (
     <Router>
       <Switch>
