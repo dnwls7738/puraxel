@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Fx5000 from "./components/pages/Fx5000";
@@ -8,27 +8,6 @@ import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
 function App() {
-  const MINWIDTH = 1024;
-  const REDIRECT_WEB = "https://puraxel.vercel.app/";
-  const REDIRECT_MOBILE = "https://lmdtwoo.netlify.app/";
-  const aaaa = () => (window.location.href = REDIRECT_WEB);
-  const bbbb = () => (window.location.href = REDIRECT_MOBILE);
-  const Mobile = window.innerWidth >= MINWIDTH;
-
-  useEffect(() => {
-    // if (Mobile) {
-    //   aaaa();
-    // } else {
-    //   return;
-    // }
-
-    if (Mobile) {
-      aaaa();
-    } else {
-      bbbb();
-    }
-    return;
-  });
   return (
     <Router>
       <Switch>
