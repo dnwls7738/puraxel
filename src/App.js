@@ -22,10 +22,6 @@ function App() {
     //   return;
     // }
 
-    console.log(e);
-    console.log(window.innerHeight);
-    console.log(window.innerWidth);
-    console.log(window.location);
     if (Mobile) {
       aaaa();
     } else {
