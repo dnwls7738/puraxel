@@ -1,8 +1,6 @@
 import { React, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { MobileView, isMobile, isTablet } from "react-device-detect";
-
 import Fx5000 from "./components/pages/Fx5000";
 import Hair from "./components/pages/Hair";
 import Main from "./components/pages/Main";
