@@ -13,7 +13,7 @@ function App() {
   const REDIRECT_MOBILE = "https://lmdtwoo.netlify.app/";
   const aaaa = () => (window.location.href = REDIRECT_WEB);
   const bbbb = () => (window.location.href = REDIRECT_MOBILE);
-  const Mobile = window.innerHeight >= MINWIDTH;
+  const Mobile = window.innerWidth >= MINWIDTH;
 
   useEffect(() => {
     // if (Mobile) {
