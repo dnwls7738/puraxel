@@ -28,7 +28,7 @@ function App() {
       }
       // bbbb ? aaaa : "";
     };
-  }, []);
+  });
   return isMobile || isTablet ? (
     <MobileView>
       <Router>
