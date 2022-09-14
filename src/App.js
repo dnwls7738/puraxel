@@ -16,6 +16,12 @@ function App() {
   const Mobile = window.innerHeight >= MINWIDTH;
 
   useEffect(() => {
+    if (Mobile) {
+      aaaa();
+    } else {
+      return;
+    }
+
     window.onresize = function (e) {
       console.log(e);
       console.log(window.innerHeight);
