@@ -11,7 +11,7 @@ function App() {
   const Minwidth = "1024px";
   const Redirect_Web = "https://puraxel.vercel.app/";
   const aaaa = () => (window.location.href = Redirect_Web);
-  const Mobile = window.innerWidth <= Minwidth;
+  const Mobile = window.innerWidth >= Minwidth;
 
   useEffect(() => {
     if (Mobile) {
