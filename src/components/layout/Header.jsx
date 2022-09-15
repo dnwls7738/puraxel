@@ -217,8 +217,10 @@ const style3 = {
 
 function Header({ name, text }) {
   const form = useRef();
+  console.log(form.current);
   const matches = useMediaQuery("(max-width:1024px)");
 
+  // 모달 창들 열기 닫기
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
@@ -236,6 +238,7 @@ function Header({ name, text }) {
   const handleOpen3 = () => setOpen3(true);
   const handleClose3 = () => setOpen3(false);
 
+  // 문의 모달 닫기 확인창
   const [closeNoticeDialogOpen, setCloseNoticeDialogOpen] = useState(false);
 
   const handleOpenNoticeDialog = () => {
@@ -253,6 +256,7 @@ function Header({ name, text }) {
     setClose(!close);
   };
 
+  // 문의 보내기 확인창
   const [sendAgreeDialogOpen, setSendAgreeDialogOpen] = useState(false);
 
   const handleOpenSendAgreeDialog = () => {
@@ -263,16 +267,92 @@ function Header({ name, text }) {
     setSendAgreeDialogOpen(false);
   };
 
+  //
   function Component2() {
     if (name === "puraxel" || "tech") {
       return;
     }
   }
 
+  // 화면 새로고침
   function Reload() {
     window.location.reload({ name });
   }
 
+  // 문의하기 유효성 검사
+  const [checked, setChecked] = useState(false);
+  const [emailError, setEmailError] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [registerError, setRegisterError] = useState("");
+
+  const handleAgree = (event) => {
+    setChecked(event.target.checked);
+  };
+
+  const handleSubmit = (e) => {
+    const email = document.getElementById("email").value;
+    const user_name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    e.preventDefault();
+
+    // 이름 유효성 검사
+    const nameRegex = /^[가-힣]{2,15}$/;
+    if (!nameRegex.test(user_name) || user_name.length < 1 || user_name === "")
+      setNameError("올바른 이름을 입력해주세요.");
+    else setNameError("");
+
+    // 전화번호 유효성 체크
+    const phoneRegex = /^(010|011|016|017|018|019)[0-9]{3,4}[0-9]{4}$/;
+    if (!phoneRegex.test(phone))
+      setPhoneError("올바른 전화번호 형식이 아닙니다.");
+    else setPhoneError("");
+
+    // 이메일 유효성 체크
+    const emailRegex =
+      /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    if (!emailRegex.test(email))
+      setEmailError("올바른 이메일 형식이 아닙니다.");
+    else setEmailError("");
+
+    // 개인정보 수집 동의 체크
+    if (!checked) alert("개인정보 수집 및 활용에 동의해주세요.");
+
+    // 문의 보내기
+    if (
+      emailRegex.test(email) &&
+      nameRegex.test(user_name) &&
+      checked &&
+      phoneRegex.test(phone)
+    ) {
+      sendEmail(e);
+    } else alert("필수항목을 작성해주세요");
+    setSendAgreeDialogOpen(false);
+  };
+
+  // emailjs
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_peys2qi",
+        "template_clgp9bs",
+        form.current,
+        "53H2U-Njd_JLqmLIf"
+      )
+      .then(
+        (result) => {
+          alert("문의가 완료되었습니다.");
+          handleClose2();
+        },
+        (error) => {
+          setRegisterError("문의하기에 실패했습니다. 다시한번 확인해 주세요.");
+        }
+      );
+  };
+
+  // 사이드 바 메뉴
   const list = () => (
     <Box
       role="presentation"
@@ -451,76 +531,6 @@ function Header({ name, text }) {
     </Box>
   );
 
-  const [checked, setChecked] = useState(false);
-  const [emailError, setEmailError] = useState("");
-  const [phoneError, setPhoneError] = useState("");
-  const [nameError, setNameError] = useState("");
-  const [registerError, setRegisterError] = useState("");
-
-  const handleAgree = (event) => {
-    setChecked(event.target.checked);
-  };
-
-  const handleSubmit = (e) => {
-    const email = document.getElementById("email").value;
-    const user_name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    e.preventDefault();
-
-    // 이름 유효성 검사
-    const nameRegex = /^[가-힣]{2,15}$/;
-    if (!nameRegex.test(user_name) || user_name.length < 1 || user_name === "")
-      setNameError("올바른 이름을 입력해주세요.");
-    else setNameError("");
-
-    // 전화번호 유효성 체크
-    const phoneRegex = /^(010|011|016|017|018|019)[0-9]{3,4}[0-9]{4}$/;
-    if (!phoneRegex.test(phone))
-      setPhoneError("올바른 전화번호 형식이 아닙니다.");
-    else setPhoneError("");
-
-    // 이메일 유효성 체크
-    const emailRegex =
-      /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-    if (!emailRegex.test(email))
-      setEmailError("올바른 이메일 형식이 아닙니다.");
-    else setEmailError("");
-
-    // 개인정보 수집 동의 체크
-    if (!checked) alert("개인정보 수집 및 활용에 동의해주세요.");
-
-    if (
-      emailRegex.test(email) &&
-      nameRegex.test(user_name) &&
-      checked &&
-      phoneRegex.test(phone)
-    ) {
-      sendEmail(e);
-    } else alert("필수항목을 작성해주세요");
-    setSendAgreeDialogOpen(false);
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_peys2qi",
-        "template_clgp9bs",
-        form.current,
-        "53H2U-Njd_JLqmLIf"
-      )
-      .then(
-        (result) => {
-          alert("문의가 완료되었습니다.");
-          handleClose2();
-        },
-        (error) => {
-          setRegisterError("문의하기에 실패했습니다. 다시한번 확인해 주세요.");
-        }
-      );
-  };
-
   return matches === true ? (
     <header id="header">
       <div className="header__logo">
@@ -608,6 +618,7 @@ function Header({ name, text }) {
           </React.Fragment>
         ))}
 
+        {/* 사업자 정보 모달 */}
         <Modal
           aria-labelledby="transition-modal-title"
           aria-describedby="transition-modal-description"
@@ -678,6 +689,7 @@ function Header({ name, text }) {
           </Fade>
         </Modal>
 
+        {/* 문의 모달 */}
         <Modal
           open={open2}
           aria-labelledby="modal-modal-title"
@@ -984,6 +996,7 @@ function Header({ name, text }) {
           </Box>
         </Modal>
 
+        {/* 개인정보처리 모달 */}
         <Modal
           onClick={handleClose3}
           open={open3}
