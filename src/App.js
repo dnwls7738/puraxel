@@ -1,5 +1,7 @@
-import { React, useEffect } from "react";
+import { React, useEffect, useState } from "react";
+import { debounce } from "lodash";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import Fx5000 from "./components/pages/Fx5000";
 import Hair from "./components/pages/Hair";
@@ -8,29 +10,18 @@ import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
 function App() {
-  const MINWIDTH = 1024;
-  const REDIRECT_WEB = "https://puraxel.vercel.app/";
-  // const REDIRECT_MOBILE = "https://lmdtwoo.netlify.app/";
-  const aaaa = () => (window.location.href = REDIRECT_WEB);
-  // const bbbb = () => (window.location.href = REDIRECT_MOBILE);
-  const Mobile = window.innerWidth;
+  const matches = useMediaQuery("(max-width:1024px)");
+  // const MINWIDTH = 1024;
+  const REDIRECT_Web = "https://puraxel.vercel.app/";
+  // const windowSizeDetectCondition = window.innerWidth > MINWIDTH;
 
-  const Sec = 300;
+  // useEffect(() => {
 
-  useEffect(() => {
-    window.onresize = function (e) {
-      const Timer = setTimeout(function () {
-        if (Mobile < MINWIDTH) {
-          aaaa();
-        } else {
-          return;
-        }
-      }, Sec);
+  //   windowSizeDetectCondition ? {window.location.href = REDIRECT_Web} : "";
 
-      clearTimeout(Timer);
-    };
-  });
-  return (
+  // });
+
+  return matches === true ? (
     <Router>
       <Switch>
         <Route path="/" exact component={Main} />
@@ -40,6 +31,8 @@ function App() {
         <Route path="/핵심기술" exact component={PuraTech} />
       </Switch>
     </Router>
+  ) : (
+    <>{(window.location.href = REDIRECT_Web)} </>
   );
 }
 
