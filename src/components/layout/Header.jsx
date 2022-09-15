@@ -217,7 +217,6 @@ const style3 = {
 
 function Header({ name, text }) {
   const form = useRef();
-  console.log(form.current);
   const matches = useMediaQuery("(max-width:1024px)");
 
   // 모달 창들 열기 닫기
