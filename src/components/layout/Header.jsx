@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import Icon from "@mui/material/Icon";
-import Navbars from "./Navbars";
 import emailjs from "@emailjs/browser";
 // import useInput from "../hooks/useInput";
 import style5 from "./ModalComponent.module.css";
@@ -217,7 +215,6 @@ const style3 = {
 
 function Header({ name, text }) {
   const form = useRef();
-  const matches = useMediaQuery("(max-width:1024px)");
 
   // 모달 창들 열기 닫기
   const [open, setOpen] = useState(false);
@@ -422,6 +419,7 @@ function Header({ name, text }) {
                 <p
                   style={{
                     marginTop: 12,
+                    marginBottom: 12,
                   }}
                 >
                   Shop
@@ -430,7 +428,7 @@ function Header({ name, text }) {
             </Link>
           </div>
         </div>
-        <div className="service">
+        {/* <div className="service">
           <div>
             <p className="product">customer service</p>
             <Link
@@ -450,7 +448,7 @@ function Header({ name, text }) {
               </div>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div
           style={{
             display: "flex",
@@ -530,7 +528,7 @@ function Header({ name, text }) {
     </Box>
   );
 
-  return matches === true ? (
+  return (
     <header id="header">
       <div className="header__logo">
         <div className="logo">
@@ -804,7 +802,7 @@ function Header({ name, text }) {
 
                       <Grid item xs={12}>
                         <TextField
-                          inputProps={{ maxLength: 30 }}
+                          inputProps={{ maxLength: 20 }}
                           required
                           fullWidth
                           variant="standard"
@@ -1002,12 +1000,56 @@ function Header({ name, text }) {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <Box></Box>
+          <Box sx={style}>
+            <Typography
+              id="transition-modal-title"
+              variant="h6"
+              component="h2"
+              sx={{
+                fontFamily: "Pretendard",
+                fontStyle: "normal",
+                fontWeight: "700",
+                fontSize: "1.2rem",
+                lineHeight: "150%",
+                letterSpacing: "-0.01em",
+                color: "#4D5058",
+              }}
+            >
+              당사는 아래와 같이 개인정보를 수집·이용하고자 합니다.
+              <br /> 내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오.
+              <br /> 본 방침은 2022년 1월 1일부터 시행됩니다.
+            </Typography>
+
+            <div id="transition-modal-description" style={{ marginTop: 12 }}>
+              <p style={style2}>
+                [개인정보 수집·이용 내역]
+                <br /> - 수집 항목 : 이름, 전화번호, 상호명, 이메일
+                <br /> - 수집 목적 : 고객의 제품문의 사항 대응
+                <br /> - 보유 기간 : 1년
+              </p>
+              <br />
+              <p
+                style={{
+                  fontFamily: "Pretendard",
+                  fontStyle: "normal",
+                  fontWeight: "700",
+                  fontSize: "1.07rem",
+                  lineHeight: "150%",
+                  letterSpacing: "-0.01em",
+                  color: "#4D5058",
+                }}
+              >
+                * 위의 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다.
+                <br />
+                그러나 동의를 거부할 경우 문의 사항에 대해 원활한 고객 대응에
+                <br />
+                제한을 받을 수 있습니다.
+              </p>
+            </div>
+          </Box>
         </Modal>
       </div>
     </header>
-  ) : (
-    <Navbars />
   );
 }
 
