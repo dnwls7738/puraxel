@@ -804,7 +804,7 @@ function Header({ name, text }) {
 
                       <Grid item xs={12}>
                         <TextField
-                          inputProps={{ maxLength: 20 }}
+                          inputProps={{ maxLength: 30 }}
                           required
                           fullWidth
                           variant="standard"
