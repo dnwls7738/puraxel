@@ -213,8 +213,27 @@ const style3 = {
   p: 2,
 };
 
+const btnDisabled = {
+  bgcolor: "#DFE1E8",
+};
+const btnActive = {
+  bgcolor: "#55576F",
+};
+
 function Header({ name, text }) {
   const form = useRef();
+
+  const [customerName, setCustomerName] = useState(undefined);
+  const [customerTel, setCustomerTel] = useState(undefined);
+  const [customerMail, setCustomerMail] = useState(undefined);
+  const [customerContent, setCustomerContent] = useState(undefined);
+
+  const resetState = () => {
+    setCustomerName(undefined);
+    setCustomerTel(undefined);
+    setCustomerMail(undefined);
+    setCustomerContent(undefined);
+  };
 
   // 모달 창들 열기 닫기
   const [open, setOpen] = useState(false);
@@ -229,6 +248,7 @@ function Header({ name, text }) {
   const handleClose2 = () => {
     setOpen2(false);
     handleCloseNoticeDialog(false);
+    resetState();
   };
 
   const handleOpen3 = () => setOpen3(true);
@@ -255,8 +275,10 @@ function Header({ name, text }) {
   // 문의 보내기 확인창
   const [sendAgreeDialogOpen, setSendAgreeDialogOpen] = useState(false);
 
-  const handleOpenSendAgreeDialog = () => {
-    setSendAgreeDialogOpen(true);
+  const handleOpenSendAgreeDialog = (e) => {
+    !requireInputDataChecker()
+      ? e.preventDefault()
+      : setSendAgreeDialogOpen(true);
   };
 
   const handleCloseSendAgreeDialog = () => {
@@ -322,9 +344,19 @@ function Header({ name, text }) {
       phoneRegex.test(phone)
     ) {
       sendEmail(e);
-    } else alert("필수항목을 작성해주세요");
+    } else setRegisterError("필수항목을 작성해주세요");
     setSendAgreeDialogOpen(false);
   };
+
+  const mail = [
+    customerName,
+    customerTel,
+    customerMail,
+    customerContent,
+    checked,
+  ];
+
+  const requireInputDataChecker = () => mail.filter((x) => x).length === 5;
 
   // emailjs
   const sendEmail = (e) => {
@@ -781,6 +813,9 @@ function Header({ name, text }) {
                           name="user_name"
                           label="성명"
                           error={nameError !== "" || false}
+                          onChange={(e) => {
+                            setCustomerName(e.target.value);
+                          }}
                         />
                         <FormHelperText>{nameError}</FormHelperText>
                       </Grid>
@@ -791,11 +826,14 @@ function Header({ name, text }) {
                           required
                           fullWidth
                           variant="standard"
-                          type="text"
+                          type="number"
                           id="phone"
                           name="contact_number"
                           label="연락처(숫자만 입력)"
                           error={phoneError !== "" || false}
+                          onChange={(e) => {
+                            setCustomerTel(e.target.value);
+                          }}
                         />
                         <FormHelperText>{phoneError}</FormHelperText>
                       </Grid>
@@ -811,6 +849,9 @@ function Header({ name, text }) {
                           name="user_email"
                           label="이메일"
                           error={emailError !== "" || false}
+                          onChange={(e) => {
+                            setCustomerMail(e.target.value);
+                          }}
                         />
                         <FormHelperText>{emailError}</FormHelperText>
                       </Grid>
@@ -882,6 +923,7 @@ function Header({ name, text }) {
                           </Grid>
                         </Grid>
                       </Grid>
+
                       <Grid item xs={12}>
                         <div
                           style={{
@@ -915,6 +957,7 @@ function Header({ name, text }) {
                           </p>
                         </div>
                       </Grid>
+
                       <Grid item xs={12}>
                         <div style={{ borderTop: "1px solid #F2F3F6" }}>
                           <textarea
@@ -933,6 +976,7 @@ function Header({ name, text }) {
                             type="text"
                             placeholder="문의 내용을 입력해 주세요"
                             name="message"
+                            onChange={(e) => setCustomerContent(e.target.value)}
                           />
                         </div>
                       </Grid>
@@ -943,11 +987,13 @@ function Header({ name, text }) {
                       sx={{
                         mt: 3,
                         mb: 2,
-                        bgcolor: "#DFE1E8",
                         height: "5.6rem",
                         fontSize: "1.6rem",
                         fontWeight: 800,
                         fontFamily: "Pretendard",
+                        background: !requireInputDataChecker()
+                          ? btnDisabled.bgcolor
+                          : btnActive.bgcolor,
                       }}
                     >
                       문의신청
