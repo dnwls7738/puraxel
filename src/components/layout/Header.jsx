@@ -634,7 +634,7 @@ function Header({ name, text }) {
               hideBackdrop
               PaperProps={{
                 sx: {
-                  Width: 340,
+                  width: 340,
                   color: "#55576F",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   zIndex: 99999,
