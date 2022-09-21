@@ -242,7 +242,9 @@ function Header({ name, text }) {
   const [close, setClose] = useState(false);
 
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const handleOpen2 = () => setOpen2(true);
   const handleClose2 = () => {
@@ -344,8 +346,7 @@ function Header({ name, text }) {
       phoneRegex.test(phone)
     ) {
       sendEmail(e);
-    } else setRegisterError("필수항목을 작성해주세요");
-    setSendAgreeDialogOpen(false);
+    } else setSendAgreeDialogOpen(false);
   };
 
   const mail = [
@@ -805,14 +806,17 @@ function Header({ name, text }) {
                       <Grid item xs={6}>
                         <TextField
                           inputProps={{ maxLength: 12 }}
-                          autoFocus
                           variant="standard"
                           required
                           fullWidth
                           id="name"
+                          type="text"
                           name="user_name"
                           label="성명"
-                          error={nameError !== "" || false}
+                          onKeyDown={() => {
+                            setNameError(false);
+                          }}
+                          error={nameError ? true : false}
                           onChange={(e) => {
                             setCustomerName(e.target.value);
                           }}
@@ -826,11 +830,14 @@ function Header({ name, text }) {
                           required
                           fullWidth
                           variant="standard"
-                          type="number"
+                          type="text"
                           id="phone"
                           name="contact_number"
                           label="연락처(숫자만 입력)"
-                          error={phoneError !== "" || false}
+                          onKeyDown={() => {
+                            setPhoneError(false);
+                          }}
+                          error={phoneError ? true : false}
                           onChange={(e) => {
                             setCustomerTel(e.target.value);
                           }}
@@ -848,10 +855,13 @@ function Header({ name, text }) {
                           id="email"
                           name="user_email"
                           label="이메일"
-                          error={emailError !== "" || false}
+                          onKeyDown={() => {
+                            setEmailError(false);
+                          }}
                           onChange={(e) => {
                             setCustomerMail(e.target.value);
                           }}
+                          error={emailError ? true : false}
                         />
                         <FormHelperText>{emailError}</FormHelperText>
                       </Grid>
