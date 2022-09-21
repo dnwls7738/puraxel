@@ -8,7 +8,7 @@ import Main from "./components/pages/Main";
 import Me from "./components/pages/Me";
 import PuraTech from "./components/pages/PuraTech";
 
-const REDIRECT_MOBILE = "https://puraxel.vercel.app/";
+const REDIRECT_MOBILE = "https://dev.puraxel.co.kr/";
 
 function App() {
   return isMobile || isTablet ? (
