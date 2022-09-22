@@ -1,5 +1,11 @@
 import React from "react";
-import MainImg from "../../assets/img/main.png";
+import { Autoplay, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/scss";
+import "swiper/scss/pagination";
+import MainImg from "../../assets/img/home_main.png";
+import MainImg2 from "../../assets/img/home_main2.png";
+import MainImg3 from "../../assets/img/home_main3.png";
 
 function MainCont() {
   return (
@@ -18,22 +24,31 @@ function MainCont() {
             fontWeight: "400",
             fontSize: "1.6rem",
             color: "#55576F",
-            marginBottom: "24px",
+            marginBottom: "20px",
           }}
         >
           레이저의 미세한 홀이 당신의 피부를 지켜줍니다.
         </p>
-        <div className="contExplain2">
-          <p>소형 미용기기의 혁신</p>
-          <p className="span">
-            레이저 전문 기업이 만들어
-            <br />
-            안전한 소형 프락셔널 레이저
-          </p>
-        </div>
       </div>
       <div className="contMain2">
-        <img src={MainImg} alt="" />
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 3000 }}
+          loop={true}
+          speed={300}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+        >
+          <SwiperSlide>
+            <img src={MainImg} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={MainImg2} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={MainImg3} alt="" />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

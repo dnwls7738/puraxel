@@ -1,7 +1,16 @@
 diff --git a/node_modules/swiper/modules/pagination/pagination.scss b/node_modules/swiper/modules/pagination/pagination.scss
-index 2da2b03..a23aee4 100644
+index 2da2b03..b2db857 100644
 --- a/node_modules/swiper/modules/pagination/pagination.scss
 +++ b/node_modules/swiper/modules/pagination/pagination.scss
+@@ -2,7 +2,7 @@
+ @at-root {
+   :root {
+     /*
+-  --swiper-pagination-color: var(--swiper-theme-color);
++  --swiper-pagination-color: #9FA3B0;
+   --swiper-pagination-bullet-size: 8px;
+   --swiper-pagination-bullet-width: 8px;
+   --swiper-pagination-bullet-height: 8px;
 @@ -33,9 +33,9 @@
  .swiper-pagination-custom,
  .swiper-horizontal > .swiper-pagination-bullets,
@@ -9,12 +18,23 @@ index 2da2b03..a23aee4 100644
 -  bottom: 10px;
 -  left: 0;
 -  width: 100%;
-+  top: -8px;
++  top: 0px;
 +  right: 0;
 +  margin-right: 20px;
  }
  /* Bullets */
  .swiper-pagination-bullets-dynamic {
+@@ -65,8 +65,8 @@
+   }
+ }
+ .swiper-pagination-bullet {
+-  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+-  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
++  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 5px));
++  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 5px));
+   display: inline-block;
+   border-radius: 50%;
+   background: var(--swiper-pagination-bullet-inactive-color, #000);
 diff --git a/node_modules/swiper/swiper.scss b/node_modules/swiper/swiper.scss
 index 761dd1e..b27a458 100644
 --- a/node_modules/swiper/swiper.scss
