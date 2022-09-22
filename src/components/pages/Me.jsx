@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { useEffect } from "react";
-import { useRef } from "react";
+import React from "react";
 import MeCont from "../includes/MeCont";
 import Header from "../layout/Header";
 

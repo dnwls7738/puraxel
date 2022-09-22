@@ -57,7 +57,7 @@ index 819dec4..3c8ce1f 100644
 -$themeColor: #007aff !default;
 +$themeColor: #9FA3B0 !default;
 diff --git a/node_modules/swiper/swiper.scss b/node_modules/swiper/swiper.scss
-index 761dd1e..b27a458 100644
+index 16f6e7d..7967e3b 100644
 --- a/node_modules/swiper/swiper.scss
 +++ b/node_modules/swiper/swiper.scss
 @@ -40,8 +40,8 @@

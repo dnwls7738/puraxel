@@ -24,7 +24,7 @@
     "react-scripts": "5.0.1",
     "react-spring": "^9.5.2",
     "recoil": "^0.7.5",
-    "swiper": "^8.3.2",
+    "swiper": "^8.4.2",
     "swiper-src": "github:dnwls7738/swiper",
     "web-vitals": "^2.1.4"
   },
