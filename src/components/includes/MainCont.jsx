@@ -33,9 +33,9 @@ function MainCont() {
       <div className="contMain2">
         <Swiper
           modules={[Autoplay, Pagination]}
-          autoplay={{ delay: 3000 }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop={true}
-          speed={300}
+          speed={2000}
           slidesPerView={1}
           pagination={{ clickable: true }}
         >

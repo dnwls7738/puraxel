@@ -86,6 +86,9 @@ function FxItem() {
                   bottom: "0",
                   paddingLeft: "8px",
                   paddingBottom: "8px",
+                  width: "100%",
+                  backgroundImage: "linear-gradient(#fff0,#fff)",
+                  backdropFilter: "blur(0.7px)",
                 }}
               >
                 <img

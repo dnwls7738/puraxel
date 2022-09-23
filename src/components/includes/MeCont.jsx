@@ -95,6 +95,7 @@ function MeCont() {
               text1="프락셔널 레이저의 효능을"
               text2="직접 확인하실 수 있습니다."
               text3="하루 10분, 이제 집에서 관리하세요."
+              text4="※ 이 제품은 “미용기기” 입니다"
             />
           </SwiperSlide>
 
