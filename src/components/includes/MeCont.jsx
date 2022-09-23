@@ -65,47 +65,6 @@ function MeCont() {
                <span style="font-size: 1.2rem;color:#B6BCC7;font-weight:600;letter-spacing: -0.01em;">0${total}</span>`;
             },
           }}
-          // pagination={{
-          //   type: "custom",
-          //   renderCustom: (swiper, current, total) => {
-          //     // console.log(document.documentURI);
-          //     // console.log(swiper.realIndex);
-
-          //     return `<span
-          //     class="customPagination"
-          //     style="
-          //       display: flex;
-          //       flex-direction: column;
-          //       justify-content: center;
-          //       align-items: center;
-          //     "
-          //   >
-
-          //     <span>
-          //       <span
-          //         style="
-          //           font-size: 1.2rem;
-          //           color: #55576f;
-          //           font-weight:600;
-          //           letter-spacing: -0.01em;
-          //           margin-right: 0.8rem;
-          //         "
-          //         >0${current}<span style="margin-left: 0.8rem"><img src=${Line}
-          //            }}></span></span
-          //       ><span
-          //         style="
-          //         font-size: 1.2rem;
-          //         color: #55576f;
-          //         font-weight:600;
-          //         letter-spacing: -0.01em;
-          //         margin-right: 0.8rem;
-          //         "
-          //         >0${total}</span
-          //       >
-          //     </span>
-          //   </span>`;
-          //   },
-          // }}
           onSlideChange={(index) => {
             if (index.activeIndex === 0) {
               window.scroll({
@@ -178,12 +137,12 @@ function MeCont() {
                 </p>
               </div>
 
-              <div class="video-container" onClick={handleOpen3}>
+              <div className="video-container" onClick={handleOpen3}>
                 <iframe
                   src="https://www.youtube.com/embed/PZze0csQVoM"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                   title="d"
                 ></iframe>
               </div>
@@ -195,14 +154,14 @@ function MeCont() {
                 aria-describedby="modal-modal-description"
               >
                 <Box sx={style}>
-                  <div class="video-container" style={{ height: "100%" }}>
+                  <div className="video-container" style={{ height: "100%" }}>
                     <iframe
                       width="100%"
                       height="100%"
                       src="https://www.youtube.com/embed/PZze0csQVoM"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
+                      allowFullScreen
                       title="d"
                     ></iframe>
                   </div>

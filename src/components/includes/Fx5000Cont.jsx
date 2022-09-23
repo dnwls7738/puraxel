@@ -117,13 +117,13 @@ function Fx5000Cont() {
                 직접 경험해보세요.
               </p>
             </div>
-            <div class="video-container" onClick={handleOpen3}>
+            <div className="video-container" onClick={handleOpen3}>
               <iframe
                 src="https://www.youtube.com/embed/X6oDTHJnxq4"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
 
@@ -134,15 +134,15 @@ function Fx5000Cont() {
               aria-describedby="modal-modal-description"
             >
               <Box sx={style}>
-                <div class="video-container" style={{ height: "100%" }}>
+                <div className="video-container" style={{ height: "100%" }}>
                   <iframe
                     width="100%"
                     height="100%"
                     src="https://www.youtube.com/embed/X6oDTHJnxq4"
                     title="YouTube video player"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowFullScreen
                   ></iframe>
                 </div>
               </Box>
