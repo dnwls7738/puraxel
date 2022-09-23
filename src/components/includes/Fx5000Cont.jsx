@@ -32,14 +32,14 @@ function Fx5000Cont() {
     width: "80%",
     height: "50%",
     position: "absolute",
-    top: "50%",
+    top: "60%",
     left: "50%",
     transform: "translate(-50%, -60%)",
     bgcolor: "background.paper",
     border: "none",
     borderRadius: "4px",
     boxShadow: 24,
-    p: 2,
+    p: 1,
   };
   const [open3, setOpen3] = useState(false);
   const handleOpen3 = () => setOpen3(true);

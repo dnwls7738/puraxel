@@ -38,7 +38,7 @@ function HairCont() {
     border: "none",
     borderRadius: "4px",
     boxShadow: 24,
-    p: 2,
+    p: 1,
   };
   const [open3, setOpen3] = useState(false);
   const handleOpen3 = () => setOpen3(true);
