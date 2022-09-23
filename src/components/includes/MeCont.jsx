@@ -58,20 +58,54 @@ function MeCont() {
           spaceBetween={10}
           slidesPerView={1}
           pagination={{
-            type: "fraction",
-            renderFraction: function (currentClass, totalClass) {
-              return (
-                '<span class="' +
-                currentClass +
-                '"></span>' +
-                `<img src=${Line}
-              }}>` +
-                '<span class="' +
-                totalClass +
-                '"></span>'
-              );
+            type: "custom",
+            renderCustom: (swiper, current, total) => {
+              return `<span style="font-size: 1.2rem;color: #55576f;font-weight:600;letter-spacing: -0.01em;">0${current}</span> 
+                <img src=${Line} /> 
+               <span style="font-size: 1.2rem;color:#B6BCC7;font-weight:600;letter-spacing: -0.01em;">0${total}</span>`;
             },
           }}
+          // pagination={{
+          //   type: "custom",
+          //   renderCustom: (swiper, current, total) => {
+          //     // console.log(document.documentURI);
+          //     // console.log(swiper.realIndex);
+
+          //     return `<span
+          //     class="customPagination"
+          //     style="
+          //       display: flex;
+          //       flex-direction: column;
+          //       justify-content: center;
+          //       align-items: center;
+          //     "
+          //   >
+
+          //     <span>
+          //       <span
+          //         style="
+          //           font-size: 1.2rem;
+          //           color: #55576f;
+          //           font-weight:600;
+          //           letter-spacing: -0.01em;
+          //           margin-right: 0.8rem;
+          //         "
+          //         >0${current}<span style="margin-left: 0.8rem"><img src=${Line}
+          //            }}></span></span
+          //       ><span
+          //         style="
+          //         font-size: 1.2rem;
+          //         color: #55576f;
+          //         font-weight:600;
+          //         letter-spacing: -0.01em;
+          //         margin-right: 0.8rem;
+          //         "
+          //         >0${total}</span
+          //       >
+          //     </span>
+          //   </span>`;
+          //   },
+          // }}
           onSlideChange={(index) => {
             if (index.activeIndex === 0) {
               window.scroll({
