@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,8 +25,25 @@ import lmdt2 from "../../assets/img/certifi_lmdt_02.png";
 import lmdt3 from "../../assets/img/certifi_lmdt_03.png";
 import lmdt4 from "../../assets/img/certifi_lmdt_04.png";
 import lmdt5 from "../../assets/img/certifi_lmdt_05.png";
+import { Box, Modal } from "@mui/material";
 
 function Fx5000Cont() {
+  const style = {
+    width: "80%",
+    height: "50%",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -60%)",
+    bgcolor: "background.paper",
+    border: "none",
+    borderRadius: "4px",
+    boxShadow: 24,
+    p: 2,
+  };
+  const [open3, setOpen3] = useState(false);
+  const handleOpen3 = () => setOpen3(true);
+  const handleClose3 = () => setOpen3(false);
   return (
     <div
       style={{
@@ -107,14 +124,36 @@ function Fx5000Cont() {
                 직접 경험해보세요.
               </p>
             </div>
-            <div
-              style={{
-                position: "relative",
-                height: "0",
-                paddingBottom: "56.25%",
-                marginTop: "16px",
-              }}
-            ></div>
+            <div class="video-container" onClick={handleOpen3}>
+              <iframe
+                src="https://www.youtube.com/embed/X6oDTHJnxq4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <Modal
+              onClick={handleClose3}
+              open={open3}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Box sx={style}>
+                <div class="video-container" style={{ height: "100%" }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/X6oDTHJnxq4"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </Box>
+            </Modal>
           </div>
         </SwiperSlide>
         <SwiperSlide>
