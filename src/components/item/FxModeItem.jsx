@@ -88,13 +88,14 @@ function FxModeItem() {
             >
               <div
                 style={{
-                  width: "100%",
                   position: "absolute",
                   bottom: "0",
                   paddingLeft: "8px",
                   paddingBottom: "8px",
-                  backgroundImage: "linear-gradient(#fff0,#fff)",
+                  width: "99.8%",
+                  backgroundImage: "linear-gradient(#fff1,#fff)",
                   backdropFilter: "blur(0.7px)",
+                  borderRadius: "4px",
                 }}
               >
                 <img
@@ -142,9 +143,11 @@ function FxModeItem() {
                     paddingBottom: "8px",
                     position: "absolute",
                     bottom: 0,
-                    width: "100%",
-                    backgroundImage: "linear-gradient(#fff0,#fff)",
+
+                    width: "99.8%",
+                    backgroundImage: "linear-gradient(#fff1,#fff)",
                     backdropFilter: "blur(0.7px)",
+                    borderRadius: "4px",
                   }}
                 >
                   <img
@@ -188,9 +191,11 @@ function FxModeItem() {
                     paddingBottom: "8px",
                     position: "absolute",
                     bottom: 0,
-                    width: "100%",
-                    backgroundImage: "linear-gradient(#fff0,#fff)",
+
+                    width: "99.8%",
+                    backgroundImage: "linear-gradient(#fff1,#fff)",
                     backdropFilter: "blur(0.7px)",
+                    borderRadius: "4px",
                   }}
                 >
                   <img
@@ -237,9 +242,10 @@ function FxModeItem() {
                     position: "absolute",
                     bottom: 0,
                     paddingBottom: "8px",
-                    width: "100%",
-                    backgroundImage: "linear-gradient(#fff0,#fff)",
+                    width: "99.8%",
+                    backgroundImage: "linear-gradient(#fff1,#fff)",
                     backdropFilter: "blur(0.7px)",
+                    borderRadius: "4px",
                   }}
                 >
                   <img
@@ -282,9 +288,10 @@ function FxModeItem() {
                     position: "absolute",
                     bottom: 0,
                     paddingBottom: "8px",
-                    width: "100%",
-                    backgroundImage: "linear-gradient(#fff0,#fff)",
+                    width: "99.8%",
+                    backgroundImage: "linear-gradient(#fff1,#fff)",
                     backdropFilter: "blur(0.7px)",
+                    borderRadius: "4px",
                   }}
                 >
                   <div>
