@@ -57,17 +57,15 @@ index 819dec4..3c8ce1f 100644
 -$themeColor: #007aff !default;
 +$themeColor: #9FA3B0 !default;
 diff --git a/node_modules/swiper/swiper.scss b/node_modules/swiper/swiper.scss
-index 16f6e7d..7967e3b 100644
+index 16f6e7d..d5a9e19 100644
 --- a/node_modules/swiper/swiper.scss
 +++ b/node_modules/swiper/swiper.scss
-@@ -40,8 +40,8 @@
+@@ -40,7 +40,7 @@
  }
  .swiper-wrapper {
    position: relative;
 -  width: 100%;
--  height: 100%;
 +  width: 100vw;
-+  height: 100vh;
+   height: 100%;
    z-index: 1;
    display: flex;
-   transition-property: transform;
