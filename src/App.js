@@ -23,17 +23,13 @@ function App() {
         <Switch>
           <Suspense fallback={<div>Loading...</div>}>
             <Route path="/" exact component={Main} />
-          </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
+
             <Route path="/PURAXEL-Me" exact component={Me} />
-          </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
+
             <Route path="/PURAXEL" exact component={Fx5000} />
-          </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
+
             <Route path="/PURAXEL-Hair" exact component={Hair} />
-          </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
+
             <Route path="/핵심기술" exact component={PuraTech} />
           </Suspense>
         </Switch>
