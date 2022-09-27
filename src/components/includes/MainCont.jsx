@@ -1,8 +1,10 @@
 import React from "react";
+
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
+
 import MainImg from "../../assets/img/home_main.png";
 import MainImg2 from "../../assets/img/home_main2.png";
 import MainImg3 from "../../assets/img/home_main3.png";
