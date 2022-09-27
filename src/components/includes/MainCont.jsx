@@ -42,13 +42,13 @@ function MainCont() {
           pagination={{ clickable: true }}
         >
           <SwiperSlide>
-            <img src={MainImg} alt="" />
+            <img src={MainImg} loading="lazy" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={MainImg2} alt="" />
+            <img src={MainImg2} loading="lazy" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={MainImg3} alt="" />
+            <img src={MainImg3} loading="lazy" alt="" />
           </SwiperSlide>
         </Swiper>
       </div>
