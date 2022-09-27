@@ -20,8 +20,8 @@ function App() {
   return isMobile || isTablet ? (
     <MobileView>
       <Router>
-        <Switch>
-          <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Switch>
             <Route path="/" exact component={Main} />
 
             <Route path="/PURAXEL-Me" exact component={Me} />
@@ -31,8 +31,8 @@ function App() {
             <Route path="/PURAXEL-Hair" exact component={Hair} />
 
             <Route path="/핵심기술" exact component={PuraTech} />
-          </Suspense>
-        </Switch>
+          </Switch>
+        </Suspense>
       </Router>
     </MobileView>
   ) : (
