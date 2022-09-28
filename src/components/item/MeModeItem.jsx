@@ -89,7 +89,7 @@ function MeModeItem() {
                 background: modeCondition
                   ? "linear-gradient(rgba(147, 132, 234, 1), rgba(105, 101, 155, 1))"
                   : "#f2f3f6",
-                color: modeCondition ? "#f8f9fa" : "#a7abb6",
+                color: modeCondition ? "#f8f9fa" : "#000000",
                 boxShadow: modeCondition ? "0 8px 8px #00000020" : "none",
               }}
             >
@@ -107,7 +107,7 @@ function MeModeItem() {
                   ? "#f2f3f6"
                   : "linear-gradient(rgba(147, 132, 234, 1), rgba(105, 101, 155, 1))",
                 borderColor: modeCondition ? "#f2f3f6" : "#4d5058",
-                color: modeCondition ? "#a7abb6" : "#f8f9fa",
+                color: modeCondition ? "#000000" : "#f8f9fa",
                 boxShadow: modeCondition ? "none" : "0 8px 8px #00000020",
               }}
             >

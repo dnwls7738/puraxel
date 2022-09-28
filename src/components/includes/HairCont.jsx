@@ -60,7 +60,7 @@ function HairCont() {
         pagination={{
           type: "custom",
           renderCustom: (swiper, current, total) => {
-            return `<span style="font-size: 1.2rem;color: #55576f;font-weight:600;letter-spacing: -0.01em;">0${current}</span> 
+            return `<span style="font-size: 1.2rem;color: #000000;font-weight:600;letter-spacing: -0.01em;">0${current}</span> 
               <img src=${Line} /> 
              <span style="font-size: 1.2rem;color:#B6BCC7;font-weight:600;letter-spacing: -0.01em;">0${total}</span>`;
           },

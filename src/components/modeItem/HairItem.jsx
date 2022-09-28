@@ -47,7 +47,7 @@ function HairItem() {
               style={{
                 fontFamily: "Pretendard",
                 fontSize: "1.6rem",
-                color: "rgba(85, 87, 111, 1)",
+                color: "#000000",
                 fontWeight: "700",
               }}
             >
@@ -57,7 +57,7 @@ function HairItem() {
               style={{
                 fontFamily: "Pretendard",
                 fontSize: "1.2rem",
-                color: "#A292A3",
+                color: "#CA1657",
                 fontWeight: "600",
                 lineHeight: "144%",
               }}
@@ -84,7 +84,7 @@ function HairItem() {
             style={{
               fontFamily: "Pretendard",
               fontSize: "1.6rem",
-              color: "#808591",
+              color: "#000000",
               fontWeight: "500",
               marginTop: "12px",
               lineHeight: "150%",
@@ -154,7 +154,7 @@ function HairItem() {
                 style={{
                   fontWeight: 700,
                   fontSize: "2rem",
-                  color: "#55576f",
+                  color: "#000000",
                 }}
               >
                 안전기능
@@ -187,7 +187,7 @@ function HairItem() {
                       display: "flex",
                       fontSize: "1.6rem",
                       fontWeight: 700,
-                      color: "#55576F",
+                      color: "#000000",
                       alignItems: "center",
                       background: "#F8F9FA",
                     }}
@@ -207,7 +207,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#808591",
+                      color: "#000000",
                       margin: "8px 0 20px 35px",
                     }}
                   >
@@ -222,7 +222,7 @@ function HairItem() {
                       display: "flex",
                       fontSize: "1.6rem",
                       fontWeight: 700,
-                      color: "#55576F",
+                      color: "#000000",
                       alignItems: "center",
                       background: "#F8F9FA",
                     }}
@@ -242,7 +242,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#808591",
+                      color: "#000000",
                       margin: "8px 0 20px 35px",
                     }}
                   >
@@ -258,7 +258,7 @@ function HairItem() {
                       display: "flex",
                       fontSize: "1.6rem",
                       fontWeight: 700,
-                      color: "#55576F",
+                      color: "#000000",
                       alignItems: "center",
                       background: "#F8F9FA",
                     }}
@@ -278,7 +278,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#808591",
+                      color: "#000000",
                       margin: "8px 0 20px 35px",
                     }}
                   >
@@ -294,7 +294,7 @@ function HairItem() {
                       display: "flex",
                       fontSize: "1.6rem",
                       fontWeight: 700,
-                      color: "#55576F",
+                      color: "#000000",
                       alignItems: "center",
                       background: "#F8F9FA",
                     }}
@@ -314,7 +314,7 @@ function HairItem() {
                     style={{
                       fontSize: "1.4rem",
                       fontWeight: 500,
-                      color: "#808591",
+                      color: "#000000",
                       margin: "8px 0 20px 34px",
                     }}
                   >

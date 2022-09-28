@@ -137,7 +137,7 @@
 }
 
 .rightPrivacyCollectAgree {
-  color: #a7abb6;
+  color: #000000;
   letter-spacing: -0.01em;
   font-weight: 600;
   font-size: 1.4rem;
@@ -161,7 +161,7 @@
 
   letter-spacing: -0.01em;
 
-  color: #a7abb6;
+  color: #000000;
 }
 
 .shopButton {
@@ -223,7 +223,7 @@
 
   background: #ffffff;
 
-  border: 1px solid #55576f;
+  border: 1px solid #000000;
   border-radius: 0.4rem;
   font-weight: 600;
   font-size: 1.2rem;
@@ -266,7 +266,7 @@
   font-size: 1.6rem;
 
   letter-spacing: -0.01em;
-  color: #a7abb6;
+  color: #000000;
 }
 
 .exitButton {
@@ -370,7 +370,7 @@
 }
 
 .dialog__send__checked__ic {
-  color: #55576f;
+  color: #000000;
   height: 5.6rem;
   width: 5.6rem;
   margin-bottom: 1.6rem;

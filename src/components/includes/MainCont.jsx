@@ -25,7 +25,7 @@ function MainCont() {
             fontFamily: "Pretendard",
             fontWeight: "400",
             fontSize: "1.6rem",
-            color: "#55576F",
+            color: "#000000",
             marginBottom: "20px",
           }}
         >

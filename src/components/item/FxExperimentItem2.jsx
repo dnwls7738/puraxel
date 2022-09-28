@@ -137,7 +137,7 @@ function FxExItem() {
                     fontFamily: "Pretendard",
                     fontWeight: 700,
                     fontSize: "2rem",
-                    color: "#55576f",
+                    color: "#000000",
                     padding: "12px",
                   }}
                 >
@@ -170,7 +170,7 @@ function FxExItem() {
                   onClick={selectorLaser}
                   style={{
                     backgroundColor: modeCondition ? "#808591" : "#F2F3F6",
-                    color: modeCondition ? "#FFFFFF" : "#A7ABB6",
+                    color: modeCondition ? "#FFFFFF" : "#000000",
                     boxShadow: modeCondition ? "0 4px 8px #00000026" : "none",
                     fontSize: "1.6rem",
                     fontWeight: 600,
@@ -182,7 +182,7 @@ function FxExItem() {
                   onClick={selectorGalvanic}
                   style={{
                     backgroundColor: modeCondition ? "#F2F3F6" : "#808591",
-                    color: modeCondition ? "#A7ABB6" : "#FFFFFF",
+                    color: modeCondition ? "#000000" : "#FFFFFF",
                     boxShadow: modeCondition ? "none" : "0 4px 8px #00000026",
                     fontSize: "1.6rem",
                     marginLeft: "8px",
@@ -251,7 +251,7 @@ function FxExItem() {
                   fontFamily: "Pretendard",
                   fontWeight: 700,
                   fontSize: "2rem",
-                  color: "#55576f",
+                  color: "#000000",
                   padding: "12px",
                 }}
               >

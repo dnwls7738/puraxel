@@ -171,8 +171,8 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           <div
             onClick={selectorLaser}
             style={{
-              backgroundColor: modeCondition ? "#808591" : "#F2F3F6",
-              color: modeCondition ? "#FFFFFF" : "#A7ABB6",
+              backgroundColor: modeCondition ? "#000000" : "#ECEFF4",
+              color: modeCondition ? "#FFFFFF" : "#545454",
               boxShadow: modeCondition
                 ? "0 4px 8px rgba(0, 0, 0, 0.15)"
                 : "none",
@@ -185,8 +185,8 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
           <div
             onClick={selectorGalvanic}
             style={{
-              backgroundColor: modeCondition ? "#F2F3F6" : "#808591",
-              color: modeCondition ? "#A7ABB6" : "#FFFFFF",
+              backgroundColor: modeCondition ? "#ECEFF4" : "#000000",
+              color: modeCondition ? "#545454" : "#FFFFFF",
               marginLeft: "8px",
               boxShadow: modeCondition
                 ? "none"
@@ -267,7 +267,7 @@ function SpecItem2({ img1, img2, img3, img4, Bs }) {
                     fontFamily: "Pretendard",
                     fontWeight: 700,
                     fontSize: "1.2rem",
-                    color: "#A7ABB6",
+                    color: "#000000",
                     marginLeft: "20px",
                     marginTop: "20px",
                   }}

@@ -143,7 +143,7 @@ function FxExItem() {
                     fontFamily: "Pretendard",
                     fontWeight: 700,
                     fontSize: "2rem",
-                    color: "#55576f",
+                    color: "#000000",
                     padding: "8px",
                   }}
                 >
@@ -205,7 +205,7 @@ function FxExItem() {
                     fontFamily: "Pretendard",
                     fontWeight: 700,
                     fontSize: "2rem",
-                    color: "#55576f",
+                    color: "#000000",
                     padding: "8px",
                   }}
                 >
@@ -267,7 +267,7 @@ function FxExItem() {
                     fontFamily: "Pretendard",
                     fontWeight: 800,
                     fontSize: "2rem",
-                    color: "#55576f",
+                    color: "#000000",
                     padding: "8px ",
                   }}
                 >

@@ -20,7 +20,7 @@ function FxItem5() {
               style={{
                 fontFamily: "Pretendard",
                 fontSize: "1.6rem",
-                color: "rgba(85, 87, 111, 1)",
+                color: "#000000",
                 fontWeight: "700",
               }}
             >
@@ -30,7 +30,7 @@ function FxItem5() {
               style={{
                 fontFamily: "Pretendard",
                 fontSize: "1.2rem",
-                color: "#A292A3",
+                color: "#CA1657",
                 fontWeight: "600",
                 lineHeight: "144%",
               }}
@@ -58,7 +58,7 @@ function FxItem5() {
             style={{
               fontFamily: "Pretendard",
               fontSize: "1.6rem",
-              color: "#808591",
+              color: "#000000",
               fontWeight: "500",
               marginTop: "12px",
               lineHeight: "150%",

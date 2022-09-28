@@ -100,7 +100,7 @@ function FxItem() {
                   style={{
                     fontFamily: "Pretendard",
                     fontWeight: 700,
-                    color: "#55576F",
+                    color: "#000000",
                     fontSize: "1.4rem",
                     marginLeft: "4px",
                   }}
@@ -138,7 +138,7 @@ function FxItem() {
                   style={{
                     fontFamily: "Pretendard",
                     fontWeight: 700,
-                    color: "#55576F",
+                    color: "#000000",
                     fontSize: "1.4rem",
                     marginLeft: "4px",
                   }}
@@ -174,7 +174,7 @@ function FxItem() {
                   style={{
                     fontFamily: "Pretendard",
                     fontWeight: 700,
-                    color: "#55576F",
+                    color: "#000000",
                     fontSize: "1.4rem",
                     marginLeft: "4px",
                   }}
@@ -210,7 +210,7 @@ function FxItem() {
                   style={{
                     fontFamily: "Pretendard",
                     fontWeight: 700,
-                    color: "#55576F",
+                    color: "#000000",
                     fontSize: "1.4rem",
                     marginLeft: "4px",
                   }}

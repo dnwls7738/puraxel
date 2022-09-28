@@ -4,7 +4,7 @@
   font-family: "Pretendard";
   font-weight: 400;
   font-size: 2rem;
-  color: #55576f;
+  color: #000000;
   text-align: left;
   em {
     font-weight: 800;
@@ -19,9 +19,9 @@
   border-radius: 4px;
   padding: 12px 10px;
   font-family: "Pretendard";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.4rem;
-  color: #7e818d;
+  color: #000000;
 }
 .criticalTech {
   width: 100%;
@@ -66,7 +66,7 @@
 }
 .ErYag {
   background: linear-gradient(#f8f9fa, #f8f9fa) padding-box,
-    linear-gradient(to bottom, #ffffff00, #55576f4d) border-box;
+    linear-gradient(to bottom, #ffffff00, #0000004d) border-box;
   border: 1px solid transparent;
   border-radius: 4px;
   width: 60%;
@@ -75,7 +75,7 @@
   .ErYagText1 {
     font-weight: 700;
     font-size: 1.2rem;
-    color: rgba(85, 87, 111, 1);
+    color: #000000;
   }
   .ErYagText2 {
     font-weight: 800;
@@ -135,7 +135,7 @@
   margin: 20px;
   .puraCertText {
     padding: 6px 12px;
-    background: rgba(85, 87, 111, 1);
+    background: #000000;
     border-radius: 4px;
     font-weight: 700;
     font-size: 1.4rem;
@@ -144,7 +144,7 @@
   .puraCertText2 {
     font-weight: 500;
     font-size: 1.4rem;
-    color: rgba(167, 171, 182, 1);
+    color: #4f4f4f;
     margin-left: 8px;
   }
 }
@@ -192,12 +192,12 @@
     border-radius: 4px;
     font-weight: 700;
     font-size: 1.4rem;
-    color: #808591;
+    color: #000000;
   }
   .lmdtCertText2 {
     font-weight: 500;
     font-size: 1.4rem;
-    color: rgba(167, 171, 182, 1);
+    color: #4f4f4f;
     margin-left: 8px;
   }
 }

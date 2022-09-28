@@ -8,7 +8,7 @@ import style5 from "./ModalComponent.module.css";
 import Ham from "../../assets/img/gnb_ic_ham.svg";
 import Close from "../../assets/img/gnb_close.svg";
 import Shop from "../../assets/img/gnb_ic_shop.svg";
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/gnb_logo.svg";
 import Inquiry from "../../assets/img/inquiry.svg";
 import Youtube from "../../assets/img/youtube.svg";
 import Insta from "../../assets/img/insta.svg";
@@ -83,7 +83,7 @@ const theme3 = createTheme({
       styleOverrides: {
         root: {
           "&:hover": {
-            backgroundColor: "#55576F",
+            backgroundColor: "#000000",
           },
           boxShadow: "none",
         },
@@ -110,7 +110,7 @@ const theme3 = createTheme({
     MuiCheckbox: {
       styleOverrides: {
         root: {
-          color: "#A7ABB6",
+          color: "#000000",
           "&.Mui-checked": { color: "#4D5058" },
         },
       },
@@ -118,8 +118,8 @@ const theme3 = createTheme({
     MuiInputLabel: {
       styleOverrides: {
         root: {
-          "&.Mui-focused": { color: "#A7ABB6", fontSize: "1.2rem" },
-          color: "#A7ABB6",
+          "&.Mui-focused": { color: "#000000", fontSize: "1.2rem" },
+          color: "#000000",
           fontFamily: "Pretendard",
           fontSize: "1.2rem",
         },
@@ -217,7 +217,7 @@ const btnDisabled = {
   bgcolor: "#DFE1E8",
 };
 const btnActive = {
-  bgcolor: "#55576F",
+  bgcolor: "#000000",
 };
 
 function Header({ name, text }) {
@@ -566,7 +566,7 @@ function Header({ name, text }) {
       <div className="header__logo">
         <div className="logo">
           {name === "puraxel" ? (
-            <Link to="/">
+            <Link to="/" aria-label="logo">
               <img
                 src={Logo}
                 alt=""
@@ -617,7 +617,10 @@ function Header({ name, text }) {
         {["right"].map((anchor) => (
           <React.Fragment key={anchor}>
             <ThemeProvider theme={theme1}>
-              <IconButton onClick={toggleDrawer(anchor, true)}>
+              <IconButton
+                onClick={toggleDrawer(anchor, true)}
+                aria-label="navigation menu"
+              >
                 <img
                   src={Ham}
                   style={{
@@ -635,7 +638,7 @@ function Header({ name, text }) {
               PaperProps={{
                 sx: {
                   width: "100%",
-                  color: "#55576F",
+                  color: "#000000",
                   backgroundColor: "rgba(255, 255, 255, 0.8)",
                   zIndex: 99999,
                   backdropFilter: "blur(40px)",
@@ -747,7 +750,7 @@ function Header({ name, text }) {
                     fontFamily: "Pretendard",
                     fontWeight: 300,
                     fontSize: "2rem",
-                    color: "rgba(85, 87, 111, 1)",
+                    color: "#000000",
                     padding: "8px",
                   }}
                 >
@@ -884,7 +887,7 @@ function Header({ name, text }) {
                           style={{
                             fontFamily: "Pretendard",
                             fontSize: "12px",
-                            color: "#A7ABB6",
+                            color: "#000000",
                             marginTop: "-2px",
                           }}
                         >
@@ -959,7 +962,7 @@ function Header({ name, text }) {
                             style={{
                               fontFamily: "Pretendard",
                               fontSize: "1.2rem",
-                              color: "#A7ABB6",
+                              color: "#000000",
                               cursor: "pointer",
                             }}
                           >
