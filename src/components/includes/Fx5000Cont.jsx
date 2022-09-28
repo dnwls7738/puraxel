@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { lazy, useState } from "react";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/scss";
 import "swiper/scss/pagination";
 

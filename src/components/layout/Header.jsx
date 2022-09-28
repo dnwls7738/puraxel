@@ -176,7 +176,7 @@ const header = {
   fontSize: "1.4rem",
   lineHeight: "150%",
   letterSpacing: "-0.01em",
-  color: "#4D5058",
+  color: "#000000",
 };
 
 const style2 = {
@@ -186,7 +186,7 @@ const style2 = {
   fontSize: "1.2rem",
   lineHeight: "140%",
   letterSpacing: "-0.01em",
-  color: "#7E818D",
+  color: "#000000",
 };
 
 const style = {
@@ -499,7 +499,7 @@ function Header({ name, text }) {
             >
               <Link
                 to={{
-                  pathname: "",
+                  pathname: "https://www.facebook.com/Puraxel.official/",
                 }}
                 target="_blank"
               >
@@ -517,7 +517,7 @@ function Header({ name, text }) {
 
               <Link
                 to={{
-                  pathname: "",
+                  pathname: "https://www.instagram.com/puraxel/",
                 }}
                 target="_blank"
               >
@@ -535,7 +535,8 @@ function Header({ name, text }) {
 
               <Link
                 to={{
-                  pathname: "",
+                  pathname:
+                    "https://www.youtube.com/channel/UC7X6D4v-G-b7NmNeU2j-jwQ",
                 }}
                 target="_blank"
               >
@@ -680,9 +681,10 @@ function Header({ name, text }) {
                     display: "inline-block",
                     fontFamily: "Pretendard",
                     marginLeft: "40px",
-                    background: "#F2F3F6",
+                    background: "#000000",
                     padding: "2px 8px 2px 8px",
                     borderRadius: "4px",
+                    color: "#ffffff",
                   }}
                 >
                   <Link
@@ -690,7 +692,6 @@ function Header({ name, text }) {
                       pathname: "https://www.lameditech.com/",
                     }}
                     target="_blank"
-                    style={{}}
                   >
                     라메디텍 바로가기
                     <div
