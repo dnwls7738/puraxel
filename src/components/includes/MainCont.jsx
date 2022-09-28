@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/pagination";
 
-import MainImg from "../../assets/img/home_main.png";
-import MainImg2 from "../../assets/img/home_main2.png";
-import MainImg3 from "../../assets/img/home_main3.png";
+import MainImg from "../../assets/img/home_main.webp";
+import MainImg2 from "../../assets/img/home_main2.webp";
+import MainImg3 from "../../assets/img/home_main3.webp";
 
 function MainCont() {
   return (
