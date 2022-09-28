@@ -15,6 +15,7 @@ import Insta from "../../assets/img/insta.svg";
 import Facebook from "../../assets/img/facebook.svg";
 import Shortcut from "../../assets/img/shortcutMini.svg";
 
+import { CheckCircle, CheckCircleOutline } from "@mui/icons-material";
 import {
   ListItem,
   ListItemText,
@@ -41,7 +42,6 @@ import {
   DialogTitle,
   DialogActions,
 } from "@mui/material";
-import { CheckCircle, CheckCircleOutline } from "@mui/icons-material";
 
 const theme = createTheme({
   components: {
